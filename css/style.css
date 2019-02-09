@@ -4,6 +4,12 @@
     --main-font: 'Nunito', sans-serif;
 }
 
+/*
+  Classes are identified with a .
+  IDs are identified with a #
+*/
+
+
 html, body
 {
     height: 100%;
@@ -41,4 +47,8 @@ body {
 .hideme
 {
     opacity:0;
+}
+
+.specialtext{
+  color: red;
 }
