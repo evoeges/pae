@@ -1,6 +1,6 @@
 
 $(function(){  // $(document).ready shorthand
-  $('.monster').fadeIn('slow');
+  $('.fade_section').fadeIn('slow');
 });
 
 $(document).ready(function() {
