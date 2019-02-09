@@ -3,3 +3,42 @@
     --secondary-color: #aaa;
     --main-font: 'Nunito', sans-serif;
 }
+
+html, body
+{
+    height: 100%;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  background-color: ;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.row {
+  height: 100%;
+}
+
+#container
+{
+    height:2000px;
+}
+
+#container DIV
+{
+    margin:50px;
+    padding:50px;
+    background-color:pink;
+}
+
+.hideme
+{
+    opacity:0;
+}
