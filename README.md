@@ -72,7 +72,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 * **Elyse Voegeli** - *Initial work* - [evoeges](https://github.com/evoeges)
 * **Jon Truong** - *Initial work* - [ohbother](https://github.com/ohbother)
-* **Akina Younge** - *Initial work*
+* **Akina Younge** - *Initial work* - [Akinana27](https://github.com/Akinana27)
 * **Dee Yusuf** - *Initial work*
 
 
