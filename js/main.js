@@ -9,7 +9,7 @@ function toggleDefinitions(inputSwitch) {
     "These decisions can have far reaching consequences for people, sometimes good or bad.";
   } else {
     x.innerHTML = "An " + "<em>" + "automated decision system" + "</em>" +  " (ADS) refers to any set of formal or informal processes used by a city agency or governmental body to make, or assist in making, decisions; which" +
-      "<ul>" +
+      "<ul>" + "<br>" +
         "<li>"+  "relies on one or more components that are, partially or entirely, computerized; which" + "</li>" +
         "<ul>" +
           "<li>" + "play a material role in the decision-making process; and where" + "</li>" +
