@@ -20,3 +20,8 @@ function toggleDefinitions(inputSwitch) {
         ;
   }
 }
+
+$(window).scroll(function(){
+    $(".fadeOut").css("opacity", 1 - $(window).scrollTop() / 250);
+  
+  });
