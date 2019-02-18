@@ -17,6 +17,7 @@ html, body
 
 body {
   font-family: var(--main-font);
+  font-size: 120%;
 }
 
 .page {
@@ -35,7 +36,7 @@ h2 {
   color: var(--main-color);
   margin-top: 10%;
   margin-bottom: 5%;
-  font-size: 25px;
+  font-size: 25;
 }
 
 strong{
@@ -44,6 +45,7 @@ strong{
 
 #definitions_buttons{
   padding: 5%;
+  font-size: 130%;
 }
 
 .problem_statement{
@@ -51,4 +53,8 @@ strong{
  border-width: 5px;
  border-radius: 16px;
  padding: 5%;
+}
+
+.row{
+  padding-top: 5%;
 }
