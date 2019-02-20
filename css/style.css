@@ -17,7 +17,7 @@ html, body
 
 body {
   font-family: var(--main-font);
-  font-size: 120%;
+  font-size: 110%;
 }
 
 .page {
@@ -45,7 +45,7 @@ strong{
 
 #definitions_buttons{
   padding: 5%;
-  font-size: 130%;
+  font-size: 120%;
 }
 
 .problem_statement{
@@ -60,12 +60,12 @@ strong{
 }
 
 .slidecontainer {
-  width: 80%; /* Width of the outside container */
+  width: 100%; /* Width of the outside container */
 }
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 60%;
   height: 15px;
   border-radius: 5px;
   background: #d3d3d3;
@@ -95,4 +95,8 @@ strong{
   border-radius: 50%;
   background:  var(--main-color);
   cursor: pointer;
+}
+
+.slider-row{
+  padding: 1%;
 }
