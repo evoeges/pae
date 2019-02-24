@@ -1,4 +1,6 @@
 
+//variables for the visualization instance
+var toyalgo;
 
 
 function toggleDefinitions(inputSwitch) {
