@@ -76,9 +76,49 @@ var business=0;
 var inspection=0;
 var windows=0;
 
-if (id==="age") {
-	age=1;
+setButtons();
+function setButtons(){
+	if (id==="age") {
+		age=1;
+	}
+
+	if (id==="style") {
+		style=1;
+	}
+
+	if (id==="sq_footage") {
+		sq_footage=1;
+	}
+
+	if (id==="neighborhood") {
+		neighborhood=1;
+	}
+
+	if (id==="prev_fire") {
+		proximity=1;
+	}
+
+	if (id==="height") {
+		height=1;
+	}
+	if (id==="no_occupants") {
+		occupants=1;
+	}
+
+	if (id==="business") {
+	business=1;
+	}
+
+	if (id==="last_inspection") {
+	inspection=1;
+	}
+
+	if (id==="no_windows") {
+		windows=1;
+	}
+
 }
+
 
 var probabilityFire=0;
 
@@ -87,12 +127,12 @@ regressionEq();
 function regressionEq(){
 	  for (var i=0; i<vis.data.length; i++) {
  			vis.data[i].Fire=	(
-				(.02 * vis.data[i].Building_Age)*age +
-				(.02 * vis.data[i].Architectural_Style)*style +
+				(.01 * vis.data[i].Building_Age)*age +
+				(.01 * vis.data[i].Architectural_Style)*style +
 				(.01*vis.data[i].Square_Footage)*sq_footage +
 				(.01*vis.data[i].Neighborhood)*neighborhood +
-				(.03*vis.data[i].Proximity_Prev_Fires)*proximity +
-				(01*vis.data[i].Height)*height+
+				(.008* vis.data[i].Proximity_Prev_Fires)*proximity +
+				(.01*vis.data[i].Height)*height+
 				(.025*vis.data[i].Number_Occupants)*occupants+
 				(.03*vis.data[i].Business)*business -
 				(.06*vis.data[i].Last_Inspection)*inspection +
