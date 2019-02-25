@@ -54,16 +54,56 @@ ToyAlgorithm.prototype.initVis=function(){
    vis.svg.append("g")
        .attr("class", "y-axis axis");
 
-       vis.wrangleData();
+       vis.wrangleData('none');
 }
 
-ToyAlgorithm.prototype.wrangleData=function(){
+ToyAlgorithm.prototype.wrangleData=function(id){
 //currently empty function. maybe we'll use this to create the actual regression?
 /*
 We could create an actual regression function with coefficients and for each house factor in the variables that have been selected into the regression to generate a probability of fire and then set on fire if the probability is above a threshold
 */
- 	var vis= this;
-	vis.updateVis("none");
+
+ var vis= this;
+
+var age=0;
+var style=0;
+var sq_footage=0;
+var neighborhood=0;
+var proximity=0;
+var height=0;
+var occupants=0;
+var business=0;
+var inspection=0;
+var windows=0;
+
+if (id==="age") {
+	age=1;
+}
+
+var probabilityFire=0;
+
+regressionEq();
+
+function regressionEq(){
+	  for (var i=0; i<vis.data.length; i++) {
+ 			vis.data[i].Fire=	(
+				(.02 * vis.data[i].Building_Age)*age +
+				(.02 * vis.data[i].Architectural_Style)*style +
+				(.01*vis.data[i].Square_Footage)*sq_footage +
+				(.01*vis.data[i].Neighborhood)*neighborhood +
+				(.03*vis.data[i].Proximity_Prev_Fires)*proximity +
+				(01*vis.data[i].Height)*height+
+				(.025*vis.data[i].Number_Occupants)*occupants+
+				(.03*vis.data[i].Business)*business -
+				(.06*vis.data[i].Last_Inspection)*inspection +
+				(0*vis.data[i].Number_Windows)*windows);
+		}
+}
+
+
+
+  var vis= this;
+	vis.updateVis(id);
 }
 
 ToyAlgorithm.prototype.updateVis = function(id){
@@ -78,11 +118,13 @@ var houses =  vis.svg.selectAll("rect")
 			 .merge(houses)
 			 .transition()
 			 .duration(1000)
-       .attr("fill", function(){
-				 if (id==="none"){
-					 return "var(--main-color)";
+       .attr("fill", function(d){
+				 if (d.Fire>.5){
+					 return "red";
 					 }
-				 else { return "red";}
+				 else {
+					 return "var(--main-color)";
+				 }
 			 })
        .attr("stroke", "#fff")
 			 .attr("height", 40)
