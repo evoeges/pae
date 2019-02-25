@@ -19,9 +19,10 @@ ToyAlgorithm.prototype.initVis=function(){
 
   vis.margin = { top: 40, right: 60, bottom: 60, left: 60 };
 
+	var windowWidth= ($( window ).width())/2;
 
 //set the height and width to be dynamic to the viewport at some point
-	vis.width = 800 - vis.margin.left - vis.margin.right,
+	vis.width = windowWidth - vis.margin.left - vis.margin.right,
   vis.height = 400 - vis.margin.top - vis.margin.bottom;
 
   // SVG drawing area
@@ -62,17 +63,27 @@ ToyAlgorithm.prototype.wrangleData=function(){
 We could create an actual regression function with coefficients and for each house factor in the variables that have been selected into the regression to generate a probability of fire and then set on fire if the probability is above a threshold
 */
  	var vis= this;
-	vis.updateVis();
+	vis.updateVis("none");
 }
 
-ToyAlgorithm.prototype.updateVis = function(){
+ToyAlgorithm.prototype.updateVis = function(id){
  var vis= this;
 
- vis.svg.selectAll("rect")
-       .data(vis.data)
-       .enter()
-       .append("rect")
-       .attr("fill", "var(--main-color)")
+var houses =  vis.svg.selectAll("rect")
+       .data(vis.data);
+
+       houses.enter().append("rect")
+			 .attr("class", "rect")
+
+			 .merge(houses)
+			 .transition()
+			 .duration(1000)
+       .attr("fill", function(){
+				 if (id==="none"){
+					 return "var(--main-color)";
+					 }
+				 else { return "red";}
+			 })
        .attr("stroke", "#fff")
 			 .attr("height", 40)
 			 .attr("width", 40)
@@ -82,4 +93,6 @@ ToyAlgorithm.prototype.updateVis = function(){
        .attr("y", function (d) {
            return vis.y(d.y_position);
        });
+
+			 houses.exit().remove();
 }

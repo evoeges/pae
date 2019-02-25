@@ -59,5 +59,11 @@ function createToyAlgoViz(data){
 }
 
 function updateToyAlgo(id){
-  console.log(id);
+  toyalgo.updateVis(id);
 }
+
+ window.addEventListener("resize", reshape);
+
+ function reshape(){
+
+ }
