@@ -104,6 +104,17 @@
     <div class="row align-items-center">
       <div class="col-4">
         Take a look at the algorithm below. You can choose which variables you think are the most important to guess whether a building will catch on fire. As you select variables, you can see which buildings the algorithm predicts on the left! Change your variables or choose different combinations to see how that changes what buildings the algorithm decides are at high risk.
+        <br> <br>
+        <button type="button" class="btn btn-secondary toy_buttons" id="age" onclick="updateToyAlgo(id)"> Building Age </button>
+        <button type="button" class="btn btn-secondary toy_buttons" id="style" onclick="updateToyAlgo(id)"> Architectural Style </button>
+        <button type="button" class="btn btn-secondary toy_buttons" id="sq_footage" onclick="updateToyAlgo(id)"> Square Footage </button>
+        <button type="button" class="btn btn-secondary toy_buttons" id="neighborhood" onclick="updateToyAlgo(id)"> Neighborhood </button>
+        <button type="button" class="btn btn-secondary toy_buttons" id="prev_fire" onclick="updateToyAlgo(id)"> Proximity to Previous Fires </button>
+        <button type="button" class="btn btn-secondary toy_buttons" id="height" onclick="updateToyAlgo(id)"> Height </button>
+        <button type="button" class="btn btn-secondary toy_buttons" id="no_occupants" onclick="updateToyAlgo(id)"> Number of Occupants </button>
+        <button type="button" class="btn btn-secondary toy_buttons" id="business" onclick="updateToyAlgo(id)"> Business </button>
+        <button type="button" class="btn btn-secondary toy_buttons" id="last_inspection" onclick="updateToyAlgo(id)"> Last Inspection</button>
+        <button type="button" class="btn btn-secondary toy_buttons" id="no_windows" onclick="updateToyAlgo(id)"> Number of Windows </button>
       </div>
       <div class="col-6">
         <div id="toy-algo-houses-area"></div>
@@ -316,9 +327,12 @@
 	<script src="js/d3.min.js"></script>
 	<script src="js/d3-tip.js"></script>
 
+  <!--visualizationObjects-->
+  <script src="js/toyAlgorithm.js"></script>
+
 	<!-- Main.js  -->
-  	<script src="js/ToyAlgorithm.js"></script>
 	<script src="js/main.js"></script>
+
 
 </body>
 </html>

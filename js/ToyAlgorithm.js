@@ -6,17 +6,18 @@
  * @param _data						-- the data to use in drawing th element
  */
 
-ToyAlgorithm = function(_parentElement, _data){
+ToyAlgorithm = function (_parentElement, _data){
 	this.parentElement = _parentElement;
     this.data = _data;
     console.log(this.data);
+    console.log(this.parentElement);
     this.initVis();
 }
 
 ToyAlgorithm.prototype.initVis=function(){
   var vis = this;
 
-  vis.margin = { top: 40, right: 0, bottom: 60, left: 60 };
+  vis.margin = { top: 40, right: 60, bottom: 60, left: 60 };
 
 
 //set the height and width to be dynamic to the viewport at some point
@@ -24,11 +25,11 @@ ToyAlgorithm.prototype.initVis=function(){
   vis.height = 400 - vis.margin.top - vis.margin.bottom;
 
   // SVG drawing area
-	vis.svg = d3.select("#" + vis.parentElement).append("svg")
-	    .attr("width", vis.width + vis.margin.left + vis.margin.right)
-	    .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
-      .append("g")
-	    .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
+    vis.svg = d3.select("#" + vis.parentElement).append("svg")
+          .attr("width", vis.width + vis.margin.left + vis.margin.right)
+          .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
+          .append("g")
+          .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
       // Scales and axes
    vis.x = d3.scaleLinear()
@@ -36,8 +37,8 @@ ToyAlgorithm.prototype.initVis=function(){
       .domain(d3.extent(vis.data, function(d) { return d.x_position; }));
 
    vis.y = d3.scaleLinear()
-       .range([vis.height, 0]);
-       .domain(d3.extent(vis.data, function(d) { return d.y_position; }));
+       .range([vis.height, 0])
+       .domain(d3.extent(vis.data, function(d) {return d.y_position; }));
 
    vis.xAxis = d3.axisBottom()
        .scale(vis.x);
@@ -52,7 +53,7 @@ ToyAlgorithm.prototype.initVis=function(){
    vis.svg.append("g")
        .attr("class", "y-axis axis");
 
-       vis.wrangleData;
+       vis.wrangleData();
 }
 
 ToyAlgorithm.prototype.wrangleData=function(){
@@ -60,9 +61,25 @@ ToyAlgorithm.prototype.wrangleData=function(){
 /*
 We could create an actual regression function with coefficients and for each house factor in the variables that have been selected into the regression to generate a probability of fire and then set on fire if the probability is above a threshold
 */
-vis.updateVis();
+ 	var vis= this;
+	vis.updateVis();
 }
 
 ToyAlgorithm.prototype.updateVis = function(){
- var vis= this; 
+ var vis= this;
+
+ vis.svg.selectAll("rect")
+       .data(vis.data)
+       .enter()
+       .append("rect")
+       .attr("fill", "var(--main-color)")
+       .attr("stroke", "#fff")
+			 .attr("height", 40)
+			 .attr("width", 40)
+       .attr("x", function (d) {
+           return vis.x(d.x_position);
+       })
+       .attr("y", function (d) {
+           return vis.y(d.y_position);
+       });
 }

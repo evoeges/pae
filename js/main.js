@@ -57,3 +57,7 @@ $(window).scroll(function(){
 function createToyAlgoViz(data){
   toyalgo = new ToyAlgorithm("toy-algo-houses-area", data);
 }
+
+function updateToyAlgo(id){
+  console.log(id);
+}
