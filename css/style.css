@@ -1,7 +1,7 @@
 :root {
     --main-color: #0097a0;
     --secondary-color: #aaa;
-    --main-font: 'Nunito', sans-serif;
+    --main-font: 'Roboto', sans-serif;
 }
 
 /*
@@ -37,6 +37,26 @@ h2 {
   margin-top: 10%;
   margin-bottom: 5%;
   font-size: 25;
+}
+
+/* splash screen */
+.bg {
+  /* The image used */
+  background-image: url("");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* intro pages */
+.intro_paragraphs{
+  font-size: 20px;
+  padding-bottom: 10%; 
 }
 
 strong{
@@ -120,19 +140,11 @@ strong{
   font-size: 58px;
 }
 
-.invisible {
-  transition: opacity 3s ease;
-  opacity: 0.0;
-}
 
-.visible {
-  transition: opacity 3s ease;
-  opacity: 1.0;
-}
 
 .fromTopIn
 {
-	transition: transform 3.0s ease, opacity 1.0s ease;
+	transition: transform 2.0s ease, opacity 2.0s ease;
 
 	transform: translate(0,0);
 	opacity: 1.0;
@@ -140,7 +152,7 @@ strong{
 
 .fromTopOut
 {
-	transition: transform 3.0s ease, opacity 1.0s ease;
+	transition: transform 2.0s ease, opacity 2.0s ease;
 
 	transform: translate(0,-10px);
 	opacity: 0.0;
@@ -148,7 +160,7 @@ strong{
 
 .fromBottomIn
 {
-	transition: transform 3.0s ease, opacity 1.0s ease;
+	transition: transform 2.0s ease, opacity 2.0s ease;
 
 	transform: translate(0,0);
 	opacity: 1.0;
@@ -156,7 +168,7 @@ strong{
 
 .fromBottomOut
 {
-	transition: transform 3.0s ease, opacity 1.0s ease;
+	transition: transform 2.0s ease, opacity 2.0s ease;
 
 	transform: translate(0,10px);
 	opacity: 0.0;
