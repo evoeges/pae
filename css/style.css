@@ -105,3 +105,59 @@ strong{
   margin-top: 3%;
   margin-left: 1%;
 }
+
+
+
+.splash_screen h1{
+  color: black;
+  font-size: 72px;
+
+}
+
+.splash_screen h2{
+  color: black;
+  margin-top: 3%;
+  font-size: 58px;
+}
+
+.invisible {
+  transition: opacity 3s ease;
+  opacity: 0.0;
+}
+
+.visible {
+  transition: opacity 3s ease;
+  opacity: 1.0;
+}
+
+.fromTopIn
+{
+	transition: transform 3.0s ease, opacity 1.0s ease;
+
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromTopOut
+{
+	transition: transform 3.0s ease, opacity 1.0s ease;
+
+	transform: translate(0,-10px);
+	opacity: 0.0;
+}
+
+.fromBottomIn
+{
+	transition: transform 3.0s ease, opacity 1.0s ease;
+
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromBottomOut
+{
+	transition: transform 3.0s ease, opacity 1.0s ease;
+
+	transform: translate(0,10px);
+	opacity: 0.0;
+}

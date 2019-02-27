@@ -10,52 +10,54 @@
 </head>
 <body>
 
-  <div class="fadeOut container page">
-    <h1> Amazing hook, we definitely want to read this website </h1>
+
+  <div class="container page splash_screen">
+
+    <div class="row align-items-center">
+        <div class="col" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+
+          <h1> automating NYC </h1>
+          <h2> and (en)coding inequality?</h2>
+
+        </div>
+      </div>
+  </div>
+</div>
+
+
+  <div class="container page">
+    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+      <h1> Wow did you consider some of the implications of this hook </h1>
+    </div>
+
     <div class="row align-items-center">
 
-      <div class="col-sm-4 align-self-center">
-        <h2>Who implements this ADS?</h2>
-        <p class="specialtext">this ads is fdny. jflkejtioerht </p>
+      <div class="col-sm-4">
+
       </div>
 
-      <div class="col-sm-4 align-self-center">
-        this is some filler text!
+      <div class="col-sm-4">
+
       </div>
 
-      <div class="col-sm-4 align-self-center">
+      <div class="col-sm-4">
       </div>
 
     </div>
   </div>
 
-  <div class="container page">
-    <h1> Wow did you consider some of the implications of this hook </h1>
-    <div class="row align-items-center">
+</div>
 
-      <div class="col-sm-4">
-        <h2>Who implements this ADS?</h2>
-        <p class="specialtext">this ads is fdny. jflkejtioerht </p>
-      </div>
-
-      <div class="col-sm-4">
-        this is some filler text!
-      </div>
-
-      <div class="col-sm-4">
-      </div>
-
-    </div>
-  </div>
-
-  <div class="container page">
+  <div class="container page" >
+    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
     <h1> Defining an ADS </h1>
+  </div>
     <div class="row align-items-center">
 
       <div class="col">
       </div>
 
-      <div class="col-8" id="definitions">
+      <div class="col-8" id="definitions" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
 
       <p id="JFI_definition">  An <em> automated decision system </em> (ADS) refers to any set of formal or informal processes used by a city agency or governmental body to make, or assist in making, decisions; which
         <ul>
@@ -73,7 +75,7 @@
 
     </div>
 
-    <div class="row align-items-center">
+    <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
 
       <div class="col">
       </div>
@@ -91,7 +93,7 @@
     </div>
   </div>
 
-  <div class="container page">
+  <div class="container page" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
     <h1> Recognize Other ADS in the Every Day </h1>
     <div class="row align-items-center">
       <div class="col">
@@ -99,12 +101,17 @@
     </div>
   </div>
 
-  <div class="container page">
+  <div class="container page" >
+    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
     <h1> Play with a Toy Algo </h1>
+  </div>
     <div class="row align-items-center">
       <div class="col-4">
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
         Take a look at the algorithm below. You can choose which variables you think are the most important to guess whether a building will catch on fire. As you select variables, you can see which buildings the algorithm predicts on the left! Change your variables or choose different combinations to see how that changes what buildings the algorithm decides are at high risk.
         <br> <br>
+      </div>
+      <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
         <button type="button" class="btn btn-secondary toy_buttons" id="age" onclick="updateToyAlgo(id)"> Building Age </button>
         <button type="button" class="btn btn-secondary toy_buttons" id="style" onclick="updateToyAlgo(id)"> Architectural Style </button>
         <button type="button" class="btn btn-secondary toy_buttons" id="sq_footage" onclick="updateToyAlgo(id)"> Square Footage </button>
@@ -116,13 +123,14 @@
         <button type="button" class="btn btn-secondary toy_buttons" id="last_inspection" onclick="updateToyAlgo(id)"> Last Inspection</button>
         <button type="button" class="btn btn-secondary toy_buttons" id="no_windows" onclick="updateToyAlgo(id)"> Number of Windows </button>
       </div>
+    </div>
       <div class="col-6">
-        <div id="toy-algo-houses-area"></div>
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)"  id="toy-algo-houses-area"></div>
       </div>
     </div>
   </div>
 
-  <div class="container page">
+  <div class="container page" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
     <h1> Classification System </h1>
     <div class="row align-items-center">
       <div class="col">
@@ -130,7 +138,7 @@
     </div>
   </div>
 
-  <div class="container page">
+  <div class="container page" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
     <h1> ADS Case Cards Page </h1>
     <div class="row align-items-center">
       <div class="col">
@@ -140,11 +148,13 @@
 
   <div >
 
-  <div class="container page" id="NYPL_case">
+  <div class="container page" id="NYPL_case" >
+    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
     <h1> New York Public Library uses an algorithm to stock books </h1>
+  </div>
     <div class="row align-items-center">
       <div class="col"></div>
-      <div class="col-8">
+      <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
         <p class="problem_statement">
           A library needs books, and librarians need to pick them. But how should they do that?  Libraries have limited resources and it's hard to test out new books by buying and returning them at a large scale. How can librarians tell which books will be popular with their patrons? What else should they consider when they're picking titles for their library branch?
         </p>
@@ -154,7 +164,7 @@
 
     <div class="row align-items-center">
       <div class="col"></div>
-      <div class="col-8">
+      <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
         <h2>Libraries use ESP to guess what we want to read</h2>
         <br>
         No, not extra-sensory perception.
@@ -165,7 +175,7 @@
       <div class="col"></div>
     </div>
 
-    <div class="row">
+    <div class="row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
 
       <div class="col-4">
       ESP is fed library patron data (like how many books by a particular author were checked out) and sales data (like Amazon purchases and reviews). In case you're wondering, no it doesn't use book reviews yet.
@@ -178,7 +188,7 @@
       </div>
     </div>
 
-    <div class="row align-items-center">
+    <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <div class="col"></div>
       <div class="col-8">
         <h2>So, which factors matter when ESP rates books?</h2>
@@ -192,7 +202,7 @@
 
     <div class="row align-items-center">
       <div class="col"></div>
-      <div class="col-8">
+      <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
         <h2>But we get better book picks, right?</h2>
         Not so fast.
         <br>
@@ -208,7 +218,7 @@
       <div class="col"></div>
     </div>
 
-    <div class="row align-items-center">
+    <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <div class="col"></div>
       <div class="col-8">
         <h2>Don't librarians still have final say?</h2>
@@ -220,10 +230,11 @@
       <div class="col"></div>
     </div>
 
-
+    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
     <h2>Rate the NYPL ADS </h2>
+  </div>
 
-    <div class="row align-items-center slider-row">
+    <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <div class="col-1">
         <span>Least Biased</span>
       </div>
@@ -239,7 +250,7 @@
       </div>
     </div>
 
-    <div class="row align-items-center slider-row">
+    <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
 
       <div class="col-1">
         <span>Least Explainable</span>
@@ -256,7 +267,7 @@
       </div>
     </div>
 
-    <div class="row align-items-center slider-row">
+    <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <div class="col-1">
         <span>Least Automated</span>
       </div>
@@ -272,7 +283,7 @@
       </div>
     </div>
 
-    <div class="row align-items-center slider-row">
+    <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <div class="col-1">
         <span>Least Impact</span>
       </div>
@@ -288,7 +299,7 @@
       </div>
     </div>
 
-    <div class="row align-items-center slider-row">
+    <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <div class="col-1">
         <span>Least Flexible</span>
       </div>
@@ -318,7 +329,12 @@
 
 
 
-
+  <script src="ScrollTrigger.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var trigger = new ScrollTrigger();
+  });
+  </script>
 
   <!-- Load JS libraries: jQuery, bootstrap, D3 -->
 	<script src="js/jquery.min.js"></script>
@@ -326,6 +342,7 @@
 	<script src="js/queue.min.js"></script>
 	<script src="js/d3.min.js"></script>
 	<script src="js/d3-tip.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
 
   <!--visualizationObjects-->
   <script src="js/toyAlgorithm.js"></script>
