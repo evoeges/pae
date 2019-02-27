@@ -68,3 +68,10 @@ function updateToyAlgo(id){
  function reshape(){
 
  }
+
+ $(document).ready(function() {
+   $('#fullpage').fullpage({
+     autoScrolling: false,
+     fitToSection: false
+   });
+ });
