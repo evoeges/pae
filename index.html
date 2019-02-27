@@ -37,7 +37,6 @@
 
   <div class="container page">
     <a id="first_page"></a>
-
     <div class="row align-items-center">
       <div class="col"></div>
       <div class="col-5 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
@@ -51,7 +50,7 @@
       <div class="col"></div>
       <div class="col-5 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
         <p>For [fighting fires](http://www.govtech.com/public-safety/New-York-City-Fights-Fire-with-Data.html) more effectively.
-Or [improving high school admissions](https://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html).
+          Or [improving high school admissions](https://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html).
         </p>
       </div>
       <div class="col"></div>
@@ -79,80 +78,95 @@ Or [improving high school admissions](https://www.nytimes.com/2014/12/07/nyregio
     <div class="row align-items-center">
       <div class="col"></div>
       <div class="col-5 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <p>Or that New York State judges set bail and sentencing using a  tool called COMPAS, and the results were [biased against black people](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing).
+        <p>Or that New York State judges set bail and sentencing using a tool called COMPAS, and the results were [biased against black people](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing).
         </p>
       </div>
       <div class="col"></div>
+    </div>
+
+    <div class="problem_statement">
+      <div class="row align-items-center">
+
+        <div class="col">
+        </div>
+
+        <div class="col-8" id="definitions" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <p id="JFI_definition"> An <em> automated decision system </em> (ADS) refers to any set of formal or informal processes used by a city agency or governmental body to make, or assist in making, decisions; which
+            <ul>
+              <li> relies on one or more components that are, partially or entirely, computerized; which </li>
+              <ul>
+                <li> play a material role in the decision-making process; and where </li>
+                <li> the decision being made has a matieral impact on an affected individual or population. </li>
+              </ul>
+            </ul>
+            An ADS may either be used to replicate a human decision or process, or establish a new process entirely. <br>
+            <strong class="hvr-grow"> An ADS must have at least one computerized component that plays a material role in making or meaningfully
+              influencing a
+              decision. </strong>
+          </p>
+
+        </div>
+        <div class="col">
+        </div>
+
+      </div>
+
+      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+
+        <div class="col">
+        </div>
+
+        <div class="col-8 text-center">
+          <div id="definitions_buttons">
+            <button type="button" class="btn btn-secondary" id="plain" onclick="toggleDefinitions(id)"> Plain English please! </button>
+            <button type="button" class="btn btn-secondary" id="legalese" onclick="toggleDefinitions(id)"> Legalese </button>
+          </div>
+        </div>
+
+        <div class="col">
+        </div>
+
+      </div>
     </div>
 
     <div class="row align-items-center">
       <div class="col"></div>
       <div class="col-5 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <p>What these systems all have in common is that they're automated and have the potential to reproduce or worsen unjust systems.
-
+        <p>It sounds complicated, but we're here to walk you through [why ADSs matter](Profirio's Bodega), [how they work](Toy Algorithm), [what questions to ask](Framework), [some examples in NYC], and [what you can do about them](Get Involved).
         </p>
+        <h2 data-anijs="if: mouseover, do: bounce animated"> <i class="fas fa-chevron-down"></i> </h2>
       </div>
-      <div class="col"></div>
+      <div class="col">
+      </div>
     </div>
 
 
   </div>
-
-
 
 
   <div class="container page">
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <h1> Defining an ADS </h1>
+      <h1> So how does this affect New Yorkers? </h1>
     </div>
     <div class="row align-items-center">
-
-      <div class="col">
-      </div>
-
-      <div class="col-8" id="definitions" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-
-        <p id="JFI_definition"> An <em> automated decision system </em> (ADS) refers to any set of formal or informal processes used by a city agency or governmental body to make, or assist in making, decisions; which
-          <ul>
-            <li> relies on one or more components that are, partially or entirely, computerized; which </li>
-            <ul>
-              <li> play a material role in the decision-making process; and where </li>
-              <li> the decision being made has a matieral impact on an affected individual or population. </li>
-            </ul>
-          </ul>
-          An ADS may either be used to replicate a human decision or process, or establish a new process entirely. <strong> An ADS must have at least one computerized component that plays a material role in making or meaningfully influencing a
-            decision. </strong>
-        </p>
-      </div>
-      <div class="col">
-      </div>
-
-    </div>
-
-    <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-
-      <div class="col">
-      </div>
-
-      <div class="col-8 text-center">
-        <div id="definitions_buttons">
-          <button type="button" class="btn btn-secondary" id="plain" onclick="toggleDefinitions(id)"> Plain English please! </button>
-          <button type="button" class="btn btn-secondary" id="legalese" onclick="toggleDefinitions(id)"> Legalese </button>
+      <div class="col-6">
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h3> Take Profirio Mejia.</h3>
+        </div>
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <p>He's been running P&L Deli Grocery--a quintessential New York City bodega in Washington Heights--since 2012. As a Dominican immigrant himself, Profirio knows his community well. The bodega is a place where neighbors go to watch baseball
+            and smoke cigars, and the locals (largely low-income immigrant families) know they can depend on for groceries through the ups and downs. </p>
+          <br><br>
+        </div>
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <p> Profirio works with an anti-hunger advocacy group to promote fruits and vegetables and knows the importance of the [Supplemental Nutritional Assistance Program (SNAP)] in a city where [15% of families are food
+            insecure](https://www.foodbanknyc.org/research-reports/). More than half of his customers bought their groceries with SNAP. When their benefits hadn't come in yet, he let them pay on an IOU system, allowing long-time patrons to take home
+            food and settle their bills later.
+          </p>
         </div>
       </div>
-
-      <div class="col">
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="container page" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-    <h1> Recognize Other ADS in the Every Day </h1>
-    <div class="row align-items-center">
-      <div class="col">
-      </div>
+        <div class="col-6">
+        </div>
     </div>
   </div>
 
