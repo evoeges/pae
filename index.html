@@ -165,9 +165,9 @@
           </p>
         </div>
       </div>
-        <div class="col-6">
-          <i class="fas fa-male"></i>
-        </div>
+      <div class="col-6">
+        <i class="fas fa-male" id="profirio"></i>
+      </div>
     </div>
   </div>
 
@@ -218,183 +218,185 @@
   </div>
 
 
-
-  <div class="container page" id="NYPL_case">
-    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <h1> New York Public Library uses an algorithm to stock books </h1>
-    </div>
-    <div class="row align-items-center">
-      <div class="col"></div>
-      <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <p class="problem_statement">
-          A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and it's hard to test out new books by buying and returning them at a large scale. How can librarians tell which books
-          will be popular with their patrons? What else should they consider when they're picking titles for their library branch?
-        </p>
+  <button class="accordion">Public Library</button>
+  <div class="panel">
+    <div class="container page" id="NYPL_case">
+      <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+        <h1> New York Public Library uses an algorithm to stock books </h1>
       </div>
-      <div class="col"></div>
-    </div>
-
-    <div class="row align-items-center">
-      <div class="col"></div>
-      <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <h2>Libraries use ESP to guess what we want to read</h2>
-        <br>
-        No, not extra-sensory perception.
-        <br>
-        <br>
-        <strong> ESP is an algorithm that uses library and non-library data to recommend books it thinks will be popular.</strong> Here's how the system works:
+      <div class="row align-items-center">
+        <div class="col"></div>
+        <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <p class="problem_statement">
+            A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and it's hard to test out new books by buying and returning them at a large scale. How can librarians tell which books
+            will be popular with their patrons? What else should they consider when they're picking titles for their library branch?
+          </p>
+        </div>
+        <div class="col"></div>
       </div>
-      <div class="col"></div>
-    </div>
 
-    <div class="row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+      <div class="row align-items-center">
+        <div class="col"></div>
+        <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h2>Libraries use ESP to guess what we want to read</h2>
+          <br>
+          No, not extra-sensory perception.
+          <br>
+          <br>
+          <strong> ESP is an algorithm that uses library and non-library data to recommend books it thinks will be popular.</strong> Here's how the system works:
+        </div>
+        <div class="col"></div>
+      </div>
 
-      <div class="col-4">
-        ESP is fed library patron data (like how many books by a particular author were checked out) and sales data (like Amazon purchases and reviews). In case you're wondering, no it doesn't use book reviews yet.
-      </div>
-      <div class="col-4">
-        The ESP algorithm looks for historical patterns in the data and makes suggestions for what books to stock at which branches. For example it might predict where the young adult book "Twilight" will be popular because that neighborhood has
-        lots of teenagers that checked out "Dracula" and "Harry Potter".
-      </div>
-      <div class="col-4">
-        Then, it's up to the librarian to choose whether or not to follow the algorithm's advice.
-      </div>
-    </div>
+      <div class="row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
 
-    <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <div class="col"></div>
-      <div class="col-8">
-        <h2>So, which factors matter when ESP rates books?</h2>
-        We don't actually know. ESP is a [neural network](https://en.wikipedia.org/wiki/Artificial_neural_network) algorithm, which is kind of a black box. We know which datasets ESP uses, but the patterns it's using to make recommondations are
-        fuzzy.
-        <br>
-        <br>
-        To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their experience
-        and knowledge.
-      </div>
-      <div class="col"></div>
-    </div>
-
-    <div class="row align-items-center">
-      <div class="col"></div>
-      <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <h2>But we get better book picks, right?</h2>
-        Not so fast.
-        <br>
-        <br>
-        As a neural network, ESP doesn't work as well if there isn't a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well. But it might have a harder time when guessing which debut
-        fiction (e.g. an author’s first book) will be a big hit.
-        <br>
-        <br>
-        Even if we have a bunch of data from Amazon or other book sellers, the data might not be representative of many NYC communities, particularly minorities and low income individuals--some of the largest users of library services that could
-        purchase fewer books. This means that the recommendations ESP produces might not reflect what patrons want and may not be easy to change unless we get a whole lot more data.
-        <br>
-        <br>
-        Also, it depends on what you mean by "better". What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the algorithm to figure out preferences for people who don't already
-        check out books.
-      </div>
-      <div class="col"></div>
-    </div>
-
-    <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <div class="col"></div>
-      <div class="col-8">
-        <h2>Don't librarians still have final say?</h2>
-        Yup! Preserving librarians' decision helps to address the possible problems with ESP. Still, librarians' choices may be swayed by what seems like a concrete, numerical score based on mathematical equations.
-        <br>
-        <br>
-        ESP augments a librarian's choices by highlighting gaps in a librarian's knowledge and experience. On the flip side, it could sway librarians away from trusting their own instincts on what their branch needs.
-      </div>
-      <div class="col"></div>
-    </div>
-
-    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <h2>Rate the NYPL ADS </h2>
-    </div>
-
-    <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <div class="col-1">
-        <span>Least Biased</span>
-      </div>
-      <div class="col-7">
-        <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="slider">
-          <span>Most Biased</span>
+        <div class="col-4">
+          ESP is fed library patron data (like how many books by a particular author were checked out) and sales data (like Amazon purchases and reviews). In case you're wondering, no it doesn't use book reviews yet.
+        </div>
+        <div class="col-4">
+          The ESP algorithm looks for historical patterns in the data and makes suggestions for what books to stock at which branches. For example it might predict where the young adult book "Twilight" will be popular because that neighborhood has
+          lots of teenagers that checked out "Dracula" and "Harry Potter".
+        </div>
+        <div class="col-4">
+          Then, it's up to the librarian to choose whether or not to follow the algorithm's advice.
         </div>
       </div>
 
-      <div class="col-4">
-        <strong> Machine Bias </strong> is about data quality and correlations that might impact marginalized groups.
+      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+        <div class="col"></div>
+        <div class="col-8">
+          <h2>So, which factors matter when ESP rates books?</h2>
+          We don't actually know. ESP is a [neural network](https://en.wikipedia.org/wiki/Artificial_neural_network) algorithm, which is kind of a black box. We know which datasets ESP uses, but the patterns it's using to make recommondations are
+          fuzzy.
+          <br>
+          <br>
+          To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their experience
+          and knowledge.
+        </div>
+        <div class="col"></div>
       </div>
-    </div>
 
-    <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-
-      <div class="col-1">
-        <span>Least Explainable</span>
+      <div class="row align-items-center">
+        <div class="col"></div>
+        <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h2>But we get better book picks, right?</h2>
+          Not so fast.
+          <br>
+          <br>
+          As a neural network, ESP doesn't work as well if there isn't a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well. But it might have a harder time when guessing which debut
+          fiction (e.g. an author’s first book) will be a big hit.
+          <br>
+          <br>
+          Even if we have a bunch of data from Amazon or other book sellers, the data might not be representative of many NYC communities, particularly minorities and low income individuals--some of the largest users of library services that could
+          purchase fewer books. This means that the recommendations ESP produces might not reflect what patrons want and may not be easy to change unless we get a whole lot more data.
+          <br>
+          <br>
+          Also, it depends on what you mean by "better". What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the algorithm to figure out preferences for people who don't already
+          check out books.
+        </div>
+        <div class="col"></div>
       </div>
-      <div class="col-7">
-        <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="slider">
-          <span>Most Explainable</span>
+
+      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+        <div class="col"></div>
+        <div class="col-8">
+          <h2>Don't librarians still have final say?</h2>
+          Yup! Preserving librarians' decision helps to address the possible problems with ESP. Still, librarians' choices may be swayed by what seems like a concrete, numerical score based on mathematical equations.
+          <br>
+          <br>
+          ESP augments a librarian's choices by highlighting gaps in a librarian's knowledge and experience. On the flip side, it could sway librarians away from trusting their own instincts on what their branch needs.
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+        <h2>Rate the NYPL ADS </h2>
+      </div>
+
+      <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+        <div class="col-1">
+          <span>Least Biased</span>
+        </div>
+        <div class="col-7">
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider">
+            <span>Most Biased</span>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <strong> Machine Bias </strong> is about data quality and correlations that might impact marginalized groups.
         </div>
       </div>
 
-      <div class="col-4">
-        <strong> Explainability </strong> is how easily humans can understand the algorithm.
-      </div>
-    </div>
+      <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
 
-    <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <div class="col-1">
-        <span>Least Automated</span>
-      </div>
-      <div class="col-7">
-        <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="slider">
-          <span>Most Atuomated</span>
+        <div class="col-1">
+          <span>Least Explainable</span>
+        </div>
+        <div class="col-7">
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider">
+            <span>Most Explainable</span>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <strong> Explainability </strong> is how easily humans can understand the algorithm.
         </div>
       </div>
 
-      <div class="col-4">
-        <strong> Automation </strong> is whether the decision is completely made by the algorithm, or just advises a human.
-      </div>
-    </div>
+      <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+        <div class="col-1">
+          <span>Least Automated</span>
+        </div>
+        <div class="col-7">
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider">
+            <span>Most Atuomated</span>
+          </div>
+        </div>
 
-    <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <div class="col-1">
-        <span>Least Impact</span>
-      </div>
-      <div class="col-7">
-        <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="slider">
-          <span>Most Impact</span>
+        <div class="col-4">
+          <strong> Automation </strong> is whether the decision is completely made by the algorithm, or just advises a human.
         </div>
       </div>
 
-      <div class="col-4">
-        <strong> Impact </strong> is how many people are affected, and how much the effect is on human wellbeing and livelihood.
-      </div>
-    </div>
+      <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+        <div class="col-1">
+          <span>Least Impact</span>
+        </div>
+        <div class="col-7">
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider">
+            <span>Most Impact</span>
+          </div>
+        </div>
 
-    <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <div class="col-1">
-        <span>Least Flexible</span>
-      </div>
-      <div class="col-7">
-        <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="slider">
-          <span>Most Flexible</span>
+        <div class="col-4">
+          <strong> Impact </strong> is how many people are affected, and how much the effect is on human wellbeing and livelihood.
         </div>
       </div>
 
-      <div class="col-4">
-        <strong> Flexibility </strong> is how easily the algorithm can be changed or updated.
+      <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+        <div class="col-1">
+          <span>Least Flexible</span>
+        </div>
+        <div class="col-7">
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider">
+            <span>Most Flexible</span>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <strong> Flexibility </strong> is how easily the algorithm can be changed or updated.
+        </div>
       </div>
+
+
+
     </div>
-
-
-
   </div>
 
   <div class="container page">
@@ -413,6 +415,23 @@
     document.addEventListener('DOMContentLoaded', function() {
       var trigger = new ScrollTrigger();
     });
+  </script>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
   </script>
 
   <!-- Load JS libraries: jQuery, bootstrap, D3 -->
