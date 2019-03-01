@@ -208,3 +208,15 @@ strong{
 #mejia_photo{
   text-align: center;
 }
+
+.algorithm_icons{
+  color: var(--main-color);
+  font-size: 400%;
+  text-align: center;
+}
+
+.algorithm_arrows{
+  color: black;
+  font-size: 250%;
+  text-align: center;
+}

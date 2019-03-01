@@ -15,7 +15,7 @@
 
 <body>
 
-
+<!-- splash screen -->
   <div class="container page splash_screen bg">
     <div class="row align-items-center">
       <div class="col">
@@ -34,7 +34,7 @@
     </div>
   </div>
 
-
+<!-- intro bubbles -->
   <div class="container page">
     <a id="first_page"></a>
     <div class="row align-items-center">
@@ -69,7 +69,7 @@
     <div class="row align-items-center">
       <div class="col"></div>
       <div class="col-5 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <p>Like how NYPD used computer statistics (CompStat) to target <a href="https://www.nyclu.org/en/stop-and-frisk-data" > black and Latinx communities with stop and frisks. </a>
+        <p>Like how NYPD used computer statistics (CompStat) to target <a href="https://www.nyclu.org/en/stop-and-frisk-data"> black and Latinx communities with stop and frisks. </a>
         </p>
       </div>
       <div class="col"></div>
@@ -143,7 +143,7 @@
 
   </div>
 
-<!-- MEJIA STORY -->
+  <!-- MEJIA STORY -->
   <div class="container page">
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <h1> So how does this affect New Yorkers? </h1>
@@ -167,13 +167,87 @@
       </div>
       <div class="col-6">
         <div id="mejia_photo" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <img src="img/mejia.jpg">
+          <img src="img/mejia.jpg">
+        </div>
       </div>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-6">
+        <div id=data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h3> In 2018, a computer program almost put his bodega out of business</h3>
+        </div>
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <p>Porfirio got a notice from the [NYC Human Resources Administration (HRA)] that his establishment was disqualified from accepting SNAP on suspicion of food stamp fraud. Earlier that year, the city, coordinating with the [USDA], started
+            using an computer program to find cases of trading cash for food stamps. </p>
+          <br><br>
+        </div>
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <p> While the computer program hasn't been made public, it's likely that Porfirio's IOU system triggered the fraud suspicion. The [algorithm] (or set of instructions) used by the program may have noticed large one-time purchases made at P&L
+            and mistakenly assumed it was a case of cash-for-food stamps fraud. P&L wasn't alone: the majority of businesses impacted by this new system have been small owner-owned shops in low-income neighborhoods like Porfirio's.
+          </p>
+          <br><br>
+        </div>
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <p> Porfirio is struggling to keep P&L going. His sales have dropped by 30%. The USDA told Proferio to come up with itemized receipts to prove his innocence, but Porfirio's registers were only able to print total sales figures. The letters
+            from his patrons that he sent in as proof were deemed insufficient evidence. Porfirio has called NYC HRA, but no one has been able to reverse the decision made by the algorithm.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col"></div>
+      <div class="col-8">
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h3> Using a flawed algorithm, this Automated Decision System (ADS) almost destroyed Profirio's livelihood and hurt people who really needed food.</h2>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+
+    <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+
+      <div class="col-3">
+        <span class="algorithm_icons"><i class="fas fa-shopping-cart"></i><span>
+      </div>
+      <div class="col-1">
+        <span class="algorithm_arrows"><i class="fas fa-arrow-right"></i></span>
+      </div>
+      <div class="col-4">
+        <span class="algorithm_icons"><i class="fas fa-shopping-cart"></i><span>
+      </div>
+      <div class="col-1">
+        <span class="algorithm_arrows"><i class="fas fa-arrow-right"></i><span>
+      </div>
+      <div class="col-3">
+        <span class="algorithm_icons"><i class="fas fa-shopping-cart"></i><span>
+      </div>
+    </div>
+    <div class="row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+      <div class="col-4">
+        Sales data gets tracked on food-stamp cards like EBT and sent to the USDA & HRA
+      </div>
+      <div class="col-4">
+        A computer program uses an algorithm and sales data to flag potential fraud.<br>
+        <strong>if</strong> single item purchase > $100 <br>
+        <strong>and</strong> there are multiple such purchases <br>
+        <strong>then</strong> flag store for fraud
+      </div>
+      <div class="col-4">
+        Then, USDA & NYC HRA Staff send a fraud notice to Profirio
       </div>
     </div>
   </div>
 
-<!-- TOY ALGO -->
+  <!-- TOY ALGO -->
   <div class="container page">
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <h1> Play with a Toy Algo </h1>
@@ -204,7 +278,7 @@
     </div>
   </div>
 
-<!-- FRAMEWORKS -->
+  <!-- FRAMEWORKS -->
   <div class="container page" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
     <h1> Classification System </h1>
     <div class="row align-items-center">
@@ -221,9 +295,9 @@
     </div>
   </div>
 
-<!-- PUBLIC LIBRARY CASE STUDY -->
+  <!-- PUBLIC LIBRARY CASE STUDY -->
   <button class="accordion">Public Library <i class="fas fa-caret-down"></i>
-</button>
+  </button>
   <div class="panel">
     <div class="container page" id="NYPL_case">
       <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
@@ -233,7 +307,8 @@
         <div class="col"></div>
         <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <p class="problem_statement">
-            A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and it's hard to test out new books by buying and returning them at a large scale. How can librarians tell which books
+            A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and it's hard to test out new books by buying and returning them at a large scale. How can librarians tell which
+            books
             will be popular with their patrons? What else should they consider when they're picking titles for their library branch?
           </p>
         </div>
@@ -275,7 +350,8 @@
           fuzzy.
           <br>
           <br>
-          To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their experience
+          To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their
+          experience
           and knowledge.
         </div>
         <div class="col"></div>
@@ -296,7 +372,8 @@
           purchase fewer books. This means that the recommendations ESP produces might not reflect what patrons want and may not be easy to change unless we get a whole lot more data.
           <br>
           <br>
-          Also, it depends on what you mean by "better". What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the algorithm to figure out preferences for people who don't already
+          Also, it depends on what you mean by "better". What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the algorithm to figure out preferences for people who don't
+          already
           check out books.
         </div>
         <div class="col"></div>
