@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <title>Pae Bae</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -25,7 +26,7 @@
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <h2> and (en)coding inequality?</h2>
         </div>
-    
+
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <a href="#first_page">
             <h1 data-anijs="if: mouseover, do: bounce animated"> <i class="fas fa-chevron-down"></i> </h1>
@@ -447,15 +448,16 @@
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <h1> So are ADSs good or bad? </h1>
     </div>
-        <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <div class="col"> </div>
-          <div class="col-8">
-            It's complicated. So, we came up with some key criteria to help us evaluate and ask questions about ADSs.
-          </div>
-          <div class="col"> </div>
-        </div>
+    <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+      <div class="col"> </div>
+      <div class="col-8">
+        It's complicated. So, we came up with some key criteria to help us evaluate and ask questions about ADSs.
+      </div>
+      <div class="col"> </div>
+    </div>
 
-        <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+    <!-- Machine Bias
+      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <div class="col"> </div>
           <div class="col-8">
             <h2> Machine Bias </h2>
@@ -464,7 +466,7 @@
           <div class="col"> </div>
         </div>
 
-        <div class="row">
+      <div class="row">
           <div class="col"> </div>
           <div class="col-4">
             <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
@@ -509,9 +511,41 @@
           </div>
         </div>
         <div class="col"> </div>
+      </div>  -->
+
+    <div class="container page">
+      <div class="row align-items-center">
+        <div class="col">
+
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/office.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Machine Bias<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explainability
+      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+        <div class="col"> </div>
+        <div class="col-8">
+          <h2>Explainability</h2>
+          <h3>How transparent is the algorithm being used?</h3>
+        </div>
+        <div class="col"> </div>
       </div>
 
-    </div>
+
+    </div> -->
 
     <!-- PUBLIC LIBRARY CASE STUDY -->
     <button class="accordion">Public Library <i class="fas fa-caret-down"></i>
@@ -744,6 +778,7 @@
     <script src="js/d3-tip.js"></script>
     <script src="js/anijs-min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/materialize.min.js"></script>
 
     <!-- Used the fullpage library -->
     <script src="js/fullpage.js"></script>

@@ -29,6 +29,7 @@ h1 {
   color: var(--main-color);
   margin-top: 10%;
   margin-bottom: 5%;
+  font-size: 50px;
 }
 
 h2 {
@@ -36,7 +37,15 @@ h2 {
   color: var(--main-color);
   margin-top: 10%;
   margin-bottom: 5%;
-  font-size: 25;
+  font-size: 40px;
+}
+
+h3 {
+  text-align: center;
+  color: var(--main-color);
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-size: 30px;
 }
 
 /* splash screen */
@@ -180,6 +189,7 @@ strong{
   background-color: var(--main-color);
   color: white;
   cursor: pointer;
+  margin-top: 10%;
   padding: 2%;
   width: 100%;
   border: none;
