@@ -33,28 +33,28 @@ body {
 h1 {
   text-align: center;
   color: var(--main-color);
-  margin-top: 10%;
-  margin-bottom: 5%;
-  font-size: 50px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 300%;
   font-family: var(--secondary-font);
 }
 
 h2 {
   text-align: center;
   color: var(--main-color);
-  margin-top: 5%;
-  font-size: 40px;
+  margin-top: 2%;
+  font-size: 250%;
   font-family: var(--secondary-font);
 }
 
 h3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 200%;
   font-family: var(--secondary-font);
 }
 
 h4{
-  font-size: 25px;
+  font-size: 150%;
   font-family: var(--secondary-font);
 }
 /* Navbar styling */
@@ -151,12 +151,21 @@ strong{
 .slider-row{
   padding: 1%;
 }
-
+/*TOY ALGO STYLE */
 .toy_buttons {
-  margin-top: 3%;
-  margin-left: 1%;
-  border-radius: 25px;
-   text-transform: capitalize;
+  margin-left: .5%;
+  margin-top:.5%;
+  text-transform: capitalize;
+}
+
+.toyAlgoRow{
+padding-top:1%;
+padding-bottom:1%;
+
+}
+
+.new_section{
+  padding-top: 25%;
 }
 
 

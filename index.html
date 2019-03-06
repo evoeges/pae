@@ -41,7 +41,7 @@
   </div>
 
 <!--navbar-->
-  <ul class="nav fixed-top flex-column " id="navbar-side">
+  <ul class="nav fixed-top flex-column .navbar-expand-lg  " id="navbar-side">
     <li class="nav-item">
       <a class="nav-link" href="#introduction">Intro</a>
     </li>
@@ -192,7 +192,7 @@
   </div>
 
   <!-- MEJIA STORY -->
-  <div class="container page">
+  <div class="container page new_section">
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <h1 id="profirio"> So how does this affect New Yorkers? </h1>
     </div>
@@ -253,7 +253,7 @@
 
     <div class="row align-items-center">
       <div class="col"></div>
-      <div class="col-8">
+      <div class="col-10">
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <h3> Using a flawed algorithm, this Automated Decision System (ADS) almost destroyed Profirio's livelihood and hurt people who really needed food.</h3>
         </div>
@@ -263,7 +263,7 @@
 
     <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <div class="col"></div>
-      <div class="col-8">
+      <div class="col-10">
         <h3> The algorithm looked something like this</h3>
       </div>
       <div class="col"></div>
@@ -355,7 +355,7 @@
   </div>
 
   <!-- TOY ALGO -->
-  <div class="container page" id="avocados">
+  <div class="container page new_section" id="avocados">
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <h2> Tell me more about these algorithms </h2>
     </div>
@@ -461,7 +461,7 @@
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <h2 id="toyAlgo"> Can I play with an algorithm?</h2>
     </div>
-    <div class="row align-items-center">
+    <div class="row align-items-center toyAlgoRow">
       <div class="col-4">
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <p>Sure! Let’s try out a toy algorithm to help an [imaginary fire department] predict which buildings are at the highest risk for fire.
@@ -470,6 +470,13 @@
             Try different combinations of variables you think can best predict whether a building will catch on fire. As you select variables, you can see which buildings the algorithm chooses on the left!
           </p>
         </div>
+        </div>
+      <div class="col-6">
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" id="toy-algo-houses-area"></div>
+      </div>
+    </div>
+    <div class="row align-items-center toyAlgoRow">
+      <div class="col-12">
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <button type="button" class="btn btn-secondary toy_buttons" id="age" onclick="updateToyAlgo(id)"> Building Age </button>
           <button type="button" class="btn btn-secondary toy_buttons" id="style" onclick="updateToyAlgo(id)"> Architectural Style </button>
@@ -482,21 +489,19 @@
           <button type="button" class="btn btn-secondary toy_buttons" id="last_inspection" onclick="updateToyAlgo(id)"> Last Inspection</button>
           <button type="button" class="btn btn-secondary toy_buttons" id="no_windows" onclick="updateToyAlgo(id)"> Number of Windows </button>
         </div>
-      </div>
-      <div class="col-6">
-        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" id="toy-algo-houses-area"></div>
-      </div>
     </div>
+    </div>
+
   </div>
 
   <!-- FRAMEWORKS -->
-  <div class="container page" id="frameworks">
+  <div class="container page new_section" id="frameworks">
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <h2> So are ADSs good or bad? </h2>
     </div>
     <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <div class="col"> </div>
-      <div class="col-8">
+      <div class="col-10">
         <h3>It's complicated. So, we came up with some key criteria to help us evaluate and ask questions about ADSs. </h3>
       </div>
       <div class="col"> </div>
@@ -674,7 +679,7 @@
 
 
   <!-- CASE STUDIES -->
-  <div class="container page case_study">
+  <div class="container page case_study new_section">
     <h2  id="caseStudies"> Case Studies <h2>
         <h3> Click on the case studies below to learn more about real ADS being used in NYC.</h3>
 
@@ -885,7 +890,7 @@
 
 
   <!-- What's Next Page -->
-  <div class="container page">
+  <div class="container page new_section">
     <h1 id="getActive"> Get Active! </h1>
     <div class="row align-items-center">
       <div class="col">
