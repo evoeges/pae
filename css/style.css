@@ -23,7 +23,7 @@ body {
 }
 
 .container{
-  width: 80%;
+  width: 75%;
 }
 
 .page {
@@ -58,11 +58,16 @@ h4{
   font-family: var(--secondary-font);
 }
 /* Navbar styling */
+
+#navbar-side{
+  font-size: 80%;
+  width: 10%;
+}
 #navbar-side a.active {
     background-color: transparent;
     font-weight: 500;
-    margin-left: .5%;
-    padding-left: .5%;
+    margin-left: 15px;
+    padding-left: 15px;
     border-left: 3px solid var(--main-color);
 }
 
@@ -342,8 +347,10 @@ margin-top:1%;
 .affix {
   top:0;
 }
-div.sticky {
-  position: -webkit-sticky; /* Safari */
+
+.sticky {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
+  align-self: flex-start;
 }

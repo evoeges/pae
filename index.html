@@ -40,15 +40,43 @@
     </div>
   </div>
 
-  <ul class="nav flex-column fixed-top" id="navbar-side">
+<!--navbar-->
+  <ul class="nav fixed-top flex-column " id="navbar-side">
     <li class="nav-item">
       <a class="nav-link" href="#introduction">Intro</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#toy_algo">Toy Algo</a>
+      <a class="nav-link" href="#definitions">ADS Definition</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#profirio">Profirio's Story</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#bigPicture">The Big Picture</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#avocados">Avocados</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#toyAlgo">Toy Algorithm</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#frameworks">Frameworks</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#caseStudies">Case Studies</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#NYPL">NYPL</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#workerConnect">Worker Connect</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#FDNY">FDNY</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#getActive">Get Active</a>
     </li>
   </ul>
 
@@ -58,7 +86,7 @@
     <a id="first_page"></a>
     <div class="row align-items-center">
       <div class="col"></div>
-      <div class="col-5 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+      <div class="col-5 intro_paragraphs sticky" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
         <p>Maybe you've heard that New York City has been using tools like data analytics, machine learning, and AI to improve our lives.
         </p>
       </div>
@@ -279,7 +307,7 @@
       <div class="col"></div>
       <div class="col-8">
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <h3> Why should we worry about this?</h3>
+          <h3 id="bigPicture"> Why should we worry about this?</h3>
         </div>
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <p> ADSs seem to keep expanding into more areas of our lives. From policing to school assignments, the decisions made by ADSs can have far-reaching consequences for all of us--sometimes good or sometimes bad. </p>
@@ -327,7 +355,7 @@
   </div>
 
   <!-- TOY ALGO -->
-  <div class="container page" id="toy_algo">
+  <div class="container page" id="avocados">
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <h2> Tell me more about these algorithms </h2>
     </div>
@@ -431,7 +459,7 @@
     </div>
 
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <h2> Can I play with an algorithm?</h2>
+      <h2 id="toyAlgo"> Can I play with an algorithm?</h2>
     </div>
     <div class="row align-items-center">
       <div class="col-4">
@@ -645,16 +673,18 @@
   </div>
 
 
-  <!-- PUBLIC LIBRARY CASE STUDY -->
+  <!-- CASE STUDIES -->
   <div class="container page case_study">
-    <h2> Case Studies <h2>
+    <h2  id="caseStudies"> Case Studies <h2>
         <h3> Click on the case studies below to learn more about real ADS being used in NYC.</h3>
+
+  <!-- PUBLIC LIBRARY CASE STUDY -->
         <button class="accordion">Public Library <i class="fas fa-caret-down"></i>
         </button>
         <div class="panel">
           <div id="NYPL_case">
             <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-              <h1> New York Public Library uses an algorithm to stock books </h1>
+              <h1 id="NYPL"> New York Public Library uses an algorithm to stock books </h1>
             </div>
             <div class="row align-items-center">
               <div class="col"></div>
@@ -837,16 +867,18 @@
           </div>
         </div>
 
+  <!-- WORKER CONNECT CASE STUDY -->
         <button class="accordion"> Worker Connect <i class="fas fa-caret-down"></i>
         </button>
         <div class="panel">
-          <p> Case coming soon!</p>
+          <h1  id="workerConnect"> Case coming soon!</h1>
         </div>
 
-        <button class="accordion"> FDNY <i class="fas fa-caret-down"></i>
+  <!-- FDNY CASE STUDY -->
+        <button class="accordion" > FDNY <i class="fas fa-caret-down"></i>
         </button>
         <div class="panel">
-          <p> Case coming soon!</p>
+          <h1 id="FDNY"> Case coming soon!</h1>
         </div>
   </div>
 
@@ -854,7 +886,7 @@
 
   <!-- What's Next Page -->
   <div class="container page">
-    <h1> What's Next? </h1>
+    <h1 id="getActive"> Get Active! </h1>
     <div class="row align-items-center">
       <div class="col">
       </div>
@@ -863,6 +895,7 @@
 
 
 </div>
+
 
 
   <script src="ScrollTrigger.min.js"></script>
