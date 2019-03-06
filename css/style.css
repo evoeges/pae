@@ -21,6 +21,10 @@ body {
   font-size: 110%;
 }
 
+.container{
+  width: 80%;
+}
+
 .page {
   min-height: 100%;
 }
@@ -323,6 +327,9 @@ margin-top:1%;
   width: 80%
 }
 
+.affix {
+  top:0;
+}
 div.sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
