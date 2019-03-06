@@ -40,16 +40,21 @@
     </div>
   </div>
 
-  <div class="col hide-on-small-only m3 l2">
-      <ul class="section table-of-contents sticky" data-spy="affix">
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#profirio">Profirio</a></li>
-        <li><a href="#initialization">Toy Algorithm</a></li>
-      </ul>
-  </div>
+  <ul class="nav flex-column fixed-top" id="navbar-side">
+    <li class="nav-item">
+      <a class="nav-link" href="#introduction">Intro</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#toy_algo">Toy Algo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#frameworks">Frameworks</a>
+    </li>
+  </ul>
 
+<div data-spy="scroll" data-target="#navbar-side" data-offset="0">
   <!-- intro bubbles -->
-  <div class="container page">
+  <div class="container page" id="introduction">
     <a id="first_page"></a>
     <div class="row align-items-center">
       <div class="col"></div>
@@ -161,7 +166,7 @@
   <!-- MEJIA STORY -->
   <div class="container page">
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <h1> So how does this affect New Yorkers? </h1>
+      <h1 id="profirio"> So how does this affect New Yorkers? </h1>
     </div>
     <div class="row align-items-center">
       <div class="col-6">
@@ -322,7 +327,7 @@
   </div>
 
   <!-- TOY ALGO -->
-  <div class="container page">
+  <div class="container page" id="toy_algo">
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <h2> Tell me more about these algorithms </h2>
     </div>
@@ -457,7 +462,7 @@
   </div>
 
   <!-- FRAMEWORKS -->
-  <div class="container page">
+  <div class="container page" id="frameworks">
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <h2> So are ADSs good or bad? </h2>
     </div>
@@ -843,64 +848,63 @@
         <div class="panel">
           <p> Case coming soon!</p>
         </div>
-
-        <div>
-
-          <!-- What's Next Page -->
-          <div class="container page">
-            <h1> What's Next? </h1>
-            <div class="row align-items-center">
-              <div class="col">
-              </div>
-            </div>
-          </div>
+  </div>
 
 
 
+  <!-- What's Next Page -->
+  <div class="container page">
+    <h1> What's Next? </h1>
+    <div class="row align-items-center">
+      <div class="col">
+      </div>
+    </div>
+  </div>
 
-          <script src="ScrollTrigger.min.js"></script>
-          <script>
-            document.addEventListener('DOMContentLoaded', function() {
-              var trigger = new ScrollTrigger();
-            });
-          </script>
 
-          <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
+</div>
 
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                  panel.style.display = "none";
-                } else {
-                  panel.style.display = "block";
-                }
-              });
-            }
-          </script>
 
-          <!-- Load JS libraries: jQuery, bootstrap, D3 -->
-          <script src="js/jquery.min.js"></script>
-          <script src="js/bootstrap.min.js"></script>
-          <script src="js/queue.min.js"></script>
-          <script src="js/d3.min.js"></script>
-          <script src="js/d3-tip.js"></script>
-          <script src="js/anijs-min.js"></script>
-          <script src="js/ScrollTrigger.min.js"></script>
-          <script src="js/materialize.min.js"></script>
+  <script src="ScrollTrigger.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var trigger = new ScrollTrigger();
+    });
+  </script>
 
-          <!-- Used the fullpage library -->
-          <script src="js/fullpage.js"></script>
-          <script src="js/fullpage.extensions.min.js"></script>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
-          <!--visualizationObjects-->
-          <script src="js/toyAlgorithm.js"></script>
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
 
-          <!-- Main.js  -->
-          <script src="js/main.js"></script>
+  <!-- Load JS libraries: jQuery, bootstrap, D3 -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/queue.min.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/d3-tip.js"></script>
+  <script src="js/anijs-min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+
+
+  <!--visualizationObjects-->
+  <script src="js/toyAlgorithm.js"></script>
+
+  <!-- Main.js  -->
+  <script src="js/main.js"></script>
 
 
 </body>

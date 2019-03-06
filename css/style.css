@@ -19,6 +19,7 @@ html, body
 body {
   font-family: var(--main-font);
   font-size: 110%;
+  position: relative;
 }
 
 .container{
@@ -56,7 +57,18 @@ h4{
   font-size: 25px;
   font-family: var(--secondary-font);
 }
+/* Navbar styling */
+#navbar-side a.active {
+    background-color: transparent;
+    font-weight: 500;
+    margin-left: .5%;
+    padding-left: .5%;
+    border-left: 3px solid var(--main-color);
+}
 
+#navbar-side a {
+  color: var(--secondary-color);
+}
 /* splash screen */
 .bg {
   background: url("../img/skyline1.png");
