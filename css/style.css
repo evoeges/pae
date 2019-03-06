@@ -1,8 +1,8 @@
 :root {
     --main-color: #0097a0;
     --secondary-color: #aaa;
-    --secondary-font: 'Nunito', sans-serif;
-    --main-font:  'Quattrocento', serif
+    --main-font: 'Nunito', sans-serif;
+    --secondary-font:  'Quattrocento', serif
 }
 
 /*
@@ -321,4 +321,10 @@ margin-top:1%;
 
 .case-study{
   width: 80%
+}
+
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
