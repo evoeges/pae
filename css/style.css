@@ -44,6 +44,10 @@ h3 {
   font-size: 30px;
 }
 
+h4{
+  font-size: 25px;
+}
+
 /* splash screen */
 .bg {
   background: url("../img/skyline1.png");
@@ -259,9 +263,16 @@ p{
   color: white;
 }
 
+.bias-title{
+  color: #AB47BC;
+}
 .explainability-card{
   background-color: #FFCA28;
   color: white;
+}
+
+.explainability-title{
+  color: #FFCA28;
 }
 
 .automation-card{
@@ -269,14 +280,25 @@ p{
   color: white;
 }
 
+.automation-title{
+  color: #EC407A;
+}
+
 .flexibility-card{
   background-color: #FF7043;
   color: white;
 }
 
+.flexibility-title{
+  color: #FF7043;
+}
+
 .impact-card{
-  background-color: #5C6BC0;
+  background-color: #42A5F5;
   color: white;
+}
+.impact-title{
+  color: #42A5F5;
 }
 
 .card-reveal{
@@ -284,6 +306,10 @@ p{
 }
 
 .card_icon{
-  font-size: 500%;
+  font-size: 600%;
   text-align: center;
+}
+
+.card.medium{
+margin-top:1%;
 }

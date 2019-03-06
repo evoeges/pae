@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Pae Bae</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/hover-min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -517,20 +518,20 @@
 
       <div class="row">
 
-        <div class="col s4">
+        <div class="col-4">
           <div class="card medium activator machine-bias-card">
             <div class="card-content">
               <span class="card-title activator">Machine Bias<i class="fas fa-ellipsis-v right"></i></span>
-              <span class="card_icon"><i class="fas fa-robot"></i></span>
+              <span class="card_icon activator"><i class="fas fa-robot"></i></span>
               <p>Is the way an algorithm is designed (its model) and the data we put into it, appropriate?<p>
             </div>
             <div class="card-reveal">
-              <span class="card-title">Machine Bias<i class="fas fa-times right"></i></span>
-              <h3> Is the dataset representative? </h3>
+              <span class="card-title bias-title">Machine Bias<i class="fas fa-times right"></i></span>
+              <h4> Is the dataset representative? </h4>
               <p>Does the data actually look like everyone it says it's about? If an ADS is supposed to represent all New Yorkers, does it include different races? Neighborhoods? Genders? Ages? Abilities? All 5 boroughs? </p>
-              <h3> Is the dataset complete? </h3>
+              <h4> Is the dataset complete? </h4>
               <p>There shouldn't be any missing data--the relevant information should filled out. Garbage in, garbage out. </p>
-              <h3> Does the data have human biases? </h3>
+              <h4> Does the data have human biases? </h4>
               <p>Data is never objective.</p>
               <p>It's vulnerable to the biases of the people who collect, store, and use it. For example, ["statistical white flight"], was used to selectively collect crime data to criminalize Black people while erasing other ethnic categories. This
                 was used to tell the story of those in power and oppress marginalized groups.
@@ -542,7 +543,7 @@
           </div>
         </div>
 
-        <div class="col s4">
+        <div class="col-4">
           <div class="card medium activator explainability-card">
             <div class="card-content">
               <span class="card-title activator">Explainability<i class="fas fa-ellipsis-v right"></i></span>
@@ -550,27 +551,34 @@
               <p>How transparent is the algorithm being used?<p>
             </div>
             <div class="card-reveal">
-              <span class="card-title">Explainability<i class="fas fa-times right"></i></span>
-              <h3> Is the dataset representative? </h3>
-              <p>Does the data actually look like everyone it says it's about? If an ADS is supposed to represent all New Yorkers, does it include different races? Neighborhoods? Genders? Ages? Abilities? All 5 boroughs? </p>
-              </p>
+              <span class="card-title explainability-title">Explainability<i class="fas fa-times right"></i></span>
+              <p> Some algorithms are very easy to understand--like instructions for choosing an avocado. We know exactly which variables are going into the model and how they're weighted.</p>
+              <p><img src="https://img.icons8.com/cotton/64/000000/avocado.png">The avocado algorithm is a <strong> decision tree</strong>. Super explainable. </p>
+              <p>Others can feel like a black box. We give the data to the computer and it gives us a decision, but we don't really know how it reached that decision.</p>
+              <p>A <strong> neural network </strong> algorithm is not that explainable. <img src="https://img.icons8.com/dusk/64/000000/network.png"><p>
+
+
             </div>
           </div>
         </div>
 
-        <div class="col s4">
+        <div class="col-4">
           <div class="card medium activator automation-card">
             <div class="card-content">
               <span class="card-title activator">Automation<i class="fas fa-ellipsis-v right"></i></span>
-              <span class="card_icon"><i class="fas fa-cogs"></i></span>
+              <span class="card_icon activator"><i class="fas fa-cogs"></i></span>
               <p>How much of a decision is made by and acted upon by the computer program?<p>
             </div>
             <div class="card-reveal">
-              <span class="card-title">Automation<i class="fas fa-times right"></i></span>
-              <h3> Is the dataset representative? </h3>
-              <p>Does the data actually look like everyone it says it's about? If an ADS is supposed to represent all New Yorkers, does it include different races? Neighborhoods? Genders? Ages? Abilities? All 5 boroughs? </p>
-
-              </p>
+              <span class="card-title automation-title">Automation<i class="fas fa-times right"></i></span>
+              <h4> Low Automation </h4>
+              <p>The ADS doesn't make a decision. It might simply analyses the data which is then used to inform a human decision. <br>
+              Think: A dashboard that tells you what percentage of reported potholes have been filled this month.</p>
+              <h4> Medium Automation </h4>
+              <p>The algorithm provides an advisory decision, but a human still looks over the decision and decides whether to implement it. <br>Think: a scoring system the prioritizes buildings to inspect for fire risk. </p>
+              <h4> High Automation </h4>
+              The computer program uses an algorithm to make the decision on its own and implements it.
+              <br>Think: a traffic light system that sends you a ticket when it detects that you ran a red light.
             </div>
           </div>
         </div>
@@ -578,35 +586,41 @@
       </div>
 
       <div class="row">
-        <div class="col s4">
+
+        <div class="col-2"></div>
+        <div class="col-4">
           <div class="card medium activator flexibility-card">
             <div class="card-content">
-              <span class="card-title activator">Flexibility<i class="fas fa-ellipsis-v right"></i></span>
-              <span class="card_icon"><i class="fas fa-robot"></i></span>
-              <p>How hard is it to update or change the algorithm if we spot a problem?<p>
-            </div>
+              <span class="card-title  activator">Flexibility<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card_icon activator"><i class="fas fa-robot"></i></span>
+              <p>How hard is it to update or change the algorithm if we spot a problem?</p>
+          </div>
             <div class="card-reveal">
-              <span class="card-title">Flexibility<i class="fas fa-times right"></i></span>
+              <span class="card-title flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
               <p>This depends on what kind of algorithm is used, and who owns the algorithm. A very complex algorithm may be hard to update. And an algorithm that is owned by a software company, rather than the city, may also be hard to update. </p>
             </div>
           </div>
         </div>
 
-        <div class="col s4">
-          <div class="card medium activator machine-bias-card">
+        <div class="col-4">
+          <div class="card medium activator impact-card">
             <div class="card-content">
-              <span class="card-title activator">Explainability<i class="fas fa-ellipsis-v right"></i></span>
-              <span class="card_icon"><i class="fas fa-question-circle"></i></span>
-              <p>How transparent is the algorithm being used?<p>
+              <span class="card-title activator">Impact<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card_icon activator"><i class="fas fa-question-circle"></i></span>
+              <p>  How ADS affect people? At what scale and what degree, and in which direction? <p>
             </div>
             <div class="card-reveal">
-              <span class="card-title">Explainability<i class="fas fa-times right"></i></span>
-              <h3> Is the dataset representative? </h3>
-              <p>Does the data actually look like everyone it says it's about? If an ADS is supposed to represent all New Yorkers, does it include different races? Neighborhoods? Genders? Ages? Abilities? All 5 boroughs? </p>
-              </p>
+              <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
+              <h3> Scale </h3>
+            </p> How many people might be affected? The ADS might only affect 100 people, or it might affect all of New York. </p>
+            <h3> Degree </h3>
+            <p>How deep an impact will the decision have on people? The ADS might be about something important, but perhaps not severe (like what books are stocked in a library). Or it might be a matter life or death (like which buildings are at risk for fire). </p>
+            <h3> Direction </h3>
+            <p> Is it a good or bad impact? Is the glass empty or full? This really depends on our judgment and includes where we stand on values like privacy, freedom, fairness, and equity.</p>
             </div>
           </div>
         </div>
+        <div class="col-2"></div>
 
 
       </div>
