@@ -35,16 +35,12 @@ h1 {
 h2 {
   text-align: center;
   color: var(--main-color);
-  margin-top: 10%;
-  margin-bottom: 5%;
+  margin-top: 5%;
   font-size: 40px;
 }
 
 h3 {
   text-align: center;
-  color: var(--main-color);
-  margin-top: 10%;
-  margin-bottom: 5%;
   font-size: 30px;
 }
 
@@ -129,6 +125,8 @@ strong{
 .toy_buttons {
   margin-top: 3%;
   margin-left: 1%;
+  border-radius: 25px;
+   text-transform: capitalize;
 }
 
 
@@ -254,4 +252,38 @@ p{
 .hvr-icon-forward2:hover .hvr-icon2, .hvr-icon-forward2:focus .hvr-icon2, .hvr-icon-forward2:active .hvr-icon2 {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
+}
+
+.machine-bias-card{
+  background-color: #AB47BC;
+  color: white;
+}
+
+.explainability-card{
+  background-color: #FFCA28;
+  color: white;
+}
+
+.automation-card{
+  background-color: #EC407A;
+  color: white;
+}
+
+.flexibility-card{
+  background-color: #FF7043;
+  color: white;
+}
+
+.impact-card{
+  background-color: #5C6BC0;
+  color: white;
+}
+
+.card-reveal{
+  color: black;
+}
+
+.card_icon{
+  font-size: 500%;
+  text-align: center;
 }
