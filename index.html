@@ -7,11 +7,12 @@
 
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/hover-min.css">
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+
 
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -516,372 +517,381 @@
         <div class="col"> </div>
       </div>  -->
 
-      <div class="row">
+    <div class="row">
 
-        <div class="col-4">
-          <div class="card medium activator machine-bias-card">
-            <div class="card-content">
-              <span class="card-title activator">Machine Bias<i class="fas fa-ellipsis-v right"></i></span>
-              <span class="card_icon activator"><i class="fas fa-robot"></i></span>
-              <p>Is the way an algorithm is designed (its model) and the data we put into it, appropriate?<p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title bias-title">Machine Bias<i class="fas fa-times right"></i></span>
-              <h4> Is the dataset representative? </h4>
-              <p>Does the data actually look like everyone it says it's about? If an ADS is supposed to represent all New Yorkers, does it include different races? Neighborhoods? Genders? Ages? Abilities? All 5 boroughs? </p>
-              <h4> Is the dataset complete? </h4>
-              <p>There shouldn't be any missing data--the relevant information should filled out. Garbage in, garbage out. </p>
-              <h4> Does the data have human biases? </h4>
-              <p>Data is never objective.</p>
-              <p>It's vulnerable to the biases of the people who collect, store, and use it. For example, ["statistical white flight"], was used to selectively collect crime data to criminalize Black people while erasing other ethnic categories. This
-                was used to tell the story of those in power and oppress marginalized groups.
-              </p>
-              <p>Even if an algorithm (or the data) isn't intended to be racially biased, it can still perpetuate it. For example, because housing segregation has led many urban centers to be divided along racial lines, including a variable like
-                “neighborhood” in a dataset may in reality be a proxy for race when it wasn't meant to be.
-              </p>
-            </div>
+      <div class="col-4">
+        <div class="card medium activator machine-bias-card">
+          <div class="card-content">
+            <span class="card-title activator">Machine Bias<i class="fas fa-ellipsis-v right"></i></span>
+            <span class="card_icon activator"><i class="fas fa-robot"></i></span>
+            <p>Is the way an algorithm is designed (its model) and the data we put into it, appropriate?<p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title bias-title">Machine Bias<i class="fas fa-times right"></i></span>
+            <h4> Is the dataset representative? </h4>
+            <p>Does the data actually look like everyone it says it's about? If an ADS is supposed to represent all New Yorkers, does it include different races? Neighborhoods? Genders? Ages? Abilities? All 5 boroughs? </p>
+            <h4> Is the dataset complete? </h4>
+            <p>There shouldn't be any missing data--the relevant information should filled out. Garbage in, garbage out. </p>
+            <h4> Does the data have human biases? </h4>
+            <p>Data is never objective.</p>
+            <p>It's vulnerable to the biases of the people who collect, store, and use it. For example, ["statistical white flight"], was used to selectively collect crime data to criminalize Black people while erasing other ethnic categories. This
+              was used to tell the story of those in power and oppress marginalized groups.
+            </p>
+            <p>Even if an algorithm (or the data) isn't intended to be racially biased, it can still perpetuate it. For example, because housing segregation has led many urban centers to be divided along racial lines, including a variable like
+              “neighborhood” in a dataset may in reality be a proxy for race when it wasn't meant to be.
+            </p>
           </div>
         </div>
-
-        <div class="col-4">
-          <div class="card medium activator explainability-card">
-            <div class="card-content">
-              <span class="card-title activator">Explainability<i class="fas fa-ellipsis-v right"></i></span>
-              <span class="card_icon"><i class="fas fa-question-circle"></i></span>
-              <p>How transparent is the algorithm being used?<p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title explainability-title">Explainability<i class="fas fa-times right"></i></span>
-              <p> Some algorithms are very easy to understand--like instructions for choosing an avocado. We know exactly which variables are going into the model and how they're weighted.</p>
-              <p><img src="https://img.icons8.com/cotton/64/000000/avocado.png">The avocado algorithm is a <strong> decision tree</strong>. Super explainable. </p>
-              <p>Others can feel like a black box. We give the data to the computer and it gives us a decision, but we don't really know how it reached that decision.</p>
-              <p>A <strong> neural network </strong> algorithm is not that explainable. <img src="https://img.icons8.com/dusk/64/000000/network.png"><p>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div class="card medium activator automation-card">
-            <div class="card-content">
-              <span class="card-title activator">Automation<i class="fas fa-ellipsis-v right"></i></span>
-              <span class="card_icon activator"><i class="fas fa-cogs"></i></span>
-              <p>How much of a decision is made by and acted upon by the computer program?<p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title automation-title">Automation<i class="fas fa-times right"></i></span>
-              <h4> Low Automation </h4>
-              <p>The ADS doesn't make a decision. It might simply analyses the data which is then used to inform a human decision. <br>
-              Think: A dashboard that tells you what percentage of reported potholes have been filled this month.</p>
-              <h4> Medium Automation </h4>
-              <p>The algorithm provides an advisory decision, but a human still looks over the decision and decides whether to implement it. <br>Think: a scoring system the prioritizes buildings to inspect for fire risk. </p>
-              <h4> High Automation </h4>
-              The computer program uses an algorithm to make the decision on its own and implements it.
-              <br>Think: a traffic light system that sends you a ticket when it detects that you ran a red light.
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <div class="row">
-
-        <div class="col-2"></div>
-        <div class="col-4">
-          <div class="card medium activator flexibility-card">
-            <div class="card-content">
-              <span class="card-title  activator">Flexibility<i class="fas fa-ellipsis-v right"></i></span>
-              <span class="card_icon activator"><i class="fas fa-robot"></i></span>
-              <p>How hard is it to update or change the algorithm if we spot a problem?</p>
+      <div class="col-4">
+        <div class="card medium activator explainability-card">
+          <div class="card-content">
+            <span class="card-title activator">Explainability<i class="fas fa-ellipsis-v right"></i></span>
+            <span class="card_icon"><i class="fas fa-question-circle"></i></span>
+            <p>How transparent is the algorithm being used?<p>
           </div>
-            <div class="card-reveal">
-              <span class="card-title flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
-              <p>This depends on what kind of algorithm is used, and who owns the algorithm. A very complex algorithm may be hard to update. And an algorithm that is owned by a software company, rather than the city, may also be hard to update. </p>
-            </div>
+          <div class="card-reveal">
+            <span class="card-title explainability-title">Explainability<i class="fas fa-times right"></i></span>
+            <p> Some algorithms are very easy to understand--like instructions for choosing an avocado. We know exactly which variables are going into the model and how they're weighted.</p>
+            <p><img src="https://img.icons8.com/cotton/64/000000/avocado.png">The avocado algorithm is a <strong> decision tree</strong>. Super explainable. </p>
+            <p>Others can feel like a black box. We give the data to the computer and it gives us a decision, but we don't really know how it reached that decision.</p>
+            <p>A <strong> neural network </strong> algorithm is not that explainable. <img src="https://img.icons8.com/dusk/64/000000/network.png">
+              <p>
+
+
           </div>
         </div>
+      </div>
 
-        <div class="col-4">
-          <div class="card medium activator impact-card">
-            <div class="card-content">
-              <span class="card-title activator">Impact<i class="fas fa-ellipsis-v right"></i></span>
-              <span class="card_icon activator"><i class="fas fa-question-circle"></i></span>
-              <p>  How ADS affect people? At what scale and what degree, and in which direction? <p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
-              <h3> Scale </h3>
+      <div class="col-4">
+        <div class="card medium activator automation-card">
+          <div class="card-content">
+            <span class="card-title activator">Automation<i class="fas fa-ellipsis-v right"></i></span>
+            <span class="card_icon activator"><i class="fas fa-cogs"></i></span>
+            <p>How much of a decision is made by and acted upon by the computer program?<p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title automation-title">Automation<i class="fas fa-times right"></i></span>
+            <h4> Low Automation </h4>
+            <p>The ADS doesn't make a decision. It might simply analyses the data which is then used to inform a human decision. <br>
+              Think: A dashboard that tells you what percentage of reported potholes have been filled this month.</p>
+            <h4> Medium Automation </h4>
+            <p>The algorithm provides an advisory decision, but a human still looks over the decision and decides whether to implement it. <br>Think: a scoring system the prioritizes buildings to inspect for fire risk. </p>
+            <h4> High Automation </h4>
+            The computer program uses an algorithm to make the decision on its own and implements it.
+            <br>Think: a traffic light system that sends you a ticket when it detects that you ran a red light.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-2"></div>
+      <div class="col-4">
+        <div class="card medium activator flexibility-card">
+          <div class="card-content">
+            <span class="card-title  activator">Flexibility<i class="fas fa-ellipsis-v right"></i></span>
+            <span class="card_icon activator"><i class="fas fa-robot"></i></span>
+            <p>How hard is it to update or change the algorithm if we spot a problem?</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
+            <p>This depends on what kind of algorithm is used, and who owns the algorithm. A very complex algorithm may be hard to update. And an algorithm that is owned by a software company, rather than the city, may also be hard to update. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card medium activator impact-card">
+          <div class="card-content">
+            <span class="card-title activator">Impact<i class="fas fa-ellipsis-v right"></i></span>
+            <span class="card_icon activator"><i class="fas fa-question-circle"></i></span>
+            <p> How ADS affect people? At what scale and what degree, and in which direction? <p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
+            <h3> Scale </h3>
             </p> How many people might be affected? The ADS might only affect 100 people, or it might affect all of New York. </p>
             <h3> Degree </h3>
-            <p>How deep an impact will the decision have on people? The ADS might be about something important, but perhaps not severe (like what books are stocked in a library). Or it might be a matter life or death (like which buildings are at risk for fire). </p>
+            <p>How deep an impact will the decision have on people? The ADS might be about something important, but perhaps not severe (like what books are stocked in a library). Or it might be a matter life or death (like which buildings are at risk
+              for fire). </p>
             <h3> Direction </h3>
             <p> Is it a good or bad impact? Is the glass empty or full? This really depends on our judgment and includes where we stand on values like privacy, freedom, fairness, and equity.</p>
-            </div>
           </div>
         </div>
-        <div class="col-2"></div>
-
-
       </div>
+      <div class="col-2"></div>
+
+
+    </div>
 
   </div>
 
-  <!-- Explainability
-      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <div class="col"> </div>
-        <div class="col-8">
-          <h2>Explainability</h2>
-          <h3>How transparent is the algorithm being used?</h3>
-        </div>
-        <div class="col"> </div>
-      </div>
-
-
-    </div> -->
 
   <!-- PUBLIC LIBRARY CASE STUDY -->
-  <button class="accordion">Public Library <i class="fas fa-caret-down"></i>
-  </button>
-  <div class="panel">
-    <div class="container page" id="NYPL_case">
-      <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <h1> New York Public Library uses an algorithm to stock books </h1>
-      </div>
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <p class="problem_statement">
-            A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and it's hard to test out new books by buying and returning them at a large scale. How can librarians tell which
-            books
-            will be popular with their patrons? What else should they consider when they're picking titles for their library branch?
-          </p>
-        </div>
-        <div class="col"></div>
-      </div>
+  <div class="container page case_study">
+    <h2> Case Studies <h2>
+        <h3> Click on the case studies below to learn more about real ADS being used in NYC.</h3>
+        <button class="accordion">Public Library <i class="fas fa-caret-down"></i>
+        </button>
+        <div class="panel">
+          <div id="NYPL_case">
+            <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+              <h1> New York Public Library uses an algorithm to stock books </h1>
+            </div>
+            <div class="row align-items-center">
+              <div class="col"></div>
+              <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                <p class="problem_statement">
+                  A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and it's hard to test out new books by buying and returning them at a large scale. How can librarians tell which
+                  books
+                  will be popular with their patrons? What else should they consider when they're picking titles for their library branch?
+                </p>
+              </div>
+              <div class="col"></div>
+            </div>
 
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <h2>Libraries use ESP to guess what we want to read</h2>
-          <br>
-          No, not extra-sensory perception.
-          <br>
-          <br>
-          <strong> ESP is an algorithm that uses library and non-library data to recommend books it thinks will be popular.</strong> Here's how the system works:
-        </div>
-        <div class="col"></div>
-      </div>
+            <div class="row align-items-center">
+              <div class="col"></div>
+              <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                <h2>Libraries use ESP to guess what we want to read</h2>
+                <br>
+                No, not extra-sensory perception.
+                <br>
+                <br>
+                <strong> ESP is an algorithm that uses library and non-library data to recommend books it thinks will be popular.</strong> Here's how the system works:
+              </div>
+              <div class="col"></div>
+            </div>
 
-      <div class="row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+            <div class="row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
 
-        <div class="col-4">
-          ESP is fed library patron data (like how many books by a particular author were checked out) and sales data (like Amazon purchases and reviews). In case you're wondering, no it doesn't use book reviews yet.
-        </div>
-        <div class="col-4">
-          The ESP algorithm looks for historical patterns in the data and makes suggestions for what books to stock at which branches. For example it might predict where the young adult book "Twilight" will be popular because that neighborhood
-          has
-          lots of teenagers that checked out "Dracula" and "Harry Potter".
-        </div>
-        <div class="col-4">
-          Then, it's up to the librarian to choose whether or not to follow the algorithm's advice.
-        </div>
-      </div>
+              <div class="col-4">
+                ESP is fed library patron data (like how many books by a particular author were checked out) and sales data (like Amazon purchases and reviews). In case you're wondering, no it doesn't use book reviews yet.
+              </div>
+              <div class="col-4">
+                The ESP algorithm looks for historical patterns in the data and makes suggestions for what books to stock at which branches. For example it might predict where the young adult book "Twilight" will be popular because that neighborhood
+                has
+                lots of teenagers that checked out "Dracula" and "Harry Potter".
+              </div>
+              <div class="col-4">
+                Then, it's up to the librarian to choose whether or not to follow the algorithm's advice.
+              </div>
+            </div>
 
-      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <div class="col"></div>
-        <div class="col-8">
-          <h2>So, which factors matter when ESP rates books?</h2>
-          We don't actually know. ESP is a [neural network](https://en.wikipedia.org/wiki/Artificial_neural_network) algorithm, which is kind of a black box. We know which datasets ESP uses, but the patterns it's using to make recommondations are
-          fuzzy.
-          <br>
-          <br>
-          To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their
-          experience
-          and knowledge.
-        </div>
-        <div class="col"></div>
-      </div>
+            <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+              <div class="col"></div>
+              <div class="col-8">
+                <h2>So, which factors matter when ESP rates books?</h2>
+                We don't actually know. ESP is a [neural network](https://en.wikipedia.org/wiki/Artificial_neural_network) algorithm, which is kind of a black box. We know which datasets ESP uses, but the patterns it's using to make recommondations
+                are
+                fuzzy.
+                <br>
+                <br>
+                To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their
+                experience
+                and knowledge.
+              </div>
+              <div class="col"></div>
+            </div>
 
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <h2>But we get better book picks, right?</h2>
-          Not so fast.
-          <br>
-          <br>
-          As a neural network, ESP doesn't work as well if there isn't a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well. But it might have a harder time when guessing which debut
-          fiction (e.g. an author’s first book) will be a big hit.
-          <br>
-          <br>
-          Even if we have a bunch of data from Amazon or other book sellers, the data might not be representative of many NYC communities, particularly minorities and low income individuals--some of the largest users of library services that
-          could
-          purchase fewer books. This means that the recommendations ESP produces might not reflect what patrons want and may not be easy to change unless we get a whole lot more data.
-          <br>
-          <br>
-          Also, it depends on what you mean by "better". What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the algorithm to figure out preferences for people who don't
-          already
-          check out books.
-        </div>
-        <div class="col"></div>
-      </div>
+            <div class="row align-items-center">
+              <div class="col"></div>
+              <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                <h2>But we get better book picks, right?</h2>
+                Not so fast.
+                <br>
+                <br>
+                As a neural network, ESP doesn't work as well if there isn't a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well. But it might have a harder time when guessing which debut
+                fiction (e.g. an author’s first book) will be a big hit.
+                <br>
+                <br>
+                Even if we have a bunch of data from Amazon or other book sellers, the data might not be representative of many NYC communities, particularly minorities and low income individuals--some of the largest users of library services that
+                could
+                purchase fewer books. This means that the recommendations ESP produces might not reflect what patrons want and may not be easy to change unless we get a whole lot more data.
+                <br>
+                <br>
+                Also, it depends on what you mean by "better". What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the algorithm to figure out preferences for people who don't
+                already
+                check out books.
+              </div>
+              <div class="col"></div>
+            </div>
 
-      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <div class="col"></div>
-        <div class="col-8">
-          <h2>Don't librarians still have final say?</h2>
-          Yup! Preserving librarians' decision helps to address the possible problems with ESP. Still, librarians' choices may be swayed by what seems like a concrete, numerical score based on mathematical equations.
-          <br>
-          <br>
-          ESP augments a librarian's choices by highlighting gaps in a librarian's knowledge and experience. On the flip side, it could sway librarians away from trusting their own instincts on what their branch needs.
-        </div>
-        <div class="col"></div>
-      </div>
+            <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+              <div class="col"></div>
+              <div class="col-8">
+                <h2>Don't librarians still have final say?</h2>
+                Yup! Preserving librarians' decision helps to address the possible problems with ESP. Still, librarians' choices may be swayed by what seems like a concrete, numerical score based on mathematical equations.
+                <br>
+                <br>
+                ESP augments a librarian's choices by highlighting gaps in a librarian's knowledge and experience. On the flip side, it could sway librarians away from trusting their own instincts on what their branch needs.
+              </div>
+              <div class="col"></div>
+            </div>
 
-      <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <h2>Rate the NYPL ADS </h2>
-      </div>
+            <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+              <h2>Rate the NYPL ADS </h2>
+            </div>
 
-      <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <div class="col-1">
-          <span>Least Biased</span>
-        </div>
-        <div class="col-7">
-          <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider">
-            <span>Most Biased</span>
+            <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+              <div class="col-1">
+                <span>Least Biased</span>
+              </div>
+              <div class="col-7">
+                <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider">
+                  <span>Most Biased</span>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <strong> Machine Bias </strong> is about data quality and correlations that might impact marginalized groups.
+              </div>
+            </div>
+
+            <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+
+              <div class="col-1">
+                <span>Least Explainable</span>
+              </div>
+              <div class="col-7">
+                <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider">
+                  <span>Most Explainable</span>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <strong> Explainability </strong> is how easily humans can understand the algorithm.
+              </div>
+            </div>
+
+            <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+              <div class="col-1">
+                <span>Least Automated</span>
+              </div>
+              <div class="col-7">
+                <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider">
+                  <span>Most Automated</span>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <strong> Automation </strong> is whether the decision is completely made by the algorithm, or just advises a human.
+              </div>
+            </div>
+
+            <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+              <div class="col-1">
+                <span>Least Impact</span>
+              </div>
+              <div class="col-7">
+                <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider">
+                  <span>Most Impact</span>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <strong> Impact </strong> is how many people are affected, and how much the effect is on human wellbeing and livelihood.
+              </div>
+            </div>
+
+            <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+              <div class="col-1">
+                <span>Least Flexible</span>
+              </div>
+              <div class="col-7">
+                <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider">
+                  <span>Most Flexible</span>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <strong> Flexibility </strong> is how easily the algorithm can be changed or updated.
+              </div>
+            </div>
+
+
+
           </div>
         </div>
 
-        <div class="col-4">
-          <strong> Machine Bias </strong> is about data quality and correlations that might impact marginalized groups.
+        <button class="accordion"> Worker Connect<i class="fas fa-caret-down"></i>
+        </button>
+        <div class="panel">
+          <p> Case coming soon!</p>
         </div>
-      </div>
 
-      <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-
-        <div class="col-1">
-          <span>Least Explainable</span>
+        <button class="accordion"> FDNY<i class="fas fa-caret-down"></i>
+        </button>
+        <div class="panel">
+          <p> Case coming soon!</p>
         </div>
-        <div class="col-7">
-          <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider">
-            <span>Most Explainable</span>
+
+        <div>
+
+          <!-- What's Next Page -->
+          <div class="container page">
+            <h1> What's Next? </h1>
+            <div class="row align-items-center">
+              <div class="col">
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="col-4">
-          <strong> Explainability </strong> is how easily humans can understand the algorithm.
-        </div>
-      </div>
-
-      <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <div class="col-1">
-          <span>Least Automated</span>
-        </div>
-        <div class="col-7">
-          <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider">
-            <span>Most Automated</span>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <strong> Automation </strong> is whether the decision is completely made by the algorithm, or just advises a human.
-        </div>
-      </div>
-
-      <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <div class="col-1">
-          <span>Least Impact</span>
-        </div>
-        <div class="col-7">
-          <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider">
-            <span>Most Impact</span>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <strong> Impact </strong> is how many people are affected, and how much the effect is on human wellbeing and livelihood.
-        </div>
-      </div>
-
-      <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <div class="col-1">
-          <span>Least Flexible</span>
-        </div>
-        <div class="col-7">
-          <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider">
-            <span>Most Flexible</span>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <strong> Flexibility </strong> is how easily the algorithm can be changed or updated.
-        </div>
-      </div>
-
-
-
-    </div>
-  </div>
-
-  <div class="container page">
-    <h1> What's Next? </h1>
-    <div class="row align-items-center">
-      <div class="col">
-      </div>
-    </div>
-  </div>
 
 
 
 
-  <script src="ScrollTrigger.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var trigger = new ScrollTrigger();
-    });
-  </script>
+          <script src="ScrollTrigger.min.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var trigger = new ScrollTrigger();
+            });
+          </script>
 
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+          <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
-  </script>
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+          </script>
 
-  <!-- Load JS libraries: jQuery, bootstrap, D3 -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/queue.min.js"></script>
-  <script src="js/d3.min.js"></script>
-  <script src="js/d3-tip.js"></script>
-  <script src="js/anijs-min.js"></script>
-  <script src="js/ScrollTrigger.min.js"></script>
-  <script src="js/materialize.min.js"></script>
+          <!-- Load JS libraries: jQuery, bootstrap, D3 -->
+          <script src="js/jquery.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/queue.min.js"></script>
+          <script src="js/d3.min.js"></script>
+          <script src="js/d3-tip.js"></script>
+          <script src="js/anijs-min.js"></script>
+          <script src="js/ScrollTrigger.min.js"></script>
+          <script src="js/materialize.min.js"></script>
 
-  <!-- Used the fullpage library -->
-  <script src="js/fullpage.js"></script>
-  <script src="js/fullpage.extensions.min.js"></script>
+          <!-- Used the fullpage library -->
+          <script src="js/fullpage.js"></script>
+          <script src="js/fullpage.extensions.min.js"></script>
 
-  <!--visualizationObjects-->
-  <script src="js/toyAlgorithm.js"></script>
+          <!--visualizationObjects-->
+          <script src="js/toyAlgorithm.js"></script>
 
-  <!-- Main.js  -->
-  <script src="js/main.js"></script>
+          <!-- Main.js  -->
+          <script src="js/main.js"></script>
 
 
 </body>
