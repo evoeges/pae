@@ -73,6 +73,7 @@ h4{
 
 #navbar-side a {
   color: var(--secondary-color);
+  text-decoration: none;
 }
 /* splash screen */
 .bg {
@@ -93,12 +94,43 @@ h4{
 strong{
   color: var(--main-color);
 }
-
+/* buttons styling */
+.btn {
+  margin-left: .5%;
+  margin-top:.5%;
+  text-transform: capitalize;
+}
 #definitions_buttons{
   padding: 5%;
   font-size: 120%;
+  text-align:center;
 }
 
+#definitions_card{
+  height: 20%;
+}
+
+/* links style */
+/* unvisited link */
+a:link {
+ color: var(--secondary-color);
+ text-decoration: underline var(--main-color);
+}
+
+/* visited link */
+a:visited {
+ color: var(--secondary-color);
+}
+
+/* mouse over link */
+a:hover {
+ color: hotpink;
+}
+
+/* selected link */
+a:active {
+ color: var(--main-color);
+}
 .problem_statement{
   border-style: solid;
  border-width: 5px;
@@ -366,4 +398,12 @@ margin-top:1%;
 
 .frameworks_row{
   padding-top: 1%;
+}
+
+.definitions_hidden{
+  display: none;
+}
+
+.btn:focus, .btn-large:focus, .btn-small:focus, .btn-floating:focus {
+    background-color: #545b62;
 }
