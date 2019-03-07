@@ -73,6 +73,7 @@ function updateToyAlgo(id){
 $('body').scrollspy({ target: '#navbar-side' })
 
 //initialize tooltips
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+
+  $(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
