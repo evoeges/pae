@@ -1,7 +1,8 @@
 :root {
-    --main-color: #0048d9;
-    --neutral
-    --secondary-color: #aaa;
+    --main-color: #F08578;
+    --secondary-color: #abf2cd;
+    --dark-color: #4C7CBD;
+    --link-color: #9E9E9E;
     --main-font: 'Nunito', sans-serif;
     --secondary-font: 'Source Serif Pro', serif;
 }
@@ -75,7 +76,7 @@ h4{
 }
 
 #navbar-side a {
-  color: var(--secondary-color);
+  color: var(--link-color);
   text-decoration: none;
 }
 /* splash screen */
@@ -102,7 +103,9 @@ strong{
   margin-left: .5%;
   margin-top:.5%;
   text-transform: capitalize;
+  background-color: var(--main-color);
 }
+
 #definitions_buttons{
   padding: 5%;
   font-size: 120%;
@@ -116,18 +119,18 @@ strong{
 /* links style */
 /* unvisited link */
 a:link {
- color: var(--secondary-color);
+ color: var(--main-color);
  text-decoration: underline var(--main-color);
 }
 
 /* visited link */
 a:visited {
- color: var(--secondary-color);
+ color: var(--neutral-color);
 }
 
 /* mouse over link */
 a:hover {
- color: hotpink;
+ color: var(--secondary-color);
 }
 
 /* selected link */
