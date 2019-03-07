@@ -101,6 +101,7 @@ h4{
 #website_subtitle{
   font: var(--main-font);
   font-size: 45px;
+  color: var(--neutral-color);
   margin-top: 0%;
   margin-bottom: 0%;
 }
@@ -145,18 +146,18 @@ strong{
 /* links style */
 /* unvisited link */
 a:link {
- color: var(--neutral-color);
+ color: inherit;
  text-decoration: underline var(--main-color);
 }
 
 /* visited link */
 a:visited {
- color: var(--neutral-color);
+  color: inherit;
 }
 
 /* mouse over link */
 a:hover {
-  color: var(--neutral-color);
+  color: var(--link-color);
 }
 
 /* selected link */
