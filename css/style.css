@@ -106,9 +106,9 @@ h4{
 
 #website_subtitle{
   font: var(--main-font);
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 300;
-  color: var(--neutral-color);
+  color: var(--link-color);
   margin-top: 0%;
   margin-bottom: 0%;
 }
