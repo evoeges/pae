@@ -92,6 +92,13 @@ h4{
   color: var(--main-color);
   margin-bottom: 0%;
 }
+
+#title_chevron{
+  color: var(--main-color);
+  margin-bottom: 0%;
+  text-align: center;
+}
+
 #website_subtitle{
   margin-top: 0%;
   margin-bottom: 0%;
