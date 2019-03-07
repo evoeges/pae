@@ -1,8 +1,8 @@
 :root {
-    --main-color: #0097a0;
+    --main-color: #;
     --secondary-color: #aaa;
     --main-font: 'Nunito', sans-serif;
-    --secondary-font:  'Quattrocento', serif
+    --secondary-font: 'Source Serif Pro', serif;
 }
 
 /*
@@ -19,6 +19,7 @@ html, body
 body {
   font-family: var(--main-font);
   font-size: 110%;
+  font-weight:normal;
   position: relative;
 }
 
@@ -37,6 +38,7 @@ h1 {
   margin-bottom: 2%;
   font-size: 300%;
   font-family: var(--secondary-font);
+  font-weight: bold;
 }
 
 h2 {
