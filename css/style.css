@@ -118,6 +118,12 @@ strong{
 
 }
 
+#plain_text{
+  font-size: 25px;
+}
+#legalese_text{
+  font-size: 25px;
+}
 #definitions_buttons{
   padding: 5%;
   font-size: 120%;
