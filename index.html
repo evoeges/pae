@@ -20,6 +20,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 
   <!-- splash screen -->
   <div class="container page splash_screen">
@@ -41,6 +42,8 @@
     </div>
   </div>
 
+=======
+>>>>>>> 66ac01b7c5df58a0e84390c18633b194c7516ef2
   <!--navbar-->
   <ul class="nav fixed-top flex-column .navbar-expand-lg  " id="navbar-side">
     <li class="nav-item">
@@ -67,19 +70,32 @@
     <li class="nav-item">
       <a class="nav-link" href="#caseStudies">Case Studies</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#NYPL">NYPL</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#workerConnect">Worker Connect</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#FDNY">FDNY</a>
-    </li>
+
     <li class="nav-item">
       <a class="nav-link" href="#getActive">Get Active</a>
     </li>
   </ul>
+
+
+  <!-- splash screen -->
+  <div class="container page splash_screen" id="splashScreen">
+    <div class="row align-items-center">
+      <div class="col">
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h1 id="website_title"> automating NYC </h1>
+        </div>
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h2 id="website_subtitle"> <b>and (en)coding inequality?</b></h2>
+        </div>
+
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="center">
+          <a href="#first_page">
+            <h1 id="title_chevron" class="icon_center hvr-wobble-vertical"> <i class="fas fa-chevron-down center"></i> </h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div data-spy="scroll" data-target="#navbar-side" data-offset="0">
     <!-- intro bubbles -->
@@ -166,11 +182,19 @@
         <div class="col"></div>
         <div class="col-8 intro_emphasis intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <p>Automated Decision Systems sound complicated, but we're here to walk you through <a href="#profirio">why they matter</a>,  <a href="#toyAlgo">how they work</a>,  <a href="#frameworks">what questions to ask</a>,  <a href="#caseStudies">some examples in NYC</a>, and  <a href="#getActive">what you can do about them</a>.
-          <h2 data-anijs="if: mouseover, do: bounce animated"> <i class="fas fa-chevron-down"></i> </h2>
         </div>
         <div class="col">
         </div>
       </div>
+      <div class="row align-items-center row_no_padding">
+        <div class="col"></div>
+        <div class="col-8 intro_emphasis intro_paragraphs center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <a href="#profirio">
+          <h2 class="hvr-wobble-vertical icon_center"> <i class="fas fa-chevron-down"></i> </h2>
+        </a>
+        </div>
+          <div class="col"></div>
+        </div>
 
 
     </div>
@@ -568,11 +592,11 @@
 
       <div class="row frameworks_row">
 
-        <div class="col-4">
-          <div class="card medium activator machine-bias-card">
+        <div class="col-4 center">
+          <div class="card medium activator machine-bias-card center">
             <div class="card-content">
               <span class="card-title activator">Machine Bias<i class="fas fa-plus-circle  right"></i></span>
-              <span class="card_icon activator"><i class="fas fa-robot"></i></span>
+              <span class="card_icon activator icon_center"><i class="fas fa-robot"></i></span>
               <p>Is the way an algorithm is designed (its model) and the data we put into it, appropriate?<p>
             </div>
             <div class="card-reveal">
@@ -603,7 +627,7 @@
             <div class="card-reveal">
               <span class="card-title explainability-title">Explainability<i class="fas fa-times right"></i></span>
               <p> Some algorithms are very easy to understand--like instructions for choosing an avocado. We know exactly which variables are going into the model and how they're weighted.</p>
-              <p><img src="https://img.icons8.com/cotton/64/000000/avocado.png">The avocado algorithm is a <strong> decision tree</strong>. Super explainable. </p>
+              <p><img src="img/avocado.png" width="20%">The avocado algorithm is a <strong> decision tree</strong>. Super explainable. </p>
               <p>Others can feel like a black box. We give the data to the computer and it gives us a decision, but we don't really know how it reached that decision.</p>
               <p>A <strong> neural network </strong> algorithm is not that explainable. <img src="https://img.icons8.com/dusk/64/000000/network.png">
                 <p>
@@ -643,7 +667,7 @@
           <div class="card medium activator flexibility-card">
             <div class="card-content">
               <span class="card-title activator">Flexibility<i class="fas fa-plus-circle  right"></i></span>
-              <span class="card_icon activator center"><i class="far fa-circle"></i></span>
+              <span class="card_icon activator icon_center"><i class="far fa-circle"></i></span>
               <p>How hard is it to update or change the algorithm if we spot a problem?</p>
             </div>
             <div class="card-reveal">

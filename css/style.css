@@ -98,6 +98,11 @@ h4{
   text-align: center;
 }
 
+.icon_center{
+  text-align: center;
+}
+
+
 #website_subtitle{
   font: var(--main-font);
   font-size: 45px;
@@ -466,4 +471,8 @@ margin-top:1%;
 }
 .avo_right{
   text-align: right;
+}
+
+.row_no_padding{
+  padding-top:0px;
 }
