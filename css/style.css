@@ -428,10 +428,16 @@ margin-top:1%;
   text-align: center;
 }
 
+.avocado_section p{
+  padding-bottom: 3%;
+}
 .avocado_rows{
-  padding-top:1%;
+  padding-top:0;
 }
 
+.avocado_rows p{
+  padding-top: 1%;
+}
 .avo_right{
   text-align: right;
 }
