@@ -414,3 +414,15 @@ margin-top:1%;
 .avocado_images {
   width: 20%;
 }
+
+.avocado_section{
+  text-align: center;
+}
+
+.avocado_rows{
+  padding-top:1%;
+}
+
+.avo_right{
+  text-align: right;
+}
