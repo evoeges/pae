@@ -79,9 +79,21 @@ $('body').scrollspy({ target: '#navbar-side' })
     $('.tooltipped').tooltip();
   });
 
+/*
 initializeType();
 function initializeType(){
  typed= new Typed('#typed', {
       stringsElement: '#typed-strings'
     });
-}
+} */
+
+
+
+$(window).bind("scroll", function() {
+    if ($(this).scrollTop() > 250) {
+        $("#navbar-side").fadeIn();
+        $("#navbar-side").removeClass("definitions_hidden");
+    } else {
+        $("#navbar-side").stop().fadeOut();
+    }
+});
