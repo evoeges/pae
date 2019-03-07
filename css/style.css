@@ -65,7 +65,7 @@ h4{
   font-family: var(--secondary-font);
 }
 
-.paragraph_emphasis{
+.body_emphasis{
   font-size: 130%;
   font-weight: 200;
   color: var(--main-color);
