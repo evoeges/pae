@@ -89,6 +89,7 @@ h4{
   background-size: cover;
 }
 #website_title{
+  font-size: 90px;
   color: var(--main-color);
   margin-bottom: 0%;
 }
@@ -105,7 +106,8 @@ h4{
 
 #website_subtitle{
   font: var(--main-font);
-  font-size: 45px;
+  font-size: 40px;
+  font-weight: 300;
   color: var(--neutral-color);
   margin-top: 0%;
   margin-bottom: 0%;

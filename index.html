@@ -10,7 +10,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700,900|Libre+Baskerville:400,400i,700|Montserrat:300,400|Source+Serif+Pro:400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Source+Serif+Pro:400,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora|Quattrocento" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/materialize.min.css">
@@ -21,7 +21,6 @@
 
 <body>
 
-
   <!-- splash screen -->
   <div class="container page splash_screen">
     <div class="row align-items-center">
@@ -30,14 +29,8 @@
           <h1 id="website_title"> Automating NYC </h1>
         </div>
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <h2 id="website_subtitle"> <b>and (en)coding inequality?</b></h2>
+          <h2 id="website_subtitle"> and (en)coding inequality?</h2>
         </div>
-
-      <!--  <div id="typed-strings">
-          <p>Typed.js is a <strong>JavaScript</strong> library.</p>
-          <p>It <em>types</em> out sentences.</p>
-        </div>
-        <span id="typed"></span> -->
 
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="center">
           <a href="#first_page">
@@ -48,9 +41,8 @@
     </div>
   </div>
 
-
   <!--navbar-->
-  <ul class="nav fixed-top flex-column vertical-center definitions_hidden .navbar-expand-lg  " id="navbar-side">
+  <ul class="nav fixed-top flex-column .navbar-expand-lg  " id="navbar-side">
     <li class="nav-item">
       <a class="nav-link" href="#introduction">Intro</a>
     </li>
@@ -81,6 +73,26 @@
     </li>
   </ul>
 
+
+  <!-- splash screen -->
+  <div class="container page splash_screen" id="splashScreen">
+    <div class="row align-items-center">
+      <div class="col">
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h1 id="website_title"> automating NYC </h1>
+        </div>
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h2 id="website_subtitle"> <b>and (en)coding inequality?</b></h2>
+        </div>
+
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="center">
+          <a href="#first_page">
+            <h1 id="title_chevron" class="icon_center hvr-wobble-vertical"> <i class="fas fa-chevron-down center"></i> </h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div data-spy="scroll" data-target="#navbar-side" data-offset="0">
     <!-- intro bubbles -->
@@ -129,9 +141,9 @@
         <div class="col-8 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <p>Or New York State judges set bail and sentencing using a tool called COMPAS, and the results were <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"> biased against black people </a>.
           </p>
+          </div>
+          <div class="col"></div>
         </div>
-        <div class="col"></div>
-      </div>
 
       <div class="row align-items-center">
         <div class="col"></div>
@@ -148,10 +160,9 @@
           </col>
           <div class="card" id="definitions_card">
             <div class="card-content">
-              <p id="plain_text">An <strong>automated decision system (ADS)</strong> is a set of processes that relies on computerized components (like <strong> data and algorithms</strong>) to meaningfully make or influence a decision-making
-                process.<br>
-                <p id="legalese_text" class="definitions_hidden">The text of Local Law 49 of 2018 defines automated decision systems (or ADSs) as “computerized implementations of algorithms, including those derived from machine learning or other data
-                  processing or artificial intelligence techniques, which are used to make or assist in making decisions.” </p>
+              <p id="plain_text">An <strong>automated decision system (ADS)</strong> is a set of processes that relies on computerized components (like <strong> data and algorithms</strong>) to meaningfully make or influence a decision-making process.<br>
+              <p id="legalese_text" class="definitions_hidden">The text of Local Law 49 of 2018 defines automated decision systems (or ADSs) as “computerized implementations of algorithms, including those derived from machine learning or other data
+                processing or artificial intelligence techniques, which are used to make or assist in making decisions.” </p>
             </div>
             <div class="card-tabs">
               <div id="definitions_buttons">
@@ -167,8 +178,7 @@
       <div class="row align-items-center">
         <div class="col"></div>
         <div class="col-8 intro_emphasis intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <p>Automated Decision Systems sound complicated, but we're here to walk you through <a href="#profirio">why they matter</a>, <a href="#toyAlgo">how they work</a>, <a href="#frameworks">what questions to ask</a>, <a href="#caseStudies">some
-              examples in NYC</a>, and <a href="#getActive">what you can do about them</a>.
+          <p>Automated Decision Systems sound complicated, but we're here to walk you through <a href="#profirio">why they matter</a>,  <a href="#toyAlgo">how they work</a>,  <a href="#frameworks">what questions to ask</a>,  <a href="#caseStudies">some examples in NYC</a>, and  <a href="#getActive">what you can do about them</a>.
         </div>
         <div class="col">
         </div>
@@ -177,11 +187,11 @@
         <div class="col"></div>
         <div class="col-8 intro_emphasis intro_paragraphs center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <a href="#profirio">
-            <h2 class="hvr-wobble-vertical icon_center"> <i class="fas fa-chevron-down"></i> </h2>
-          </a>
+          <h2 class="hvr-wobble-vertical icon_center"> <i class="fas fa-chevron-down"></i> </h2>
+        </a>
         </div>
-        <div class="col"></div>
-      </div>
+          <div class="col"></div>
+        </div>
 
 
     </div>
@@ -363,8 +373,7 @@
       <div class="row align-items-center">
         <div class="col"></div>
         <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <p>All ADSs use computer programs that are made up of <strong> data and algorithms</strong> (which are just really detailed sets of instructions) that work together to complete a task. You can think of an algorithm as a series of steps to
-            evaluate
+          <p>All ADSs use computer programs that are made up of <strong> data and algorithms</strong> (which are just really detailed sets of instructions) that work together to complete a task. You can think of an algorithm as a series of steps to evaluate
             data and reach a decision.
           </p>
         </div>
@@ -382,7 +391,7 @@
       <div class="row align-items-left avocado_rows center">
         <div class="col"></div>
         <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <p>What are the factors you consider?</p>
+        <p>What are the factors you consider?</p>
         </div>
         <div class="col"></div>
       </div>
@@ -406,7 +415,7 @@
       <div class="row align-items-right avocado_rows">
         <div class="col"></div>
         <div class="col-8" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <p>I'm going to make some guacamole to eat tonight, <br> so I want the ripest one I can find.</p>
+          <p>I'm going to make some guacamole to eat tonight,   <br> so I want the ripest one I can find.</p>
         </div>
         <div class="col"></div>
       </div>
@@ -420,7 +429,7 @@
           <a class="tooltipped" data-position="top" data-tooltip="Cost: $1.29<br>Organic: No<br>Ripeness: Ripe"><img src="img/avocado.png" class="avocado_images"></a>
           <a class="tooltipped" data-position="top" data-tooltip="Cost: $2.00<br>Organic: No<br>Ripeness: Just Right"><img src="img/avocado.png" class="avocado_images hvr-wobble-vertical"></a>
 
-          </p>
+         </p>
         </div>
         <div class="col"></div>
       </div>
@@ -752,16 +761,14 @@
                 <div class="col"></div>
                 <div class="col-8">
                   <h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">So, which factors matter when ESP rates books?</h2>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> We don't actually know. ESP is a [neural network](https://en.wikipedia.org/wiki/Artificial_neural_network) algorithm, which is kind of a black box. We know which datasets ESP
-                    uses, but the patterns it's using to make recommondations
-                    are
-                    fuzzy. </p>
+                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> We don't actually know. ESP is a [neural network](https://en.wikipedia.org/wiki/Artificial_neural_network) algorithm, which is kind of a black box. We know which datasets ESP uses, but the patterns it's using to make recommondations
+                  are
+                  fuzzy. </p>
                   <br>
                   <br>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they
-                    serve, we might trust that and can draw from their
-                    experience
-                    and knowledge. <p>
+                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their
+                  experience
+                  and knowledge. <p>
                 </div>
                 <div class="col"></div>
               </div>
@@ -773,22 +780,19 @@
                   <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Not so fast. </p>
                   <br>
                   <br>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> As a neural network, ESP doesn't work as well if there isn't a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well.
-                    But it might have a harder time when guessing which
-                    debut
-                    fiction (e.g. an author’s first book) will be a big hit. </p>
+                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> As a neural network, ESP doesn't work as well if there isn't a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well. But it might have a harder time when guessing which
+                  debut
+                  fiction (e.g. an author’s first book) will be a big hit. </p>
                   <br>
                   <br>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Even if we have a bunch of data from Amazon or other book sellers, the data might not be representative of many NYC communities, particularly minorities and low income
-                    individuals--some of the largest users of library services that
-                    could
-                    purchase fewer books. This means that the recommendations ESP produces might not reflect what patrons want and may not be easy to change unless we get a whole lot more data. </p>
+                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Even if we have a bunch of data from Amazon or other book sellers, the data might not be representative of many NYC communities, particularly minorities and low income individuals--some of the largest users of library services that
+                  could
+                  purchase fewer books. This means that the recommendations ESP produces might not reflect what patrons want and may not be easy to change unless we get a whole lot more data. </p>
                   <br>
                   <br>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Also, it depends on what you mean by "better". What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the
-                    algorithm to figure out preferences for people who don't
-                    already
-                    check out books. </p>
+                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Also, it depends on what you mean by "better". What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the algorithm to figure out preferences for people who don't
+                  already
+                  check out books. </p>
                 </div>
                 <div class="col"></div>
               </div>
@@ -797,12 +801,10 @@
                 <div class="col"></div>
                 <div class="col-8">
                   <h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Don't librarians still have final say?</h2>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Yup! Preserving librarians' decision helps to address the possible problems with ESP. Still, librarians' choices may be swayed by what seems like a concrete, numerical score
-                    based on mathematical equations. </p>
+                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Yup! Preserving librarians' decision helps to address the possible problems with ESP. Still, librarians' choices may be swayed by what seems like a concrete, numerical score based on mathematical equations. </p>
                   <br>
                   <br>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> ESP augments a librarian's choices by highlighting gaps in a librarian's knowledge and experience. On the flip side, it could sway librarians away from trusting their own
-                    instincts on what their branch needs. </p>
+                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> ESP augments a librarian's choices by highlighting gaps in a librarian's knowledge and experience. On the flip side, it could sway librarians away from trusting their own instincts on what their branch needs. </p>
                 </div>
                 <div class="col"></div>
               </div>
@@ -952,7 +954,6 @@
     }
   </script>
 
-
   <!-- Load JS libraries: jQuery, bootstrap, D3 -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
@@ -963,7 +964,6 @@
   <script src="js/popper.min.js"></script>
   <script src="js/ScrollTrigger.min.js"></script>
   <script src="js/materialize.min.js"></script>
-  <script type="module" src="js/typed.js"></script>
 
 
   <!--visualizationObjects-->
