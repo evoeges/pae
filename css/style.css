@@ -92,7 +92,6 @@ h4{
   color: var(--main-color);
   margin-bottom: 0%;
 }
-
 #title_chevron{
   color: var(--main-color);
   margin-bottom: 0%;
@@ -100,6 +99,8 @@ h4{
 }
 
 #website_subtitle{
+  font: var(--main-font);
+  font-size: 45px;
   margin-top: 0%;
   margin-bottom: 0%;
 }
@@ -129,7 +130,7 @@ strong{
   font-size: 25px;
 }
 #legalese_text{
-  font-size: 25px;
+  font-size: 25px
 }
 #definitions_buttons{
   padding: 5%;
