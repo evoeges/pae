@@ -99,6 +99,11 @@ h4{
   text-align: center;
 }
 
+.icon_center{
+  text-align: center;
+}
+
+
 #website_subtitle{
   margin-top: 0%;
   margin-bottom: 0%;
@@ -164,7 +169,7 @@ a:active {
 }
 
 .row{
-  padding-top: 5%;
+  padding-top: 3%;
 }
 
 .slidecontainer {
@@ -458,4 +463,8 @@ margin-top:1%;
 }
 .avo_right{
   text-align: right;
+}
+
+.row_no_padding{
+  padding-top:0px;
 }
