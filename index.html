@@ -20,27 +20,6 @@
 </head>
 
 <body>
-
-  <!-- splash screen -->
-  <div class="container page splash_screen">
-    <div class="row align-items-center">
-      <div class="col">
-        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <h1 id="website_title"> automating NYC </h1>
-        </div>
-        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <h2 id="website_subtitle"> <b>and (en)coding inequality?</b></h2>
-        </div>
-
-        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="center">
-          <a href="#first_page">
-            <h1 id="title_chevron" class="icon_center hvr-wobble-vertical"> <i class="fas fa-chevron-down center"></i> </h1>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!--navbar-->
   <ul class="nav fixed-top flex-column .navbar-expand-lg  " id="navbar-side">
     <li class="nav-item">
@@ -67,19 +46,32 @@
     <li class="nav-item">
       <a class="nav-link" href="#caseStudies">Case Studies</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#NYPL">NYPL</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#workerConnect">Worker Connect</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#FDNY">FDNY</a>
-    </li>
+
     <li class="nav-item">
       <a class="nav-link" href="#getActive">Get Active</a>
     </li>
   </ul>
+
+
+  <!-- splash screen -->
+  <div class="container page splash_screen" id="splashScreen">
+    <div class="row align-items-center">
+      <div class="col">
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h1 id="website_title"> automating NYC </h1>
+        </div>
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h2 id="website_subtitle"> <b>and (en)coding inequality?</b></h2>
+        </div>
+
+        <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="center">
+          <a href="#first_page">
+            <h1 id="title_chevron" class="icon_center hvr-wobble-vertical"> <i class="fas fa-chevron-down center"></i> </h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div data-spy="scroll" data-target="#navbar-side" data-offset="0">
     <!-- intro bubbles -->
@@ -611,7 +603,7 @@
             <div class="card-reveal">
               <span class="card-title explainability-title">Explainability<i class="fas fa-times right"></i></span>
               <p> Some algorithms are very easy to understand--like instructions for choosing an avocado. We know exactly which variables are going into the model and how they're weighted.</p>
-              <p><img src="https://img.icons8.com/cotton/64/000000/avocado.png">The avocado algorithm is a <strong> decision tree</strong>. Super explainable. </p>
+              <p><img src="img/avocado.png" width="20%">The avocado algorithm is a <strong> decision tree</strong>. Super explainable. </p>
               <p>Others can feel like a black box. We give the data to the computer and it gives us a decision, but we don't really know how it reached that decision.</p>
               <p>A <strong> neural network </strong> algorithm is not that explainable. <img src="https://img.icons8.com/dusk/64/000000/network.png">
                 <p>
