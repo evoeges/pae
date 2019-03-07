@@ -160,10 +160,10 @@ var houses =  vis.svg.selectAll("rect")
 			 .duration(1000)
        .attr("fill", function(d){
 				 if (d.Fire>.5){
-					 return "red";
+					 return "#F4511E";
 					 }
 				 else {
-					 return "var(--main-color)";
+					 return "var(--houses-color)";
 				 }
 			 })
        .attr("stroke", "#fff")

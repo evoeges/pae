@@ -5,6 +5,7 @@
     --link-color: #9E9E9E;
     --main-font: 'Nunito', sans-serif;
     --secondary-font: 'Source Serif Pro', serif;
+    --houses-color: #795548;
 }
 
 /*
@@ -103,7 +104,7 @@ strong{
   margin-left: .5%;
   margin-top:.5%;
   text-transform: capitalize;
-  background-color: var(--main-color);
+
 }
 
 #definitions_buttons{
@@ -194,12 +195,13 @@ a:active {
   margin-left: .5%;
   margin-top:.5%;
   text-transform: capitalize;
+
 }
 
 .toyAlgoRow{
 padding-top:1%;
 padding-bottom:1%;
-
+  text-align: center;
 }
 
 .new_section{
@@ -277,6 +279,10 @@ padding-bottom:1%;
 
 .active, .accordion:hover {
   background-color: #ccc;
+}
+
+.accordian:focus{
+    background-color: #ccc;
 }
 
 .panel {
