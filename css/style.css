@@ -409,3 +409,7 @@ margin-top:1%;
 .btn:focus, .btn-large:focus, .btn-small:focus, .btn-floating:focus {
     background-color: #545b62;
 }
+
+.avocado_images {
+  width: 20%;
+}
