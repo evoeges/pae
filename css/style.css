@@ -87,13 +87,24 @@ h4{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+}
+#website_title{
+  color: var(--main-color);
+  margin-bottom: 0%;
+}
+#website_subtitle{
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 /* intro pages */
 .intro_paragraphs{
-  font-size: 20px;
+  font-size: 35px;
   padding-bottom: 2%;
+}
+.intro_emphasis{
+  font-size: 35px;
+  color: var(--main-color);
 }
 
 strong{
