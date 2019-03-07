@@ -7,13 +7,22 @@ import { htmlParser } from './html-parser.js';
  * @param {object} options options object
  * @returns {object} a new Typed object
  */
-export default class Typed {
+
+/*export default class Typed {
   constructor(elementId, options) {
     // Initialize it up
+     console.log("hello from typed")
     initializer.load(this, options, elementId);
     // All systems go!
     this.begin();
-  }
+  } */
+
+Typed = function (elementID, options){
+
+     console.log("hello from typed")
+    initializer.load(this, options, elementId);
+    // All systems go!
+    this.begin();
 
   /**
    * Toggle start() and stop() of the Typed instance

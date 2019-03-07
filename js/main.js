@@ -1,6 +1,7 @@
 
 //variables for the visualization instance
 var toyalgo;
+var typed;
 
 
 function toggleDefinitions(inputSwitch) {
@@ -77,3 +78,10 @@ $('body').scrollspy({ target: '#navbar-side' })
   $(document).ready(function(){
     $('.tooltipped').tooltip();
   });
+
+initializeType();
+function initializeType(){
+ typed= new Typed('#typed', {
+      stringsElement: '#typed-strings'
+    });
+}
