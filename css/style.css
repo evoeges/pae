@@ -238,7 +238,7 @@ padding-bottom:1%;
 }
 
 .new_section{
-  padding-top: 25%;
+  padding-top: 5%;
 }
 
 
@@ -484,4 +484,20 @@ margin-top:1%;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.wiggly_line {
+  width: 600px;
+  height: 200px;
+  margin-left: 10%;
+}
+
+.wiggly_line path {
+  stroke: var(--main-color);
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: none;
+  padding-left: 20%;
+  margin-left: 20%;
+
 }
