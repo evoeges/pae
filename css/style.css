@@ -7,6 +7,10 @@
     --secondary-font: 'Copse', serif;
     --houses-color: #9E9E9E;
     --card1-color: #4DB6AC;
+    --card2-color: #4DB6AC;
+    --card3-color: #4DB6AC;
+    --card4-color: #4DB6AC;
+    --card5-color: #4DB6AC;
 }
 
 /*
@@ -403,38 +407,38 @@ p{
 }
 
 .machine-bias-card{
-  background-color: #AB47BC;
+  background-color:var(--card2-color);
   color: white;
 }
 
 .bias-title{
-  color: #AB47BC;
+  color: var(--card2-color);
 }
 .explainability-card{
-  background-color: #FFCA28;
+  background-color: var(--card3-color);
   color: white;
 }
 
 .explainability-title{
-  color: #FFCA28;
+  color: var(--card3-color);
 }
 
 .automation-card{
-  background-color: #EC407A;
+  background-color:var(--card4-color);
   color: white;
 }
 
 .automation-title{
-  color: #EC407A;
+  color: var(--card4-color);
 }
 
 .flexibility-card{
-  background-color: #FF7043;
+  background-color: var(--card5-color);
   color: white;
 }
 
 .flexibility-title{
-  color: #FF7043;
+  color: var(--card5-color);
 }
 
 .impact-card{
