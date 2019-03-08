@@ -175,6 +175,7 @@ a:link {
 /* visited link */
 a:visited {
   color: inherit;
+  text-decoration: underline var(--main-color);
 }
 
 /* mouse over link */
