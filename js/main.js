@@ -97,3 +97,7 @@ $(window).bind("scroll", function() {
         $("#navbar-side").stop().fadeOut();
     }
 });
+
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});

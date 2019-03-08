@@ -660,18 +660,34 @@
 
 <!-- Impact-->
 <div class="row align-items-top" >
-  <div class="col-7">
-    <h4><strong>Impact:</strong> who does the ADS impact and how?</h4>
+  <div class="col-1"></div>
+  <div class="col-6">
+    <div>
+    <h3><strong>Impact</strong></h3>
+    <h4> Who does the ADS impact and how?</h4>
           <p> Impact helps us think through how important the discrimination / discriminatory outcomes (if they exist) are. </p>
-      <strong>Scale</Strong>
-      <p>How many people might be affected by the ADS. </p>
-      <strong>Scope</Strong>
-      <p>How deep of an impact the decision of the ADS might have on people. Deep impact is when the decision impacts something important, knowing which building might catch on fire is a matter of life and death. </p>
+        </div>
 
- <p>Superficial impact is when the decision impacts something not important or the impact is not very severe, like knowing which books will be the most popular is a matter of buying and shelving books.
- </p>
-      <strong>Vulnerability</Strong>
-      <p>How vulnerable are the groups that the ADS impacts. If an ADS impacts a group that has historically faced discrimination and the the ADS takes away resources from that group, the ADS is probably going to reproduce or worsening inequality.</p>
+
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header">Scale</div>
+      <div class="collapsible-body"><span>How many people might be affected by the ADS.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Scope</div>
+      <div class="collapsible-body"><span>  <p>How deep of an impact the decision of the ADS might have on people. Deep impact is when the decision impacts something important, knowing which building might catch on fire is a matter of life and death. </p>
+
+   <p>Superficial impact is when the decision impacts something not important or the impact is not very severe, like knowing which books will be the most popular is a matter of buying and shelving books.
+   </p>.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Vulnerability</div>
+      <div class="collapsible-body"><span>    <p>How vulnerable are the groups that the ADS impacts. If an ADS impacts a group that has historically faced discrimination and the the ADS takes away resources from that group, the ADS is probably going to reproduce or worsening inequality.</p></span></div>
+    </li>
+  </ul>
+
+
 
   </div>
   <div class="col-5">
@@ -689,6 +705,64 @@
         <p>Deep. The loss of revenue for Profirio was signficant. Moreover, the community lost a reliable food source. </p>
         <h3> Vulnerability </h3>
         <p> In general the USDA algorithm impacts vulnerable communities because it impacts communites that rely on alternative financial systems, who are usually lower income and communities of color.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--Bias-->
+
+<div class="row align-items-top" >
+  <div class="col-1"></div>
+  <div class="col-6">
+    <div>
+    <h3><strong>Bias</strong></h3>
+    <h4> What inputs in the ADS produce Bias?</h4>
+          <p> It helps identify what parts of the algorithm used in an ADS have bias imbedded in them and thus create discriminatory outcomes or worsen unjust systems. </p>
+        </div>
+
+
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header">Data</div>
+      <div class="collapsible-body"><span><p>Data are never objective. We embed our human bias when we collect, store, and use data. All data are biased.</p>
+
+<p>Data being biased means that when we analyze the data, the data might tell us to do something that's not purely objective. It might tell us to do something based on the existing biases of the world that it's capturing.  </p>
+
+<p>For example, if we use arrest data by neighborhood to distribute the police force, then we may send police to the same neighborhoods that they have historically policed, which leads to more collection of arrest data in those same neighborhoods. This creates a vicious cycle. </p>
+
+<p>These biases can arise because all datasets, to some extent, are incomplete, don't accurately represent the thing they're supposed to represent, and have historical mistakes that new data is building on.</p></span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Algorithm Model</div>
+      <div class="collapsible-body"><span>  <p>An ADS should make sure it's using an algorithm that is appropriate for the question it's answering and handling the variables correctly. Chosing the right algorithm should relate to the ADS's purpose.</p>
+
+<p>If humans are determining specific components of the algorithm, this can also create bias. For many algorithms, humans will be determining the outcome of interest and the variables. </p>
+
+<p>These decisions are biased because they are based on our own world views and what we think are the relationships between outcomes of intrests and variables.
+   </p>.</span></div>
+    </li>
+  </ul>
+
+
+
+  </div>
+  <div class="col-5">
+    <div class="card medium activator impact-card">
+      <div class="card-content">
+        <span class="card-title activator">Profirio's Story: Bias<i class="fas fa-plus-circle right"></i></span>
+        <span class="card_icon activator"><i class="fas fa-robot"></i></span>
+        <p> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
+        <h3> Data </h3>
+      </p> Because Profirio's bodega is in a low-income neighborhood, he is more likely to have more customers with food stamps. This is a bias in the data about bodegas in poor neighborhoods. This means that bodegas like Profirio's receive more scrunity whereas a bodega in a rich neighborhood gets less scrunity.   </p>
+        <h3> Algorithm Model </h3>
+        <p>The algorithm the USDA used to identify cash-for-food-stamps fraud was using large one time purchases as variable to indicate fraud. The algorithm couldn't distinguish between true fraud and Porfirio's IOU system. Someone decided that the model should flag certain transactions as fraudulent, so there was bias in the model against those kinds of transactions.
+
+</p>
       </div>
     </div>
 
