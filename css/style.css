@@ -172,6 +172,10 @@ a:link {
  text-decoration: underline var(--main-color);
 }
 
+.tooltip_definition{
+  
+}
+
 /* visited link */
 a:visited {
   color: inherit;
