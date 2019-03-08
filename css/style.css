@@ -7,6 +7,7 @@
     --secondary-font: 'Copse', serif;
     --houses-color: #9E9E9E;
     --card1-color: #4DB6AC;
+    --card2-color: #4DB6AC;
 }
 
 /*
@@ -397,12 +398,12 @@ p{
 }
 
 .machine-bias-card{
-  background-color: #AB47BC;
+  background-color:var(--card2-color);
   color: white;
 }
 
 .bias-title{
-  color: #AB47BC;
+  color: var(--card2-color);
 }
 .explainability-card{
   background-color: #FFCA28;
