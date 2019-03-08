@@ -67,7 +67,7 @@ h4{
 
 .body_emphasis{
   font-size: 130%;
-  font-weight: 200;
+  font-weight: 300;
   color: var(--main-color);
 }
 
@@ -173,7 +173,7 @@ a:link {
 }
 
 .tooltip_definition{
-  
+
 }
 
 /* visited link */
