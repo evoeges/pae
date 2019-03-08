@@ -6,6 +6,7 @@
     --main-font: 'Nunito', sans-serif;
     --secondary-font: 'Copse', serif;
     --houses-color: #9E9E9E;
+    --card1-color: #4DB6AC;
 }
 
 /*
@@ -422,11 +423,11 @@ p{
 }
 
 .impact-card{
-  background-color: #42A5F5;
+  background-color: var(--card1-color);
   color: white;
 }
 .impact-title{
-  color: #42A5F5;
+  color: var(--card1-color);
 }
 
 .card-reveal{
@@ -440,6 +441,7 @@ p{
 
 .card.medium{
 margin-top:1%;
+height:500px;
 }
 
 .case-study{

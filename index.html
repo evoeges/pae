@@ -530,68 +530,19 @@
       <h2> Chapter 3: Framework </h2><br><br>
       <h3> So are ADSs good or bad? </h3>
     </div>
-    <div class="row align-items-center" data-scroll="toggle(.fromBottomIn,.fromBottomOut)">
+    <div class="row align-items-center" >
       <div class="col"> </div>
       <div class="col-10">
-        <p class="body_takeaway">It's complicated. So, we came up with some key criteria to help us evaluate and ask questions about ADSs. </h3>
-      </div>
+        <p class="body_takeaway" data-scroll="toggle(.fromBottomIn,.fromBottomOut)">Unfortunately this isn't a yes or no question. But in order to start tackling this question we need to develop a framework to think critically about ADSs. </p>
+
+<p data-scroll="toggle(.fromBottomIn,.fromBottomOut)">Remember, ADSs are systems that involve both algorithms and humans. They *have the potential to reproduce, worsen, and sometimes accelerate unjust systems*. </p>
+
+<p data-scroll="toggle(.fromBottomIn,.fromBottomOut)">What are the components of an ADS that we can *evaluate* to check for this?</p>
+
       <div class="col"> </div>
     </div>
-
-    <!-- Machine Bias
-      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <div class="col"> </div>
-          <div class="col-8">
-            <h2> Machine Bias </h2>
-            <h3>Is the way an algorithm is designed (its model) and the data we put into it, appropriate?</h3>
-          </div>
-          <div class="col"> </div>
-        </div>
-      <div class="row">
-          <div class="col"> </div>
-          <div class="col-4">
-            <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-              <h3> Is the dataset representative? </h3>
-              <p>Does the data actually look like everyone it says it's about? If an ADS is supposed to represent all New Yorkers, does it include different races? Neighborhoods? Genders? Ages? Abilities? All 5 boroughs? </p>
-            </div>
-            <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-              <h3> Is the dataset complete? </h3>
-              <p>There shouldn't be any missing data--the relevant information should filled out. Garbage in, garbage out. </p>
-            </div>
-            <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-              <h3> Is the ADS using the right algorithm </h3>
-            </div>
-            <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-              <p>What variables does the algorithm use? How does it prioritize those variables? An ADS should make sure it's using an algorithm that is appropriate for the question it's answering and handling the variables correctly.</p>
-            </div>
-            <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-              <p>
-                For example, the algorithm the [USDA used](Profirio's Bodega) to identify cash-for-food-stamps fraud was flagging all large one time purchases as fraud. The algorithm couldn't distinguish between true fraud and Porfirio’s IOU system.
-              </p>
-            </div>
-          </div>
-            <div class="col"> </div>
-        <div class="col-4">
-          <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-            <h3> Does the data have human biases? </h3>
-          </div>
-          <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-            <p>Data is never objective.</p>
-          </div>
-          <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-            <p>It's vulnerable to the biases of the people who collect, store, and use it. For example, ["statistical white flight"], was used to selectively collect crime data to criminalize Black people while erasing other ethnic categories. This
-              was used to tell the story of those in power and oppress marginalized groups.
-            </p>
-          </div>
-          <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-            <p>Even if an algorithm (or the data) isn't intended to be racially biased, it can still perpetuate it. For example, because housing segregation has led many urban centers to be divided along racial lines, including a variable like
-              “neighborhood” in a dataset may in reality be a proxy for race when it wasn't meant to be.
-            </p>
-          </div>
-        </div>
-        <div class="col"> </div>
-      </div>  -->
-
+  </div>
+    <!--
     <div class="row frameworks_row">
 
       <div class="col-4 center">
@@ -703,7 +654,46 @@
 
 
     </div>
+-->
 
+<!-- Impact-->
+<div class="row align-items-top" >
+  <div class="col-7">
+    <h4><strong>Impact:</strong> who does the ADS impact and how?</h4>
+          <p> Impact helps us think through how important the discrimination / discriminatory outcomes (if they exist) are. </p>
+      <strong>Scale</Strong>
+      <p>How many people might be affected by the ADS. </p>
+      <strong>Scope</Strong>
+      <p>How deep of an impact the decision of the ADS might have on people. Deep impact is when the decision impacts something important, knowing which building might catch on fire is a matter of life and death. </p>
+
+ <p>Superficial impact is when the decision impacts something not important or the impact is not very severe, like knowing which books will be the most popular is a matter of buying and shelving books.
+ </p>
+      <strong>Vulnerability</Strong>
+      <p>How vulnerable are the groups that the ADS impacts. If an ADS impacts a group that has historically faced discrimination and the the ADS takes away resources from that group, the ADS is probably going to reproduce or worsening inequality.</p>
+
+  </div>
+  <div class="col-5">
+    <div class="card medium activator impact-card">
+      <div class="card-content">
+        <span class="card-title activator">Profirio's Story: Impact<i class="fas fa-plus-circle right"></i></span>
+        <span class="card_icon activator"><i class="fas fa-bolt"></i></span>
+        <p> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
+        <h3> Scale </h3>
+      </p> Large. The USDA algorithm affects any business that accepts food stamps. In New York City, that's x% of all grocery and convenient stores.  </p>
+        <h3> Scope </h3>
+        <p>Deep. The loss of revenue for Profirio was signficant. Moreover, the community lost a reliable food source. </p>
+        <h3> Vulnerability </h3>
+        <p> In general the USDA algorithm impacts vulnerable communities because it impacts communites that rely on alternative financial systems, who are usually lower income and communities of color.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- end of frameworks section-->
   </div>
 
 
