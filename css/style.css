@@ -309,14 +309,16 @@ padding-bottom:1%;
   font-size: 400%;
   font-weight: lighter;
   padding: 0;
+  margin: 0;
 }
 
 .chapter_title{
   font-family: var(--main-font);
-  font-weight: 100;
+  font-weight: 300;
   font-size: 300%;
   color: var(--link-color);
   text-align: center;
+  margin-bottom: 50px;
   padding: 0;
 }
 
