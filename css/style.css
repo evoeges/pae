@@ -502,3 +502,11 @@ height:500px;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+.collapsible-body{
+  background-color: white;
+}
+.collapsible-header{
+  text-align: center;
+  color: var(--main-color);
+}
