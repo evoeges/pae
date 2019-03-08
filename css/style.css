@@ -305,9 +305,19 @@ padding-bottom:1%;
 	opacity: 0.0;
 }
 
-.chapter_title{
+.chapter_number{
   font-size: 400%;
+  font-weight: lighter;
+  padding: 0;
+}
+
+.chapter_title{
+  font-family: var(--main-font);
+  font-weight: 100;
+  font-size: 300%;
+  color: var(--link-color);
   text-align: center;
+  padding: 0;
 }
 
 /* ADS Accordian*/
