@@ -71,7 +71,7 @@
       <a class="nav-link" href="#frameworks">Frameworks</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#caseStudies">Some Examples</a>
+      <a class="nav-link" href="#someExamples">Some Examples</a>
     </li>
 
     <li class="nav-item">
@@ -1060,12 +1060,20 @@
 
 
     <!-- CASE STUDIES -->
-    <div class="container page case_study new_section">
-      <h1 id="caseStudies"> Chapter 4: Examples <h1>
-          <h3> Click on the case studies below to learn more about some real ADSs being used in NYC.</h3>
-
+    <div id="someExamples" class="container page case_study new_section">
+      <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+      <h2 class="chapter_number"> Chapter 4 </h2>
+        <h2 class="chapter_title">Some examples</h2>
+      </div>
+      <div class="row align-items-center">
+        <div class="col"></div>
+        <div class="col-8">
+          <h3> Click on some examples to learn more about real ADSs being used in NYC.</h3>
+        </div>
+        <div class="col"></div>
+      </div>
           <!-- PUBLIC LIBRARY CASE STUDY -->
-          <button class="accordion">Public Library <i class="fas fa-caret-down"></i>
+          <button id="nypl_accordian" class="accordion"><i class="fas fa-book-reader"></i>&nbsp; Public Library
           </button>
           <div class="panel">
             <div id="NYPL_case">
@@ -1291,15 +1299,15 @@
             </div>
           </div>
 
-          <!-- WORKER CONNECT CASE STUDY -->
-          <button class="accordion"> Worker Connect <i class="fas fa-caret-down"></i>
+          <!-- PARKS AND REC CASE STUDY -->
+          <button id="workerConnect_accordian" class="accordion"><i class="fas fa-tree"></i>&nbsp;Parks & Recreation
           </button>
           <div class="panel">
             <h1 id="workerConnect"> Case coming soon!</h1>
           </div>
 
           <!-- FDNY CASE STUDY -->
-          <button class="accordion"> FDNY <i class="fas fa-caret-down"></i>
+          <button id="fdny_accordian" class="accordion"><i class="fas fa-fire"></i>&nbsp; Fire Department
           </button>
           <div class="panel">
             <h1 id="FDNY"> Case coming soon!</h1>
