@@ -1110,107 +1110,115 @@
 
               <div class="row align-items-center">
                 <div class="col"></div>
-                <div class="col-10">
-                  <h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Don't librarians still have final say?</h2>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Yup! Preserving librarians' decision helps to address the possible problems with ESP. Still, librarians' choices may be swayed by what seems like a concrete, numerical
-                    score
-                    based on mathematical equations. </p>
-                  <br>
-                  <br>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> ESP augments a librarian's choices by highlighting gaps in a librarian's knowledge and experience. On the flip side, it could sway librarians away from trusting their own
-                    instincts on what their branch needs. </p>
+                <div class="col-7">
+                  <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Don't librarians still have final say?</h3>
+                  <p>Yup! Preserving librarians' power to make decisions helps to address the possible problems with ESP. Still, librarians' choices may be swayed  by what seems like a concrete, numerical score based on mathematical equations.</p>
+                  <p>ESP augments a librarian's choices by highlighting gaps in a librarian's knowledge and experience. On the flip side, it could sway librarians away from trusting their own instincts on what their branch needs.</p>
                 </div>
                 <div class="col"></div>
               </div>
-
-              <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                <h2>Rate the NYPL ADS </h2>
-              </div>
-
-              <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                <div class="col-1">
-                  <span>Least Biased</span>
-                </div>
-                <div class="col-7">
-                  <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider">
-                    <span>Most Biased</span>
+      <!--NYPL CARDS-->
+          <div class="row">
+              <div class="col-4 case_cards" >
+                <div class="card medium activator impact-card">
+                  <div class="card-content activator">
+                    <span class="card-title activator">Profirio's Story: Impact<i class="fas fa-plus-circle right"></i></span>
+                    <span class="card_icon activator"><i class="fas fa-bolt"></i></span>
+                    <p class="activator"> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
+                    <h4> Scale </h4>
+                    </p> Large. The USDA algorithm affects any business that accepts food stamps. In New York City, that's x% of all grocery and convenient stores. </p>
+                    <h4> Scope </h4>
+                    <p>Deep. The loss of revenue for Profirio was signficant. Moreover, the community lost a reliable food source. </p>
+                    <h4> Vulnerability </h4>
+                    <p> In general the USDA algorithm impacts vulnerable communities because it impacts communites that rely on alternative financial systems, who are usually lower income and communities of color.</p>
                   </div>
                 </div>
-
-                <div class="col-4">
-                  <strong> Machine Bias </strong> is about data quality and correlations that might impact marginalized groups.
-                </div>
               </div>
+              <div class="col-4 case_cards">
+                <div class="card medium activator machine-bias-card">
+                  <div class="card-content">
+                    <span class="card-title activator">Profirio's Story: Bias<i class="fas fa-plus-circle right"></i></span>
+                    <span class="card_icon activator"><i class="fas fa-robot"></i></span>
+                    <p> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
+                    <h4> Data </h4>
+                    </p> Because Profirio's bodega is in a low-income neighborhood, he is more likely to have more customers with food stamps. This is a bias in the data about bodegas in poor neighborhoods. This means that bodegas like Profirio's receive
+                    more scrunity whereas a bodega in a rich neighborhood gets less scrunity. </p>
+                    <h4> Algorithm Model </h4>
+                    <p>The algorithm the USDA used to identify cash-for-food-stamps fraud was using large one time purchases as variable to indicate fraud. The algorithm couldn't distinguish between true fraud and Porfirio's IOU system. Someone decided
+                      that
+                      the model should flag certain transactions as fraudulent, so there was bias in the model against those kinds of transactions.
 
-              <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-
-                <div class="col-1">
-                  <span>Least Explainable</span>
-                </div>
-                <div class="col-7">
-                  <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider">
-                    <span>Most Explainable</span>
+                    </p>
                   </div>
                 </div>
-
-                <div class="col-4">
-                  <strong> Explainability </strong> is how easily humans can understand the algorithm.
-                </div>
               </div>
 
-              <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                <div class="col-1">
-                  <span>Least Automated</span>
+            <div class="col-4 case_cards">
+              <div class="card medium activator explainability-card">
+                <div class="card-content">
+                  <span class="card-title activator">Profirio's Story: Explainability<i class="fas fa-plus-circle right"></i></span>
+                  <span class="card_icon activator"><i class="fas fa-question-circle"></i></span>
+                  <p> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
                 </div>
-                <div class="col-7">
-                  <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider">
-                    <span>Most Automated</span>
-                  </div>
-                </div>
+                <div class="card-reveal">
+                  <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
 
-                <div class="col-4">
-                  <strong> Automation </strong> is whether the decision is completely made by the algorithm, or just advises a human.
+                  </p> For Profirio, we don't know how the whole ADS works. Who looks at the results of the algorithm that is flagging cases of supposed fraud? What are the checks and balances around the decision making process? </p>
+
+                  <p>If we knew more about the process and components of the ADS, we would be able to see if there were design decisions to mitigate mistakes like miscategorizing Profirio's bodega.</p>
                 </div>
               </div>
-
-              <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                <div class="col-1">
-                  <span>Least Impact</span>
-                </div>
-                <div class="col-7">
-                  <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider">
-                    <span>Most Impact</span>
-                  </div>
-                </div>
-
-                <div class="col-4">
-                  <strong> Impact </strong> is how many people are affected, and how much the effect is on human wellbeing and livelihood.
-                </div>
-              </div>
-
-              <div class="row align-items-center slider-row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                <div class="col-1">
-                  <span>Least Flexible</span>
-                </div>
-                <div class="col-7">
-                  <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider">
-                    <span>Most Flexible</span>
-                  </div>
-                </div>
-
-                <div class="col-4">
-                  <strong> Flexibility </strong> is how easily the algorithm can be changed or updated.
-                </div>
-              </div>
-
-
+            </div>
 
             </div>
+
+            <div class="row">
+              <div class="col-4 case_cards">
+                <div class="card medium activator automation-card">
+                  <div class="card-content">
+                    <span class="card-title activator">Profirio's Story: Automation<i class="fas fa-plus-circle right"></i></span>
+                    <span class="card_icon activator"><i class="fas fa-cogs"></i></span>
+                    <p> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title  automation-title">Automation<i class="fas fa-times right"></i></span>
+                    <h4> High </h4>
+                    </p> As far we know, the USDA algorithm automatically flags transactions it categorizes as "fraud" which results in the USDA sending out a letter to a business owner notifying them that their ability to accept SNAP will be
+                    suspended
+                    unless they prove otherwise.</p>
+
+                    <p>It is unclear whether a USDA employee reviews the flagged transactions before such a letter is sent.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-4 case_cards">
+                <div class="card medium activator flexibility-card">
+                  <div class="card-content">
+                    <span class="card-title activator">Profirio's Story: Flexibility<i class="fas fa-plus-circle right"></i></span>
+                    <span class="card_icon activator"><i class="far fa-circle"></i></span>
+                    <p> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title  flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
+                    <h4> Feedback System </h4>
+                    </p> The USDA ADS as a whole is not very flexible because there is not a good feedback system from people who are directly affected by the ADS.</p>
+
+                    <p>Although business owners have the ability to submit feedback if they believe they've been wrongly flagged, this feedback has to be in a very specific form. Moreover, there is no mechanism for businesses or others to tell the
+                      USDA how
+                      it can improve its system. </p>
+                    <h4> Ability and Access to Update </h4>
+                    <p>We're not sure!</p>
+                  </div>
+                </div>
+              </div>
           </div>
 
           <!-- PARKS AND REC CASE STUDY -->
