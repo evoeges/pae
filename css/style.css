@@ -446,6 +446,7 @@ p{
 .flexibility-card{
   background-color: var(--card5-color);
   color: white;
+
 }
 
 .flexibility-title{
@@ -490,7 +491,8 @@ p{
 
 .card.medium{
 margin-top:1%;
-height:500px;
+height:400px;
+margin-left: 20%;
 }
 
 #profirio_framework{
@@ -513,7 +515,8 @@ height:500px;
 }
 
 .frameworks_row{
-  padding-top: 1%;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
 
 .definitions_hidden{
