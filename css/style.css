@@ -467,6 +467,7 @@ p{
 .small-card{
   width: 100%;
   height:100%
+
 }
 
 .small-card .card-content{
@@ -562,4 +563,59 @@ height:500px;
 .collapsible-header{
   text-align: center;
   color: var(--main-color);
+}
+
+.overlay {
+    position: absolute;
+    top: -2%;
+    bottom: 0;
+    left: -2%;
+    right: 0;
+    height: 110%;
+    width: 110%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff;
+    border: transparent;
+    box-shadow: transparent;
+}
+
+.fade-container:hover .overlay {
+    opacity: 1;
+}
+
+.icon-fade {
+    font-size: 400%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.impact-card .icon-fade{
+    color: var(--card1-color);
+}
+
+
+.machine-bias-card .icon-fade{
+    color: var(--card2-color);
+}
+
+.explainability-card .icon-fade{
+    color: var(--card3-color);
+}
+
+.automation-card .icon-fade{
+    color: var(--card4-color);
+}
+
+.flexibility-card .icon-fade{
+    color: var(--card5-color);
+}
+
+.frameworks_links{
+  text-decoration: none;
 }
