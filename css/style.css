@@ -342,8 +342,8 @@ padding-bottom:1%;
   outline: none;
   transition: 0.4s;
   text-align: center;
-  font-size: 50px;
-
+  font-size: 200%;
+  border-radius: 20px;
 }
 
 .active, .accordion:hover {
@@ -354,6 +354,16 @@ padding-bottom:1%;
     background-color: #ccc;
 }
 
+#nypl_accordian{
+  background-color: #F4A79C;
+}
+#workerConnect_accordian{
+  background-color: #F19184;
+}
+
+#fdny_accordian{
+  background-color: #DB7A6E;
+}
 .panel {
   padding: 0 18px;
   display: none;
