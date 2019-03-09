@@ -185,10 +185,10 @@
     </div>
 
     <!-- MEJIA STORY -->
-    <div class="container page new_section">
+    <div id="profirio" class="container page new_section">
       <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <h2 class="chapter_number">Chapter 1</h2><br>
-        <h2 class="chapter_title">Profirio's Story</h2>
+        <h1 class="chapter_number">Chapter 1</h1><br>
+        <h1 class="chapter_title">Profirio's Story</h1>
       </div>
       <div class="row align-items-center">
         <div class="col-6">
@@ -371,8 +371,8 @@
     <!-- TOY ALGO -->
     <div class="container page new_section" id="avocados">
       <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <h2 class="chapter_number">Chapter 2</h2>
-        <h2 class="chapter_title">Avocados & Algorithms</h2>
+        <h1 class="chapter_number">Chapter 2</h1>
+        <h1 class="chapter_title">Avocados & Algorithms</h1>
       </div>
     </div>
 
@@ -542,8 +542,8 @@
 <!-- frameworks-->
 <div class="container page new_section" id="frameworks">
   <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-    <h2 class="chapter_number">Chapter 3</h2>
-    <h2 class="chapter_title">Frameworks</h2>
+    <h1 class="chapter_number">Chapter 3</h1>
+    <h1 class="chapter_title">Frameworks</h1>
   </div>
     <div class="row align-items-center">
       <div class="col"> </div>
@@ -999,18 +999,21 @@
     <!-- CASE STUDIES -->
     <div id="someExamples" class="container page case_study new_section">
       <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-      <h2 class="chapter_number"> Chapter 4 </h2>
-        <h2 class="chapter_title">Some examples</h2>
+      <h1 class="chapter_number"> Chapter 4 </h1>
+        <h1 class="chapter_title">Some examples</h1>
       </div>
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-8">
-          <h3> Click on some examples to learn more about real ADSs being used in NYC.</h3>
-        </div>
-        <div class="col"></div>
-      </div>
+
+            <div class="row align-items-center"data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+              <div class="col"></div>
+              <div class="col-10">
+                <h3> Learn about some real ADSs being used in NYC.</h3>
+              </div>
+              <div class="col"></div>
+            </div>
+
+
           <!-- PUBLIC LIBRARY CASE STUDY -->
-          <button id="nypl_accordian" class="accordion"><i class="fas fa-book-reader"></i>&nbsp; Public Library
+          <button id="nypl_accordian" class="accordion"><i class="fas fa-book-reader"></i>&nbsp; Public Library &nbsp;<i class="fas fa-sort-down"></i>
           </button>
           <div class="panel">
             <div id="NYPL_case">
@@ -1033,7 +1036,7 @@
 
               <div class="row align-items-center">
                 <div class="col"></div>
-                <div class="col-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                <div class="col-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
                   <h2>Libraries use ESP to guess what we want to read</h2>
                   <br>
                   No, not extra-sensory perception.
@@ -1069,13 +1072,10 @@
               <div class="row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
 
                 <div class="col-4">
-                  ESP is fed library patron data (like how many books by a particular author were checked out) and sales data (like Amazon purchases and reviews). In case you're wondering, no it doesn't use book reviews yet.
+                  The library feeds ESP is fed circulation data (like which books have been checked out) and sales data (like Amazon purchases). In case you're wondering, no it doesn't use book reviews yet.
                 </div>
                 <div class="col-4">
-                  The ESP algorithm looks for historical patterns in the data and makes suggestions for what books to stock at which branches. For example it might predict where the young adult book "Twilight" will be popular because that
-                  neighborhood
-                  has
-                  lots of teenagers that checked out "Dracula" and "Harry Potter".
+                  The ESP algorithm looks for historical patterns in the data and makes suggestions for what books to stock at which branches. For example it might predict where the young adult book "Twilight" will be popular because that neighborhood has lots of teenagers that checked out "Dracula" and "Harry Potter".
                 </div>
                 <div class="col-4">
                   Then, it's up to the librarian to choose whether or not to follow the algorithm's advice.
@@ -1084,20 +1084,10 @@
 
               <div class="row align-items-center">
                 <div class="col"></div>
-                <div class="col-10">
+                <div class="col-7">
                   <h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">So, which factors matter when ESP rates books?</h2>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> We don't actually know. ESP is a [neural network](https://en.wikipedia.org/wiki/Artificial_neural_network) algorithm, which is kind of a black box. We know which datasets
-                    ESP
-                    uses, but the patterns it's using to make recommondations
-                    are
-                    fuzzy. </p>
-                  <br>
-                  <br>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the
-                    community they
-                    serve, we might trust that and can draw from their
-                    experience
-                    and knowledge. <p>
+                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> We don't actually know. ESP is a <span class="tooltip_definition"> neural network</span> algorithm, which is kind of a black box. We know which datasets ESP uses, but the patterns it's using to make recommendations are fuzzy.</p>
+                  <p>To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their experience and knowledge. </p>
                 </div>
                 <div class="col"></div>
               </div>
@@ -1237,19 +1227,20 @@
           </div>
 
           <!-- PARKS AND REC CASE STUDY -->
-          <button id="workerConnect_accordian" class="accordion"><i class="fas fa-tree"></i>&nbsp;Parks & Recreation
+          <button id="workerConnect_accordian" class="accordion"><i class="fas fa-tree"></i>&nbsp;Parks & Recreation &nbsp;<i class="fas fa-sort-down"></i>
           </button>
           <div class="panel">
             <h1 id="workerConnect"> Case coming soon!</h1>
           </div>
 
           <!-- FDNY CASE STUDY -->
-          <button id="fdny_accordian" class="accordion"><i class="fas fa-fire"></i>&nbsp; Fire Department
+          <button id="fdny_accordian" class="accordion"><i class="fas fa-fire"></i>&nbsp; Fire Department &nbsp;<i class="fas fa-sort-down"></i>
           </button>
           <div class="panel">
             <h1 id="FDNY"> Case coming soon!</h1>
           </div>
     </div>
+  </div>
 
 
 
