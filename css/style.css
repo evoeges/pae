@@ -453,6 +453,24 @@ p{
   color: black;
 }
 
+.small-card{
+  width: 100%;
+  height:100%
+}
+
+.small-card .card-content{
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.small-card-row{
+  margin-bottom:0px;
+  margin-top: 0px;
+}
+.small-card-row .col{
+  padding: .5%;
+}
+
 .card_icon{
   font-size: 600%;
   text-align: center;
@@ -463,6 +481,10 @@ margin-top:1%;
 height:500px;
 }
 
+#profirio_framework{
+  padding-top:15%;
+  padding-bottom: 10%;
+}
 .case-study{
   width: 80%
 }
