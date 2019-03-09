@@ -343,7 +343,7 @@ padding-bottom:1%;
   transition: 0.4s;
   text-align: center;
   font-size: 200%;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 .active, .accordion:hover {
