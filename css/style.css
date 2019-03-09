@@ -495,9 +495,7 @@ height:400px;
 margin-left: 20%;
 }
 
-.case_cards{
-  margin: 1%;
-}
+
 
 #profirio_framework{
   padding-top:15%;
@@ -665,4 +663,9 @@ margin-left: 20%;
 
 .flexibility_collapsible .collapsible-header{
   color: var(--card5-color);
+}
+
+.case_cards{
+  margin: 1%;
+  margin-left: 1%;
 }
