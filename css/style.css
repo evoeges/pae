@@ -616,6 +616,46 @@ height:500px;
     color: var(--card5-color);
 }
 
-.frameworks_links{
+.small-card-row a{
   text-decoration: none;
+}
+
+#impact_section strong {
+  color: var(--card1-color);
+}
+
+.impact_collapsible .collapsible-header{
+  color: var(--card1-color);
+}
+
+#bias_section strong {
+  color: var(--card2-color);
+}
+
+.bias_collapsible .collapsible-header{
+  color: var(--card2-color);
+}
+
+#explainability_section strong {
+  color: var(--card3-color);
+}
+
+.explainability_collapsible .collapsible-header{
+  color: var(--card3-color);
+}
+
+#automation_section strong {
+  color: var(--card4-color);
+}
+
+.automation_collapsible .collapsible-header{
+  color: var(--card4-color);
+}
+
+#flexibility_section strong {
+  color: var(--card5-color);
+}
+
+.flexibility_collapsible .collapsible-header{
+  color: var(--card5-color);
 }
