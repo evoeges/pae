@@ -614,3 +614,7 @@ height:500px;
 .flexibility-card .icon-fade{
     color: var(--card5-color);
 }
+
+.frameworks_links{
+  text-decoration: none;
+}
