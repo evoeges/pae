@@ -1,7 +1,7 @@
 :root {
     --main-color: #F08578;
-    --secondary-color: #9ad14b;
-    --dark-color: #4C7CBD;
+    --secondary-color: #4C7CBD;
+    --dark-color: #616161;
     --link-color: #9E9E9E;
     --main-font: 'Nunito', sans-serif;
     --secondary-font: 'Copse', serif;
@@ -59,6 +59,7 @@ h2 {
 
 h3 {
   text-align: center;
+  color: var(--dark-color);
   font-size: 200%;
   font-family: var(--secondary-font);
   padding-top: 5%;
