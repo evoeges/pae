@@ -111,6 +111,7 @@ h4{
   font-size: 90px;
   color: var(--main-color);
   margin-bottom: 0%;
+  padding-bottom: 0%;
 }
 #title_chevron{
   color: var(--main-color);
@@ -130,6 +131,7 @@ h4{
   color: var(--link-color);
   margin-top: 0%;
   margin-bottom: 0%;
+  padding: 0%;
 }
 
 /* intro pages */
