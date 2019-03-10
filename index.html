@@ -890,8 +890,6 @@
           </li>
         </ul>
 
-
-
       </div>
       <div class="col-5">
         <div class="card medium activator automation-card">
@@ -1122,39 +1120,34 @@
               <div class="col-4" >
                 <div class="card  case_cards activator impact-card">
                   <div class="card-content activator">
-                    <span class="card-title activator">Profirio's Story: Impact<i class="fas fa-plus-circle right"></i></span>
+                    <span class="card-title activator">Impact<i class="fas fa-plus-circle right"></i></span>
                     <span class="card_icon activator"><i class="fas fa-bolt"></i></span>
-                    <p class="activator"> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
+                    <p class="activator">Who does the ADS affect and how?<p>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
                     <h4> Scale </h4>
-                    </p> Large. The USDA algorithm affects any business that accepts food stamps. In New York City, that's x% of all grocery and convenient stores. </p>
+                    </p>Large scale. A lot of people use libraries.</p>
                     <h4> Scope </h4>
-                    <p>Deep. The loss of revenue for Profirio was signficant. Moreover, the community lost a reliable food source. </p>
+                    <p>Superficial. Books are great, but probably not as serious as other social services and it's not about life or death.</p>
                     <h4> Vulnerability </h4>
-                    <p> In general the USDA algorithm impacts vulnerable communities because it impacts communites that rely on alternative financial systems, who are usually lower income and communities of color.</p>
+                    <p>This depends on how you look at it. People who need to use libraries might be more vulnerable because they don't have other means to get knowledge. People who's books don't get great reviews are more likely to be vulnerable people (new authors, authors that are underrepresented, topics that are underrepresented).</p>
                   </div>
                 </div>
               </div>
               <div class="col-4">
                 <div class="card  case_cards activator machine-bias-card">
                   <div class="card-content">
-                    <span class="card-title activator">Profirio's Story: Bias<i class="fas fa-plus-circle right"></i></span>
+                    <span class="card-title activator">Bias<i class="fas fa-plus-circle right"></i></span>
                     <span class="card_icon activator"><i class="fas fa-robot"></i></span>
-                    <p> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
+                    <p>What inputs in the ADS produce problems?<p>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
-                    <h4> Data </h4>
-                    </p> Because Profirio's bodega is in a low-income neighborhood, he is more likely to have more customers with food stamps. This is a bias in the data about bodegas in poor neighborhoods. This means that bodegas like Profirio's receive
-                    more scrunity whereas a bodega in a rich neighborhood gets less scrunity. </p>
+                    <h4>Data</h4>
+                    </p> ESP uses a lot of data which incorporates both library and private book sale data but is unable currently to take in other forms of data like book reviews. The data doesn't account for human biased equity issues. Sales data may be based on higher-income individuals. Libraries should think about books that their unique populations need and value.</p>
                     <h4> Algorithm Model </h4>
-                    <p>The algorithm the USDA used to identify cash-for-food-stamps fraud was using large one time purchases as variable to indicate fraud. The algorithm couldn't distinguish between true fraud and Porfirio's IOU system. Someone decided
-                      that
-                      the model should flag certain transactions as fraudulent, so there was bias in the model against those kinds of transactions.
-
-                    </p>
+                    <p>ESP uses a neural network. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know if what kinds of bias in the data are driving outcomes.                    </p>
                   </div>
                 </div>
               </div>
@@ -1162,14 +1155,14 @@
             <div class="col-4">
               <div class="card  case_cards activator explainability-card">
                 <div class="card-content">
-                  <span class="card-title activator">Profirio's Story: Explainability<i class="fas fa-plus-circle right"></i></span>
+                  <span class="card-title activator">Explainability<i class="fas fa-plus-circle right"></i></span>
                   <span class="card_icon activator"><i class="fas fa-question-circle"></i></span>
-                  <p> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
+                  <p>How easy is it for humans to understand how the ADS works?<p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
 
-                  </p> For Profirio, we don't know how the whole ADS works. Who looks at the results of the algorithm that is flagging cases of supposed fraud? What are the checks and balances around the decision making process? </p>
+                  </p>ESP is a neural network, which is not very explainable. We can't distinguish which variables algorithm is using and how important they end up being to the eventual results.</p>
 
                   <p>If we knew more about the process and components of the ADS, we would be able to see if there were design decisions to mitigate mistakes like miscategorizing Profirio's bodega.</p>
                 </div>
@@ -1182,16 +1175,14 @@
               <div class="col-4 case_cards">
                 <div class="card  case_cards activator automation-card">
                   <div class="card-content">
-                    <span class="card-title activator">Profirio's Story: Automation<i class="fas fa-plus-circle right"></i></span>
+                    <span class="card-title activator">Automation<i class="fas fa-plus-circle right"></i></span>
                     <span class="card_icon activator"><i class="fas fa-cogs"></i></span>
-                    <p> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
+                    <p>How much of the decision is made by the ADS?<p>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title  automation-title">Automation<i class="fas fa-times right"></i></span>
-                    <h4> High </h4>
-                    </p> As far we know, the USDA algorithm automatically flags transactions it categorizes as "fraud" which results in the USDA sending out a letter to a business owner notifying them that their ability to accept SNAP will be
-                    suspended
-                    unless they prove otherwise.</p>
+                    <h4> Medium </h4>
+                    </p>ESP is advisory. It gives a score, but the Librarians can still use their own knowledge or priorities to decide how much the score guides their decisions on whether to buy a book, how many copies to buy, or where to place the book.</p>
 
                     <p>It is unclear whether a USDA employee reviews the flagged transactions before such a letter is sent.</p>
                   </div>
@@ -1202,20 +1193,16 @@
               <div class="col-4">
                 <div class="card case_cards activator flexibility-card">
                   <div class="card-content">
-                    <span class="card-title activator">Profirio's Story: Flexibility<i class="fas fa-plus-circle right"></i></span>
+                    <span class="card-title activator">Flexibility<i class="fas fa-plus-circle right"></i></span>
                     <span class="card_icon activator"><i class="far fa-circle"></i></span>
-                    <p> Purpose: To Use government funds more efficiently by catching food stamp fraud <p>
+                    <p>Can the ADS be changed easily if people have feedback?</p>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title  flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
                     <h4> Feedback System </h4>
-                    </p> The USDA ADS as a whole is not very flexible because there is not a good feedback system from people who are directly affected by the ADS.</p>
-
-                    <p>Although business owners have the ability to submit feedback if they believe they've been wrongly flagged, this feedback has to be in a very specific form. Moreover, there is no mechanism for businesses or others to tell the
-                      USDA how
-                      it can improve its system. </p>
+                    </p>Librarians have been able to give feedback to the company that runs ESP, but...</p>
                     <h4> Ability and Access to Update </h4>
-                    <p>We're not sure!</p>
+                    <p>ESP is owned by a private company that has to many any updates.</p>
                   </div>
                 </div>
               </div>
@@ -1252,7 +1239,7 @@
         <div class="col">
         </div>
         <div class="col-10">
-          <h4>We've seen how automating decision making can sometimes <b>increase discrimination and inequality</b>. </h4>
+          <h4>We've seen how automating decision making can sometimes increase discrimination and inequality. </h4>
           <p> But this isn't inevitable. </p>
           <p> We can decide when the City should or shouldn't automate decisions. We can ask the tough questions to make sure that government systems don't leave out those of us who have historically been, or are currently being ignored. We can
             bring
