@@ -77,6 +77,10 @@ $('body').scrollspy({ target: '#navbar-side' })
   $(document).ready(function(){
     $('.tooltipped').tooltip();
   });
+  
+  $('.popover-dismiss').popover({
+  trigger: 'focus'
+})
 
 /*
 initializeType();
