@@ -318,10 +318,15 @@ padding-bottom:1%;
 }
 
 .chapter_number{
-  font-size: 400%;
+  font-size: 300%;
   font-weight: lighter;
-  padding: 0;
-  margin: 0;
+  width: 100px;
+  height: 100px;
+  background: var(--main-color);
+  color: white;
+  margin: auto;
+  padding: 18px;
+  border-radius: 50%;
 }
 
 .chapter_title{
