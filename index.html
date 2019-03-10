@@ -195,17 +195,17 @@
             <h3> Why do ADSs matter? <br>Just ask Profirio Mejia.</h3>
           </div>
 
-            <p class="body_emphasis" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Since 2012, Profirio's been running P&L Deli Grocery, a bodega in Washington Heights.</p>
-            <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Like many of his neighbors, Profirio is a Dominican immigrant. The bodega is a place where neighbors go to watch baseball and smoke cigars.
-              Locals know they can count on it for groceries, even when times are tough. </p>
-              <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Profirio works with an anti-hunger advocacy group and knows the importance of the <a href="https://www.fns.usda.gov/snap/eligible-food-items"
-                target="_blank">Supplemental Nutrition Assistance Program (SNAP)</a>, also
-              known as food stamps. More than half of his customers bought their groceries with SNAP benefits from the US Department of Agriculture (USDA). </p>
-              <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">But when their benefits hadn't come in yet, he let them pay on an IOU system. That
-              way, long-time patrons could take home food and settle
-              their bills later.
-            </p>
-            <br><br>
+          <p class="body_emphasis" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Since 2012, Profirio's been running P&L Deli Grocery, a bodega in Washington Heights.</p>
+          <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Like many of his neighbors, Profirio is a Dominican immigrant. The bodega is a place where neighbors go to watch baseball and smoke cigars.
+            Locals know they can count on it for groceries, even when times are tough. </p>
+          <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Profirio works with an anti-hunger advocacy group and knows the importance of the <a href="https://www.fns.usda.gov/snap/eligible-food-items" target="_blank">Supplemental Nutrition
+              Assistance Program (SNAP)</a>, also
+            known as food stamps. More than half of his customers bought their groceries with SNAP benefits from the US Department of Agriculture (USDA). </p>
+          <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">But when their benefits hadn't come in yet, he let them pay on an IOU system. That
+            way, long-time patrons could take home food and settle
+            their bills later.
+          </p>
+          <br><br>
 
         </div>
         <div class="col-6">
@@ -474,14 +474,17 @@
             Some ADS involve multiple algorithms, hundreds of thousands of data points, and variables that are given different <strong>weights</strong> or priority. But really, the building blocks are the same.
           </p>
 
-            <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">In some cases, people have control over what steps the algorithm takes. For example, people--like you--might decide which variables are the most important in buying avocados or predicting a place that is committing food-stamp fraud. </p>
-              <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">In other cases, data is given to a computer, and that computer analyses the data, learns about it, and then decides which variables are important. </p>
-              <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">When a computer learns on its own rather than you telling it which variables are important, this is called a <strong class="tooltip_definition">machine learning algorithm</strong>. They are less transparent because we don't
-              always
-              know why the computer places more
-              or less importance of different variables.
-            </p>
-            <p class="body_takeaway" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">ADS can involve multiple algorithms, hundreds of thousands of data points, and variables that are given different weights or priority or chosen by the computer. But, the building blocks are the same. </p>
+          <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">In some cases, people have control over what steps the algorithm takes. For example, people--like you--might decide which variables are the most important in buying avocados or
+            predicting a place that is committing food-stamp fraud. </p>
+          <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">In other cases, data is given to a computer, and that computer analyses the data, learns about it, and then decides which variables are important. </p>
+          <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">When a computer learns on its own rather than you telling it which variables are important, this is called a <strong class="tooltip_definition">machine learning algorithm</strong>. They
+            are less transparent because we don't
+            always
+            know why the computer places more
+            or less importance of different variables.
+          </p>
+          <p class="body_takeaway" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">ADS can involve multiple algorithms, hundreds of thousands of data points, and variables that are given different weights or priority or chosen by the computer.
+            But, the building blocks are the same. </p>
 
         </div>
         <div class="col"></div>
@@ -491,193 +494,193 @@
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <h2 id="toyAlgo"> Can I play with an algorithm?</h2>
         </div>
-        <div class="row align-items-center toyAlgoRow">
-          <div class="col-4">
-            <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-              <p>Sure! Let’s try out a toy algorithm to help an [imaginary fire department] predict which buildings are at the highest risk for fire.
-              </p>
-              <p>
-                Click on different combinations of variables. Which ones variables do you think can best predict whether a building will catch on fire?
-              </p>
-              <p>As you select variables, on the left hand side you'll see which buildings the algorithm predicts will catch on fire.
-              </p>
+      </div>
+      <div class="row align-items-center toyAlgoRow">
+        <div class="col-4">
+          <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+            <p>Sure! Let’s try out a toy algorithm to help an [imaginary fire department] predict which buildings are at the highest risk for fire.
+            </p>
+            <p>
+              Click on different combinations of variables. Which ones variables do you think can best predict whether a building will catch on fire?
+            </p>
+            <p>As you select variables, on the left hand side you'll see which buildings the algorithm predicts will catch on fire.
+            </p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" id="toy-algo-houses-area"></div>
+        </div>
+      </div>
+      <div class="row align-items-center toyAlgoRow">
+        <div class="col-12">
+          <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+            <button type="button" class="btn btn-secondary toy_buttons" id="age" onclick="updateToyAlgo(id)"> Building Age </button>
+            <button type="button" class="btn btn-secondary toy_buttons" id="style" onclick="updateToyAlgo(id)"> Architectural Style </button>
+            <button type="button" class="btn btn-secondary toy_buttons" id="sq_footage" onclick="updateToyAlgo(id)"> Square Footage </button>
+            <button type="button" class="btn btn-secondary toy_buttons" id="neighborhood" onclick="updateToyAlgo(id)"> Neighborhood </button>
+            <button type="button" class="btn btn-secondary toy_buttons" id="prev_fire" onclick="updateToyAlgo(id)"> Proximity to Previous Fires </button>
+            <button type="button" class="btn btn-secondary toy_buttons" id="height" onclick="updateToyAlgo(id)"> Height </button>
+            <button type="button" class="btn btn-secondary toy_buttons" id="no_occupants" onclick="updateToyAlgo(id)"> Number of Occupants </button>
+            <button type="button" class="btn btn-secondary toy_buttons" id="business" onclick="updateToyAlgo(id)"> Business </button>
+            <button type="button" class="btn btn-secondary toy_buttons" id="last_inspection" onclick="updateToyAlgo(id)"> Last Inspection</button>
+            <button type="button" class="btn btn-secondary toy_buttons" id="no_windows" onclick="updateToyAlgo(id)"> Number of Windows </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- frameworks-->
+    <div class="container page new_section" id="frameworks">
+      <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+        <h1 class="chapter_number">Chapter 3</h1>
+        <h1 class="chapter_title">Frameworks</h1>
+      </div>
+      <div class="row align-items-center">
+        <div class="col"> </div>
+        <div class="col-7">
+          <h3> So are ADSs good or bad?</h3>
+          <p data-scroll="toggle(.fromBottomIn,.fromBottomOut)">Unfortunately this isn't a yes or no question. But in order to start tackling this question we need to develop a framework to think critically about ADSs. </p>
+
+          <p data-scroll="toggle(.fromBottomIn,.fromBottomOut)">Remember, ADSs are systems that involve both algorithms and humans. They <strong>have the potential to reproduce, worsen, and sometimes accelerate unjust systems</strong>. </p>
+
+          <p data-scroll="toggle(.fromBottomIn,.fromBottomOut)">What are the components of an ADS that we can <strong>evaluate</strong> to check for this?</p>
+        </div>
+        <div class="col"> </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col"> </div>
+        <div class="col-7">
+          <h3 data-scroll="toggle(.fromBottomIn,.fromBottomOut)"> A good ADS starts with a good purpose</h3>
+          <h4 data-scroll="toggle(.fromBottomIn,.fromBottomOut)"> How does the agency define the goal of the ADS and why are they automating a component of the decision making process?</h4>
+          <p data-scroll="toggle(.fromBottomIn,.fromBottomOut)"><strong>Purpose</strong> will color, or frame our thinking. It is the first step before we do our evaluation.</p>
+
+          <p data-scroll="toggle(.fromBottomIn,.fromBottomOut)">Some purposes cause more reason for concern than others.</p>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">Good Purpose</div>
+              <div class="collapsible-body"><span>
+                  <p>A purpose like "to improve the lives of New Yorkers and undo unjust systems" tends to be really good and not cause much concern because it means the ADS could be designed with that potential of unjust systems in mind.</p>
+                </span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">Neutral Purpose</div>
+              <div class="collapsible-body"><span>
+                  <p>A purpose like "to do an existing task more efficiently" is a common purpose governments use for why they are automating part of a decision making process. This purpose can be okay, but it doesn't explicitly acknowledge unjust
+                    systems, meaning it might accidentally reproduce, worsen, or accelarate an unjust system. We want to be critical of these sorts of purposes.
+                  </p>
+                </span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">Bad Purpose</div>
+              <div class="collapsible-body"><span>
+                  <p>
+                    A purpose like "to cut services or benefits from vulnerable people" is very problematic. If this is the purpose, we might want to totally reject this project because it will almost definitely reproduce, worsen, or accelarte an
+                    unjust system.</p>
+                </span></div>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col"> </div>
+      </div>
+
+
+      <div class="row align-items-center">
+        <div class="col"></div>
+        <div class="col-10">
+          <h3 data-scroll="toggle(.fromBottomIn,.fromBottomOut)"> If we like the purpose enough we should start thinking about the technical components.</h3>
+          <p> We should make sure they match. Otherwise, the ADS might accidentally reproduce, worsen, or accelerate unjust systems.</p>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row small-card-row">
+
+        <div class="col">
+          <a href="#impact_section" class="frameworks_links">
+            <div class="card impact-card small-card fade-container">
+              <div class="card-content">
+                <h4>Impact</h4>
+                <p> Who is affected by the ADS and how?</p>
+              </div>
+              <div class="overlay">
+                <div class="icon-fade"> <i class="fas fa-bolt"></i></div>
+              </div>
             </div>
-          </div>
-          <div class="col-6">
-            <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" id="toy-algo-houses-area"></div>
-          </div>
+          </a>
         </div>
-        <div class="row align-items-center toyAlgoRow">
-          <div class="col-12">
-            <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-              <button type="button" class="btn btn-secondary toy_buttons" id="age" onclick="updateToyAlgo(id)"> Building Age </button>
-              <button type="button" class="btn btn-secondary toy_buttons" id="style" onclick="updateToyAlgo(id)"> Architectural Style </button>
-              <button type="button" class="btn btn-secondary toy_buttons" id="sq_footage" onclick="updateToyAlgo(id)"> Square Footage </button>
-              <button type="button" class="btn btn-secondary toy_buttons" id="neighborhood" onclick="updateToyAlgo(id)"> Neighborhood </button>
-              <button type="button" class="btn btn-secondary toy_buttons" id="prev_fire" onclick="updateToyAlgo(id)"> Proximity to Previous Fires </button>
-              <button type="button" class="btn btn-secondary toy_buttons" id="height" onclick="updateToyAlgo(id)"> Height </button>
-              <button type="button" class="btn btn-secondary toy_buttons" id="no_occupants" onclick="updateToyAlgo(id)"> Number of Occupants </button>
-              <button type="button" class="btn btn-secondary toy_buttons" id="business" onclick="updateToyAlgo(id)"> Business </button>
-              <button type="button" class="btn btn-secondary toy_buttons" id="last_inspection" onclick="updateToyAlgo(id)"> Last Inspection</button>
-              <button type="button" class="btn btn-secondary toy_buttons" id="no_windows" onclick="updateToyAlgo(id)"> Number of Windows </button>
+
+
+        <div class="col">
+          <a href="#bias_section" class="frameworks_links">
+            <div class="card machine-bias-card small-card fade-container">
+              <div class="card-content">
+                <h4>Bias</h4>
+                <p> What inputs in the ADS produce problems?</p>
+              </div>
+              <div class="overlay">
+                <div class="icon-fade"> <i class="fas fa-robot"></i></div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-
-      </div>
-
-
-<!-- frameworks-->
-<div class="container page new_section" id="frameworks">
-  <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-    <h1 class="chapter_number">Chapter 3</h1>
-    <h1 class="chapter_title">Frameworks</h1>
-  </div>
-  <div class="row align-items-center">
-    <div class="col"> </div>
-    <div class="col-7">
-      <h3> So are ADSs good or bad?</h3>
-      <p data-scroll="toggle(.fromBottomIn,.fromBottomOut)">Unfortunately this isn't a yes or no question. But in order to start tackling this question we need to develop a framework to think critically about ADSs. </p>
-
-      <p data-scroll="toggle(.fromBottomIn,.fromBottomOut)">Remember, ADSs are systems that involve both algorithms and humans. They <strong>have the potential to reproduce, worsen, and sometimes accelerate unjust systems</strong>. </p>
-
-      <p data-scroll="toggle(.fromBottomIn,.fromBottomOut)">What are the components of an ADS that we can <strong>evaluate</strong> to check for this?</p>
-    </div>
-    <div class="col"> </div>
-  </div>
-</div>
-    <div class="row align-items-center">
-      <div class="col"> </div>
-      <div class="col-7">
-        <h3 data-scroll="toggle(.fromBottomIn,.fromBottomOut)"> A good ADS starts with a good purpose</h3>
-        <h4 data-scroll="toggle(.fromBottomIn,.fromBottomOut)"> How does the agency define the goal of the ADS and why are they automating a component of the decision making process?</h4>
-        <p data-scroll="toggle(.fromBottomIn,.fromBottomOut)"><strong>Purpose</strong> will color, or frame our thinking. It is the first step before we do our evaluation.</p>
-
-        <p data-scroll="toggle(.fromBottomIn,.fromBottomOut)">Some purposes cause more reason for concern than others.</p>
-        <ul class="collapsible">
-          <li>
-            <div class="collapsible-header">Good Purpose</div>
-            <div class="collapsible-body"><span>
-                <p>A purpose like "to improve the lives of New Yorkers and undo unjust systems" tends to be really good and not cause much concern because it means the ADS could be designed with that potential of unjust systems in mind.</p>
-              </span></div>
-          </li>
-          <li>
-            <div class="collapsible-header">Neutral Purpose</div>
-            <div class="collapsible-body"><span>
-                <p>A purpose like "to do an existing task more efficiently" is a common purpose governments use for why they are automating part of a decision making process. This purpose can be okay, but it doesn't explicitly acknowledge unjust
-                  systems, meaning it might accidentally reproduce, worsen, or accelarate an unjust system. We want to be critical of these sorts of purposes.
-                </p>
-              </span></div>
-          </li>
-          <li>
-            <div class="collapsible-header">Bad Purpose</div>
-            <div class="collapsible-body"><span>
-                <p>
-                  A purpose like "to cut services or benefits from vulnerable people" is very problematic. If this is the purpose, we might want to totally reject this project because it will almost definitely reproduce, worsen, or accelarte an
-                  unjust system.</p>
-              </span></div>
-          </li>
-        </ul>
-
-      </div>
-      <div class="col"> </div>
-    </div>
-
-
-    <div class="row align-items-center">
-      <div class="col"></div>
-      <div class="col-10">
-        <h3 data-scroll="toggle(.fromBottomIn,.fromBottomOut)"> If we like the purpose enough we should start thinking about the technical components.</h3>
-        <p> We should make sure they match. Otherwise, the ADS might accidentally reproduce, worsen, or accelerate unjust systems.</p>
-      </div>
-      <div class="col"></div>
-    </div>
-
-        <div class="row small-card-row">
-          <div class="col">
-        <a href="#impact_section" class="frameworks_links">
-        <div class="card impact-card small-card fade-container">
-          <div class="card-content">
-
-            <h4>Impact</h4>
-            <p> Who is affected by the ADS and how?</p>
-          </div>
-
-        <div class="overlay">
-            <div class="icon-fade"> <i class="fas fa-bolt"></i></div>
-        </a>
-        </div>
-          </div>
-
-      </div>
-
 
         <div class="col">
-            <a href="#bias_section" class="frameworks_links">
-        <div class="card machine-bias-card small-card fade-container">
-          <div class="card-content">
-            <h4>Bias</h4>
-            <p> What inputs in the ADS produce problems?</p>
-          </div>
-          <div class="overlay">
-              <div class="icon-fade"> <i class="fas fa-robot"></i></div>
+          <a href="#explainability_section" class="frameworks_links">
+            <div class="card explainability-card small-card  fade-container">
+              <div class="card-content">
+                <h4>Explainability</h4>
+                <p> How easy is it for humans to understand how the ADS works?</p>
+              </div>
+              <div class="overlay">
+                <div class="icon-fade"> <i class="fas fa-question-circle"></i></div>
+              </div>
+            </div>
           </a>
-          </div>
         </div>
-      </div>
 
         <div class="col">
-            <a href="#explainability_section" class="frameworks_links">
-        <div class="card explainability-card small-card  fade-container">
-          <div class="card-content">
-            <h4>Explainability</h4>
-            <p> How easy is it for humans to understand how the ADS works?</p>
-          </div>
-          <div class="overlay">
-              <div class="icon-fade"> <i class="fas fa-question-circle"></i></div>
+          <a href="#automation_section" class="frameworks_links">
+            <div class="card automation-card small-card  fade-container">
+              <div class="card-content">
+                <h4>Automation</h4>
+                <p> How much of the decision is made by the ADS?</p>
+              </div>
+              <div class="overlay">
+                <div class="icon-fade"> <i class="fas fa-cogs"></i></div>
+              </div>
+            </div>
           </a>
-          </div>
         </div>
-      </div>
-
-          <div class="col">
-              <a href="#automation_section" class="frameworks_links">
-        <div class="card automation-card small-card  fade-container">
-          <div class="card-content">
-            <h4>Automation</h4>
-            <p> How much of the decision is made by the ADS?</p>
-          </div>
-          <div class="overlay">
-              <div class="icon-fade"> <i class="fas fa-cogs"></i></div>
-          </a>
-          </div>
-        </div>
-      </div>
 
         <div class="col">
-            <a href="#flexibility_section" class="frameworks_links">
-        <div class="card flexibility-card small-card  fade-container">
-          <div class="card-content">
-            <h4>Flexibility</h4>
-            <p> Can the ADS be changed easily if people have feedback?</p>
-          </div>
-          <div class="overlay">
-              <div class="icon-fade"> <i class="far fa-circle"></i></div>
+          <a href="#flexibility_section" class="frameworks_links">
+            <div class="card flexibility-card small-card  fade-container">
+              <div class="card-content">
+                <h4>Flexibility</h4>
+                <p> Can the ADS be changed easily if people have feedback?</p>
+              </div>
+              <div class="overlay">
+                <div class="icon-fade"> <i class="far fa-circle"></i></div>
+              </div>
+            </div>
           </a>
-          </div>
         </div>
+
       </div>
 
-    </div>
 
-
-    <div class="row align-items-center" id="profirio_framework">
-      <div class="col"></div>
-      <div class="col-10">
-        <h3 data-scroll="toggle(.fromBottomIn,.fromBottomOut)" > Let's look at Profirio's story through this framework.</h3>
+      <div class="row align-items-center" id="profirio_framework">
+        <div class="col"></div>
+        <div class="col-10">
+          <h3 data-scroll="toggle(.fromBottomIn,.fromBottomOut)"> Let's look at Profirio's story through this framework.</h3>
+        </div>
+        <div class="col"></div>
       </div>
-      <div class="col"></div>
-    </div>
+
 
 
 
@@ -995,291 +998,300 @@
 
 
 
-    <!-- CASE STUDIES -->
-    <div id="someExamples" class="container page case_study new_section">
-      <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+  <!-- CASE STUDIES -->
+  <div id="someExamples" class="container page case_study new_section">
+    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
       <h1 class="chapter_number"> Chapter 4 </h1>
-        <h1 class="chapter_title">Some examples</h1>
+      <h1 class="chapter_title">Some examples</h1>
+    </div>
+
+    <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+      <div class="col"></div>
+      <div class="col-10">
+        <h3> Learn about some real ADSs being used in NYC.</h3>
       </div>
+      <div class="col"></div>
+    </div>
 
-            <div class="row align-items-center"data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-              <div class="col"></div>
-              <div class="col-10">
-                <h3> Learn about some real ADSs being used in NYC.</h3>
+
+    <!-- PUBLIC LIBRARY CASE STUDY -->
+    <button id="nypl_accordian" class="accordion"><i class="fas fa-book-reader"></i>&nbsp; Public Library &nbsp;<i class="fas fa-sort-down"></i>
+    </button>
+    <div class="panel">
+      <div id="NYPL_case">
+        <div class="row align-items-icon_center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <div class="col"></div>
+          <div class="col-8">
+            <h2 id="NYPL"> New York Public Library uses an algorithm to stock books </h2>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col"></div>
+          <div class="col-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+            <p id="nypl_problem_statement">
+              A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and it's hard to test out new books by buying and returning them at a large scale. How can librarians
+              tell
+              which
+              books
+              will be popular with their patrons? What else should they consider when they're picking titles for their library branch?
+            </p>
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col"></div>
+          <div class="col-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+            <h3>Libraries use ESP to guess what we want to read</h3>
+            <br>
+            No, not extra-sensory perception.
+            <br>
+            <br>
+            ESP is an algorithm that uses library and non-library data to recommend books it thinks will be popular. Here's how the system works:
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <div class="col-3">
+            <span class="algorithm_icons">
+              <i class="fab fa-amazon"></i>
+            </span>
+          </div>
+          <div class="col-1">
+            <span class="algorithm_arrows"><i class="fas fa-arrow-right"></i></span>
+          </div>
+          <div class="col-4">
+
+            <span class="algorithm_icons"><i class="fas fa-book"></i></span>
+
+          </div>
+          <div class="col-1">
+            <span class="algorithm_arrows"><i class="fas fa-arrow-right"></i><span>
+          </div>
+          <div class="col-3">
+            <span class="algorithm_icons"><i class="fas fa-user"></i><span>
+          </div>
+        </div>
+
+        <div class="row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+
+          <div class="col-4">
+            The library feeds ESP is fed circulation data (like which books have been checked out) and sales data (like Amazon purchases). In case you're wondering, no it doesn't use book reviews yet.
+          </div>
+          <div class="col-4">
+            The ESP algorithm looks for historical patterns in the data and makes suggestions for what books to stock at which branches. For example it might predict where the young adult book "Twilight" will be popular because that neighborhood has
+            lots of teenagers that checked out "Dracula" and "Harry Potter".
+          </div>
+          <div class="col-4">
+            Then, it's up to the librarian to choose whether or not to follow the algorithm's advice.
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col"></div>
+          <div class="col-7">
+            <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">So, which factors matter when ESP rates books?</h3>
+            <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> We don't actually know. ESP is a <span class="tooltip_definition"> neural network</span> algorithm, which is kind of a black box. We know which datasets ESP uses, but the patterns
+              it's using to make recommendations are fuzzy.</p>
+            <p>To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their
+              experience and knowledge. </p>
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col"></div>
+          <div class="col-7">
+            <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">But we get better book picks, right?</h3>
+            <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Not so fast. </p>
+            <p> As a neural network, ESP doesn't work as well if there isn't a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well. But it might have a harder time when guessing which debut
+              fiction (e.g. an author’s first book) will be a hit with readers </p>
+            <p> Even if we have a bunch of data from Amazon or other book sellers, the data might not be representative of many NYC communities, particularly minorities and low income individuals--some of the largest users of library services that
+              could purchase fewer books. This means that the recommendations ESP produces might not reflect what patrons want and may not be easy to change unless we get a whole lot more data.</p>
+            <p> Also, it depends on what you mean by "better". What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the algorithm to figure out preferences for people who don't
+              already check out books.</p>
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col"></div>
+          <div class="col-7">
+            <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Don't librarians still have final say?</h3>
+            <p>Yup! Preserving librarians' power to make decisions helps to address the possible problems with ESP. Still, librarians' choices may be swayed by what seems like a concrete, numerical score based on mathematical equations.</p>
+            <p>ESP augments a librarian's choices by highlighting gaps in a librarian's knowledge and experience. On the flip side, it could sway librarians away from trusting their own instincts on what their branch needs.</p>
+          </div>
+          <div class="col"></div>
+        </div>
+        <!--NYPL CARDS-->
+        <div class="row">
+          <div class="col-4">
+            <div class="card  case_cards activator impact-card">
+              <div class="card-content activator">
+                <span class="card-title activator">Impact<i class="fas fa-plus-circle right"></i></span>
+                <span class="card_icon activator"><i class="fas fa-bolt"></i></span>
+                <p class="activator">Who does the ADS affect and how?<p>
               </div>
-              <div class="col"></div>
-            </div>
-
-
-          <!-- PUBLIC LIBRARY CASE STUDY -->
-          <button id="nypl_accordian" class="accordion"><i class="fas fa-book-reader"></i>&nbsp; Public Library &nbsp;<i class="fas fa-sort-down"></i>
-          </button>
-          <div class="panel">
-            <div id="NYPL_case">
-              <div class="row align-items-icon_center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                <div class="col"></div>
-                <div class="col-8">
-                <h2 id="NYPL"> New York Public Library uses an algorithm to stock books </h2>
-                </div>
-                <div class="col"></div>
-              </div>
-              <div class="row align-items-center">
-                <div class="col"></div>
-                <div class="col-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                  <p id="nypl_problem_statement">
-                    A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and it's hard to test out new books by buying and returning them at a large scale. How can librarians
-                    tell
-                    which
-                    books
-                    will be popular with their patrons? What else should they consider when they're picking titles for their library branch?
-                  </p>
-                </div>
-                <div class="col"></div>
-              </div>
-
-              <div class="row align-items-center">
-                <div class="col"></div>
-                <div class="col-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                  <h3>Libraries use ESP to guess what we want to read</h3>
-                  <br>
-                  No, not extra-sensory perception.
-                  <br>
-                  <br>
-                  ESP is an algorithm that uses library and non-library data to recommend books it thinks will be popular. Here's how the system works:
-                </div>
-                <div class="col"></div>
-              </div>
-
-              <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-                <div class="col-3">
-                  <span class="algorithm_icons">
-                    <i class="fab fa-amazon"></i>
-                  </span>
-                </div>
-                <div class="col-1">
-                  <span class="algorithm_arrows"><i class="fas fa-arrow-right"></i></span>
-                </div>
-                <div class="col-4">
-
-                  <span class="algorithm_icons"><i class="fas fa-book"></i></span>
-
-                </div>
-                <div class="col-1">
-                  <span class="algorithm_arrows"><i class="fas fa-arrow-right"></i><span>
-                </div>
-                <div class="col-3">
-                  <span class="algorithm_icons"><i class="fas fa-user"></i><span>
-                </div>
-              </div>
-
-              <div class="row" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-
-                <div class="col-4">
-                  The library feeds ESP is fed circulation data (like which books have been checked out) and sales data (like Amazon purchases). In case you're wondering, no it doesn't use book reviews yet.
-                </div>
-                <div class="col-4">
-                  The ESP algorithm looks for historical patterns in the data and makes suggestions for what books to stock at which branches. For example it might predict where the young adult book "Twilight" will be popular because that neighborhood has lots of teenagers that checked out "Dracula" and "Harry Potter".
-                </div>
-                <div class="col-4">
-                  Then, it's up to the librarian to choose whether or not to follow the algorithm's advice.
-                </div>
-              </div>
-
-              <div class="row align-items-center">
-                <div class="col"></div>
-                <div class="col-7">
-                  <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">So, which factors matter when ESP rates books?</h3>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> We don't actually know. ESP is a <span class="tooltip_definition"> neural network</span> algorithm, which is kind of a black box. We know which datasets ESP uses, but the patterns it's using to make recommendations are fuzzy.</p>
-                  <p>To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their experience and knowledge. </p>
-                </div>
-                <div class="col"></div>
-              </div>
-
-              <div class="row align-items-center">
-                <div class="col"></div>
-                <div class="col-7">
-                  <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">But we get better book picks, right?</h3>
-                  <p data-scroll="toggle(.fromBottomIn, .fromBottomOut)"> Not so fast. </p>
-                  <p> As a neural network, ESP doesn't work as well if there isn't a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well. But it might have a harder time when guessing which debut fiction (e.g. an author’s first book) will be a hit with readers </p>
-                  <p> Even if we have a bunch of data from Amazon or other book sellers, the data might not be representative of many NYC communities, particularly minorities and low income individuals--some of the largest users of library services that could purchase fewer books. This means that the recommendations ESP produces might not reflect what patrons want and may not be easy to change unless we get a whole lot more data.</p>
-                  <p> Also, it depends on what you mean by "better". What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the algorithm to figure out preferences for people who don't already check out books.</p>
-                </div>
-                <div class="col"></div>
-              </div>
-
-              <div class="row align-items-center">
-                <div class="col"></div>
-                <div class="col-7">
-                  <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Don't librarians still have final say?</h3>
-                  <p>Yup! Preserving librarians' power to make decisions helps to address the possible problems with ESP. Still, librarians' choices may be swayed  by what seems like a concrete, numerical score based on mathematical equations.</p>
-                  <p>ESP augments a librarian's choices by highlighting gaps in a librarian's knowledge and experience. On the flip side, it could sway librarians away from trusting their own instincts on what their branch needs.</p>
-                </div>
-                <div class="col"></div>
-              </div>
-      <!--NYPL CARDS-->
-          <div class="row">
-              <div class="col-4" >
-                <div class="card  case_cards activator impact-card">
-                  <div class="card-content activator">
-                    <span class="card-title activator">Impact<i class="fas fa-plus-circle right"></i></span>
-                    <span class="card_icon activator"><i class="fas fa-bolt"></i></span>
-                    <p class="activator">Who does the ADS affect and how?<p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
-                    <h4> Scale </h4>
-                    </p>Large scale. A lot of people use libraries.</p>
-                    <h4> Scope </h4>
-                    <p>Superficial. Books are great, but probably not as serious as other social services and it's not about life or death.</p>
-                    <h4> Vulnerability </h4>
-                    <p>This depends on how you look at it. People who need to use libraries might be more vulnerable because they don't have other means to get knowledge. People who's books don't get great reviews are more likely to be vulnerable people (new authors, authors that are underrepresented, topics that are underrepresented).</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card  case_cards activator machine-bias-card">
-                  <div class="card-content">
-                    <span class="card-title activator">Bias<i class="fas fa-plus-circle right"></i></span>
-                    <span class="card_icon activator"><i class="fas fa-robot"></i></span>
-                    <p>What inputs in the ADS produce problems?<p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
-                    <h4>Data</h4>
-                    </p> ESP uses a lot of data which incorporates both library and private book sale data but is unable currently to take in other forms of data like book reviews. The data doesn't account for human biased equity issues. Sales data may be based on higher-income individuals. Libraries should think about books that their unique populations need and value.</p>
-                    <h4> Algorithm Model </h4>
-                    <p>ESP uses a neural network. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know if what kinds of bias in the data are driving outcomes.                    </p>
-                  </div>
-                </div>
-              </div>
-
-            <div class="col-4">
-              <div class="card  case_cards activator explainability-card">
-                <div class="card-content">
-                  <span class="card-title activator">Explainability<i class="fas fa-plus-circle right"></i></span>
-                  <span class="card_icon activator"><i class="fas fa-question-circle"></i></span>
-                  <p>How easy is it for humans to understand how the ADS works?<p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
-
-                  </p>ESP is a neural network, which is not very explainable. We can't distinguish which variables algorithm is using and how important they end up being to the eventual results.</p>
-
-                  <p>If we knew more about the process and components of the ADS, we would be able to see if there were design decisions to mitigate mistakes like miscategorizing Profirio's bodega.</p>
-                </div>
+              <div class="card-reveal">
+                <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
+                <h4> Scale </h4>
+                </p>Large scale. A lot of people use libraries.</p>
+                <h4> Scope </h4>
+                <p>Superficial. Books are great, but probably not as serious as other social services and it's not about life or death.</p>
+                <h4> Vulnerability </h4>
+                <p>This depends on how you look at it. People who need to use libraries might be more vulnerable because they don't have other means to get knowledge. People who's books don't get great reviews are more likely to be vulnerable people
+                  (new authors, authors that are underrepresented, topics that are underrepresented).</p>
               </div>
             </div>
+          </div>
+          <div class="col-4">
+            <div class="card  case_cards activator machine-bias-card">
+              <div class="card-content">
+                <span class="card-title activator">Bias<i class="fas fa-plus-circle right"></i></span>
+                <span class="card_icon activator"><i class="fas fa-robot"></i></span>
+                <p>What inputs in the ADS produce problems?<p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
+                <h4>Data</h4>
+                </p> ESP uses a lot of data which incorporates both library and private book sale data but is unable currently to take in other forms of data like book reviews. The data doesn't account for human biased equity issues. Sales data may
+                be based on higher-income individuals. Libraries should think about books that their unique populations need and value.</p>
+                <h4> Algorithm Model </h4>
+                <p>ESP uses a neural network. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know if what kinds of bias in the data are driving outcomes. </p>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-4">
+            <div class="card  case_cards activator explainability-card">
+              <div class="card-content">
+                <span class="card-title activator">Explainability<i class="fas fa-plus-circle right"></i></span>
+                <span class="card_icon activator"><i class="fas fa-question-circle"></i></span>
+                <p>How easy is it for humans to understand how the ADS works?<p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
+
+                </p>ESP is a neural network, which is not very explainable. We can't distinguish which variables algorithm is using and how important they end up being to the eventual results.</p>
+
+                <p>If we knew more about the process and components of the ADS, we would be able to see if there were design decisions to mitigate mistakes like miscategorizing Profirio's bodega.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-4 case_cards">
+            <div class="card  case_cards activator automation-card">
+              <div class="card-content">
+                <span class="card-title activator">Automation<i class="fas fa-plus-circle right"></i></span>
+                <span class="card_icon activator"><i class="fas fa-cogs"></i></span>
+                <p>How much of the decision is made by the ADS?<p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title  automation-title">Automation<i class="fas fa-times right"></i></span>
+                <h4> Medium </h4>
+                </p>ESP is advisory. It gives a score, but the Librarians can still use their own knowledge or priorities to decide how much the score guides their decisions on whether to buy a book, how many copies to buy, or where to place the
+                book.</p>
+
+                <p>It is unclear whether a USDA employee reviews the flagged transactions before such a letter is sent.</p>
+              </div>
             </div>
 
-            <div class="row">
-              <div class="col-4 case_cards">
-                <div class="card  case_cards activator automation-card">
-                  <div class="card-content">
-                    <span class="card-title activator">Automation<i class="fas fa-plus-circle right"></i></span>
-                    <span class="card_icon activator"><i class="fas fa-cogs"></i></span>
-                    <p>How much of the decision is made by the ADS?<p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title  automation-title">Automation<i class="fas fa-times right"></i></span>
-                    <h4> Medium </h4>
-                    </p>ESP is advisory. It gives a score, but the Librarians can still use their own knowledge or priorities to decide how much the score guides their decisions on whether to buy a book, how many copies to buy, or where to place the book.</p>
+          </div>
 
-                    <p>It is unclear whether a USDA employee reviews the flagged transactions before such a letter is sent.</p>
-                  </div>
-                </div>
-
+          <div class="col-4">
+            <div class="card case_cards activator flexibility-card">
+              <div class="card-content">
+                <span class="card-title activator">Flexibility<i class="fas fa-plus-circle right"></i></span>
+                <span class="card_icon activator"><i class="far fa-circle"></i></span>
+                <p>Can the ADS be changed easily if people have feedback?</p>
               </div>
-
-              <div class="col-4">
-                <div class="card case_cards activator flexibility-card">
-                  <div class="card-content">
-                    <span class="card-title activator">Flexibility<i class="fas fa-plus-circle right"></i></span>
-                    <span class="card_icon activator"><i class="far fa-circle"></i></span>
-                    <p>Can the ADS be changed easily if people have feedback?</p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title  flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
-                    <h4> Feedback System </h4>
-                    </p>Librarians have been able to give feedback to the company that runs ESP, but...</p>
-                    <h4> Ability and Access to Update </h4>
-                    <p>ESP is owned by a private company that has to many any updates.</p>
-                  </div>
-                </div>
+              <div class="card-reveal">
+                <span class="card-title  flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
+                <h4> Feedback System </h4>
+                </p>Librarians have been able to give feedback to the company that runs ESP, but...</p>
+                <h4> Ability and Access to Update </h4>
+                <p>ESP is owned by a private company that has to many any updates.</p>
               </div>
+            </div>
           </div>
         </div>
       </div>
-
-          <!-- PARKS AND REC CASE STUDY -->
-          <button id="workerConnect_accordian" class="accordion"><i class="fas fa-tree"></i>&nbsp;Parks & Recreation &nbsp;<i class="fas fa-sort-down"></i>
-          </button>
-          <div class="panel">
-            <h1 id="workerConnect"> Case coming soon!</h1>
-          </div>
-
-          <!-- FDNY CASE STUDY -->
-          <button id="fdny_accordian" class="accordion"><i class="fas fa-fire"></i>&nbsp; Fire Department &nbsp;<i class="fas fa-sort-down"></i>
-          </button>
-          <div class="panel">
-            <h1 id="FDNY"> Case coming soon!</h1>
-          </div>
     </div>
+
+    <!-- PARKS AND REC CASE STUDY -->
+    <button id="workerConnect_accordian" class="accordion"><i class="fas fa-tree"></i>&nbsp;Parks & Recreation &nbsp;<i class="fas fa-sort-down"></i>
+    </button>
+    <div class="panel">
+      <h1 id="workerConnect"> Case coming soon!</h1>
+    </div>
+
+    <!-- FDNY CASE STUDY -->
+    <button id="fdny_accordian" class="accordion"><i class="fas fa-fire"></i>&nbsp; Fire Department &nbsp;<i class="fas fa-sort-down"></i>
+    </button>
+    <div class="panel">
+      <h1 id="FDNY"> Case coming soon!</h1>
+    </div>
+  </div>
   </div>
 
 
 
-    <!-- What's Next Page -->
-    <div class="container page new_section">
-      <div id="getActive" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-        <h1 class="chapter_number">Chapter 5</h1><br>
-        <h1 class="chapter_title">What should we do?</h1>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col">
-        </div>
-        <div class="col-10">
-          <h4>We've seen how automating decision making can sometimes increase discrimination and inequality. </h4>
-          <p> But this isn't inevitable. </p>
-          <p> We can decide when the City should or shouldn't automate decisions. We can ask the tough questions to make sure that government systems don't leave out those of us who have historically been, or are currently being ignored. We can
-            bring
-            together our diverse experiences to make our voices stronger. </p>
-        </div>
-        <div class="col">
-        </div>
-      </div>
-
-      <div class="row align-items-top">
-        <div class="col-4">
-          <div class="card" ckass="active_card">
-            <div class="card-content">
-              <h3>Build Power</h3>
-              <p> Connect with other members of this advocacy community.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card" ckass="active_card">
-            <div class="card-content">
-              <h3>Advocate</h3>
-              <p> Use these templates to reach out to your local elected officials to keep pushing the work of the ADS Taskforce!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div class="card" ckass="active_card">
-            <div class="card-content">
-              <h3>Learn More</h3>
-              <p> Dig deeper into the articles, papers, and books we used to make the website.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
+  <!-- What's Next Page -->
+  <div class="container page new_section">
+    <div id="getActive" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+      <h1 class="chapter_number">Chapter 5</h1><br>
+      <h1 class="chapter_title">What should we do?</h1>
     </div>
+
+    <div class="row align-items-center">
+      <div class="col">
+      </div>
+      <div class="col-10">
+        <h4>We've seen how automating decision making can sometimes increase discrimination and inequality. </h4>
+        <p> But this isn't inevitable. </p>
+        <p> We can decide when the City should or shouldn't automate decisions. We can ask the tough questions to make sure that government systems don't leave out those of us who have historically been, or are currently being ignored. We can
+          bring
+          together our diverse experiences to make our voices stronger. </p>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+
+    <div class="row align-items-top">
+      <div class="col-4">
+        <div class="card" ckass="active_card">
+          <div class="card-content">
+            <h3>Build Power</h3>
+            <p> Connect with other members of this advocacy community.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card" ckass="active_card">
+          <div class="card-content">
+            <h3>Advocate</h3>
+            <p> Use these templates to reach out to your local elected officials to keep pushing the work of the ADS Taskforce!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card" ckass="active_card">
+          <div class="card-content">
+            <h3>Learn More</h3>
+            <p> Dig deeper into the articles, papers, and books we used to make the website.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
 
 
   </div>
