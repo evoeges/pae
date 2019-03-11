@@ -77,7 +77,11 @@ $('body').scrollspy({ target: '#navbar-side' })
   $(document).ready(function(){
     $('.tooltipped').tooltip();
   });
-  
+
+//enable popover
+$("[data-toggle=popover]")
+.popover({html:true})
+
 /*
 initializeType();
 function initializeType(){

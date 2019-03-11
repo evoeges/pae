@@ -3,6 +3,8 @@
     --secondary-color: #4C7CBD;
     --dark-color: #616161;
     --link-color: #9E9E9E;
+    --popover-word-color: #2EC4B6;
+    --popover-word-pressed-color: #2ab3a6;
     --main-font: 'Nunito', sans-serif;
     --secondary-font: 'Copse', serif;
     --houses-color: #9E9E9E;
@@ -183,6 +185,10 @@ a:link {
 .tooltip_definition{
 
 }
+/* popover */
+.popover-definition{
+  color: var(--popover-word-color);
+}
 
 /* visited link */
 a:visited {
@@ -199,6 +205,24 @@ a:hover {
 a:active {
  color: var(--main-color);
 }
+
+/* popover links */
+a.popover_word{
+  background-color: var(--popover-word-color);
+  border-radius: 10px;
+  color: white;
+  font-weight: 200;
+  padding: 3.5px;
+  text-decoration: none;
+  width: 5px;
+
+}
+
+a.popover_word:hover {
+  background-color: var(--popover-word-pressed-color);
+}
+
+
 #nypl_problem_statement{
  border-style: solid;
  border-width: 3px;
