@@ -3,7 +3,7 @@
     --secondary-color: #4C7CBD;
     --dark-color: #616161;
     --link-color: #9E9E9E;
-    --popover-word-color: #2EC4B6;
+    --popover-word-color: #2ab3a6;
     --popover-word-pressed-color: #2ab3a6;
     --main-font: 'Nunito', sans-serif;
     --secondary-font: 'Copse', serif;
@@ -208,18 +208,18 @@ a:active {
 
 /* popover links */
 a.popover_word{
-  background-color: var(--popover-word-color);
+  border: 2px solid;
+  border-color: var(--popover-word-color);
   border-radius: 10px;
-  color: white;
-  font-weight: 200;
-  padding: 3.5px;
+  color: var(--popover-word-color);
+  padding: 2px;
   text-decoration: none;
-  width: 5px;
-
 }
 
 a.popover_word:hover {
   background-color: var(--popover-word-pressed-color);
+  color: white;
+  border-color: var(--popover-word-pressed-color);
 }
 
 
