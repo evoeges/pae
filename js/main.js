@@ -78,10 +78,6 @@ $('body').scrollspy({ target: '#navbar-side' })
     $('.tooltipped').tooltip();
   });
   
-  $('.popover-dismiss').popover({
-  trigger: 'focus'
-})
-
 /*
 initializeType();
 function initializeType(){
