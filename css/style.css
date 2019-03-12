@@ -764,3 +764,7 @@ ul.toy_algo_boxes li input[type="checkbox"]:checked + label {
     color: white;
     transition: all .2s;
 }
+
+ul:not(.browser-default) > li {
+    list-style-type: circle;
+}
