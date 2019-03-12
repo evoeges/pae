@@ -765,6 +765,6 @@ ul.toy_algo_boxes li input[type="checkbox"]:checked + label {
     transition: all .2s;
 }
 
-ul:not(.browser-default) > li {
+#human_ADS_differences li {
     list-style-type: circle;
 }
