@@ -3,6 +3,21 @@
 var toyalgo;
 var typed;
 
+//initialize selections for the toy algo
+var toyAlgoSelections={
+  age:0,
+  style:0,
+  sq_footage:0,
+  neighborhood:0,
+  prev_fire:0,
+  height:0,
+  no_occupants:0,
+  business:0,
+  last_inspection:0,
+  no_windows:0};
+
+
+
 
 function toggleDefinitions(inputSwitch) {
 
@@ -50,11 +65,19 @@ $(window).scroll(function(){
 }
 
 function createToyAlgoViz(data){
-  toyalgo = new ToyAlgorithm("toy-algo-houses-area", data);
+  toyalgo = new ToyAlgorithm("toy-algo-houses-area", data, toyAlgoSelections);
 }
 
 function updateToyAlgo(id){
-  toyalgo.wrangleData(id);
+  if (document.getElementById(id).checked == true){
+    toyAlgoSelections[id]=1;
+  }
+
+    if (document.getElementById(id).checked == false){
+      toyAlgoSelections[id]=0;
+    }
+
+  toyalgo.wrangleData(toyAlgoSelections);
 }
 
  window.addEventListener("resize", reshape);
