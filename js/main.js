@@ -136,7 +136,7 @@ function makeSkylineDrawing(){
 
   new Vivus('skyline_drawing', {
     duration: 200,
-    file: 'img/skylineSketch.svg',
+    file: 'img/newYork2.svg',
     onReady: function (myVivus) {
         myVivus.el.setAttribute('height', '300');
       },
