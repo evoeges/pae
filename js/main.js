@@ -137,7 +137,8 @@ function makeSkylineDrawing(){
     onReady: function (myVivus) {
         myVivus.el.setAttribute('height', '300');
       },
-    type: 'sync'
+    type: 'sync',
+    start: 'autostart'
   });
 
 }
