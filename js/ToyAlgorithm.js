@@ -100,14 +100,7 @@ var houses =  vis.svg.selectAll("rect")
 			 .merge(houses)
 			 .transition()
 			 .duration(1000)
-       .attr("fill", function(d){
-				 if (d.Fire>.5){
-					 return "#F4511E";
-					 }
-				 else {
-					 return "var(--houses-color)";
-				 }
-			 })
+       .attr("fill", "var(--houses-color)")
        .attr("stroke", "#fff")
 			 .attr("height", 40)
 			 .attr("width", 40)
@@ -119,4 +112,44 @@ var houses =  vis.svg.selectAll("rect")
        });
 
 			 houses.exit().remove();
+
+			 	var fires=vis.svg.selectAll("text")
+			 		.data(vis.data);
+
+			 		fires.enter().append("text")
+			 		.merge(fires)
+			 		.transition()
+			 		.duration(1000)
+			 		/*.attr('font-family', 'FontAwesome')
+			 	  .attr('font-size', "25px" )
+			 	  .text(function(d){
+			 			if (d.Fire>.5){
+			 				return '\uf577'}
+			 			}) */
+ 					.attr("class", "fa")
+					.text(function(d){
+	 				 if (d.Fire>.5){
+	 					 	return '\uf06d';
+	 					 }
+					 })
+					.attr("fill","#EF6C00")
+					.attr('font-size', function (d) { return '40px' })
+			 		.attr("x", function (d) {
+			 				return vis.x(d.x_position)+20;
+			 		})
+			 		.attr("y", function (d) {
+			 				return vis.y(d.y_position)+20;
+			 		});
+
+			 		fires.exit().remove();
+
+			/* 		svg.append('text')
+  .attr('x', 15)
+   .attr('y', -17)
+   .attr('fill', 'black')
+   .attr("class", "fa")
+   .attr('font-size', function (d) { return '20px' })
+   .text(function (d) { return '\uf2b9' }); */
+
+
 }
