@@ -135,9 +135,9 @@ function makeSkylineDrawing(){
     duration: 200,
     file: 'img/skylineSketch.svg',
     onReady: function (myVivus) {
-        // `el` property is the SVG element
         myVivus.el.setAttribute('height', '300');
-      }
+      },
+    type: 'sync'
   });
 
 }
