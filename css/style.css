@@ -148,8 +148,8 @@ h4{
 
 /* intro pages */
 .intro_paragraphs{
-  font-size: 35px;
-  padding-bottom: 2%;
+  font-size: 18px;
+  margin-top: 5%;
 }
 .intro_emphasis{
   font-size: 35px;
@@ -564,13 +564,6 @@ margin-left: 20%;
 
 .affix {
   top:0;
-}
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
 }
 
 .frameworks_row{
