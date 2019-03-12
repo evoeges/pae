@@ -138,7 +138,7 @@ function makeSkylineDrawing(){
     duration: 200,
     file: 'img/newYork2.svg',
     onReady: function (myVivus) {
-        myVivus.el.setAttribute('height', '300');
+        myVivus.el.setAttribute('width', '75%');
       },
     type: 'sync',
     start: 'autostart'

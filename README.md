@@ -60,6 +60,11 @@ Add additional notes about how to deploy this on a live system
 
 * [Bootstrap](https://getbootstrap.com/) - Used for styling
 
+# Icons and Images Credit
+
+* NYC Skyline modified from [Freepik](http://www.freepik.com)
+
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
