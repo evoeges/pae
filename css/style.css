@@ -718,3 +718,44 @@ margin-left: 20%;
   margin: 1%;
   margin-left: 1%;
 }
+
+/* Toy algo buttons */
+
+ul.toy_algo_boxes {
+    list-style: none;
+    padding: 2%;
+}
+ul.toy_algo_boxes li{
+  display: inline;
+}
+
+ul.toy_algo_boxes li label{
+    display: inline-block;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    border-radius: 50px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+    font-size: 120%;
+}
+
+ul.toy_algo_boxes li label {
+    padding:1%;
+    cursor: pointer;
+}
+
+ul.toy_algo_boxes li label::before {
+    font-size: 120%;
+    padding:1%;
+}
+
+ul.toy_algo_boxes li input[type="checkbox"]:checked + label {
+    background-color: var(--main-color);
+    color: white;
+    transition: all .2s;
+}
