@@ -118,14 +118,14 @@ h4{
   background-size: cover;
 }
 #website_title{
-  font-size: 90px;
-  color: var(--main-color);
-  margin-top: 5%;
+  font-size: 500%;
+  color: var(--popover-word-color);
+  margin-top: 3%;
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
 #title_chevron{
-  color: var(--main-color);
+  color: var(--popover-word-color);
   margin-bottom: 0%;
   text-align: center;
   font-size: 50px;
@@ -142,7 +142,7 @@ h4{
 
 #website_subtitle{
   font: var(--main-font);
-  font-size: 60px;
+  font-size: 300%;
   font-weight: 300;
   color: var(--dark-color);
   margin-top: 0%;
@@ -152,8 +152,9 @@ h4{
 
 /* intro pages */
 .intro_paragraphs{
-  font-size: 35px;
-  padding-bottom: 2%;
+  color: var(--dark-color);
+  font-size: 150%;
+  margin-top: 5%;
 }
 .intro_emphasis{
   font-size: 35px;
@@ -570,13 +571,6 @@ margin-left: 20%;
 
 .affix {
   top:0;
-}
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
 }
 
 .frameworks_row{
