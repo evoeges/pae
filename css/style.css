@@ -84,6 +84,11 @@ h4{
   color: var(--main-color);
 }
 
+.citation{
+  font-size:80%;
+  font-weight: 200;
+  color: var(--link-color);
+}
 /* Navbar styling */
 
 #navbar-side{
