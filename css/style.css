@@ -1,8 +1,10 @@
 :root {
     --main-color: #F08578;
     --secondary-color: #4C7CBD;
+    --success-color:;
     --dark-color: #616161;
     --link-color: #9E9E9E;
+    --nav-link-color: #9E9E9E;
     --popover-word-color: #2ab3a6;
     --popover-word-pressed-color: #2ab3a6;
     --main-font: 'Nunito', sans-serif;
@@ -87,7 +89,7 @@ h4{
 .citation{
   font-size:80%;
   font-weight: 200;
-  color: var(--link-color);
+  color: var(--nav-link-color);
 }
 /* Navbar styling */
 
@@ -104,7 +106,7 @@ h4{
 }
 
 #navbar-side a {
-  color: var(--link-color);
+  color: var(--nav-link-color);
   text-decoration: none;
 }
 /* splash screen */
@@ -118,6 +120,7 @@ h4{
 #website_title{
   font-size: 90px;
   color: var(--main-color);
+  margin-top: 5%;
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
@@ -135,9 +138,9 @@ h4{
 
 #website_subtitle{
   font: var(--main-font);
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 300;
-  color: var(--link-color);
+  color: var(--dark-color);
   margin-top: 0%;
   margin-bottom: 0%;
   padding: 0%;
@@ -198,7 +201,7 @@ a:link {
 .popover{
   border: 2px solid;
   border-color: var(--popover-word-color);
-  color: var(--secondary-color);
+  color:
   -moz-box-shadow:-10 10 .75rem;
   -webkit-box-shadow:-10 10 .75rem;
   box-shadow: -10 10 .75rem;
@@ -218,7 +221,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: var(--link-color);
+  color: var(--nav-link-color);
 }
 
 /* selected link */
@@ -378,7 +381,7 @@ padding-bottom:1%;
   font-family: var(--main-font);
   font-weight: 600;
   font-size: 300%;
-  color: var(--link-color);
+  color: var(--nav-link-color);
   text-align: center;
   margin-bottom: 50px;
   padding: 0;
