@@ -28,6 +28,7 @@
   <div class="container page splash_screen">
     <div class="row align-items-center">
       <div class="col">
+
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
           <h1 id="website_title"> Automating NYC</h1>
         </div>
@@ -41,13 +42,17 @@
         </div>
         <span id="typed"></span> -->
 
+    <div id="skyline_drawing"></div>
+
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="center">
           <a href="#first_page">
             <h1 id="title_chevron" class="hvr-wobble-vertical"> <i class="fas fa-chevron-down center"> </i> </h1>
           </a>
         </div>
+
       </div>
     </div>
+
   </div>
 
 
@@ -512,7 +517,6 @@
       </div>
       <div class="row align-items-center toyAlgoButtonsRow">
         <div class="col-12">
-          <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
             <ul class="toy_algo_boxes">
     <li><input type="checkbox" id="age" onclick="updateToyAlgo(id)"><label for="age">Building Age</label></li>
     <li><input type="checkbox" id="style" onclick="updateToyAlgo(id)"><label for="style">Architectural Style</label></li>
@@ -536,7 +540,6 @@
             <button type="button" class="btn btn-secondary toy_buttons" id="business" onclick="updateToyAlgo(id)"> Business </button>
             <button type="button" class="btn btn-secondary toy_buttons" id="last_inspection" onclick="updateToyAlgo(id)"> Last Inspection</button>
             <button type="button" class="btn btn-secondary toy_buttons" id="no_windows" onclick="updateToyAlgo(id)"> Number of Windows </button> -->
-          </div>
         </div>
       </div>
 
@@ -1341,6 +1344,9 @@
   </script>
 
 
+
+
+
   <!-- Load JS libraries: jQuery, bootstrap, D3 -->
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -1352,6 +1358,11 @@
   <script src="js/ScrollTrigger.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script type="module" src="js/typed.js"></script>
+
+<!-- used vivus library -->
+
+<script src="js/pathformer.js"></script>
+<script src="js/vivus.min.js"></script>
 
 
   <!--visualizationObjects-->

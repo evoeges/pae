@@ -127,3 +127,17 @@ $(window).bind("scroll", function() {
 $(document).ready(function(){
   $('.collapsible').collapsible();
 });
+
+makeSkylineDrawing();
+function makeSkylineDrawing(){
+
+  new Vivus('skyline_drawing', {
+    duration: 200,
+    file: 'img/skylineSketch.svg',
+    onReady: function (myVivus) {
+        myVivus.el.setAttribute('height', '300');
+      },
+    type: 'sync'
+  });
+
+}
