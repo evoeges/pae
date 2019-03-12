@@ -76,7 +76,7 @@ function regressionEq(){
 				(.01*vis.data[i].Height)*selections.height+
 				(.025*vis.data[i].Number_Occupants)*selections.no_occupants+
 				(.03*vis.data[i].Business)*selections.business -
-				(.06*vis.data[i].Last_Inspection)*selections.last_inspection +
+				(.02*vis.data[i].Last_Inspection)*selections.last_inspection +
 				(0*vis.data[i].Number_Windows)*selections.no_windows);
 
 		}

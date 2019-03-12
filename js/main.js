@@ -58,7 +58,7 @@ $(window).scroll(function(){
         data[i].Neighborhood = +data[i].Neighborhood;
         data[i].Number_Occupants = +data[i].Number_Occupants;
         data[i].Number_Windows = +data[i].Number_Windows;
-        data[i].Proximity_Prev_Firess = +data[i].Proximity_Prev_Fires;
+        data[i].Proximity_Prev_Fires = +data[i].Proximity_Prev_Fires;
         data[i].Square_Footage = +data[i].Square_Footage;
         data[i].Fire = +data[i].Fire;
     }
