@@ -6,11 +6,10 @@
  * @param _data						-- the data to use in drawing th element
  */
 
-ToyAlgorithm = function (_parentElement, _data){
-	this.parentElement = _parentElement;
+ToyAlgorithm = function (_parentElement, _data, _selections){
+		this.parentElement = _parentElement;
     this.data = _data;
-    console.log(this.data);
-    console.log(this.parentElement);
+		this.selections=_selections;
     this.initVis();
 }
 
@@ -54,99 +53,42 @@ ToyAlgorithm.prototype.initVis=function(){
    vis.svg.append("g")
        .attr("class", "y-axis axis");
 
-       vis.wrangleData('none');
+       vis.wrangleData(vis.selections);
 }
 
-ToyAlgorithm.prototype.wrangleData=function(id){
+ToyAlgorithm.prototype.wrangleData=function(selections){
 //currently empty function. maybe we'll use this to create the actual regression?
 /*
 We could create an actual regression function with coefficients and for each house factor in the variables that have been selected into the regression to generate a probability of fire and then set on fire if the probability is above a threshold
 */
-
- var vis= this;
-
-var age=0;
-var style=0;
-var sq_footage=0;
-var neighborhood=0;
-var proximity=0;
-var height=0;
-var occupants=0;
-var business=0;
-var inspection=0;
-var windows=0;
-
-setButtons();
-function setButtons(){
-	if (id==="age") {
-		age=1;
-	}
-
-	if (id==="style") {
-		style=1;
-	}
-
-	if (id==="sq_footage") {
-		sq_footage=1;
-	}
-
-	if (id==="neighborhood") {
-		neighborhood=1;
-	}
-
-	if (id==="prev_fire") {
-		proximity=1;
-	}
-
-	if (id==="height") {
-		height=1;
-	}
-	if (id==="no_occupants") {
-		occupants=1;
-	}
-
-	if (id==="business") {
-	business=1;
-	}
-
-	if (id==="last_inspection") {
-	inspection=1;
-	}
-
-	if (id==="no_windows") {
-		windows=1;
-	}
-
-}
-
-
-var probabilityFire=0;
+var vis= this;
 
 regressionEq();
 
 function regressionEq(){
 	  for (var i=0; i<vis.data.length; i++) {
  			vis.data[i].Fire=	(
-				(.01 * vis.data[i].Building_Age)*age +
-				(.01 * vis.data[i].Architectural_Style)*style +
-				(.01*vis.data[i].Square_Footage)*sq_footage +
-				(.01*vis.data[i].Neighborhood)*neighborhood +
-				(.008* vis.data[i].Proximity_Prev_Fires)*proximity +
-				(.01*vis.data[i].Height)*height+
-				(.025*vis.data[i].Number_Occupants)*occupants+
-				(.03*vis.data[i].Business)*business -
-				(.06*vis.data[i].Last_Inspection)*inspection +
-				(0*vis.data[i].Number_Windows)*windows);
+				(.01 * vis.data[i].Building_Age)*selections.age +
+				(.01 * vis.data[i].Architectural_Style)*selections.style +
+				(.01*vis.data[i].Square_Footage)*selections.sq_footage +
+				(.01*vis.data[i].Neighborhood)*selections.neighborhood +
+				(.008* vis.data[i].Proximity_Prev_Fires)*selections.prev_fire +
+				(.01*vis.data[i].Height)*selections.height+
+				(.025*vis.data[i].Number_Occupants)*selections.no_occupants+
+				(.03*vis.data[i].Business)*selections.business -
+				(.06*vis.data[i].Last_Inspection)*selections.last_inspection +
+				(0*vis.data[i].Number_Windows)*selections.no_windows);
+
 		}
 }
 
 
 
   var vis= this;
-	vis.updateVis(id);
+	vis.updateVis();
 }
 
-ToyAlgorithm.prototype.updateVis = function(id){
+ToyAlgorithm.prototype.updateVis = function(){
  var vis= this;
 
 var houses =  vis.svg.selectAll("rect")
