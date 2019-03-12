@@ -179,6 +179,8 @@ strong{
   text-align:center;
 }
 
+
+
 #definitions_card{
   height: 20%;
 }
@@ -770,4 +772,28 @@ ul.toy_algo_boxes li input[type="checkbox"]:checked + label {
 
 #human_ADS_differences li {
     list-style-type: circle;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    font-size: 120%;
+    border-radius: 50px;
+    padding: 3%;
+    height: 20%;
+  }
+
+.btn-secondary:hover{
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.btn-secondary:focus{
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.btn-secondary:submit{
+  background-color: var(--main-color);
+  border-color: var(--main-color);
 }
