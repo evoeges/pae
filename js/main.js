@@ -25,12 +25,15 @@ console.log(inputSwitch);
 
 if (inputSwitch === "legalese") {
     $("#plain_text").addClass("definitions_hidden");
-    $("#plain").removeClass("active");
+    $("#plain").removeClass("definitions_hidden");
     $("#legalese_text").removeClass("definitions_hidden");
+    $("#legalese").addClass("definitions_hidden");
   }
   if (inputSwitch === "plain") {
       $("#plain_text").removeClass("definitions_hidden");
       $("#legalese_text").addClass("definitions_hidden");
+      $("#plain").addClass("definitions_hidden");
+      $("#legalese").removeClass("definitions_hidden");
     }
 }
 
