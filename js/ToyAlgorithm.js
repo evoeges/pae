@@ -101,7 +101,8 @@ var houses =  vis.svg.selectAll("rect")
 			 .transition()
 			 .duration(1000)
        .attr("fill", "var(--houses-color)")
-       .attr("stroke", "#fff")
+       /*.attr("fill", "#fff")
+			 .attr("stroke-width", "4")*/
 			 .attr("height", 40)
 			 .attr("width", 40)
        .attr("x", function (d) {
@@ -120,12 +121,6 @@ var houses =  vis.svg.selectAll("rect")
 			 		.merge(fires)
 			 		.transition()
 			 		.duration(1000)
-			 		/*.attr('font-family', 'FontAwesome')
-			 	  .attr('font-size', "25px" )
-			 	  .text(function(d){
-			 			if (d.Fire>.5){
-			 				return '\uf577'}
-			 			}) */
  					.attr("class", "fa")
 					.text(function(d){
 	 				 if (d.Fire>.5){
