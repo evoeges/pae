@@ -148,7 +148,7 @@ function makeDrawings(){
     duration: 200,
     file: 'img/PLDeli.svg',
     onReady: function (myVivus) {
-        myVivus.el.setAttribute('width', '90%');
+        myVivus.el.setAttribute('width', '100%');
       },
   });
 
