@@ -131,8 +131,8 @@ $(document).ready(function(){
   $('.collapsible').collapsible();
 });
 
-makeSkylineDrawing();
-function makeSkylineDrawing(){
+makeDrawings();
+function makeDrawings(){
 
   new Vivus('skyline_drawing', {
     duration: 200,
@@ -142,6 +142,14 @@ function makeSkylineDrawing(){
       },
     type: 'sync',
     start: 'autostart'
+  });
+
+  new Vivus('bodega_drawing', {
+    duration: 200,
+    file: 'img/PLDeli.svg',
+    onReady: function (myVivus) {
+        myVivus.el.setAttribute('width', '90%');
+      },
   });
 
 }
