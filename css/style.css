@@ -76,13 +76,13 @@ h4{
 
 .body_emphasis{
   font-size: 130%;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--main-color);
 }
 
 .body_takeaway{
   font-size: 175%;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--main-color);
 }
 
@@ -176,6 +176,10 @@ strong{
 
 }
 
+#definitions_box{
+}
+
+
 #plain_text{
   font-size: 25px;
 }
@@ -188,11 +192,6 @@ strong{
   text-align:center;
 }
 
-
-
-#definitions_card{
-  height: 20%;
-}
 
 /* links style */
 /* unvisited link */
@@ -232,7 +231,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: var(--nav-link-color);
+  color: var(--main-color);
 }
 
 /* selected link */
