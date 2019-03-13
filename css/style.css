@@ -90,10 +90,7 @@ h4{
   padding: 4%;
 }
 
-#human_ADS_differences li {
-    list-style-type: circle;
-    margin-left: 5%;
-}
+
 
 .citation{
   font-size:80%;
@@ -798,8 +795,14 @@ ul.toy_algo_boxes li input[type="checkbox"]:checked + label {
     transition: all .2s;
 }
 
-#human_ADS_differences li {
-    list-style-type: circle;
+
+
+.colored_bullet{
+  color: var(--secondary-color);
+  font-size: 50%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top:3%
 }
 
 .btn-secondary {
