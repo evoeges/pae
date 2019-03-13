@@ -653,10 +653,13 @@ margin-left: 20%;
 .collapsible-body{
   background-color: white;
 }
+
 .collapsible-header{
   text-align: center;
   color: var(--main-color);
 }
+
+
 
 .overlay {
     position: absolute;
@@ -831,4 +834,9 @@ ul {
 .btn-secondary:submit{
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
+}
+
+
+.collapsible-header i {
+   line-height: 5;
 }
