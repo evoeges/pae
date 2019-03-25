@@ -840,3 +840,13 @@ ul {
 .collapsible-header i {
    line-height: 5;
 }
+
+.iconCircle{
+  border-radius: 50%;
+  width: 72px;
+  height: 36px;
+  background: none;
+  border: 4px solid white;
+  color: white;
+  text-align: center;
+}
