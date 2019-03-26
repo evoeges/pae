@@ -449,14 +449,14 @@ padding-bottom:1%;
 }
 
 #nypl_accordian{
-  background-color: var(--esp-color);
+  background-color: #F4A79C;
 }
 #nycha_accordian{
-  background-color: var(--nycha-color);
+  background-color: #F19184;
 }
 
 #fdny_accordian{
-  background-color: var(--doe-color);
+  background-color: #DB7A6E;
 }
 .panel {
   padding: 0 18px;
@@ -887,9 +887,4 @@ ul {
 
 .finalpage{
   height: 100%;
-  margin-bottom:25%;
-}
-
-.bio{
-  font-size: 85%;
 }
