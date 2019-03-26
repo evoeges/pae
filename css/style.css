@@ -1,6 +1,9 @@
 :root {
     --main-color: #2ab3a6;
     --secondary-color: #F08578;
+    --esp-color: #3454D1;
+    --nycha-color: #7FB069;
+    --doe-color: #F28F3B;
     --success-color:4C7CBD;
     --dark-color: #616161;
     --link-color: #9E9E9E;
@@ -281,12 +284,12 @@ a:active {
  color: var(--secondary-color);
 }
 
-#nypl_problem_statement{
+#problem_statement{
  border-style: solid;
  border-width: 3px;
  border-radius: 16px;
  padding: 5%;
- color: var(--secondary-color);
+ color: var(--main-color);
 }
 
 .row{
@@ -424,7 +427,6 @@ padding-bottom:1%;
 
 /* ADS Accordian*/
 .accordion {
-  background-color: var(--main-color);
   color: white;
   cursor: pointer;
   margin-top: 5%;
@@ -449,7 +451,7 @@ padding-bottom:1%;
 #nypl_accordian{
   background-color: #F4A79C;
 }
-#workerConnect_accordian{
+#nycha_accordian{
   background-color: #F19184;
 }
 
@@ -616,6 +618,10 @@ margin-left: 20%;
 
 /* avocados section */
 
+.avocado_thoughts{
+  font-style: italic;
+  font-size: 110%;
+}
 .avocado_images {
   width: 20%;
 }
@@ -839,4 +845,13 @@ ul {
 
 .collapsible-header i {
    line-height: 5;
+}
+
+/** examples section **/
+#NYCHA{
+  color: var(--nycha-color);
+}
+
+.case_title{
+  margin-top: 10%;
 }
