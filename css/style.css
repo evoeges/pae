@@ -449,14 +449,14 @@ padding-bottom:1%;
 }
 
 #nypl_accordian{
-  background-color: #F4A79C;
+  background-color: var(--esp-color);
 }
 #nycha_accordian{
-  background-color: #F19184;
+  background-color: var(--nycha-color);
 }
 
 #fdny_accordian{
-  background-color: #DB7A6E;
+  background-color: var(--doe-color);
 }
 .panel {
   padding: 0 18px;
