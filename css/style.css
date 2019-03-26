@@ -887,4 +887,9 @@ ul {
 
 .finalpage{
   height: 100%;
+  margin-bottom:25%;
+}
+
+.bio{
+  font-size: 85%;
 }
