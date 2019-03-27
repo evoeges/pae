@@ -292,7 +292,7 @@ a:active {
  color: var(--main-color);
 }
 
-.problem_statement.h3{
+.problem_statement_header{
   padding-top: none;
 }
 
