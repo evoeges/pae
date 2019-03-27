@@ -886,7 +886,7 @@
             <div class="collapsible-body"><span>
                 <p>Some algorithms are very easy to understand, like instructions for choosing an avocado. We know exactly which variables are going into the model and how they're weighted. </p>
 
-                <p>The avocado algorithm is a <strong class="tooltip_definition"> decision tree</strong>. Super explainable. </p>
+                <p>The avocado algorithm is a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover" data-content="A <b>decision tree</b> is like a flowchart made up of nodes connected by branches. Each node represents a different possibility or 'condition'. <br> So for our avocados it might look something like this:"> decision tree</a>. Super explainable. </p>
               </span>
             </div>
           </li>
@@ -1313,9 +1313,60 @@
       <div class="row align-items-center">
         <div class="col"></div>
         <div class="col-md-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-          <h3>TSAP ASAP</h3>
+          <h3>TSAP helps at multiple decision points</h3>
           <p>
-          Tenant Selection and Assignment Plan (TSAP)
+            TSAP is a complex ADS because it's covering multiple decision points for the ultimate decision point: who fills one of the vacant public housing units?
+          </p>
+          <p>There's four main processes going on.
+          <p>One process that's happening is decision making about priority codes and screening for eligibility for new applicants.
+          </p>A second process that's happening is decision making about priority codes and screening for transfer applications.
+          <p>A third process that's happening is predictions on how many units will open up every two weeks, which determines the number of eligibility screenings that NYCHA does for new applicants.
+          </p>
+          <p>The fourth process going on is actually filling the vacant units.
+          </p>
+          <p>Here's how those four processes connect:
+          </p>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col"></div>
+        <div class="col-md-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
+          <h3>Are different algorithms used in each of the TSAP processes?</h3>
+          <p>Yes. Algorithms are used in each of these processes and they are different algorithms, though they all interact with one another.Each of the algorithms that are used are different and their level of automation and flexibility are different.
+          </p>
+          <p>For example, the priority codes for both new applicants and transfers are a pretty simple <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover" data-content="A <b>decision tree</b> is like a flowchart made up of nodes connected by branches. Each node represents a different possibility or 'condition'. <br> So for our avocados it might look something like this:">decision tree</a>. It follows a series of yes or no questions to sort people into priority codes. You can look up the different priority codes in the most recent <a href="https://www1.nyc.gov/assets/nycha/downloads/pdf/TSAPlan.pdf">TSAP documentation</a> from 2016.
+          </p>
+          <p>On the other hand, predicting the vacancies and therefore how many eligibility interviews to do of new applicants is more like a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover" data-content="A <b>decision tree</b> is like a flowchart made up of nodes connected by branches. Each node represents a different possibility or 'condition'. <br> So for our avocados it might look something like this:">linear regression</a>. The formula to predict vacancies relies on previous data on actual vacancies and past data on the number of applicants that was needed to fill vacancies of a similar size.
+          </p>
+          <p>All of the algorithms can be changed if a Mayor really wants to. They need to go through a review process to make amendments to NYCHA's general plan.
+          </p>
+          </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col"></div>
+        <div class="col-md-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
+          <h3>But what if there are still more people on the waitlist than there are apartments?</h3>
+          <p>Unfortunately TSAP does not solve for the underlying problem that there are more people on the waitlist than there are apartments. TSAP can only help sort people who are on the waitlist in to vacant units.
+          </p>
+          <p>But, this data or the length of the waitlist could be used as information to advocate for more public housing units
+          </p>
+          </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col"></div>
+        <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
+          <h3 class="problem_statement" id="nycha">
+            Priority need gets housing, but still not enough units.
+            <p>NYCHA has over 175,000 public housing units across the City. Fewer than 1% are vacated each year, and the waitlist is over 200,000 families long. As soon as a unit is vacant, NYCHA has to fill it with eligible applicants.
+            <br> How can NYCHA sort through such a long waitlist to fill vacant units as quickly as possible?
+            </p>
+          </h3>
         </div>
         <div class="col"></div>
       </div>
