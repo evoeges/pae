@@ -1370,14 +1370,103 @@
       <div class="row align-items-center">
         <div class="col"></div>
         <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <p class="problem_statement">
-            <b>Priority need gets housing, but still not enough units.</b>
-            <p>NYCHA has over 175,000 public housing units across the City. Fewer than 1% are vacated each year, and the waitlist is over 200,000 families long. As soon as a unit is vacant, NYCHA has to fill it with eligible applicants.
-            <br> How can NYCHA sort through such a long waitlist to fill vacant units as quickly as possible?
-            </p>
-          </p>
+          <div class="problem_statement">
+            <h4 class="problem_statement_header">Priority need gets housing, but still not enough units.</h4>
+            <p>TSAP does it's job: it matches people to vacant units. However, it's doing its job with a limited amount of resources. Making the matching process easier will definitely help some families, but it still leaves a lot of families on the waitlist. Is there a way to have this ADS help get at the underlying unjust system of not having enough housing in our expensive City?
+        </div>
         </div>
         <div class="col"></div>
+      </div>
+      <!-- NYCHA -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card  case_cards activator impact-card">
+            <div class="card-content activator">
+              <span class="card-title activator">Impact<i class="fas fa-plus-circle right"></i></span>
+              <span class="card_icon activator"><i class="fas fa-bolt"></i></span>
+              <p class="activator">Who does the ADS affect and how?<p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
+              <h4> Scale </h4>
+              </p>Large scale. There's hundreds of thousands of people on the NYCHA waiting list. Then there's hundreds of thousands of people living in NYCHA units, any of whom who might want transfers.</p>
+              <h4> Scope </h4>
+              <p>Deep. TSAP matches people who need affordable publich housing to those very units.</p>
+              <h4> Vulnerability </h4>
+              <p>People who are either new applicants to NYCHA or who are asking for transfers are doing so because they have limited access to affordable housing. TSAP helps match people now, but it doesn't help get housing for all the people who are not matched.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card  case_cards activator machine-bias-card">
+            <div class="card-content">
+              <span class="card-title activator">Bias<i class="fas fa-plus-circle right"></i></span>
+              <span class="card_icon activator"><i class="fas fa-robot"></i></span>
+              <p>What inputs in the ADS produce problems?<p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
+              <h4>Data</h4>
+              <p>The data TSAP uses is based on historical data and the data that is inputed either by new applicants, transfer requests, or case workers helping people who are new applicants or asking for transfers.</p>
+              <h4> Algorithm Model </h4>
+              <p>There are multiple algorithms in this ADS. It seems like NYCHA is trying to use the best algorithm for each decision type.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card  case_cards activator explainability-card">
+            <div class="card-content">
+              <span class="card-title activator">Explainability<i class="fas fa-plus-circle right"></i></span>
+              <span class="card_icon activator"><i class="fas fa-question-circle"></i></span>
+              <p>How easy is it for humans to understand how the ADS works?<p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
+              <p>The information about TSAP is available online, but the description is 57 pages long!
+              Certain parts of the ADS are more explainable than others. For example, what the priority codes are and what the qualifications for these priority codes is pretty explainable, but predicting vacant units and how that impacts eligibility interviews is less explainable.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <div class="card  case_cards activator automation-card">
+            <div class="card-content">
+              <span class="card-title activator">Automation<i class="fas fa-plus-circle right"></i></span>
+              <span class="card_icon activator"><i class="fas fa-cogs"></i></span>
+              <p>How much of the decision is made by the ADS?<p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title  automation-title">Automation<i class="fas fa-times right"></i></span>
+              <h4> High </h4>
+              <p>Many parts of this ADS are automatic. For example, the predicted vacancies is through a formula and gives a specific number that the agency is supposed to follow for determining the number of eligibility interviews. And the process for matching people to vacant apartments is automatic and supposed to be followed by agency staff.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+          <div class="card case_cards activator flexibility-card">
+            <div class="card-content">
+              <span class="card-title activator">Flexibility<i class="fas fa-plus-circle right"></i></span>
+              <span class="card_icon activator"><i class="far fa-circle"></i></span>
+              <p>Can the ADS be changed easily if people have feedback?</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title  flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
+              <h4> Feedback System </h4>
+              <p>TSAP can be updated by a Mayor, though it has to go through a review process. It is unclear if tenants can give feedback to TSAP or contest TSAP results.</p>
+              <h4> Ability and Access to Update </h4>
+              <p>There is a team at NYCHA that works just on TSAP.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
       </div>
 
     </div>
@@ -1469,7 +1558,7 @@
           <div class="col"></div>
         </div>
 
-        <!--NYPL CARDS-->
+        <!--DOE CARDS-->
         <div class="row">
           <div class="col-md-4">
             <div class="card  case_cards activator impact-card">
