@@ -284,12 +284,16 @@ a:active {
  color: var(--secondary-color);
 }
 
-#problem_statement{
+.problem_statement{
  border-style: solid;
  border-width: 3px;
  border-radius: 16px;
  padding: 5%;
  color: var(--main-color);
+}
+
+.problem_statement.h3{
+  padding-top: none;
 }
 
 .row{
