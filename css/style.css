@@ -827,10 +827,10 @@ ul {
     color: #fff;
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
-    font-size: 120%;
+    
     border-radius: 50px;
-    padding: 3%;
-    height: 20%;
+
+
   }
 
 .btn-secondary:hover{
@@ -896,4 +896,8 @@ ul {
 
 .code_block{
   font-family: monospace;
+}
+
+.modal{
+  margin-top: 10%;
 }
