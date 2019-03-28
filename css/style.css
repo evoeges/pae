@@ -827,7 +827,7 @@ ul {
     color: #fff;
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
-    
+
     border-radius: 50px;
 
 
@@ -899,5 +899,38 @@ ul {
 }
 
 .modal{
-  margin-top: 10%;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  }
+
+  #navbar-side{
+    display: none;
+    opacity: 0;
+  }
+
+  #website_title{
+    font-size: 300%;
+  }
+  #website_subtitle{
+    font-size: 250%;
+  }
+  #title_chevron{
+    font-size: 300%;
+  }
+  .intro_emphasis{
+    font-size: 6vw;
+  }
+  p.intro_emphasis{
+    font-size: 6vw;
+  }
+  .intro_paragraphs{
+    font-size: 5vw;
+  }
+
 }
