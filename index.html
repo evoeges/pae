@@ -289,11 +289,13 @@
             <div class="col-md-4 center">
               <span class="algorithm_icons"><i class="fas fa-desktop"></i></span>
             </div>
-            <div class="col-md-8" id="typed-strings"><span class="code_block">
-              <b>if</b> single item purchase &gt; $100 <br>
-              <b>and</b> multiple such purchases <br>
-              <b>then</b> flag for fraud <br>
-            </span>
+            <div class="col-md-8 code_block">
+              <div id="typed-strings">
+                <b>if</b> single item purchase &gt; $100 <br>
+                <b>and</b> multiple such purchases <br>
+                <b>then</b> flag for fraud <br>
+              </div>
+              <span id="typed"></span>
             </div>
           </div>
 
@@ -1699,12 +1701,12 @@
 
     <div class="row align-items-top">
       <div class="col-md-4">
-        <div class="card" ckass="active_card" data-toggle="modal" data-target=".bd-example-modal-lg">
+        <div class="card" ckass="active_card" data-toggle="modal" data-target=".buildpower_modal">
           <div class="card-content">
             <h3>Build Power</h3>
             <p> Connect with other members of this advocacy community.</p>
           </div>
-          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal fade buildpower_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <h4 class="center"> Build Power </h4>
@@ -1730,6 +1732,132 @@
                       Upturn<br>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col"></div>
+                      <div class="col-md-10">
+                        If you're impacted or moved by specific issue, get connected with one of the many amazing organizing groups that are focused on it.
+                      </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <p><strong>Child & Family Welfare</strong><br>
+Child Welfare Organizing Project<br>
+Center for Family Life in Sunset Park<br>
+National Coalition for Child Protection Reform<br>
+Movement for Family Power<br>
+Queens Community House<br>
+University Settlement<br>
+Criminal Justice<br>
+The Fortune Society<br>
+Economic Justice<br>
+Democratic Socialists of America<br>
+Jews for Racial & Economic Justice<br>
+Mary Mitchell<br>
+New Economy Project<br>
+Northwest Bronx Community & Clergy Coalition<br>
+Participatory Budgeting Project</p>
+
+<p><strong>Education</strong><br>
+IntegrateNYC</p>
+
+<p><strong>Environmental & Transit Justice</strong><br>
+Green Workers Cooperative<br>
+NY Renews<br>
+Riders Alliance<br>
+UpRose<br>
+WE ACT</p>
+
+<p><strong>Gender & Sexuality Justice</strong><br>
+Audre Lorde Project<br>
+FIERCE!<br>
+Girls for Gender Equity<br>
+Project Hajra<br>
+Red Umbrella<br>
+Sylvia Rivera Law Project<br>
+Streetwise and Safe<br>
+Transgender Law Center<br>
+WomanKind</p>
+
+<p><strong>Health</strong><br>
+Campaign for NY Health</p>
+                      </div>
+                        <div class="col-md-4">
+                          <p><strong>Housing & Homelessness</strong><br>
+Banana Kelly Community Improvement Association<br>
+Chhaya CDC<br>
+Churches United for Fair Housing<br>
+Community Action for Safe Apartments<br>
+Cooper Square Committee<br>
+Fifth Ave Committee<br>
+Flatbush Tenant Coalition<br>
+Good Old Lower East Side<br>
+IMPACCT Brooklyn<br>
+JustFix.Nyc<br>
+Mirabal Sisters Cultural & Community Center<br>
+Neighbors Helping Neighbors<br>
+Picture the Homeless<br>
+Right to the City Alliance<br>
+St. Nicks Alliance<br>
+Tenants & Neighbors<br>
+Woodside on the Move</p>
+
+<p><strong>Immigration</strong><br>
+African Communities Together<br>
+Atlas DIY<br>
+Black Alliance for Just Immigration<br>
+CAIR NY<br>
+Cidadão Global<br>
+Desis Rising Up and Moving<br>
+Families for Freedom<br>
+Haitian Women for Haitian Refugees<br>
+New Immigrant Community Empowerment<br>
+New York Immigration Coalition<br>
+Pan-African Community Development Initiative<br>
+Sapna NYC</p>
+                        </div>
+                          <div class="col-md-4">
+                            <p><strong>Policing</strong><br>
+  Community for Police Reform<br></p>
+
+  <p><strong>Workers’ & Labor Rights</strong><br>
+  Brandworkers’ International<br>
+  Center for Frontline Retail<br>
+  Chinese Staff & Workers Association<br>
+  La Colmena<br>
+  Damayan Migrant Workers Association<br>
+  Domestic Workers United<br>
+  Flushing Workers Center<br>
+  Institute for the Future of Work<br>
+  Laundry Workers Center<br>
+  National Domestic Workers Alliance<br>
+  National Employment Law Project<br>
+  National Mobilization Against Sweatshops<br>
+  New York City Network of Worker Cooperatives<br>
+  New York Taxi Workers’ Alliance<br>
+  Restaurant Opportunities Center<br>
+  Worker’s Justice Project<br>
+  Youth Organizing<br>
+  Ugnayan Youth<br>
+  Youth Ministries for Peace & Justice<br>
+  Youth Represent<br></p>
+
+  <p><strong>Multi-Issue Organizing</strong><br>
+  Adhikaar<br>
+  Asian Americans for Equality<br>
+  Brooklyn Movement Center<br>
+  BronxPOWER<br>
+  CAAAV Organizing Asian Communities<br>
+  Community Voices Heard<br>
+  Families United for Racial and Economic Justice<br>
+  Make the Road NY<br>
+  MinKwon Center for Community Action<br>
+  Movement for Justice en El Barrio<br>
+  New York Community for Change<br>
+  Nos Quedamos<br>
+  Vocal NY<br></p>
+</div>
+                      </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -1826,7 +1954,10 @@
 
 
 <!--typed.js script-->
-<script>
+
+<script type="module">
+import Typed from './typed.js';
+
 var typed = new Typed('#typed', {
   stringsElement: '#typed-strings'
 });
