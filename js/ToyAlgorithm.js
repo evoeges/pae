@@ -119,6 +119,8 @@ var formatPercent=d3.format(".000%");
  	.attr('class', 'd3-tip popover')
  	.html(function(d) {
 	 		return  "Address: " + d.Address +"<br>"
+			+"Borough: " + d.borough +"<br>"
+			+ "Building Age: " +d.Building_Age+" years old" +"<br>"
 			+"Fire Risk: " + formatPercent(d.Fire);
 
 		 });
