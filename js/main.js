@@ -4,7 +4,7 @@ var toyalgo;
 var typed;
 
 //initialize selections for the toy algo
-var toyAlgoSelections={
+/*var toyAlgoSelections={
   age:0,
   style:0,
   sq_footage:0,
@@ -14,7 +14,19 @@ var toyAlgoSelections={
   no_occupants:0,
   business:0,
   last_inspection:0,
-  no_windows:0};
+  no_windows:0
+}; */
+
+var toyAlgoSelections={
+  age:0,
+  sq_footage:0,
+  neighborhood:0,
+  no_occupants:0,
+  business:0,
+  no_windows:0,
+  dollar_value:0,
+  height:0
+};
 
 
 

@@ -550,7 +550,7 @@
       </div>
       <div class="row align-items-center toyAlgoButtonsRow">
         <div class="col-md-12">
-          <ul class="toy_algo_boxes">
+          <!-- old buttons <ul class="toy_algo_boxes">
             <li><input type="checkbox" id="age" onclick="updateToyAlgo(id)"><label for="age">Building Age</label></li>
             <li><input type="checkbox" id="style" onclick="updateToyAlgo(id)"><label for="style">Architectural Style</label></li>
             <li><input type="checkbox" id="sq_footage" onclick="updateToyAlgo(id)"><label for="sq_footage">Square Footage</label></li>
@@ -561,18 +561,18 @@
             <li><input type="checkbox" id="business" onclick="updateToyAlgo(id)"><label for="business">Business</label></li>
             <li><input type="checkbox" id="last_inspection" onclick="updateToyAlgo(id)"><label for="last_inspection">Last Inspection</label></li>
             <li><input type="checkbox" id="no_windows" onclick="updateToyAlgo(id)"><label for="no_windows">Number of Windows</label></li>
+          </ul> -->
+          <ul class="toy_algo_boxes">
+            <li><input type="checkbox" id="age" onclick="updateToyAlgo(id)"><label for="age">Building Age</label></li>
+            <li><input type="checkbox" id="sq_footage" onclick="updateToyAlgo(id)"><label for="sq_footage">Square Footage</label></li>
+            <li><input type="checkbox" id="neighborhood" onclick="updateToyAlgo(id)"><label for="neighborhood">Neighborhood</label></li>
+            <li><input type="checkbox" id="no_occupants" onclick="updateToyAlgo(id)"><label for="no_occupants">Number of Occupants</label></li><br>
+            <li><input type="checkbox" id="business" onclick="updateToyAlgo(id)"><label for="business">Business</label></li>
+            <li><input type="checkbox" id="dollar_value" onclick="updateToyAlgo(id)"><label for="dollar_value">Dollar Value</label></li>
+            <li><input type="checkbox" id="no_windows" onclick="updateToyAlgo(id)"><label for="no_windows">Number of Windows</label></li>
+            <li><input type="checkbox" id="height" onclick="updateToyAlgo(id)"><label for="height">Height</label></li>
           </ul>
-          <!--
-            <button type="button" class="btn btn-secondary toy_buttons" id="age" onclick="updateToyAlgo(id)"> Building Age </button>
-            <button type="button" class="btn btn-secondary toy_buttons" id="style" onclick="updateToyAlgo(id)"> Architectural Style </button>
-            <button type="button" class="btn btn-secondary toy_buttons" id="sq_footage" onclick="updateToyAlgo(id)"> Square Footage </button>
-            <button type="button" class="btn btn-secondary toy_buttons" id="neighborhood" onclick="updateToyAlgo(id)"> Neighborhood </button>
-            <button type="button" class="btn btn-secondary toy_buttons" id="prev_fire" onclick="updateToyAlgo(id)"> Proximity to Previous Fires </button>
-            <button type="button" class="btn btn-secondary toy_buttons" id="height" onclick="updateToyAlgo(id)"> Height </button>
-            <button type="button" class="btn btn-secondary toy_buttons" id="no_occupants" onclick="updateToyAlgo(id)"> Number of Occupants </button>
-            <button type="button" class="btn btn-secondary toy_buttons" id="business" onclick="updateToyAlgo(id)"> Business </button>
-            <button type="button" class="btn btn-secondary toy_buttons" id="last_inspection" onclick="updateToyAlgo(id)"> Last Inspection</button>
-            <button type="button" class="btn btn-secondary toy_buttons" id="no_windows" onclick="updateToyAlgo(id)"> Number of Windows </button> -->
+
         </div>
       </div>
 
@@ -626,25 +626,13 @@
               <li>
                 <div class="collapsible-header">Improve Lives & Undo Injustice in A System</div>
                 <div class="collapsible-body"><span>
-                    <p>An example of this is...</p>
-                  </span></div>
-              </li>
-              <li>
-                <div class="collapsible-header">Improve Lives By Undoing Injustice in a System</div>
-                <div class="collapsible-body"><span>
-                    <p>An example of this is...</p>
-                  </span></div>
-              </li>
-              <li>
-                <div class="collapsible-header">Improve Lives & Take Into Account Unjust Systems</div>
-                <div class="collapsible-body"><span>
-                    <p>An example of this is...</p>
+                    <p>An example of this would be using algorithms to create more racially and socioeconomically integrated schools in NYC.</p>
                   </span></div>
               </li>
               <li>
                 <div class="collapsible-header">Improve Lives By Taking Into Account Unjust Systems</div>
                 <div class="collapsible-body"><span>
-                    <p>An example of this is...</p>
+                    <p>An example of this would be an ADS checking if it was hurting some groups more than others. For example, what if the USDA had built into its ADS a check to warn USDA employees if most of the businesses flagged were minority-owned.</p>
                   </span></div>
               </li>
             </ul>
@@ -1557,7 +1545,7 @@
             <div class="col-md-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
               <h3>Some students have to go through a second matching process?</h3>
               <p>
-                Unfortunately the algorithm does not necarrily match everyone. You might give a list of 12 schools you love, but those schools love other students more than you and so you don't end up with a spot to the school. </p>
+                Unfortunately the algorithm does not necessarily match everyone. You might give a list of 12 schools you love, but those schools love other students more than you and so you don't end up with a spot to the school. </p>
 
               <p>That being said, the DOE algorithm is an improvement from the previous system. Before the DOE started using this matching algorithm when economists helped to design it in 2005, almost 30,000 students were not getting matched with any
                 school on their list. After the implementation, the number of unmatched students dropped to 3,000. </p>
@@ -1844,59 +1832,58 @@
                       <a href="https://www.facebook.com/WoodsideontheMove/" target="blank">Woodside on the Move</a></p>
 
                     <p><strong>Immigration</strong><br>
-                      African Communities Together<br>
-                      Atlas DIY<br>
-                      Black Alliance for Just Immigration<br>
-                      CAIR NY<br>
-                      Cidadão Global<br>
-                      Desis Rising Up and Moving<br>
-                      Families for Freedom<br>
-                      Haitian Women for Haitian Refugees<br>
-                      New Immigrant Community Empowerment<br>
-                      New York Immigration Coalition<br>
-                      Pan-African Community Development Initiative<br>
-                      Sapna NYC</p>
+                      <a href="http://www.africans.us/" target="blank">African Communities Together</a><br>
+                      <a href="http://www.atlasdiy.org/" target="blank">Atlas DIY</a><br>
+                      <a href="https://baji.org/" target="blank">Black Alliance for Just Immigration</a><br>
+                      <a href="https://www.cidadaoglobal.org/" target="blank">Cidadão Global</a><br>
+                      <a href="http://www.drumnyc.org/" target="blank">Desis Rising Up and Moving</a><br>
+                      <a href="https://familiesforfreedom.org/" target="blank">Families for Freedom</a><br>
+                      <a href="https://haitianrefugees.org/" target="blank">Haitian Women for Haitian Refugees</a><br>
+                      <a href="http://www.nynice.org/" target="blank">New Immigrant Community Empowerment</a><br>
+                      <a href="https://www.nyic.org/" target="blank">New York Immigration Coalition</a><br>
+                      <a href="http://www.panafricancdi.com/" target="blank">Pan-African Community Development Initiative</a><br>
+                      <a href="http://sapnanyc.org/" target="blank">Sapna NYC</a></p>
                   </div>
                   <div class="col-md-4">
                     <p><strong>Policing</strong><br>
-                      Community for Police Reform<br></p>
+                      <a href="https://www.changethenypd.org/" target="blank">Community for Police Reform</a><br></p>
 
                     <p><strong>Workers’ & Labor Rights</strong><br>
-                      Brandworkers’ International<br>
-                      Center for Frontline Retail<br>
-                      Chinese Staff & Workers Association<br>
-                      La Colmena<br>
-                      Damayan Migrant Workers Association<br>
-                      Domestic Workers United<br>
-                      Flushing Workers Center<br>
-                      Institute for the Future of Work<br>
-                      Laundry Workers Center<br>
-                      National Domestic Workers Alliance<br>
-                      National Employment Law Project<br>
-                      National Mobilization Against Sweatshops<br>
-                      New York City Network of Worker Cooperatives<br>
-                      New York Taxi Workers’ Alliance<br>
-                      Restaurant Opportunities Center<br>
-                      Worker’s Justice Project<br>
-                      Youth Organizing<br>
-                      Ugnayan Youth<br>
-                      Youth Ministries for Peace & Justice<br>
-                      Youth Represent<br></p>
+                      <a href="https://brandworkers.org/" target="blank">Brandworkers’ International</a><br>
+                      <a href="https://frontlineretail.org/" target="blank">Center for Frontline Retail</a><br>
+                      <a href="http://cswa.org/" target="blank">Chinese Staff & Workers Association</a><br>
+                      <a href="https://www.lacolmenanyc.org/" target="blank">La Colmena</a><br>
+                      <a href="https://www.damayanmigrants.org/" target="blank">Damayan Migrant Workers Association</a><br>
+                      <a href="http://www.domesticworkersunited.org/index.php/en/" target="blank">Domestic Workers United</a><br>
+                      <a href="https://www.facebook.com/flushingworkerscenter/" target="blank">Flushing Workers Center</a><br>
+                      <a href="http://laundryworkerscenter.org/" target="blank">Laundry Workers Center</a><br>
+                      <a href="https://www.domesticworkers.org/" target="blank">National Domestic Workers Alliance</a><br>
+                      <a href="https://www.nelp.org/" target="blank">National Employment Law Project</a><br>
+                      <a href="http://nmass.org/" target="blank">National Mobilization Against Sweatshops</a><br>
+                      <a href="https://nycworker.coop/home/" target="blank">New York City Network of Worker Cooperatives</a><br>
+                      <a href="http://www.nytwa.org/" target="blank">New York Taxi Workers’ Alliance</a><br>
+                      <a href="https://rocunited.org/staff-and-locals/new-york/" target="blank">Restaurant Opportunities Center</a><br>
+                      <a href="http://www.workersjustice.org/" target="blank">Worker’s Justice Project</a><br>
+
+                    <p><strong>Youth Organizing</strong><br>
+                      <a href="https://twitter.com/ugnayanyouth?lang=en" target="blank">Ugnayan Youth</a><br>
+                      <a href="https://www.ympj.org/" target="blank">Youth Ministries for Peace & Justice</a><br>
+                      <a href="http://youthrepresent.org/" target="blank">Youth Represent</a><br></p>
 
                     <p><strong>Multi-Issue Organizing</strong><br>
-                      Adhikaar<br>
-                      Asian Americans for Equality<br>
-                      Brooklyn Movement Center<br>
-                      BronxPOWER<br>
-                      CAAAV Organizing Asian Communities<br>
-                      Community Voices Heard<br>
-                      Families United for Racial and Economic Justice<br>
-                      Make the Road NY<br>
-                      MinKwon Center for Community Action<br>
-                      Movement for Justice en El Barrio<br>
-                      New York Community for Change<br>
-                      Nos Quedamos<br>
-                      Vocal NY<br></p>
+                      <a href="http://www.adhikaar.org/" target="blank">Adhikaar</a><br>
+                      <a href="https://www.aafe.org/" target="blank">Asian Americans for Equality</a><br>
+                      <a href="http://brooklynmovementcenter.org/" target="blank">Brooklyn Movement Center</a><br>
+                      <a href="https://bronxpower.org/" target="blank">BronxPOWER</a><br>
+                      <a href="https://caaav.org/" target="blank">CAAAV Organizing Asian Communities</a><br>
+                      <a href="https://www.cvhaction.org/" target="blank">Community Voices Heard</a><br>
+                      <a href="http://furee.org/" target="blank">Families United for Racial and Economic Justice</a><br>
+                      <a href="https://maketheroadny.org/" target="blank">Make the Road NY</a><br>
+                      <a href="http://minkwon.org/" target="blank">MinKwon Center for Community Action</a><br>
+                      <a href="https://m.facebook.com/Movement-for-Justice-in-El-Barrio-54775959685/" target="blank">Movement for Justice en El Barrio</a><br>
+                      <a href="https://www.nycommunities.org/" target="blank">New York Community for Change</a><br>
+                      <a href="https://nosquedamos.org/" target="blank">Nos Quedamos</a><br>
+                      <a href="http://www.vocal-ny.org/" target="blank">Vocal NY</a><br></p>
                   </div>
                 </div>
               </div>
@@ -2008,7 +1995,7 @@
       <div class="col-md-3">
         <h4 class="center"> Deepra </h4>
         <p class="center"> Content Development <br> + <br> Research</p>
-        <p class="bio"><em> Deepra is a native New Yorker, former government analyst, and a design thinker committed to finding ways governments and technology can form ethical and symbiotic relationships.</em></p>
+        <p class="bio"><em> Deepra is a native New Yorker, former government analyst, and design thinker committed to finding ways governments and technology can form ethical and symbiotic relationships.</em></p>
       </div>
       <div class="col-md-3">
         <h4 class="center"> Elyse </h4>
