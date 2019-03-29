@@ -518,6 +518,14 @@ p{
 
 
 /** framework cards **/
+.front-card-title{
+  text-align: center;
+}
+
+.front-card-text{
+  text-align: center;
+}
+
 .collapsible-body{
   background-color: white;
 }
