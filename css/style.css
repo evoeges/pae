@@ -850,6 +850,13 @@ ul {
   list-style-position: outside;
 }
 
+ul.indented-bullet-points{
+  padding-left: 10%;
+}
+
+li {
+  margin-bottom: 1%;
+}
 .btn-secondary {
     color: #fff;
     background-color: var(--secondary-color);
