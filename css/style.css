@@ -516,7 +516,6 @@ p{
   transform: translateX(100%);
 }
 
-
 /** framework cards **/
 .front-card-title{
   text-align: center;
@@ -849,6 +848,21 @@ ul.toy_algo_boxes li input[type="checkbox"]:checked + label {
 ul {
   list-style-position: outside;
 }
+
+ul.indented-bullet-points{
+   padding-left: 1.2em;
+   list-style-type: circle !important;
+}
+
+ul:not(.browser-default) > li{
+  list-style-type: circle !important;
+}
+
+ul.collapsible{
+  list-style-type: none;
+}
+
+
 
 .btn-secondary {
     color: #fff;
