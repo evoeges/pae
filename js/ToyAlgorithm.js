@@ -66,7 +66,7 @@ var vis= this;
 regressionEq();
 
 function regressionEq(){
-	  for (var i=0; i<vis.data.length; i++) {
+	 /* for (var i=0; i<vis.data.length; i++) {
  			vis.data[i].Fire=	(
 				(.01 * vis.data[i].Building_Age)*selections.age +
 				(.01 * vis.data[i].Architectural_Style)*selections.style +
@@ -79,7 +79,22 @@ function regressionEq(){
 				(.02*vis.data[i].Last_Inspection)*selections.last_inspection +
 				(0*vis.data[i].Number_Windows)*selections.no_windows);
 
+		} */
+		for (var i=0; i<vis.data.length; i++) {
+ vis.data[i].Fire=	(
+	(-.000002782  * vis.data[i].Building_Age)*selections.age +
+	(.00000001143*vis.data[i].Square_Footage)*selections.sq_footage +
+	(.004761 *vis.data[i].boroughBX)*selections.neighborhood +
+	(.0003790  *vis.data[i].boroughMN)*selections.neighborhood -
+	(.0003136  *vis.data[i].boroughQN)*selections.neighborhood +
+	(.0001211  *vis.data[i].boroughSI)*selections.neighborhood +
+	(.0006597 *vis.data[i].Height)*selections.height+
+	(.00009939*vis.data[i].Number_Occupants)*selections.no_occupants+
+	(.03*vis.data[i].Business)*selections.business +
+	(0*vis.data[i].Number_Windows)*selections.no_windows);
+
 		}
+
 }
 
 
@@ -92,9 +107,10 @@ ToyAlgorithm.prototype.updateVis = function(){
  var vis= this;
 
  vis.tip = d3.tip()
- 	.attr('class', 'd3-tip')
+ 	.attr('class', 'd3-tip popover')
  	.html(function(d) {
-	 		return  "Address: " + d.Address +"<br>" +"Fire Risk: " + (d.Fire*100)+"%";
+	 		return  "Address: " + d.Address +"<br>"
+			+"Fire Risk: " + (d.Fire*100)+"%";
 
 		 });
 
@@ -135,7 +151,7 @@ var houses =  vis.svg.selectAll("rect")
 			 		.duration(1000)
  					.attr("class", "fa")
 					.text(function(d){
-	 				 if (d.Fire>.5){
+	 				 if (d.Fire>.001){
 	 					 	return '\uf06d';
 	 					 }
 					 })
