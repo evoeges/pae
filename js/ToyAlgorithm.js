@@ -91,11 +91,23 @@ function regressionEq(){
 ToyAlgorithm.prototype.updateVis = function(){
  var vis= this;
 
+ vis.tip = d3.tip()
+ 	.attr('class', 'd3-tip')
+ 	.html(function(d) {
+	 		return  "Address: " + d.Address +"<br>" +"Fire Risk: " + (d.Fire*100)+"%";
+
+		 });
+
+vis.svg.call(vis.tip);
+
 var houses =  vis.svg.selectAll("rect")
        .data(vis.data);
 
        houses.enter().append("rect")
 			 .attr("class", "rect")
+			.on("mouseover", vis.tip.show)
+			 .on("mouseout", vis.tip.hide)
+
 
 			 .merge(houses)
 			 .transition()
@@ -145,6 +157,7 @@ var houses =  vis.svg.selectAll("rect")
    .attr("class", "fa")
    .attr('font-size', function (d) { return '20px' })
    .text(function (d) { return '\uf2b9' }); */
+
 
 
 }
