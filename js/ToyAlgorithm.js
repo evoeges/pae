@@ -82,19 +82,26 @@ function regressionEq(){
 		} */
 		for (var i=0; i<vis.data.length; i++) {
  vis.data[i].Fire=	(
-	(-.000002782  * vis.data[i].Building_Age)*selections.age +
+	(.000002782  * vis.data[i].Building_Age)*selections.age +
 	(.00000001143*vis.data[i].Square_Footage)*selections.sq_footage +
 	(.004761 *vis.data[i].boroughBX)*selections.neighborhood +
-	(.0003790  *vis.data[i].boroughMN)*selections.neighborhood -
+	(.0003790  *vis.data[i].boroughMN)*selections.neighborhood +
 	(.0003136  *vis.data[i].boroughQN)*selections.neighborhood +
 	(.0001211  *vis.data[i].boroughSI)*selections.neighborhood +
 	(.0006597 *vis.data[i].Height)*selections.height+
-	(.00009939*vis.data[i].Number_Occupants)*selections.no_occupants+
-	(.03*vis.data[i].Business)*selections.business +
-	(0*vis.data[i].Number_Windows)*selections.no_windows);
+	(.000009939*vis.data[i].Number_Occupants)*selections.no_occupants+
+	(.006791*vis.data[i].landuse4)*selections.business +
+	(-.0007427*vis.data[i].landuse5)*selections.business +
+	(-.0000000009511*vis.data[i].assesstot)*selections.dollar_value +
+	(0*vis.data[i].Number_Windows)*selections.no_windows)*100;
 
+		if (vis.data[i].Fire>=1){
+			vis.data[i].Fire=.99;
 		}
-
+		if (vis.data[i].Fire<=0){
+			vis.data[i].Fire=0;
+		}
+	}
 }
 
 
@@ -106,11 +113,13 @@ function regressionEq(){
 ToyAlgorithm.prototype.updateVis = function(){
  var vis= this;
 
+var formatPercent=d3.format(".000%");
+
  vis.tip = d3.tip()
  	.attr('class', 'd3-tip popover')
  	.html(function(d) {
 	 		return  "Address: " + d.Address +"<br>"
-			+"Fire Risk: " + (d.Fire*100)+"%";
+			+"Fire Risk: " + formatPercent(d.Fire);
 
 		 });
 
@@ -151,7 +160,7 @@ var houses =  vis.svg.selectAll("rect")
 			 		.duration(1000)
  					.attr("class", "fa")
 					.text(function(d){
-	 				 if (d.Fire>.001){
+	 				 if (d.Fire>.3){
 	 					 	return '\uf06d';
 	 					 }
 					 })
