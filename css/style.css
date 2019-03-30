@@ -524,6 +524,7 @@ p{
 /** framework cards **/
 .front-card-title{
   text-align: center;
+  color: white;
 }
 
 .front-card-text{
@@ -588,7 +589,7 @@ p{
 }
 
 .small-card{
-  width: 100%;
+  width: 70%;
   height:100%
 
 }
@@ -987,4 +988,25 @@ li {
 
 .bio {
   font-size: 85%;
+}
+
+.sticky{
+  position: sticky;
+  position: -webkit-sticky;
+  height: 50%;
+  top: 20%;
+
+}
+
+.sticky_card_icon{
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.impact_details h3{
+  color: var(--card1-color);
 }
