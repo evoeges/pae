@@ -1,5 +1,5 @@
 :root {
-    --main-color: # ;
+    --main-color: #2ab3a6;
     --secondary-color: #F08578;
     --esp-color: #3454D1;
     --nycha-color: #7170B2;
@@ -974,8 +974,6 @@ li {
   }
 
 }
-<<<<<<< HEAD
-=======
 
 .bio_images{
   display: block;
@@ -990,4 +988,3 @@ li {
 .bio {
   font-size: 85%;
 }
->>>>>>> 82295b280f9e2312e4bd1b2b8c251fb8c0c6005e
