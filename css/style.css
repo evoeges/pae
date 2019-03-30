@@ -643,8 +643,12 @@ margin-left: 20%;
   font-size: 110%;
   margin: 5%;
 }
-.avocado_images {
+.avocado_images{
   width: 20%;
+}
+
+.avo-emoji{
+  font-size: 500%;
 }
 
 .avocado_section{
