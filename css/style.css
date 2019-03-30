@@ -974,3 +974,20 @@ li {
   }
 
 }
+<<<<<<< HEAD
+=======
+
+.bio_images{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border:3px solid var(--secondary-color);
+  width: 70%;
+  margin-bottom: 10%;
+}
+
+.bio {
+  font-size: 85%;
+}
+>>>>>>> 82295b280f9e2312e4bd1b2b8c251fb8c0c6005e
