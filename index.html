@@ -228,7 +228,13 @@
 
         </div>
         <div class="col-md-6">
+<<<<<<< HEAD
           <img src="img/mejia.png">
+=======
+          <div id="porfirio_drawing" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
+          </div>
+
+>>>>>>> 60458a62ef30c0e3b581afe0406a3754c4f89b2e
         </div>
       </div>
 
@@ -521,13 +527,21 @@
       <div class="row align-items-center toyAlgoRow">
         <div class="col-md-4">
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
+            <p>  We created <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
+                data-content="This is a <b>regression model</b> we created from a random dataset of over 500,000 buildings in NYC. It weights variable importance based on which buildings have previously caught fire. In reality, there are much better algorithms than a regression for this kind of problem, like <b>logit models</b> or <b> decision trees</b>!  <br>"> this algorithm <a> to help an imaginary fire department predict which buildings are at high risk for fire using data from the <a href="https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data Portal</a>. <!--`text(FireRisk)_i= \beta_0 + \beta_1*text(BuildingAge)_i+\beta_2*text(Square_Footage)_i+\epsilon_i`--></p>
+            <p> All of the boxes represent real buildings in the city!</p>
+            <p>Click on different combinations of <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
+                data-content="Each of these variables have a different weight. You can hover over the building to see what the predicted risk of fire is for each one. Try selecting different combinations of variables to see how the fire risk prediction for each building changes.">variables</a> in the bubbles below to add or remove them from the algorithm. </p>
+            <p>Which variables do you think can best predict whether a building will catch on fire?
+            </p>
+            <!-- alternate
             <p>
               <b>Sure! Click on different combinations of <a id="variable_example">variables</a> in the bubbles below to add or remove them from the algorithm</b>. As you select variables, the algorithm will change its prediction of which buildings have the highest fire risk for an imaginary fire department.
             </p>
             <p><b>Which ones do you think can best predict whether a building will catch on fire?</b>
             </p>
             <p class="citation">Based on data from the <a href="https://opendata.cityofnewyork.us/">NYC Open Data Portal</a>
-            </p>
+            -->
           </div>
         </div>
         <div class="col-md-6">
@@ -1974,22 +1988,25 @@
 
     <div class="row align-items-top">
       <div class="col-md-3">
-        <h4 class="center"> Aki </h4>
+        <img src="img/aki.jpg" class="bio_images hvr-wobble-vertical">
+        <h3 class="center bio_name"> Aki </h3>
         <p class="center"> Project Management <br> + <br> Data Wrangler </p>
         <p class="bio"><em> Aki is a futurist thinker and racial justice advocate who believes in empowering communities to use data and technology to dismantle systems of oppression.</em></p>
       </div>
       <div class="col-md-3">
-        <h4 class="center"> Deepra </h4>
+        <img src="img/dee.jpg" class="bio_images hvr-wobble-vertical">
+        <h3 class="center bio_name"> Deepra </h3>
         <p class="center"> Content Development <br> + <br> Research</p>
         <p class="bio"><em> Deepra is a native New Yorker, former government analyst, and design thinker committed to finding ways governments and technology can form ethical and symbiotic relationships.</em></p>
       </div>
       <div class="col-md-3">
-        <h4 class="center"> Elyse </h4>
+        <img src="img/elyse.jpg" class="bio_images hvr-wobble-vertical">
+        <h3 class="center bio_name"> Elyse </h3>
         <p class="center">Design<br> + <br> Engineering</p>
         <p class="bio"><em> Elyse is a data analyst and designer committed to making tech accountable, accessible, and delightful.</em></p>
       </div>
       <div class="col-md-3">
-        <h4 class="center">Jon </h4>
+        <h3 class="center bio_name">Jon </h3>
         <p class="center"> Design <br> + <br> Content Development</p>
       </div>
     </div>
@@ -2045,6 +2062,7 @@ var typed = new Typed('#typed', {
   <script src="js/ScrollTrigger.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script type="module" src="js/typed.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script>
 
   <!-- used vivus library -->
 

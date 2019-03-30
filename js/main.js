@@ -156,6 +156,14 @@ function makeDrawings(){
     start: 'autostart'
   });
 
+  /*new Vivus('porfirio_drawing', {
+    duration: 200,
+    file: 'img/porfirio.svg',
+    onReady: function (myVivus) {
+        myVivus.el.setAttribute('width', '100%');
+      },
+  }); */
+
   new Vivus('bodega_drawing', {
     duration: 200,
     file: 'img/PLDeli.svg',
