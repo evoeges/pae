@@ -860,7 +860,7 @@ ul.indented-bullet-points{
 }
 
 li {
-  margin-bottom: 1%;
+  margin-bottom: 3%;
 }
 .btn-secondary {
     color: #fff;
@@ -950,6 +950,7 @@ li {
 
   #website_title{
     font-size: 300%;
+    font-kerning: normal;
   }
   #website_subtitle{
     font-size: 250%;
