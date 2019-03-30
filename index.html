@@ -802,14 +802,14 @@
                 <div class="card-content">
                     <img src="img/impact.png" class="sticky_card_icon">
                   <h3 class="front-card-title">Impact</h3>
-                  <p class="front-card-body center"> Who is affected by <br>the ADS and how?</p>
+                  <p class="front-card-body center"> Who is affected by the ADS and how?</p>
                 </div>
               </div>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-5 impact_details">
 
-              <div class="body_emphasis"> Impact helps us think through how important the discriminatory outcomes (if they exist) are. </div>
+              <div class="body_emphasis"> If the ADS worsened an unjust system, impact helps us think through how important the resulting injustice is. </div>
 
                 <h3>Scale</h3>
                 <p>How many people might be affected by the ADS.</p>
@@ -900,30 +900,37 @@
       <div class="row align-items-top frameworks_row">
           <div class="col"></div>
           <div class="col-md-4 sticky" align="center">
-              <div class="card bias-card small-card">
+              <div class="card machine-bias-card small-card">
                 <div class="card-content">
                     <img src="img/bias.png" class="sticky_card_icon">
                   <h3 class="front-card-title">Bias</h3>
-                  <p class="front-card-body center"> Who is affected by <br>the ADS and how?</p>
+                  <p class="front-card-body center">What inputs in the ADS create problems?</p>
                 </div>
               </div>
           </div>
           <div class="col-md-1"></div>
-          <div class="col-md-5 impact_details">
+          <div class="col-md-5 bias_details">
 
-              <div class="body_emphasis"> Impact helps us think through how important the discriminatory outcomes (if they exist) are. </div>
+              <div class="body_emphasis"> This framework helps identify what parts of the data or algorithm used in an ADS have real world biases imbedded in them and thus worsen unjust systems. </div>
 
-                <h3>Scale</h3>
-                <p>How many people might be affected by the ADS.</p>
-                <h3>Scope</h3>
-                    <p><b>How deep of an impact the decision of the ADS might have on people.</b> Deep impact is when the decision impacts something important, knowing which building might catch on fire is a matter of life and death. </p>
+                <h3>Data</h3>
+                <p><b>Data are never objective. </b>We embed our human bias when we collect, store, and use data. All data are biased.</p>
 
-                    <p>Shallow impact is when the decision impacts something not important or the impact is not very severe, like knowing which books will be the most popular is a matter of buying and shelving books.
-                    </p>
+                 <p>Data being biased means that when we analyze the data, the data might tell us to do something that's not purely objective. It might tell us to do something based on the existing biases of the world that it's capturing. </p>
 
-                <h3>Vulnerability</h3>
-                    <p><b>How vulnerable are the groups that the ADS impacts.</b> If an ADS impacts a group that has historically faced discrimination and the the ADS takes away resources from that group, the ADS is probably going to worsen
-                      inequality.</p>
+                 <p>For example, if we use arrest data by neighborhood to distribute the police force, then we may send police to the same neighborhoods that they have historically policed, which leads to more collection of arrest data in those
+                   same
+                   neighborhoods. This creates a vicious cycle. </p>
+
+                 <p>These biases can arise because all datasets, to some extent, are incomplete, don't accurately represent the thing they're supposed to represent, and have historical mistakes that new data is building on.</p>
+
+                <h3>Algorithm Model</h3>
+                <p>There are hundreds of different algorithms that each calculate outputs slightly differently. <b>An ADS should use the correct type of algorithm the question so that it handles the variables and data points correctly.</b> Choosing the right algorithm should relate to the ADS's purpose.</p>
+
+              <p>If humans are determining specific components of the algorithm, this can also create bias. For many algorithms, humans will be determining the outcome of interest and the variables. </p>
+
+              <p>These decisions are biased because they are based on our own world views and what we think are the relationships between outcomes of interest and variables.
+              </p>
 
 
 
@@ -931,7 +938,7 @@
           <div class="col"></div>
         </div>
 
-
+<!--Explainability-->
   <!--    <div class="row align-items-top frameworks_row">
         <div class="col-md-1"></div>
         <div class="col-md-6">
@@ -985,6 +992,37 @@
 
         </div>
       </div> -->
+      <div class="row align-items-top frameworks_row">
+          <div class="col"></div>
+          <div class="col-md-4 sticky" align="center">
+              <div class="card explainability-card small-card">
+                <div class="card-content">
+                    <img src="img/explainability.png" class="sticky_card_icon">
+                  <h3 class="front-card-title">Explainability</h3>
+                  <p class="front-card-body center"> How easy is it for humans to understand how the ADS works?</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-5 explainability_details">
+
+              <div class="body_emphasis"> When we know how the ADS works, we can analyze its process and components. If the ADS worsens an unjust system, then we can pinpoint exactly how it's happening. </div>
+
+                <h3>Easy to Understand</h3>
+                <p>Some algorithms are very easy to understand, like instructions for choosing an avocado. We know exactly which variables are going into the model and how they're weighted. </p>
+
+                    <p>The avocado algorithm is a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
+                        data-content="A <b>decision tree</b> is like a flowchart made up of nodes connected by branches. Each node represents a different possibility or 'condition'. <br> So for our avocados it might look something like this:"> decision
+                        tree</a>. Super explainable. </p>
+
+                <h3>Hard to Understand</h3>
+                <p> Others can feel like a black box. We give the data to the computer and it gives us a decision, but we don't really know how it reached that decision. </p>
+
+                <p>A <strong class="tooltip_definition"> neural network</strong> algorithm is not that explainable. </p>
+
+          </div>
+          <div class="col"></div>
+        </div>
 
       <!-- Automation-->
   <!--    <div class="row align-items-top frameworks_row ">
@@ -1039,6 +1077,38 @@
 
         </div>
       </div> -->
+      <div class="row align-items-top frameworks_row">
+          <div class="col"></div>
+          <div class="col-md-4 sticky" align="center">
+              <div class="card automation-card small-card">
+                <div class="card-content">
+                    <img src="img/automation.png" class="sticky_card_icon">
+                  <h3 class="front-card-title">Automation</h3>
+                  <p class="front-card-body center">  How much of the decision is made by the ADS?</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-5 automation_details">
+
+              <div class="body_emphasis"> If the decision is made mostly automatically, it could worsen unjust systems without humans even knowing. </div>
+
+                <h3>Low Automation</h3>
+                <p>The ADS doesn't make a decision. It simply analyzes the data which is then used to inform a human decision. </p>
+                <p>Think: A dashboard that tells you what percentage of reported potholes have been filled this month.</p>
+                <h3>Medium Automation</h3>
+                <p>The algorithm provides an advisory decision, but a human still looks over the decision and decides whether to implement it. </p>
+                Think: A scoring system the prioritizes buildings to inspect for fire risk.
+
+                <h3>High Automation</h3>
+                    <p>An algorithm makes a decision and the people using it simply implement that decision. </p>
+                    <p>Think: a traffic light system that sends you a ticket when it detects that you ran a red light.</p>
+
+
+
+          </div>
+          <div class="col"></div>
+        </div>
 
       <!-- Flexibility-->
     <!--  <div class="row align-items-top frameworks_row">
@@ -1095,6 +1165,36 @@
 
         </div>
       </div> -->
+      <div class="row align-items-top frameworks_row">
+          <div class="col"></div>
+          <div class="col-md-4 sticky" align="center">
+              <div class="card flexibility-card small-card">
+                <div class="card-content">
+                    <img src="img/flexibility.png" class="sticky_card_icon">
+                  <h3 class="front-card-title">Flexibility</h3>
+                  <p class="front-card-body center"> Can the ADS be changed easily if people have feedback?</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-5 flexibility_details">
+
+              <div class="body_emphasis"> In order to avoid worsening unjust systems, we want to make sure if there's a problem with the ADS that we know to fix it. </div>
+
+                <h3>Feedback Mechanisms</h3>
+                <p>Feedback from people directly affected by the ADS or who use the ADS on a regular basis is often the best source of feedback to improve the ADS. </p>
+                <h3>Ability and Access to Update</h3>
+                <p>While feedback is important, what a government can do with the feedback is limited based on whether or not they have access and skills to update the algorithm. </p>
+
+                <p>Whether or not they have access to update the algorithm might depend on who owns ADS. Is it owned by the government or by a private company? And it might be based on whether the government has the in house talent to update
+                  the
+                  algorithm.
+
+                </p>
+
+          </div>
+          <div class="col"></div>
+        </div>
 
       <div class="row align-items-center" id="Porfirio_framework">
         <div class="col"></div>

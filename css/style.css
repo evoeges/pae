@@ -1010,3 +1010,38 @@ li {
 .impact_details h3{
   color: var(--card1-color);
 }
+
+.impact_details .body_emphasis{
+  color: var(--card1-color);
+}
+
+.bias_details h3{
+  color: var(--card2-color);
+}
+.bias_details .body_emphasis{
+  color: var(--card2-color);
+}
+
+
+.explainability_details h3{
+  color: var(--card3-color);
+}
+.explainability_details .body_emphasis{
+  color: var(--card3-color);
+}
+
+
+.automation_details h3{
+  color: var(--card4-color);
+}
+.automation_details .body_emphasis{
+  color: var(--card4-color);
+}
+
+
+.flexibility_details h3{
+  color: var(--card5-color);
+}
+.flexibility_details .body_emphasis{
+  color: var(--card5-color);
+}
