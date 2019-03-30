@@ -4,7 +4,7 @@
     --esp-color: #3454D1;
     --nycha-color: #7170B2;
     --doe-color: #F28F3B;
-    --success-color:4C7CBD;
+    --success-color:#4C7CBD;
     --dark-color: #616161;
     --link-color: #9E9E9E;
     --nav-link-color: #9E9E9E;
@@ -65,7 +65,7 @@ h2 {
 }
 
 h3 {
-  text-align: center;
+  text-align: left;
   color: var(--dark-color);
   font-size: 180%;
   font-family: var(--secondary-font);
@@ -91,7 +91,7 @@ h4{
   font-size: 160%;
   font-weight: 400;
   padding: 4%;
-  margin-top:5%;
+  margin-top:2%;
 }
 
 
@@ -421,9 +421,9 @@ padding-bottom:1%;
 
 .chapter_title{
   font-family: var(--main-font);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 300%;
-  color: var(--nav-link-color);
+  color: var(--main-color);
   text-align: center;
   margin-bottom: 50px;
   padding: 0;
@@ -641,6 +641,7 @@ margin-left: 20%;
 .avocado_thoughts{
   font-style: italic;
   font-size: 110%;
+  margin: 5%;
 }
 .avocado_images {
   width: 20%;
