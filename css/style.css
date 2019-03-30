@@ -1,5 +1,5 @@
 :root {
-    --main-color: #2ab3a6;
+    --main-color: # ;
     --secondary-color: #F08578;
     --esp-color: #3454D1;
     --nycha-color: #7170B2;
@@ -72,6 +72,7 @@ h3 {
   color: var(--dark-color);
   font-size: 180%;
   font-family: var(--secondary-font);
+  font-weight: 500;
   padding-top: 5%;
 }
 
@@ -376,9 +377,6 @@ padding-bottom:1%;
   font-size: 58px;
 }
 
-.bio_name{
-  color: var(--main-color);
-}
 
 
 .fromTopIn
@@ -975,14 +973,4 @@ li {
     font-size: 5vw;
   }
 
-}
-
-.bio_images{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  border:3px solid var(--secondary-color);
-  width: 70%;
-  margin-bottom: 10%;
 }
