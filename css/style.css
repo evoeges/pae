@@ -38,6 +38,9 @@ body {
   position: relative;
 }
 
+p {
+  line-height: 1.43;
+}
 .container{
   width: 75%;
 }
@@ -857,6 +860,7 @@ ul {
 
 ul.indented-bullet-points{
   padding-left: 10%;
+  list-style-type: circle;
 }
 
 li {
