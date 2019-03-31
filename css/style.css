@@ -637,7 +637,8 @@ margin-left: 20%;
   padding-bottom: 10%;
 }
 
-.ads_visual_header{
+.centered-header{
+  text-align: center;
   padding-top: 10%;
   padding-bottom: 5%;
 }
