@@ -175,6 +175,7 @@ function makeDrawings(){
   new Vivus('register_drawing', {
     duration: 200,
     file: 'img/register2.svg',
+    type: 'oneByOne',
     onReady: function (myVivus) {
         myVivus.el.setAttribute('width', '100%');
       },
