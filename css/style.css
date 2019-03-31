@@ -13,11 +13,11 @@
     --main-font: 'Nunito', sans-serif;
     --secondary-font: 'Copse', serif;
     --houses-color: #BDBDBD;
-    --card1-color: #008772;
-    --card2-color: #ED4FAF;
-    --card3-color: #0072C6;
-    --card4-color: #9E2387;
-    --card5-color: #FCA311;
+    --card1-color: #381433;
+    --card2-color: #4f0337;
+    --card3-color: #680e4b;
+    --card4-color: #841a4d;
+    --card5-color: #931a3f;
 }
 
 /*
@@ -524,6 +524,12 @@ p{
 /** framework cards **/
 .front-card-title{
   text-align: center;
+  color: white;
+}
+
+.card-title{
+  font-size: 200%;
+  color: white;
 }
 
 .front-card-text{
@@ -588,8 +594,9 @@ p{
 }
 
 .small-card{
-  width: 100%;
+  width: 70%;
   height:100%
+
 
 }
 
@@ -607,8 +614,13 @@ p{
 }
 
 .card_icon{
-  font-size: 600%;
-  text-align: center;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  padding-bottom: 15%;
+
 }
 
 .card.medium{
@@ -806,6 +818,7 @@ margin-left: 20%;
 .case_cards{
   margin: 1%;
   margin-left: 1%;
+  height: 100%;
 }
 
 /* Toy algo buttons */
@@ -987,4 +1000,69 @@ li {
 
 .bio {
   font-size: 85%;
+}
+
+.sticky{
+  position: sticky;
+  position: -webkit-sticky;
+  height: 50%;
+  top: 20%;
+
+}
+
+.sticky_card_icon{
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.impact_details h3{
+  color: var(--card1-color);
+}
+
+.impact_details .body_takeaway{
+  color: var(--card1-color);
+    border-color: var(--card1-color);
+}
+
+.bias_details h3{
+  color: var(--card2-color);
+}
+.bias_details .body_takeaway{
+  color: var(--card2-color);
+    border-color: var(--card2-color);
+}
+
+
+.explainability_details h3{
+  color: var(--card3-color);
+}
+.explainability_details .body_takeaway{
+  color: var(--card3-color);
+    border-color: var(--card3-color);
+}
+
+
+.automation_details h3{
+  color: var(--card4-color);
+}
+.automation_details .body_takeaway{
+  color: var(--card4-color);
+    border-color: var(--card4-color);
+}
+
+
+.flexibility_details h3{
+  color: var(--card5-color);
+}
+.flexibility_details .body_takeaway{
+  color: var(--card5-color);
+    border-color: var(--card5-color);
+}
+
+.card .card-title{
+  font-size: 180%;
 }
