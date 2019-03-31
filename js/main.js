@@ -174,7 +174,15 @@ function makeDrawings(){
 
   new Vivus('register_drawing', {
     duration: 200,
-    file: 'img/register.svg',
+    file: 'img/register2.svg',
+    onReady: function (myVivus) {
+        myVivus.el.setAttribute('width', '100%');
+      },
+  });
+
+  new Vivus('avocado_drawing', {
+    duration: 200,
+    file: 'img/avocado.svg',
     onReady: function (myVivus) {
         myVivus.el.setAttribute('width', '100%');
       },
