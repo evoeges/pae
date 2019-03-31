@@ -1073,7 +1073,7 @@ li {
 }
 .flexibility_details .body_takeaway{
   color: var(--card5-color);
-    border-color: var(--card5-color);
+  border-color: var(--card5-color);
 }
 
 .card .card-title{
@@ -1086,4 +1086,9 @@ li {
 
 .card-reveal h4{
   font-size: 110%;
+}
+
+/** get active **/
+.card-get-active{
+  height: 20vw;
 }

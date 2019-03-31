@@ -173,3 +173,10 @@ function makeDrawings(){
   });
 
 }
+
+$(".card-hover").hover(
+  function(){
+    $(this).addClass('z-depth-4')},
+    function(){
+    $(this).removeClass('z-depth-4')
+  })
