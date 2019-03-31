@@ -594,8 +594,8 @@ p{
 }
 
 .small-card{
-  width: 20vw;
-  height:25vw;
+  width: 25vw;
+  height:30vw;
 
 
 }
@@ -1082,4 +1082,8 @@ li {
 
 .card-reveal p{
   font-size: 85%;
+}
+
+.card-reveal h4{
+  font-size: 110%;
 }
