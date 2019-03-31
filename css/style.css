@@ -594,8 +594,8 @@ p{
 }
 
 .small-card{
-  width: 70%;
-  height:100%
+  width: 20vw;
+  height:25vw;
 
 
 }
@@ -627,6 +627,8 @@ p{
 margin-top:1%;
 height:400px;
 margin-left: 20%;
+
+
 }
 
 
@@ -818,7 +820,8 @@ margin-left: 20%;
 .case_cards{
   margin: 1%;
   margin-left: 1%;
-  height: 100%;
+  width: 20vw;
+  height:25vw;
 }
 
 /* Toy algo buttons */
@@ -986,6 +989,15 @@ li {
     font-size: 5vw;
   }
 
+  .small-card{
+    width: 100%;
+    height: 100%;
+  }
+
+  .case_cards{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .bio_images{
