@@ -114,6 +114,8 @@ ToyAlgorithm.prototype.updateVis = function(){
  var vis= this;
 
 var formatPercent=d3.format(".000%");
+var formatMoney= d3.format("($.2s");
+var formatArea=d3.format(",.2r");
 
  vis.tip = d3.tip()
  	.attr('class', 'd3-tip popover')
@@ -121,6 +123,10 @@ var formatPercent=d3.format(".000%");
 	 		return  "Address: " + d.Address +"<br>"
 			+"Borough: " + d.borough +"<br>"
 			+ "Building Age: " +d.Building_Age+" years old" +"<br>"
+			+ "Square Footage: " + formatArea(d.Square_Footage)+"<br>"
+			+ "Number of Occupants: " + d.Number_Occupants+"<br>"
+			+ "Dollar Value: " + formatMoney(d.assesstot)+"<br>"
+			+ "Height: " + d.Height +" floors"+"<br>"
 			+"Fire Risk: " + formatPercent(d.Fire);
 
 		 });
