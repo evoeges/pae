@@ -672,7 +672,7 @@
           <div class="card machine-bias-card small-card fade-container">
             <div class="card-content">
               <h4 class="front-card-title">Bias</h4>
-              <p> What inputs in the ADS produce problems?</p>
+              <p> What inputs in the ADS create problems?</p>
             </div>
             <div class="overlay">
               <div class="icon-fade"> / </div>
@@ -826,7 +826,7 @@
         <div class="col-md-6">
           <div>
             <h3 id="bias_section"><strong>Bias</strong></h3>
-            <h4> What inputs in the ADS produce problems?</h4>
+            <h4> What inputs in the ADS create problems?</h4>
             <p> It helps identify what parts of the algorithm used in an ADS have bias imbedded in them and thus create discriminatory outcomes or worsen unjust systems. </p>
           </div>
 
@@ -1194,6 +1194,103 @@
         <div class="col"></div>
       </div>
 
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card  case_cards activator impact-card">
+            <div class="card-content activator">
+              <span class="activator"><img src="img/impact.png" class="card_icon activator"></span>
+            <h3 class="card-title activator">Impact<i class="right activator" data-feather="maximize-2"></i></h3>
+              <p class="activator">Who does the ADS affect and how?</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
+              <h4> Scale </h4>
+              <p>Large scale. Large. The USDA algorithm affects any business that accepts food stamps. In New York City, <a href="https://www1.nyc.gov/site/foodpolicy/help/snap-benefits.page" target="_blank">1.6 million low income people </a>rely on SNAP.</p>
+              <h4> Scope </h4>
+              <p>Deep. The loss of revenue for Porfirio was significant. Moreover, the community lost a reliable food source. </p>
+              <h4> Vulnerability </h4>
+              <p>In general the USDA algorithm impacts vulnerable communities because it impacts communities that rely on alternative financial systems, who are usually lower income and communities of color.<</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card  case_cards activator machine-bias-card">
+            <div class="card-content">
+              <span class="activator"><img src="img/bias.png" class="card_icon activator"></span>
+            <h3 class="card-title activator">Bias<i class="right activator" data-feather="maximize-2"></i></h3>
+              <p>What inputs in the ADS create problems?</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
+              <h4>Data</h4>
+              <p>Because Porfirio's bodega is in a low-income neighborhood, he is more likely to have more customers with food stamps. While the data is technically accurate, it is geographically skewed so that bodegas like Porfirio's receive more scrutiny whereas bodegas in rich neighborhoods receive less scrutiny.</p>
+              <h4> Algorithm Model </h4>
+              <p>The algorithm the USDA used to identify cash-for-food-stamps fraud was using large one time purchases as variable to indicate fraud. The algorithm couldn't distinguish between true fraud and Porfirio's IOU system. Someone decided that the model should flag certain transactions as fraudulent, so there was bias in the model against those kinds of transactions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card  case_cards activator explainability-card">
+            <div class="card-content">
+              <span class="activator"><img src="img/explainability.png" class="card_icon activator"></span>
+            <h3 class="card-title activator">Explainability<i class="right activator" data-feather="maximize-2"></i></h3>
+              <p>How easy is it for humans to understand how the ADS works?</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
+            <p> For Porfirio, we don't know how the whole ADS works. Who looks at the results of the algorithm that is flagging cases of supposed fraud? What are the checks and balances around the decision making process? </p>
+
+              <p>If we knew more about the process and components of the ADS, we would be able to see if there were design decisions to mitigate mistakes like miscategorizing Porfirio's bodega.</p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <div class="card  case_cards activator automation-card">
+            <div class="card-content">
+              <span class="activator"><img src="img/automation.png" class="card_icon activator"></span>
+            <h3 class="card-title activator">Automation<i class="right activator" data-feather="maximize-2"></i></h3>
+              <p>How much of the decision is made by the ADS?</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title  automation-title">Automation<i class="fas fa-times right"></i></span>
+              <h4> High </h4>
+              <p>As far we know, the USDA algorithm automatically flags transactions it categorizes as "fraud" which results in the USDA sending out a letter to a business owner notifying them that their ability to accept SNAP will be
+              suspended
+              unless they prove otherwise.</p>
+
+              <p>It is unclear whether a USDA employee reviews the flagged transactions before such a letter is sent.</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+          <div class="card case_cards activator flexibility-card">
+            <div class="card-content">
+              <span class="activator"><img src="img/flexibility.png" class="card_icon activator"></span>
+            <h3 class="card-title activator">Flexibility<i class="right activator" data-feather="maximize-2"></i></h3>
+              <p>Can the ADS be changed easily if people have feedback?</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title  flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
+              <h4> Feedback System </h4>
+              <p>The USDA ADS as a whole is not very flexible because there is not a good feedback system from people who are directly affected by the ADS.</p>
+              <h4> Ability and Access to Update </h4>
+              <p>Although business owners have the ability to submit feedback if they believe they've been wrongly flagged, this feedback has to be in a very specific form. Moreover, there is no mechanism for businesses or others to tell the USDA how it can improve its system.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
 
 
       <!-- end of frameworks section-->
@@ -1365,7 +1462,7 @@
                 <div class="card-reveal">
                   <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
                   <h4> Scale </h4>
-                  </p>Large scale. A lot of people use libraries.</p>
+                  <p>Large scale. A lot of people use libraries.</p>
                   <h4> Scope </h4>
                   <p>Superficial. Books are great, but probably not as serious as other social services and it's not about life or death.</p>
                   <h4> Vulnerability </h4>
@@ -1380,12 +1477,12 @@
                 <div class="card-content">
                   <span class="activator"><img src="img/bias.png" class="card_icon activator"></span>
                   <h3 class="card-title  activator">Bias<i class="right activator" data-feather="maximize-2"></i></h3>
-                  <p>What inputs in the ADS produce problems?<p>
+                  <p>What inputs in the ADS create problems?</p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
                   <h4>Data</h4>
-                  </p> ESP uses a lot of data which incorporates both library and private book sale data but is unable currently to take in other forms of data like book reviews. The data doesn't account for human biased equity issues. Sales data may
+                  <p> ESP uses a lot of data which incorporates both library and private book sale data but is unable currently to take in other forms of data like book reviews. The data doesn't account for human biased equity issues. Sales data may
                   be based on higher-income individuals. Libraries should think about books that their unique populations need and value.</p>
                   <h4> Algorithm Model </h4>
                   <p>ESP uses a neural network. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know if what kinds of bias in the data are driving outcomes. </p>
@@ -1398,12 +1495,12 @@
                 <div class="card-content">
                   <span class="activator"><img src="img/explainability.png" class="card_icon activator"></span>
                 <h3 class="card-title activator">Explainability<i class="right activator" data-feather="maximize-2"></i></h3>
-                  <p>How easy is it for humans to understand how the ADS works?<p>
+                  <p>How easy is it for humans to understand how the ADS works?</p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
 
-                  </p>ESP is a neural network, which is not very explainable. We can't distinguish which variables algorithm is using and how important they end up being to the eventual results.</p>
+                  <p>ESP is a neural network, which is not very explainable. We can't distinguish which variables algorithm is using and how important they end up being to the eventual results.</p>
 
                   <p>If we knew more about the process and components of the ADS, we would be able to see if there were design decisions to mitigate mistakes like miscategorizing Porfirio's bodega.</p>
                 </div>
@@ -1419,12 +1516,12 @@
                 <div class="card-content">
                   <span class="activator"><img src="img/automation.png" class="card_icon activator"></span>
                 <h3 class="card-title activator">Automation<i class="right activator" data-feather="maximize-2"></i></h3>
-                  <p>How much of the decision is made by the ADS?<p>
+                  <p>How much of the decision is made by the ADS?</p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title  automation-title">Automation<i class="fas fa-times right"></i></span>
                   <h4> Medium </h4>
-                  </p>ESP is advisory. It gives a score, but the Librarians can still use their own knowledge or priorities to decide how much the score guides their decisions on whether to buy a book, how many copies to buy, or where to place the
+                  <p>ESP is advisory. It gives a score, but the Librarians can still use their own knowledge or priorities to decide how much the score guides their decisions on whether to buy a book, how many copies to buy, or where to place the
                   book.</p>
 
                   <p>It is unclear whether a USDA employee reviews the flagged transactions before such a letter is sent.</p>
@@ -1443,7 +1540,7 @@
                 <div class="card-reveal">
                   <span class="card-title  flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
                   <h4> Feedback System </h4>
-                  </p>Librarians have been able to give feedback to the company that runs ESP, but...</p>
+                  <p>Librarians have been able to give feedback to the company that runs ESP, but...</p>
                   <h4> Ability and Access to Update </h4>
                   <p>ESP is owned by a private company that has to many any updates.</p>
                 </div>
@@ -1564,12 +1661,12 @@
               <div class="card-content activator">
                 <span class="activator"><img src="img/impact.png" class="card_icon activator"></span>
               <h3 class="card-title activator">Impact<i class="right activator" data-feather="maximize-2"></i></h3>
-                <p class="activator">Who does the ADS affect and how?<p>
+                <p class="activator">Who does the ADS affect and how?</p>
               </div>
               <div class="card-reveal">
                 <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
                 <h4> Scale </h4>
-                </p>Large scale. There's hundreds of thousands of people on the NYCHA waiting list. Then there's hundreds of thousands of people living in NYCHA units, any of whom who might want transfers.</p>
+                <p>Large scale. There's hundreds of thousands of people on the NYCHA waiting list. Then there's hundreds of thousands of people living in NYCHA units, any of whom who might want transfers.</p>
                 <h4> Scope </h4>
                 <p>Deep. TSAP matches people who need affordable publich housing to those very units.</p>
                 <h4> Vulnerability </h4>
@@ -1583,7 +1680,7 @@
               <div class="card-content">
                 <span class="activator"><img src="img/bias.png" class="card_icon activator"></span>
               <h3 class="card-title activator">Bias<i class="right activator" data-feather="maximize-2"></i></h3>
-                <p>What inputs in the ADS produce problems?<p>
+                <p>What inputs in the ADS create problems?</p>
               </div>
               <div class="card-reveal">
                 <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
@@ -1600,7 +1697,7 @@
               <div class="card-content">
                 <span class="activator"><img src="img/explainability.png" class="card_icon activator"></span>
               <h3 class="card-title activator">Explainability<i class="right activator" data-feather="maximize-2"></i></h3>
-                <p>How easy is it for humans to understand how the ADS works?<p>
+                <p>How easy is it for humans to understand how the ADS works?</p>
               </div>
               <div class="card-reveal">
                 <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
@@ -1621,7 +1718,7 @@
               <div class="card-content">
                 <span class="activator"><img src="img/automation.png" class="card_icon activator"></span>
               <h3 class="card-title activator">Automation<i class="right activator" data-feather="maximize-2"></i></h3>
-                <p>How much of the decision is made by the ADS?<p>
+                <p>How much of the decision is made by the ADS?</p>
               </div>
               <div class="card-reveal">
                 <span class="card-title  automation-title">Automation<i class="fas fa-times right"></i></span>
@@ -1753,12 +1850,12 @@
                 <div class="card-content activator">
                   <span class="activator"><img src="img/impact.png" class="card_icon activator"></span>
                 <h3 class="card-title activator">Impact<i class="right activator" data-feather="maximize-2"></i></h3>
-                  <p class="activator">Who does the ADS affect and how?<p>
+                  <p class="activator">Who does the ADS affect and how?</p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
                   <h4> Scale </h4>
-                  </p>Medium scale. Every year 80,000+ students are affected by this algorithm.</p>
+                  <p>Medium scale. Every year 80,000+ students are affected by this algorithm.</p>
                   <h4> Scope </h4>
                   <p>Deep. DOE's matching algorithm decides where students go to high school, which can have an impact on their lives beyond high school as well.</p>
                   <h4> Vulnerability </h4>
@@ -1772,12 +1869,12 @@
                 <div class="card-content">
                   <span class="activator"><img src="img/bias.png" class="card_icon activator"></span>
                 <h3 class="card-title activator">Bias<i class="right activator" data-feather="maximize-2"></i></h3>
-                  <p>What inputs in the ADS produce problems?<p>
+                  <p>What inputs in the ADS create problems?</p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
                   <h4>Data</h4>
-                  </p> This algorithm uses data from students ranking their preferences and schools ranking their preferences with admissions priorities. These data sets can be very biased. Student rankings are based on their own perceptions of their
+                  <p> This algorithm uses data from students ranking their preferences and schools ranking their preferences with admissions priorities. These data sets can be very biased. Student rankings are based on their own perceptions of their
                   competitivity in the proces, their parents' knowledge about which schools are best, their desire to stay with their friends. The school preferences based on admissions priorities are biased to just track what the schools want to
                   focus on. If they want to focus on good grades, they can do that. If they want to focus on students in the neighborhood, they can do that.</p>
                   <h4> Algorithm Model </h4>
@@ -1791,12 +1888,12 @@
                 <div class="card-content">
                   <span class="activator"><img src="img/explainability.png" class="card_icon activator"></span>
                 <h3 class="card-title activator">Explainability<i class="right activator" data-feather="maximize-2"></i></h3>
-                  <p>How easy is it for humans to understand how the ADS works?<p>
+                  <p>How easy is it for humans to understand how the ADS works?/<p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
 
-                  </p>The document that guides students through the high school application and matching process is called <a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish"
+                  <p>The document that guides students through the high school application and matching process is called <a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish"
                     target="_blank"> the high School Directory</a>. </p>
                   <p>It is over 600 pages long with 28 pages of instructions! Most of the 630+ pages is school profiles that has a ton of information about every school to help inform students about their competitivity for matching with the school.
                   </p>
@@ -1814,12 +1911,12 @@
                 <div class="card-content">
                   <span class="activator"><img src="img/automation.png" class="card_icon activator"></span>
                 <h3 class="card-title activator">Automation<i class="right activator" data-feather="maximize-2"></i></h3>
-                  <p>How much of the decision is made by the ADS?<p>
+                  <p>How much of the decision is made by the ADS?</p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title  automation-title">Automation<i class="fas fa-times right"></i></span>
                   <h4> High </h4>
-                  </p>Students are automatically matched to their schools through the matching algorithm. The results are offer letters, not recommendations that are checked by another party.</p>
+                  <p>Students are automatically matched to their schools through the matching algorithm. The results are offer letters, not recommendations that are checked by another party.</p>
                 </div>
               </div>
 
