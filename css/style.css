@@ -527,6 +527,11 @@ p{
   color: white;
 }
 
+.card-title{
+  font-size: 200%;
+  color: white;
+}
+
 .front-card-text{
   text-align: center;
 }
@@ -592,6 +597,7 @@ p{
   width: 70%;
   height:100%
 
+
 }
 
 .small-card .card-content{
@@ -608,8 +614,13 @@ p{
 }
 
 .card_icon{
-  font-size: 600%;
-  text-align: center;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  padding-bottom: 15%;
+
 }
 
 .card.medium{
@@ -807,6 +818,7 @@ margin-left: 20%;
 .case_cards{
   margin: 1%;
   margin-left: 1%;
+  height: 100%;
 }
 
 /* Toy algo buttons */
@@ -1049,4 +1061,8 @@ li {
 .flexibility_details .body_takeaway{
   color: var(--card5-color);
     border-color: var(--card5-color);
+}
+
+.card .card-title{
+  font-size: 180%;
 }
