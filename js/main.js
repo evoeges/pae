@@ -172,6 +172,14 @@ function makeDrawings(){
       },
   });
 
+  new Vivus('register_drawing', {
+    duration: 200,
+    file: 'img/register.svg',
+    onReady: function (myVivus) {
+        myVivus.el.setAttribute('width', '100%');
+      },
+  });
+
 }
 
 $(".card-hover").hover(
