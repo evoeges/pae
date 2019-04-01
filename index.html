@@ -1338,23 +1338,43 @@
         </div>
 
         <div class="row align-items-center">
-          <div class="col"></div>
-          <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <div class="carousel carousel-slider center">
-                <div class="carousel-item red white-text" href="#one!">
-                  <h2>First Panel</h2>
-                  <p class="white-text">This is your first panel</p>
-                </div>
-                <div class="carousel-item amber white-text" href="#two!">
-                  <h2>Second Panel</h2>
-                  <p class="white-text">This is your second panel</p>
-                </div>
+          <div class="col-md-3 center">
+            <i class="fas fa-pen-nib algorithm_icons"></i>
           </div>
+          <div class="col-md-3 center">
+            <i class="far fa-question-circle algorithm_icons"></i><i class="far fa-building algorithm_icons"></i>
           </div>
-          <div class="col"></div>
+          <div class="col-md-3 center">
+          <i class="fas fa-user-check algorithm_icons"></i>
+          </div>
+          <div class="col-md-3 center">
+            <i class="far fa-user algorithm_icons"></i><i class="fas fa-link algorithm_icon_link"></i><i class="far fa-building algorithm_icons"></i>
+          </div>
       </div>
 
-
+        <div class="row align-items-top">
+          <div class="col-md-3">
+            <h4 class="center">1. Apply & Assign</h4>
+            <p>New people apply to get put onto the waitlist. People already in public housing units also apply to transfer to other units when there are openings.
+              <br><br>These two groups of applicants are assigned “priority codes” based on their income and needs (like having experienced domestic abuse, hate crimes, or involuntary displacement) and put on a general waiting list.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h4 class="center">2. Predict</h4>
+            <p>Every two weeks, TSAP uses a computer program to predict the types of units that are most likely to be vacated in the next six months.<br><br> The algorithm first looks at how many eligible and certified transfer applicants can fill those units. Then, it figures out how many new applicants from the waiting list might be eligible and should get interviewed to be certified.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h4 class="center">3. Verify</h4>
+            <p>NYCHA staff reach out to the list of new applicants to interview and verify that applicants actually do meet the requirements for the apartment. If they pass, they’ll be “certified” and placed in the pool to fill units.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h4 class="center">4. Match</h4>
+            <p>Once a vacant unit opens up, the computer program looks for people who are certified and eligible. It prioritizes transfers with high-needs, then transfers with less urgent needs and new applicants.
+            </p>
+          </div>
+      </div>
 
 
         <div class="row align-items-center">
@@ -1397,6 +1417,15 @@
           <div class="col"></div>
         </div>
 
+        <div class="row align-items-center">
+          <div class="col"></div>
+          <div class="col-md-10">
+              <p class="citation center">Read more about TSAP in the <a href="https://www1.nyc.gov/assets/nycha/downloads/pdf/TSAPlan.pdf">official documentation from 2016</a></p>
+          </div>
+          <div class="col"></div>
+        </div>
+
+
         <!-- NYCHA -->
         <div class="row">
           <div class="col-md-4">
@@ -1409,13 +1438,12 @@
               <div class="card-reveal">
                 <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
                 <h4> Scale </h4>
-                <p>Large scale. There's hundreds of thousands of people on the NYCHA waiting list. Then there's hundreds of thousands of people living in NYCHA units, any of whom who might want transfers.</p>
+                <p>Large scale. There's hundreds of thousands of people on the waiting list who want to be assigned a new apartment.</p>
                 <h4> Scope </h4>
                 <p>Deep. TSAP matches people who need affordable public housing to those very units.</p>
                 <h4> Vulnerability </h4>
-                <p>People who are either new applicants to NYCHA or who are asking for transfers are doing so because they have limited access to affordable housing. TSAP helps match people now, but it doesn't help get housing for all the people
-                  who
-                  are not matched.</p>
+                <p>Vulnerable population. New and existing applicants for public housing have limited access to affordable housing.
+                </p>
               </div>
             </div>
           </div>
@@ -1429,9 +1457,11 @@
               <div class="card-reveal">
                 <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
                 <h4>Data</h4>
-                <p>The data TSAP uses is based on historical data and the data that is input either by new applicants, transfer requests, or case workers helping people who are new applicants or asking for transfers.</p>
+                <p>The data TSAP uses is based on both historical data and new data input by new applicants, transfer requests, or case workers.  The algorithm makes a prediction about how many units will be vacated based on how many units of a certain type were vacated in the past. However,  there might be other factors at play in the present day that the algorithm can’t account for. For example, maybe that building was renovated and fewer people want to leave now. This is called omitted variable bias.
+                </p>
                 <h4> Algorithm Model </h4>
-                <p>There are multiple algorithms in this ADS. It seems like NYCHA is trying to use the best algorithm for each decision type.</p>
+                <p>There are multiple algorithms in this ADS. It seems like NYCHA is trying to use the best algorithm for each decision type.
+                </p>
               </div>
             </div>
           </div>
@@ -1445,9 +1475,11 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
-                <p>The information about TSAP is available online, but the description is 57 pages long!
-                  Certain parts of the ADS are more explainable than others. For example, what the priority codes are and what the qualifications for these priority codes is pretty explainable, but predicting vacant units and how that impacts
-                  eligibility interviews is less explainable.
+                <p>The information about TSAP is available online, but the description is 57 pages long! The actual algorithms used are pretty explainable. Decision trees and linear regressions both have clearly identifiable variables and the weights are easy to understand.
+                </p>
+                <p>The ADS as a whole can be confusing though.
+                </p>
+                <p>Certain parts are easier to understand than others. For example, what the priority codes are and what the qualifications for these priority codes are is clearly laid out, but predicting vacant units and how that impacts eligibility interviews is more opaque.
                 </p>
               </div>
             </div>
@@ -1466,10 +1498,9 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title  automation-title">Automation<i class="fas fa-times right"></i></span>
-                <h4> High </h4>
-                <p>Many parts of this ADS are automatic. For example, the predicted vacancies is through a formula and gives a specific number that the agency is supposed to follow for determining the number of eligibility interviews. And the
-                  process
-                  for matching people to vacant apartments is automatic and supposed to be followed by agency staff.</p>
+                <h4>High</h4>
+                <p>TSAP is mostly automated. For example, vacancies and suggestions for eligibility interviews are predicted using a formula. The process for matching people to vacant apartments is also automatic.
+                </p>
               </div>
             </div>
 
@@ -1485,16 +1516,16 @@
               <div class="card-reveal">
                 <span class="card-title  flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
                 <h4> Feedback System </h4>
-                <p>TSAP can be updated by a Mayor, though it has to go through a review process. It is unclear if tenants can give feedback to TSAP or contest TSAP results.</p>
+                <p>TSAP can be updated by a Mayor, though it has to go through a review process. It is unclear if tenants can give feedback to TSAP or contest TSAP results.
+                </p>
                 <h4> Ability and Access to Update </h4>
-                <p>There is a team at NYCHA that works just on TSAP.</p>
+                <p>It’s very updateable. There’s a NYCHA team that works solely on TSAP implementation.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-2"></div>
         </div>
-        Read more about TSAP<a href="https://www1.nyc.gov/assets/nycha/downloads/pdf/TSAPlan.pdf">here
-        </a>.
       </div>
 
 

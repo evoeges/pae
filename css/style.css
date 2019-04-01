@@ -1,9 +1,9 @@
 :root {
     --main-color: #2ab3a6;
     --secondary-color: #F08578;
-    --esp-color: #3454D1;
-    --nycha-color: #7170B2;
-    --doe-color: #F28F3B;
+    --esp-color: #2ab3a6;
+    --nycha-color: #2ab3a6;
+    --doe-color: #2ab3a6;
     --success-color:#4C7CBD;
     --dark-color: #616161;
     --link-color: #9E9E9E;
@@ -480,6 +480,12 @@ padding-bottom:1%;
 .algorithm_icons{
   color: var(--main-color);
   font-size: 400%;
+  text-align: center;
+}
+
+.algorithm_icon_link{
+  color: var(--main-color);
+  font-size: 250%;
   text-align: center;
 }
 
