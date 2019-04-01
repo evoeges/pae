@@ -984,11 +984,6 @@ li {
     font-size: 225%;
   }
 
-  .chapter_number{
-        font-size: 225%;
-  }
-
-
   h2 {
     font-size: 175%;
   }
@@ -999,6 +994,10 @@ li {
 
   h3 {
     font-size: 125%;
+  }
+
+  .card-title{
+    font-size: 140%;
   }
 
 
