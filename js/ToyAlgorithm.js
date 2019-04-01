@@ -174,7 +174,7 @@ ToyAlgorithm.prototype.updateVis = function() {
     .duration(1000)
     .attr("class", "fa")
     .text(function(d) {
-      if (d.Fire > .3) {
+      if (d.Fire >= .3) {
         return '\uf06d';
       }
     })
