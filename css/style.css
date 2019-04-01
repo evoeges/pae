@@ -1189,9 +1189,9 @@ li {
 }
 
 
-#navbar-side a{
+  #navbar-side a{
     color: var(--mobile-nav-color);
-}
+  }
 
   #navbar-side a.active {
     background-color: transparent;
@@ -1201,5 +1201,10 @@ li {
     border-left: none;
     font-size: 60%;
     color: var(--secondary-color);
-}
+  }
+
+  .frameworks_row .body_takeaway{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 }
