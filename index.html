@@ -504,29 +504,28 @@
           <h3 id="toyAlgo"> Can I play with an algorithm?</h3>
         </div>
       </div>
-      <div class="row align-items-center toyAlgoRow">
-        <div class="col-md-4">
+      <div class="row align-items-bottom toyAlgoRow">
+        <div class="col-md-5">
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
             <p> We created <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                data-content="This is a <b>regression model</b> we created from a random dataset of over 500,000 buildings in NYC. It weights variable importance based on which buildings have previously caught fire. In reality, there are much better algorithms than a regression for this kind of problem, like <b>logit models</b> or <b> decision trees</b>!  <br>">
-                this algorithm <a> to help an imaginary fire department predict which buildings are at high risk for fire using data from the <a href="https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data Portal</a>.
-                  <!--`text(FireRisk)_i= \beta_0 + \beta_1*text(BuildingAge)_i+\beta_2*text(Square_Footage)_i+\epsilon_i`-->
-            </p>
-            <p> All of the boxes represent real buildings in the city!</p>
+                data-content="This is a <b>linear regression model</b> we created from a dataset of over 500,000 NYC buildings. It weights variables based on which buildings have previously caught fire. In reality, there are better algorithms than a linear regression for this kind of problem, like <b>logit models</b> or <b> decision trees</b>!  <br>">
+                this algorithm<a> to help an imaginary fire department predict which buildings are at high risk for fire. </p>
+            <p> All of the boxes represent real buildings! Hover over to see building characteristics.</p>
             <p>Click on different combinations of <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                data-content="Each of these variables has a different weight. Try selecting different combinations of variables. Some of them will make the risk score increase, and some will make the score decrease. You can hover over the building to see the predicted risk of fire.">variables</a>
-              in the bubbles below to add or remove them from the algorithm. </p>
-            <p>Which variables do you think can best predict whether a building will catch on fire?
-            </p>
+                data-content="Each of these variables has a different weight. Try selecting different combinations of variables. Some of them will make the risk score increase, and some will make the score decrease.">variables</a> in the bubbles below to add or remove them from the algorithm.</p>
+                <p> Once the predicted fire risk passes a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
+                  data-content="Each building now has a probability of catching on fire. But how do we know which buildings are the most important to inspect? We decided to inspect buildings above a 30% fire risk, because fires are so dangerous.">threshold</a>, the building will appear with a flame so we know the fire department should inspect it.</p>
+                  <p class="citation">*Created using data from the <a href="https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data Portal</a>.
 
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once" id="toy-algo-houses-area"></div>
         </div>
       </div>
       <div class="row align-items-center toyAlgoButtonsRow">
-        <div class="col-md-12">
+        <div class="col-md"></div>
+        <div class="col-md-8">
           <!-- old buttons <ul class="toy_algo_boxes">
             <li><input type="checkbox" id="age" onclick="updateToyAlgo(id)"><label for="age">Building Age</label></li>
             <li><input type="checkbox" id="style" onclick="updateToyAlgo(id)"><label for="style">Architectural Style</label></li>
@@ -540,17 +539,17 @@
             <li><input type="checkbox" id="no_windows" onclick="updateToyAlgo(id)"><label for="no_windows">Number of Windows</label></li>
           </ul> -->
           <ul class="toy_algo_boxes">
-            <li><input type="checkbox" id="age" onclick="updateToyAlgo(id)"><label for="age">Building Age</label></li>
-            <li><input type="checkbox" id="sq_footage" onclick="updateToyAlgo(id)"><label for="sq_footage">Square Footage</label></li>
             <li><input type="checkbox" id="neighborhood" onclick="updateToyAlgo(id)"><label for="neighborhood">Neighborhood</label></li>
-            <li><input type="checkbox" id="no_occupants" onclick="updateToyAlgo(id)"><label for="no_occupants">Number of Occupants</label></li><br>
+            <li><input type="checkbox" id="sq_footage" onclick="updateToyAlgo(id)"><label for="sq_footage">Square Footage</label></li>
+            <li><input type="checkbox" id="age" onclick="updateToyAlgo(id)"><label for="age">Building Age</label></li>
+            <li><input type="checkbox" id="no_occupants" onclick="updateToyAlgo(id)"><label for="no_occupants">Number of Occupants</label></li>
             <li><input type="checkbox" id="business" onclick="updateToyAlgo(id)"><label for="business">Business</label></li>
             <li><input type="checkbox" id="dollar_value" onclick="updateToyAlgo(id)"><label for="dollar_value">Dollar Value</label></li>
-            <li><input type="checkbox" id="no_windows" onclick="updateToyAlgo(id)"><label for="no_windows">Number of Windows</label></li>
             <li><input type="checkbox" id="height" onclick="updateToyAlgo(id)"><label for="height">Height</label></li>
           </ul>
-
         </div>
+          <div class="col-md"></div>
+
       </div>
 
       <div class="row align-items-center">

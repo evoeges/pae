@@ -1095,3 +1095,8 @@ li {
 .csl-entry{
   padding-top: 5%;
 }
+
+.toy_algo_tip{
+  font-size: 85%;
+  text-align: center;
+}
