@@ -1162,4 +1162,10 @@ li {
     padding-right: 0;
     padding-left: 0;
   }
+
+  .bio_images{
+    width: 50%;
+    margin-bottom: 0;
+    margin-top: 5%;
+  }
 }
