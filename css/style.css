@@ -882,7 +882,8 @@ ul {
 }
 
 ul.indented-bullet-points{
-  padding-left: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   list-style-type: circle;
 }
 
