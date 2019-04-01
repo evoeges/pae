@@ -971,6 +971,37 @@ li {
   height: 100%;
   }
 
+  .accordion {
+
+    font-size: 110%;
+    border-radius: 50px;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+  .chapter_title{
+    font-size: 225%;
+  }
+
+  .chapter_number{
+        font-size: 225%;
+  }
+
+
+  h2 {
+    font-size: 175%;
+  }
+
+  h3{
+    font-size: 150%;
+  }
+
+  h3 {
+    font-size: 125%;
+  }
+
+
   #navbar-side{
     display: none;
     opacity: 0;
@@ -1004,6 +1035,10 @@ li {
   .case_cards{
     width: 100%;
     height: 100%;
+  }
+
+  .card-get-active{
+    height: 50%;
   }
 }
 
