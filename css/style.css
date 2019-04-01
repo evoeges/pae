@@ -971,6 +971,16 @@ li {
   height: 100%;
   }
 
+  .card_row{
+    padding-top: 0%;
+    margin-bottom: 0%;
+  }
+
+
+    .card_row .col-md-4{
+      padding-bottom: 3%;
+    }
+
   .accordion {
 
     font-size: 110%;
@@ -997,7 +1007,7 @@ li {
   }
 
   .card-title{
-    font-size: 140%;
+    font-size: 130%;
   }
 
 
