@@ -18,7 +18,7 @@ ToyAlgorithm.prototype.initVis = function() {
     top: 40,
     right: 60,
     bottom: 60,
-    left: 60
+    left: 20
   };
 
   var windowWidth = ($(window).width()) / 2;

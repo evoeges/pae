@@ -156,6 +156,7 @@ h4{
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
+
 #title_chevron{
   color: var(--main-color);
   margin-bottom: 0%;
@@ -1210,5 +1211,17 @@ li {
 
   .bio {
     font-size: 100%;
+  }
+
+  #register_drawing{
+    display: none;
+  }
+
+  ul.toy_algo_boxes li label {
+    font-size: 100%;
+  }
+
+  #avocado_drawing{
+    display: none;
   }
 }
