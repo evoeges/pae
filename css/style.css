@@ -1106,3 +1106,7 @@ li {
   font-size: 85%;
   text-align: center;
 }
+
+.popover_image{
+  width: 50%;
+}
