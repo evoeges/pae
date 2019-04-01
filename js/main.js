@@ -197,3 +197,19 @@ $(".card-hover").hover(
     function(){
     $(this).removeClass('z-depth-4')
   })
+
+  jQuery(document).ready(function($) {
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww < 700) {
+      $('.col-md-4').removeClass('sticky');
+    } else if (ww >= 700) {
+      $('.col-md-4').addClass('sticky');
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
+});
