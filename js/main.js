@@ -198,21 +198,21 @@ $(".card-hover").hover(
     $(this).removeClass('z-depth-4')
   })
 
-  jQuery(document).ready(function($) {
-  var alterClass = function() {
-    var ww = document.body.clientWidth;
-    if (ww < 700) {
-      $('.col-md-4').removeClass('sticky');
-    } else if (ww >= 700) {
-      $('.col-md-4').addClass('sticky');
+    jQuery(document).ready(function($) {
+    var alterClass = function() {
+      var ww = document.body.clientWidth;
+      if (ww < 700) {
+        $('.sticky_card_section').removeClass('sticky');
+      } else if (ww >= 700) {
+        $('.sticky_card_section').addClass('sticky');
+      };
     };
-  };
-  $(window).resize(function(){
+    $(window).resize(function(){
+      alterClass();
+    });
+    //Fire it when the page first loads:
     alterClass();
   });
-  //Fire it when the page first loads:
-  alterClass();
-});
 
 var chart = $("#toy-algo-houses-area"),
     aspect = chart.width() / chart.height(),
