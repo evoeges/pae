@@ -1320,10 +1320,5 @@ li {
 #typed-strings{
   display:none;
 }
-a:link {
- color: inherit;
- text-decoration: underline var(--secondary-color);
-}
-
 
 }
