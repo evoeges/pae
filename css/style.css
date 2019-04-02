@@ -1309,5 +1309,8 @@ li {
     width: 100%;
   }
 
+.helper{
+    display:none;
+  }
 
 }
