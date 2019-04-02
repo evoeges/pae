@@ -540,11 +540,11 @@
       <div class="row align-items-center toyAlgoButtonsRow">
         <div class="col-md-8">
           <ul class="toy_algo_boxes">
-            <li><input type="checkbox" id="neighborhood" onclick="updateToyAlgo(id)"><label for="neighborhood">Neighborhood</label></li>
-            <li><input type="checkbox" id="sq_footage" onclick="updateToyAlgo(id)"><label for="sq_footage">Square Footage</label></li>
+            <li><input type="checkbox" id="neighborhood" onclick="updateToyAlgo(id); toggleDefinitions(id);"><label for="neighborhood">Neighborhood</label></li>
+            <li><input type="checkbox" id="sq_footage" onclick="updateToyAlgo(id); toggleDefinitions(id);"><label for="sq_footage">Square Footage</label></li>
             <li><input type="checkbox" id="age" onclick="updateToyAlgo(id); toggleDefinitions(id);"><label for="age">Building Age</label></li>
-            <li><input type="checkbox" id="no_occupants" onclick="updateToyAlgo(id)"><label for="no_occupants">Number of Occupants</label></li>
-            <li><input type="checkbox" id="business" onclick="updateToyAlgo(id)"><label for="business">Business</label></li>
+            <li><input type="checkbox" id="no_occupants" onclick="updateToyAlgo(id); toggleDefinitions(id);"><label for="no_occupants">Number of Occupants</label></li>
+            <li><input type="checkbox" id="business" onclick="updateToyAlgo(id); toggleDefinitions(id);"><label for="business">Business</label></li>
             <li><input type="checkbox" id="dollar_value" onclick="updateToyAlgo(id); toggleDefinitions(id);"><label for="dollar_value">Property Value</label></li>
             <li><input type="checkbox" id="height" onclick="updateToyAlgo(id); toggleDefinitions(id);"><label for="height">Height</label></li>
           </ul>
@@ -553,6 +553,11 @@
             <p id="building_age_text" class="definitions_hidden">Hmm! Doesn't look like building age changed much. It has a low weight in the algorithm.</p>
             <p id="dollar_value_text" class="definitions_hidden">Interesting! Property value has a negative correlation. This means that the more valuable a property is, the less likely it is to catch fire.</p>
             <p id="height_text" class="definitions_hidden">Whoa! Height has a big impact. Looks like that variable has a high weight in the algorithm.</p>
+            <p id="neighborhood_text" class="definitions_hidden">Whoa! Height has a big impact. Looks like that variable has a high weight in the algorithm.</p>
+            <p id="sq_footage_text" class="definitions_hidden">Whoa! Height has a big impact. Looks like that variable has a high weight in the algorithm.</p>
+            <p id="no_occupants_text" class="definitions_hidden">Whoa! Height has a big impact. Looks like that variable has a high weight in the algorithm.</p>
+            <p id="business_text" class="definitions_hidden">Whoa! Height has a big impact. Looks like that variable has a high weight in the algorithm.</p>
+
           </div>
 
       </div>
