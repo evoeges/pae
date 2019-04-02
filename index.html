@@ -1066,7 +1066,7 @@
             <div class="col"></div>
             <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
               <p class="problem_statement">
-                A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and it's hard to test out new books by buying and returning them at a large scale. How can librarians
+                A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and they can't reallly test out new books by buying and returning them. How can librarians
                 tell which books will be popular with their patrons? What else should they consider when they're picking titles for their library branch?
               </p>
             </div>
@@ -1076,7 +1076,7 @@
           <div class="row align-items-center">
             <div class="col"></div>
             <div class="col-md-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-              <h3>Libraries use ESP to guess what we want to read</h3>
+              <h3>Libraries use ESP to guess what we want to read.</h3>
               <p>
                 No, not extra-sensory perception.</p>
               <p>
@@ -1111,14 +1111,13 @@
 
             <div class="col-md-3">
               <h4 class="center">1. Data</h4>
-              <p>The library feeds ESP is fed circulation data (like which books have been checked out) and sales data (like Amazon purchases). In case you're wondering, no it doesn't use book reviews yet.</p>
+              <p>ESP is fed circulation data (like which books have been checked out) and sales data (like Amazon purchases). In case you're wondering, no it doesn't use book reviews yet.</p>
             </div>
 
             <div class="col-md-4">
               <h4 class="center">2. Predict</h4>
-              <p>The ESP algorithm looks for historical patterns in the data and makes suggestions for what books to stock at which branches. For example it might predict where the young adult book "Twilight" will be popular because that neighborhood
-              has
-              lots of teenagers that checked out "Dracula" and "Harry Potter".</p>
+              <p>The ESP algorithm looks for historical patterns in the data and makes suggestions for what books to stock at which library branches. For example it might predict that the young adult book "Twilight" will be popular in a specific branch because that branch
+              has lots of teenagers that checked out "Dracula" and "Harry Potter".</p>
             </div>
 
             <div class="col-md-3">
@@ -1133,7 +1132,7 @@
             <div class="col-md-7">
               <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">So, which factors matter when ESP rates books?</h3>
               <p data-scroll="toggle(.fromBottomIn, .fromBottomOut) once"> We don't actually know. ESP is a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                  data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. <br> They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a> algorithm, which is kind of a black box. We know which datasets ESP uses, but the
+                  data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a> algorithm, which is hard to understand, it's like a black box. We know which datasets ESP uses, but the
                 patterns
                 it's using to make recommendations are fuzzy.</p>
               <p>To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their
@@ -1148,13 +1147,12 @@
               <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">But we get better book picks, right?</h3>
               <p data-scroll="toggle(.fromBottomIn, .fromBottomOut) once"> Not so fast. </p>
               <p> As a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                  data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. <br> They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a>, ESP doesn't work as well if there isn't a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well. But it might have a harder time when guessing which
+                  data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a>, ESP works best when there is a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well. But it would have a harder time when guessing which
                 debut
                 fiction (e.g. an author’s first book) will be a hit with readers. </p>
-              <p> Even if we have a bunch of data from Amazon or other book sellers, the data might not be representative of many NYC communities, particularly minorities and low income individuals. These communities are some of the largest users of library services, and they might also purchase fewer books. This means that the recommendations ESP produces might not reflect what patrons want and may not be easy to change unless we get a whole lot more data.</p>
-              <p> Also, it depends on what you mean by "better". What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the algorithm to figure out preferences for people who
-                don't
-                already check out books.</p>
+              <p> Even if we have a bunch of data from Amazon or other book sellers, the data might not be representative of many NYC communities, particularly minorities and low income individuals. These communities are some of the largest users of library services, and they might also purchase fewer books. ESP's recommendations are likely to skews to reflect what patrons who buy a lot of books want because these people are well represented in the dataset. But the book preferences of the people who have the ability to buy a lot of books might not reflect the preferences of people from smaller communities or communities that buy fewer books, who might be more reflective of the patrons at the local branch level. It may not be easy to change the predictions unless we get a whole lot more data.</p>
+              <p> Also, it depends on what you mean by "better book." What if your goal is to bring in people who aren't currently using the library? Existing library patron data wouldn't allow the algorithm to figure out preferences for people who
+                don't already check out books.</p>
             </div>
             <div class="col"></div>
           </div>
@@ -1163,7 +1161,7 @@
             <div class="col"></div>
             <div class="col-md-7">
               <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">Don't librarians still have final say?</h3>
-              <p>Yup! Preserving librarians' power to make decisions helps to address the possible problems with ESP. Still, librarians' choices may be swayed by what seems like a concrete, numerical score based on mathematical equations.</p>
+              <p>Yup! When the libraian knows a lot about their local patrons and has goals to promote undoing unjust systems, preserving librarians' power to make decisions helps to address these possible problems with ESP. Still, librarians' choices may be swayed by what seems like a concrete, numerical score based on mathematical equations.</p>
               <p>ESP augments a librarian's choices by highlighting gaps in a librarian's knowledge and experience. On the flip side, it could sway librarians away from trusting their own instincts on what their branch needs.</p>
             </div>
             <div class="col"></div>
@@ -1184,10 +1182,10 @@
                   <h4> Scale </h4>
                   <p>Large scale. A lot of people use libraries.</p>
                   <h4> Scope </h4>
-                  <p>Superficial. Books are great, but probably not as serious as other social services and it's not about life or death.</p>
+                  <p>Superficial. Books are great, but probably not as serious as other social services. It's not about life or death.</p>
                   <h4> Vulnerability </h4>
-                  <p>This depends on how you look at it. People who need to use libraries might be more vulnerable because they don't have other means to knowledge.</p> <p>People whose books don't get great reviews are more likely to be vulnerable
-                    people
+                  <p>This depends on how you look at it. People who need to use libraries might be more vulnerable because they might not have other means to knowledge.</p>
+                  <p>Authors whose books don't have high sales or who don't have a lot of data about their work are more likely to be vulnerable people
                     (new authors, authors that are underrepresented, topics that are underrepresented).</p>
                 </div>
               </div>
@@ -1202,12 +1200,11 @@
                 <div class="card-reveal">
                   <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
                   <h4>Data</h4>
-                  <p> ESP uses a lot of data which incorporates both library and private book sale data but is unable currently to take in other forms of data like book reviews. The data doesn't account for human biased equity issues. Sales data
-                    may
-                    be based on higher-income individuals. Libraries should think about books that their unique populations need and value.</p>
+                  <p>ESP uses a lot of data which incorporates both library and private book sale data but is currently unable to take into account other forms of data, like book reviews.</p>
+                  <p>The data doesn't account for human biased equity issues. Sales data may be skewed to higher-income individuals who can buy more books. Libraries should think about books that their unique populations need and value.</p>
                   <h4> Algorithm Model </h4>
                   <p>ESP uses a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                      data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. <br> They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a>. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know what kinds of bias in the data are driving outcomes. </p>
+                      data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a>. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know what kinds of bias in the data are driving outcomes. </p>
                 </div>
               </div>
             </div>
@@ -1286,7 +1283,7 @@
       </div>
 
       <!-- NYCHA CASE STUDY -->
-      <button id="nycha_accordian" class="accordion"><i class="far fa-building"></i></i>&nbsp;NYC Housing Authority &nbsp;<i class="fas fa-sort-down"></i>
+      <button id="nycha_accordian" class="accordion"><i class="far fa-building"></i></i>&nbsp;Housing Authority &nbsp;<i class="fas fa-sort-down"></i>
       </button>
       <div class="panel">
         <div class="row align-items-icon_center" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
@@ -1376,7 +1373,7 @@
                 tree</a> that follows a series of yes or no questions about the person’s needs.
             </p>
             <p>The step for predicting vacancies is more like a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                data-content="A <b>linear regression</b> draws a simple line through data points to make a prediction. <br> They look like this: <br><img src='img/regression.svg' class='popover_image'> ">linear regression</a>. The algorithm looks at past data and past vacancies and determines how important each variable is in ‘causing’ a vacancy. It then uses this formula to predict future vacancies on new data.
+                data-content="A <b>linear regression</b> draws a simple line through data points to make a prediction. They look like this: <br><img src='img/regression.svg' class='popover_image'> ">linear regression</a>. The algorithm looks at past data and past vacancies and determines how important each variable is in ‘causing’ a vacancy. It then uses this formula to predict future vacancies on new data.
             </p>
           </div>
           <div class="col"></div>
@@ -1468,7 +1465,7 @@
                 <p>The information about TSAP is available online, but the description is 57 pages long! The actual algorithms used are pretty explainable. <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
                     data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. <br> So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image'>"> Decision
                     trees</a> and <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                        data-content="A <b>linear regression</b> draws a simple line through data points to make a prediction. <br> They look like this: <br><img src='img/regression.svg' class='popover_image'> ">linear regressions</a> both have clearly identifiable variables and the weights are easy to understand.
+                        data-content="A <b>linear regression</b> draws a simple line through data points to make a prediction. They look like this: <br><img src='img/regression.svg' class='popover_image'> ">linear regressions</a> both have clearly identifiable variables and the weights are easy to understand.
                 </p>
                 <p>The ADS as a whole can be confusing though.
                 </p>
