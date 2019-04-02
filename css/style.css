@@ -1111,11 +1111,19 @@ li {
   text-align: right;
 }
 
+.easter_eggs{
+  text-align: left;
+}
+
 #building_age_text{
   color: var(--secondary-color);
 }
 
 #dollar_value_text{
+  color: var(--secondary-color);
+}
+
+#height_text{
   color: var(--secondary-color);
 }
 /* MOBILE SPECIFICATIONS */

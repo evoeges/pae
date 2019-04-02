@@ -19,22 +19,34 @@ var toyAlgoSelections={
 
 
 
-function toggleDefinitions(inputSwitch) {
+function toggleDefinitions(id){
 
-console.log(inputSwitch);
-
-if (inputSwitch === "legalese") {
-    $("#plain_text").addClass("definitions_hidden");
-    $("#plain").removeClass("definitions_hidden");
-    $("#legalese_text").removeClass("definitions_hidden");
-    $("#legalese").addClass("definitions_hidden");
+  if (id === "dollar_value") {
+    $("#dollar_value_text").removeClass("definitions_hidden"),
+    $("#building_age_text").addClass("definitions_hidden"),
+    $("#height_text").addClass("definitions_hidden")
   }
-  if (inputSwitch === "plain") {
-      $("#plain_text").removeClass("definitions_hidden");
-      $("#legalese_text").addClass("definitions_hidden");
-      $("#plain").addClass("definitions_hidden");
-      $("#legalese").removeClass("definitions_hidden");
+
+  if (id==="age") {
+      $("#building_age_text").removeClass("definitions_hidden"),
+      $("#dollar_value_text").addClass("definitions_hidden"),
+      $("#height_text").addClass("definitions_hidden")
     }
+    if (id==="height") {
+        $("#building_age_text").addClass("definitions_hidden"),
+        $("#dollar_value_text").addClass("definitions_hidden"),
+        $("#height_text").removeClass("definitions_hidden")
+      }
+
+    if (toyAlgoSelections.dollar_value === 0) {
+        $("#dollar_value_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.age === 0) {
+        $("#building_age_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.height === 0) {
+        $("#height_text").addClass("definitions_hidden");
+    };
 }
 
 $(window).scroll(function(){
@@ -81,6 +93,7 @@ function updateToyAlgo(id){
     }
 
   toyalgo.wrangleData(toyAlgoSelections);
+  toggleDefinitions();
 }
 
  window.addEventListener("resize", reshape);
