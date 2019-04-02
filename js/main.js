@@ -219,8 +219,12 @@ var chart = $("#toy-algo-houses-area"),
     container = chart.parent();
 
 $(window).on("resize", function() {
-  console.log("hello");
     var targetWidth = container.width();
     chart.attr("width", targetWidth);
     chart.attr("height", Math.round(targetWidth / aspect));
 }).trigger("resize");
+
+$('.modal-backdrop').click(function(){
+  console.log("hello");
+  $('.learn_modal').modal('hide');
+})

@@ -24,7 +24,7 @@ ToyAlgorithm.prototype.initVis = function() {
 
   var windowWidth = ($(window).width()) / 2;
 
-  console.log(windowWidth);
+
 
   //set the height and width to be dynamic to the viewport at some point
   vis.width = windowWidth - vis.margin.left - vis.margin.right,

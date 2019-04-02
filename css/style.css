@@ -1074,7 +1074,21 @@ li {
 .popover_image{
   width: 50%;
 }
-
+.modal-content{
+  padding-top: 0;
+}
+.modal-close{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index:1;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+.modal-close-button{
+  padding: 5%;
+  font-size: 100%;
+}
 /* MOBILE SPECIFICATIONS */
 
 @media only screen and (max-width: 700px) {
