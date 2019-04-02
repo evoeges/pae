@@ -1089,6 +1089,19 @@ li {
 
   font-size: 100%;
 }
+
+.credits{
+  font-size: 125%;
+ color: var(--dark-color);
+ font-family: var(--main-font);
+
+}
+
+.thanks{
+  color: var(--main-color);
+  text-align: center;
+  padding-bottom: 3%;
+}
 /* MOBILE SPECIFICATIONS */
 
 @media only screen and (max-width: 700px) {
@@ -1242,4 +1255,6 @@ li {
   #toy-algo-houses-area{
     width: 100%;
   }
+
+
 }
