@@ -478,9 +478,9 @@
 
             <p>In some cases, people have control over what steps the algorithm takes. People &mdash; like you &mdash; decide which variables are the most important in buying
               avocados or
-              predicting a place that is committing food-stamp fraud.
+              predicting that a place is committing food-stamp fraud.
             </p>
-            <p>In other cases, data is given to a computer, and that computer analyzes the data, learns about it, and then decides which variables are important. </p>
+            <p>In other cases, data is given to a computer that learns about the data and then decides which variables are important.</p>
           </div>
             <div class="col-md-2">
                 <div id="avocado_drawing"></div>
@@ -492,14 +492,14 @@
           <div class="col"></div>
           <div class="col-md-7">
 
-            <p>When a computer learns on its own rather than you telling it which variables are important, the set of instructions it uses is called a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0"
+            <p>When a computer learns on its own, rather than having you tell it which variables are important, the set of instructions it uses is called a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0"
                 class="popover-dismiss" data-toggle="popover"
                 data-content="<b>Machine learning algorithms</b> are sets of instructions that find patterns in data to predict an outcome.<br><br> For example, you could write a machine learning algorithm that predicts what kinds of avocados you'd like. You might give it qualities (ripeness, price, organic or not) of all the avocados you've ever bought. The algorithm would use part of that data to figure out what patterns might exist. <br><br>The <b>model</b> it creates could then be used to look at a new pile of avocados and predict which one you want.">machine
                 learning algorithm</a>. They
               are less transparent because we don't
               always
               know why the computer places more
-              or less importance of different variables.
+              or less importance on different variables.
             </p>
           </div>
           <div class="col"></div>
@@ -519,14 +519,15 @@
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
             <p> We created <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
                 data-content="This is a <b>linear regression model</b> we created from a dataset of over 850,000 NYC buildings. It weights variables based on which buildings have previously caught fire. In reality, there are better algorithms than a linear regression for this kind of problem, like <b>logit models</b> or <b> decision trees</b>!  <br>">
-                this algorithm<a> to help an imaginary fire department predict which buildings are at high risk for fire. </p>
-            <p> All of the boxes represent real buildings! Hover over to see building characteristics.</p>
-            <p>Click on different combinations of <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                data-content="Each of these variables has a different weight. Try selecting different combinations of variables. Some of them will make the risk score increase, and some will make the score decrease.">variables</a> in the bubbles below to add or remove them from the algorithm.</p>
-                <p> Once the predicted fire risk passes a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                  data-content="Each building now has a probability of catching on fire. But how do we know which buildings are the most important to inspect? We decided to inspect buildings above a 30% fire risk, because fires are so dangerous.">threshold</a>, the building will appear with a flame so we know the fire department should inspect it.</p>
-                  <p class="citation">*Created using data from the <a href="https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data Portal</a>.
-
+                this algorithm<a> to help an imaginary fire department predict which buildings are at high risk for fire.
+            </p>
+            <p> All of the boxes represent real buildings! Hover over them to see building characteristics. Click on different combinations of <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
+                data-content="Each of these variables has a different weight. Try selecting different combinations of variables. Some of them will make the risk score increase, and some will make the score decrease.">variables</a> in the bubbles below to add or remove them from the algorithm.
+            </p>
+            <p> Once the predicted fire risk passes a threshold of 30% fire risk, the building will appear with a flame to alert the fire department to inspect it!
+            </p>
+            <p class="citation">*Created using data from the <a href="https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data Portal</a>.
+            </p>
           </div>
         </div>
         <div class="col-md-5">
