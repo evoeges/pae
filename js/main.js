@@ -24,19 +24,69 @@ function toggleDefinitions(id){
   if (id === "dollar_value") {
     $("#dollar_value_text").removeClass("definitions_hidden"),
     $("#building_age_text").addClass("definitions_hidden"),
+    $("#neighborhood_text").addClass("definitions_hidden"),
+    $("#sq_footage_text").addClass("definitions_hidden"),
+    $("#no_occupants_text").addClass("definitions_hidden"),
+    $("#business_text").addClass("definitions_hidden"),
     $("#height_text").addClass("definitions_hidden")
   }
 
   if (id==="age") {
       $("#building_age_text").removeClass("definitions_hidden"),
       $("#dollar_value_text").addClass("definitions_hidden"),
+      $("#neighborhood_text").addClass("definitions_hidden"),
+      $("#sq_footage_text").addClass("definitions_hidden"),
+      $("#no_occupants_text").addClass("definitions_hidden"),
+      $("#business_text").addClass("definitions_hidden"),
       $("#height_text").addClass("definitions_hidden")
     }
     if (id==="height") {
         $("#building_age_text").addClass("definitions_hidden"),
         $("#dollar_value_text").addClass("definitions_hidden"),
+        $("#neighborhood_text").addClass("definitions_hidden"),
+        $("#sq_footage_text").addClass("definitions_hidden"),
+        $("#no_occupants_text").addClass("definitions_hidden"),
+        $("#business_text").addClass("definitions_hidden"),
         $("#height_text").removeClass("definitions_hidden")
       }
+
+      if (id==="neighborhood") {
+          $("#building_age_text").addClass("definitions_hidden"),
+          $("#dollar_value_text").addClass("definitions_hidden"),
+          $("#neighborhood_text").removeClass("definitions_hidden"),
+          $("#sq_footage_text").addClass("definitions_hidden"),
+          $("#no_occupants_text").addClass("definitions_hidden"),
+          $("#business_text").addClass("definitions_hidden"),
+          $("#height_text").addClass("definitions_hidden")
+        }
+        if (id==="sq_footage") {
+            $("#building_age_text").addClass("definitions_hidden"),
+            $("#dollar_value_text").addClass("definitions_hidden"),
+            $("#neighborhood_text").addClass("definitions_hidden"),
+            $("#sq_footage_text").removeClass("definitions_hidden"),
+            $("#no_occupants_text").addClass("definitions_hidden"),
+            $("#business_text").addClass("definitions_hidden"),
+            $("#height_text").addClass("definitions_hidden")
+          }
+          if (id==="no_occupants") {
+              $("#building_age_text").addClass("definitions_hidden"),
+              $("#dollar_value_text").addClass("definitions_hidden"),
+              $("#neighborhood_text").addClass("definitions_hidden"),
+              $("#sq_footage_text").addClass("definitions_hidden"),
+              $("#no_occupants_text").removeClass("definitions_hidden"),
+              $("#business_text").addClass("definitions_hidden"),
+              $("#height_text").addClass("definitions_hidden")
+            }
+            if (id==="business") {
+                $("#building_age_text").addClass("definitions_hidden"),
+                $("#dollar_value_text").addClass("definitions_hidden"),
+                $("#neighborhood_text").addClass("definitions_hidden"),
+                $("#sq_footage_text").addClass("definitions_hidden"),
+                $("#no_occupants_text").addClass("definitions_hidden"),
+                $("#business_text").removeClass("definitions_hidden"),
+                $("#height_text").addClass("definitions_hidden")
+              }
+
 
     if (toyAlgoSelections.dollar_value === 0) {
         $("#dollar_value_text").addClass("definitions_hidden");
@@ -46,6 +96,18 @@ function toggleDefinitions(id){
     };
     if (toyAlgoSelections.height === 0) {
         $("#height_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.no_occupants === 0) {
+        $("#no_occupants_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.sq_footage === 0) {
+        $("#sq_footage_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.business === 0) {
+        $("#business_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.neighborhood === 0) {
+        $("#neighborhood_text").addClass("definitions_hidden");
     };
 }
 

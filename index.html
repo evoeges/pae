@@ -535,7 +535,7 @@
         </div>
       </div>
       <div class="row align-items-center toyAlgoButtonsRow">
-        <div class="col-md-8">
+        <div class="col-md-7">
           <ul class="toy_algo_boxes">
             <li><input type="checkbox" id="neighborhood" onclick="updateToyAlgo(id); toggleDefinitions(id);"><label for="neighborhood">Neighborhood</label></li>
             <li><input type="checkbox" id="sq_footage" onclick="updateToyAlgo(id); toggleDefinitions(id);"><label for="sq_footage">Square Footage</label></li>
@@ -546,14 +546,14 @@
             <li><input type="checkbox" id="height" onclick="updateToyAlgo(id); toggleDefinitions(id);"><label for="height">Height</label></li>
           </ul>
         </div>
-          <div class="col-md-4 easter_eggs">
+          <div class="col-md-5 easter_eggs">
             <p id="building_age_text" class="definitions_hidden">Hmm! Doesn't look like building age changed much. It has a low weight in the algorithm.</p>
             <p id="dollar_value_text" class="definitions_hidden">Interesting! Property value has a negative correlation. This means that the more valuable a property is, the less likely it is to catch fire.</p>
             <p id="height_text" class="definitions_hidden">Whoa! Height has a big impact. Looks like that variable has a high weight in the algorithm.</p>
-            <p id="neighborhood_text" class="definitions_hidden">Whoa! Height has a big impact. Looks like that variable has a high weight in the algorithm.</p>
-            <p id="sq_footage_text" class="definitions_hidden">Whoa! Height has a big impact. Looks like that variable has a high weight in the algorithm.</p>
-            <p id="no_occupants_text" class="definitions_hidden">Whoa! Height has a big impact. Looks like that variable has a high weight in the algorithm.</p>
-            <p id="business_text" class="definitions_hidden">Whoa! Height has a big impact. Looks like that variable has a high weight in the algorithm.</p>
+            <p id="neighborhood_text" class="definitions_hidden">Seems like buildings in the Bronx have a higher risk than buildings in other boroughs. This could be because of other variables we didn't include in the dataset. Maybe buildings in the Bronx have a certain architectural style that is riskier. This is called ommitted variable bias.</p>
+            <p id="sq_footage_text" class="definitions_hidden">Bigger buildings are more likely to catch on fire. That makes sense!</p>
+            <p id="no_occupants_text" class="definitions_hidden">More people means greater risk. Fun fact! We didn't have an exact count of the number of people living in the buildings. So we used the number of residential units as a proxy variable.</p>
+            <p id="business_text" class="definitions_hidden">Businesses have a higher risk of fire. There could be a variable we're missing that is correlated to businesses. Maybe a lot of these businesses are restaurants where kitchen fires can happen. </p>
 
           </div>
 
