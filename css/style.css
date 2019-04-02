@@ -1313,4 +1313,11 @@ li {
     display:none;
   }
 
+.algorithm_icons{
+    display:none;
+  }
+
+  #typed-strings{
+    display:none;
+  }
 }
