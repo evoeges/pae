@@ -766,11 +766,13 @@ margin-left: 20%;
 
 .impact-card .icon-fade{
     color: var(--card1-color);
+    text-align: left;
 }
 
 
 .machine-bias-card .icon-fade{
     color: var(--card2-color);
+    text-align: left;
 }
 
 .explainability-card .icon-fade{
@@ -1107,6 +1109,14 @@ li {
   color: var(--secondary-color);
   font-size: 90%;
   text-align: right;
+}
+
+#building_age_text{
+  color: var(--secondary-color);
+}
+
+#dollar_value_text{
+  color: var(--secondary-color);
 }
 /* MOBILE SPECIFICATIONS */
 

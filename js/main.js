@@ -4,18 +4,6 @@ var toyalgo;
 var typed;
 
 //initialize selections for the toy algo
-/*var toyAlgoSelections={
-  age:0,
-  style:0,
-  sq_footage:0,
-  neighborhood:0,
-  prev_fire:0,
-  height:0,
-  no_occupants:0,
-  business:0,
-  last_inspection:0,
-  no_windows:0
-}; */
 
 var toyAlgoSelections={
   age:0,
@@ -101,12 +89,6 @@ function updateToyAlgo(id){
 
  }
 
-/* $(document).ready(function() {
-   $('#fullpage').fullpage({
-     autoScrolling: false,
-     fitToSection: false
-   });
- }); */
 
 //load scrollspy
 $('body').scrollspy({ target: '#navbar-side' })
@@ -120,13 +102,6 @@ $('body').scrollspy({ target: '#navbar-side' })
 $("[data-toggle=popover]")
 .popover({html:true})
 
-/*
-initializeType();
-function initializeType(){
- typed= new Typed('#typed', {
-      stringsElement: '#typed-strings'
-    });
-} */
 
 
 
@@ -156,13 +131,7 @@ function makeDrawings(){
     start: 'autostart'
   });
 
-  /*new Vivus('porfirio_drawing', {
-    duration: 200,
-    file: 'img/porfirio.svg',
-    onReady: function (myVivus) {
-        myVivus.el.setAttribute('width', '100%');
-      },
-  }); */
+
 
   new Vivus('bodega_drawing', {
     duration: 200,
