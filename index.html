@@ -1217,7 +1217,7 @@
                   <p>The data doesn't account for human biased equity issues. Sales data may be skewed to higher-income individuals who can buy more books. Libraries should think about books that their unique populations need and value.</p>
                   <h4> Algorithm Model </h4>
                   <p>ESP uses a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                      data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a>. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know what kinds of bias in the data are driving outcomes. </p>
+                      data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a>. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know what kinds of biases in the data are driving outcomes. </p>
                 </div>
               </div>
             </div>
@@ -1284,7 +1284,7 @@
             <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
               <div class="problem_statement">
                 <h4 class="problem_statement_header">Machine learning risk, with human safeguards</h4>
-                <p>At its best, ESP makes useful suggestions that librarians can incorporate into their book stocking decisions. Because it depends on Amazon sales and current circulation data, there is a risk that the results don't consider
+                <p>At its best, ESP makes useful suggestions that librarians can incorporate into their book stocking decisions. Because it depends on sales data and current circulation data, there is a risk that the results don't consider
                   populations that are excluded from these spaces. Librarians still get final say, which is a good way to address these concerns.
                 </p>
               </div>
@@ -1312,7 +1312,7 @@
           <div class="col"></div>
           <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
             <p class="problem_statement">
-              The New York City Housing Authority (NYCHA) has over 175,000 public housing units across the City. Fewer than 1% are vacated each year, and the waitlist is over 200,000 families long. As soon as a unit is vacant, NYCHA has to fill it with eligible applicants.
+              The New York City Housing Authority (NYCHA) has over 175,000 public housing units across the City. Fewer than 1% are vacated each year, and the waitlist is over 200,000 families long. As soon as a unit is vacant, NYCHA has to fill it with eligible New Yorkers.
               <br>
               How can NYCHA sort through such a long waitlist to fill vacant units as quickly as possible? Could they start the process even before a unit is vacated?
             </p>
@@ -1327,7 +1327,7 @@
             <p>
               The Tenant Selection and Assignment Plan (TSAP) is an ADS that does what it says in the name: select and assign tenants to apartments that open up.
             </p>
-            <p>It’s built to do this as soon as possible, to make sure units don’t go unfilled for too long in a city where many people need shelter. In fact, the process begins even before units are vacated, by predicting which units will go vacant in the next six months. This helps NYCHA make sure it has staff resources and a ready waitlist of applicants to fill apartments when they open up.
+            <p>It’s built to do this as soon as possible, to make sure units don’t go unfilled for too long in a city where many people need shelter. In fact, the process begins even before units are vacated, by predicting which units will go vacant in the next six months. This helps NYCHA make sure it has staff resources and a ready waitlist of eligible and certified New Yorkers to fill apartments when they open up.
             </p>
             <p>The process looks like this:
             </p>
@@ -1353,18 +1353,18 @@
         <div class="row align-items-top">
           <div class="col-md-3">
             <h4 class="center">1. Apply & Assign</h4>
-            <p>New people apply to get put onto the waitlist. People already in public housing units also apply to transfer to other units when there are openings.
-              <br><br>These two groups of applicants are assigned “priority codes” based on their income and needs (like having experienced domestic abuse, hate crimes, or involuntary displacement) and put on a general waiting list.
+            <p>New people apply to get put onto the NYCHA waitlist. People already in public housing units also apply to transfer to other units when there are openings.
+              <br><br>These two groups of applicants are assigned “priority codes” based on their income and needs (like having experienced domestic abuse, hate crimes, or involuntary displacement) and are put on a general waiting list.
             </p>
           </div>
           <div class="col-md-3">
             <h4 class="center">2. Predict</h4>
-            <p>Every two weeks, TSAP uses a computer program to predict the types of units that are most likely to be vacated in the next six months.<br><br> The algorithm first looks at how many eligible and certified transfer applicants can fill those units. Then, it figures out how many new applicants from the waiting list might be eligible and should get interviewed to be certified.
+            <p>Every two weeks, TSAP uses a computer program to predict the types of units that are most likely to be vacated in the next six months.<br><br> The algorithm first looks at how many eligible and certified transfer applicants can fill those units. Then, it figures out how many new applicants from the general waiting list might be eligible and should get interviewed to be certified.
             </p>
           </div>
           <div class="col-md-3">
             <h4 class="center">3. Verify</h4>
-            <p>NYCHA staff reach out to the list of new applicants to interview and verify that applicants actually do meet the requirements for the apartment. If they pass, they’ll be “certified” and placed in the pool to fill units.
+            <p>NYCHA staff reach out to the list of new applicants to interview them. These interviews are to verify that applicants actually do meet the requirements for the apartment. If they pass, they’ll be “certified” and placed in the pool to fill units.
             </p>
           </div>
           <div class="col-md-3">
@@ -1396,31 +1396,10 @@
           <div class="col"></div>
           <div class="col-md-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
             <h3 class="nycha_titles">What if there’s still more people waitlisted than there are apartments?</h3>
-            <p>Unfortunately, TSAP doesn’t solve for the underlying problem that there are more people on the waitlist than there are apartments. TSAP can only help sort people who are on the waitlist into vacant units.
+            <p>Unfortunately, TSAP doesn’t solve for the underlying problem that there are more people on the waitlist than there are available apartments. TSAP can only help sort people who are on the waitlist into vacant units, it can't make more vacant units.
             </p>
-            <p>But, this data or the length of the waitlist could be used as information to advocate for more public housing units
+            <p>But, this data or the length of the waitlist could be used as information to advocate for more public housing units.
             </p>
-          </div>
-          <div class="col"></div>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col"></div>
-          <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <div class="problem_statement">
-              <h4 class="problem_statement_header">Priority needs get housing, but still not enough units.
-              </h4>
-              <p>TSAP does its job: it matches people to vacant units. However, it's doing its job with a limited amount of resources. Making the matching process easier will definitely help some families, but it still leaves a lot of families on the waitlist. Is there a way to have this ADS help get at the underlying unjust system of not having enough affordable housing?
-              </p>
-            </div>
-          </div>
-          <div class="col"></div>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col"></div>
-          <div class="col-md-10">
-              <p class="citation center">Read more about TSAP in the <a href="https://www1.nyc.gov/assets/nycha/downloads/pdf/TSAPlan.pdf">official documentation from 2016</a></p>
           </div>
           <div class="col"></div>
         </div>
@@ -1531,6 +1510,26 @@
         </div>
       </div>
 
+      <div class="row align-items-center">
+        <div class="col"></div>
+        <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
+          <div class="problem_statement">
+            <h4 class="problem_statement_header">High priority needs get housing, but still not enough units.
+            </h4>
+            <p>TSAP does its job: it matches people to vacant units. However, it's doing its job with a limited supply of housing. Making the matching process easier will definitely help some families, but it still leaves a lot of families on the waitlist. Is there a way to have this ADS help get at the underlying unjust system of not having enough affordable housing?
+            </p>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col"></div>
+        <div class="col-md-10">
+            <p class="citation center">Read more about TSAP in the <a href="https://www1.nyc.gov/assets/nycha/downloads/pdf/TSAPlan.pdf">official documentation from 2016</a></p>
+        </div>
+        <div class="col"></div>
+      </div>
 
 
 
@@ -1604,7 +1603,7 @@
 
             <div class="col-md-3">
               <h4 class="center">2. Schools Submit</h4>
-              <p>Simultaneously each year, schools submit their information, like how many seats they have and what priorities they have for how to rank or prioritize students that want to apply to their school. For example, some schools called "screened schools" might say that they give priority to students with the highest 8th grade GPA first. Some schools called "zoned schools" might say that they give priority to students who live in their neighborhoods.</p>
+              <p>Simultaneously each year, schools submit their information, like how many seats they have and what criteria they have for how to rank or prioritize students that want to apply to their school. For example, some schools called "screened schools" might say that they give priority to students with the highest 8th grade GPA first. Some schools called "zoned schools" might say that they give priority to students who live in their neighborhoods.</p>
             </div>
             <div class="col-md-3">
               <h4 class="center">3. Match</h4>
@@ -1636,9 +1635,9 @@
               <h3> So this is better, right?</h3>
               <p> Sort of. </p>
               <p>
-                The new algorithm helps to more efficiently “assign as many students as possible into programs that they rank highly, given constraints due to limited seats and the high schools' own admission priorities”, as the New York Independent Budget Office reported in 2016. </p>
-              <p>But the matching algorithm doesn’t challenge the underlying unjust system that maintains school segregation and the unequal distribution of educational resources. It doesn’t challenge the specific admissions priorities and preferences of schools that can perpetuate school segregation.  </p>
-              <p>Also, the matching process doesn’t apply to schools that tend to be more competitive and highly resourced schools, like charter schools or the eight specialized high schools where students qualify by taking the Specialized High School Admissions Test (SHSAT). And it definitely doesn’t apply to the one audition school in NYC (LaGuardia High School). There might be good reasons for excluding some of these schools from the system, but redesigning the ADS could have been an opportunity to think critically about these reasons. </p>
+                The new algorithm helps to more efficiently “assign as many students as possible into programs that they rank highly, given constraints due to limited seats and the high schools' own admission priorities,” as the New York Independent Budget Office reported in 2016. </p>
+              <p>But the matching algorithm doesn’t challenge the underlying unjust system that maintains school segregation and the unequal distribution of educational resources. It doesn’t challenge the specific admissions priorities and preferences of schools. These priorities and preferences can perpetuate school segregation.  </p>
+              <p>Also, the matching process doesn’t apply to schools that tend to be more competitive and highly resourced schools, like charter schools or the eight specialized high schools where students qualify by taking the Specialized High School Admissions Test (SHSAT). And it definitely doesn’t apply to the one audition school in New York City (LaGuardia High School). There might be good reasons for excluding some of these schools from the system, but redesigning the ADS could have been an opportunity to think critically about these reasons. </p>
             </div>
             <div class="col"></div>
           </div>
@@ -1671,7 +1670,7 @@
                   <h4> Scope </h4>
                   <p>Deep. DOE's matching algorithm decides where students go to high school, which can have an impact on their lives well beyond high school.</p>
                   <h4> Vulnerability </h4>
-                  <p>This ADS interacts with all students, including those from more vulnerable backgrounds. We should ask if the ADS is more difficult to navigate for more vulnerable students and whether school priorities disadvantage them.</p>
+                  <p>This ADS interacts with all students, including those from more vulnerable backgrounds. However, the ADS is more difficult to navigate for students from familes who have less resources to spend to understand the ADS. School priorities also tend to disadvantage students with less resources.</p>
                 </div>
               </div>
             </div>
@@ -1687,7 +1686,7 @@
                   <h4>Data</h4>
                   <p> This algorithm uses data from students and schools ranking their preferences. These datasets can be very biased. Student rankings are based on their own perceptions of their competitivity in the process, their parents' knowledge about which schools are best, their desire to stay with their friends. School rankings are based on their admissions priorities, which just track what the schools want to focus on. If they want to focus on good grades, they can do that. If they want to focus on students in the neighborhood, they can do that.</p>
                   <h4> Algorithm Model </h4>
-                  <p>The algorithm maximizes top mutual matches for students and schools. It is unclear what kind of matching algorithm is used for these ranked preferences.</p>
+                  <p>The algorithm maximizes top mutual matches for students and schools. This algorithm is used in other matching situations, like matching medical students to residencies.</p>
                 </div>
               </div>
             </div>
@@ -1703,7 +1702,7 @@
                   <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
                   <p> The matching algorithm is explainable. It follows a clear series of steps and is based on the preferences of students and schools.  </p>
                   <p>The <a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish"
-                      target="_blank"> High School Directory</a> is the document that guides students through the high school application and matching process. The directory has school profiles which gives information about every school to inform students about their chances of matching. </p>
+                      target="_blank"> High School Directory</a> is the document that guides students through the high school application and matching process. The directory has school profiles. This information about every school in New York City is supposed to help inform students about their chances of matching. </p>
                 </div>
               </div>
             </div>
@@ -1740,7 +1739,7 @@
                   <h4> Feedback System </h4>
                   <p>Students can appeal their matches, but only for certain reasons like travel, housing, or medical hardships.  </p>
                   <h4> Ability and Access to Update </h4>
-                  <p>Students can appeal their matches to staff in DOE which makes it more flexible. Also, the algorithm is maintained by the DOE, which could allow it to be updated.</p>
+                  <p>Students can appeal their matches to staff in DOE which makes it more flexible. Also, the algorithm is maintained by the DOE Office of Student Enrollment. Hypothetically, staff from that office could update the algorithm.</p>
                 </div>
               </div>
             </div>
@@ -1751,7 +1750,7 @@
             <div class="col"></div>
             <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
               <div class="problem_statement">
-                <h4 class="problem_statement_header">More students are matched, but unequal education continues</h4>
+                <h4 class="problem_statement_header">More students are matched, but unequal education continues.</h4>
                 <p>DOE's matching algorithm sorts through a lot of preferences to mutually match schools with students. However, it doesn’t challenge school admissions priorities that disadvantage certain groups or keep schools segregated.</p>
 
               </div>
