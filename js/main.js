@@ -4,18 +4,6 @@ var toyalgo;
 var typed;
 
 //initialize selections for the toy algo
-/*var toyAlgoSelections={
-  age:0,
-  style:0,
-  sq_footage:0,
-  neighborhood:0,
-  prev_fire:0,
-  height:0,
-  no_occupants:0,
-  business:0,
-  last_inspection:0,
-  no_windows:0
-}; */
 
 var toyAlgoSelections={
   age:0,
@@ -31,22 +19,96 @@ var toyAlgoSelections={
 
 
 
-function toggleDefinitions(inputSwitch) {
+function toggleDefinitions(id){
 
-console.log(inputSwitch);
-
-if (inputSwitch === "legalese") {
-    $("#plain_text").addClass("definitions_hidden");
-    $("#plain").removeClass("definitions_hidden");
-    $("#legalese_text").removeClass("definitions_hidden");
-    $("#legalese").addClass("definitions_hidden");
+  if (id === "dollar_value") {
+    $("#dollar_value_text").removeClass("definitions_hidden"),
+    $("#building_age_text").addClass("definitions_hidden"),
+    $("#neighborhood_text").addClass("definitions_hidden"),
+    $("#sq_footage_text").addClass("definitions_hidden"),
+    $("#no_occupants_text").addClass("definitions_hidden"),
+    $("#business_text").addClass("definitions_hidden"),
+    $("#height_text").addClass("definitions_hidden")
   }
-  if (inputSwitch === "plain") {
-      $("#plain_text").removeClass("definitions_hidden");
-      $("#legalese_text").addClass("definitions_hidden");
-      $("#plain").addClass("definitions_hidden");
-      $("#legalese").removeClass("definitions_hidden");
+
+  if (id==="age") {
+      $("#building_age_text").removeClass("definitions_hidden"),
+      $("#dollar_value_text").addClass("definitions_hidden"),
+      $("#neighborhood_text").addClass("definitions_hidden"),
+      $("#sq_footage_text").addClass("definitions_hidden"),
+      $("#no_occupants_text").addClass("definitions_hidden"),
+      $("#business_text").addClass("definitions_hidden"),
+      $("#height_text").addClass("definitions_hidden")
     }
+    if (id==="height") {
+        $("#building_age_text").addClass("definitions_hidden"),
+        $("#dollar_value_text").addClass("definitions_hidden"),
+        $("#neighborhood_text").addClass("definitions_hidden"),
+        $("#sq_footage_text").addClass("definitions_hidden"),
+        $("#no_occupants_text").addClass("definitions_hidden"),
+        $("#business_text").addClass("definitions_hidden"),
+        $("#height_text").removeClass("definitions_hidden")
+      }
+
+      if (id==="neighborhood") {
+          $("#building_age_text").addClass("definitions_hidden"),
+          $("#dollar_value_text").addClass("definitions_hidden"),
+          $("#neighborhood_text").removeClass("definitions_hidden"),
+          $("#sq_footage_text").addClass("definitions_hidden"),
+          $("#no_occupants_text").addClass("definitions_hidden"),
+          $("#business_text").addClass("definitions_hidden"),
+          $("#height_text").addClass("definitions_hidden")
+        }
+        if (id==="sq_footage") {
+            $("#building_age_text").addClass("definitions_hidden"),
+            $("#dollar_value_text").addClass("definitions_hidden"),
+            $("#neighborhood_text").addClass("definitions_hidden"),
+            $("#sq_footage_text").removeClass("definitions_hidden"),
+            $("#no_occupants_text").addClass("definitions_hidden"),
+            $("#business_text").addClass("definitions_hidden"),
+            $("#height_text").addClass("definitions_hidden")
+          }
+          if (id==="no_occupants") {
+              $("#building_age_text").addClass("definitions_hidden"),
+              $("#dollar_value_text").addClass("definitions_hidden"),
+              $("#neighborhood_text").addClass("definitions_hidden"),
+              $("#sq_footage_text").addClass("definitions_hidden"),
+              $("#no_occupants_text").removeClass("definitions_hidden"),
+              $("#business_text").addClass("definitions_hidden"),
+              $("#height_text").addClass("definitions_hidden")
+            }
+            if (id==="business") {
+                $("#building_age_text").addClass("definitions_hidden"),
+                $("#dollar_value_text").addClass("definitions_hidden"),
+                $("#neighborhood_text").addClass("definitions_hidden"),
+                $("#sq_footage_text").addClass("definitions_hidden"),
+                $("#no_occupants_text").addClass("definitions_hidden"),
+                $("#business_text").removeClass("definitions_hidden"),
+                $("#height_text").addClass("definitions_hidden")
+              }
+
+
+    if (toyAlgoSelections.dollar_value === 0) {
+        $("#dollar_value_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.age === 0) {
+        $("#building_age_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.height === 0) {
+        $("#height_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.no_occupants === 0) {
+        $("#no_occupants_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.sq_footage === 0) {
+        $("#sq_footage_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.business === 0) {
+        $("#business_text").addClass("definitions_hidden");
+    };
+    if (toyAlgoSelections.neighborhood === 0) {
+        $("#neighborhood_text").addClass("definitions_hidden");
+    };
 }
 
 $(window).scroll(function(){
@@ -93,6 +155,7 @@ function updateToyAlgo(id){
     }
 
   toyalgo.wrangleData(toyAlgoSelections);
+  toggleDefinitions();
 }
 
  window.addEventListener("resize", reshape);
@@ -101,12 +164,6 @@ function updateToyAlgo(id){
 
  }
 
-/* $(document).ready(function() {
-   $('#fullpage').fullpage({
-     autoScrolling: false,
-     fitToSection: false
-   });
- }); */
 
 //load scrollspy
 $('body').scrollspy({ target: '#navbar-side' })
@@ -120,13 +177,6 @@ $('body').scrollspy({ target: '#navbar-side' })
 $("[data-toggle=popover]")
 .popover({html:true})
 
-/*
-initializeType();
-function initializeType(){
- typed= new Typed('#typed', {
-      stringsElement: '#typed-strings'
-    });
-} */
 
 
 
@@ -156,13 +206,7 @@ function makeDrawings(){
     start: 'autostart'
   });
 
-  /*new Vivus('porfirio_drawing', {
-    duration: 200,
-    file: 'img/porfirio.svg',
-    onReady: function (myVivus) {
-        myVivus.el.setAttribute('width', '100%');
-      },
-  }); */
+
 
   new Vivus('bodega_drawing', {
     duration: 200,
@@ -173,7 +217,7 @@ function makeDrawings(){
   });
 
   new Vivus('register_drawing', {
-    duration: 200,
+    duration: 500,
     file: 'img/register2.svg',
     type: 'oneByOne',
     onReady: function (myVivus) {
@@ -182,7 +226,7 @@ function makeDrawings(){
   });
 
   new Vivus('avocado_drawing', {
-    duration: 200,
+    duration: 500,
     file: 'img/avocado.svg',
     onReady: function (myVivus) {
         myVivus.el.setAttribute('width', '100%');
@@ -197,3 +241,34 @@ $(".card-hover").hover(
     function(){
     $(this).removeClass('z-depth-4')
   })
+
+    jQuery(document).ready(function($) {
+    var alterClass = function() {
+      var ww = document.body.clientWidth;
+      if (ww < 700) {
+        $('.sticky_card_section').removeClass('sticky');
+      } else if (ww >= 700) {
+        $('.sticky_card_section').addClass('sticky');
+      };
+    };
+    $(window).resize(function(){
+      alterClass();
+    });
+    //Fire it when the page first loads:
+    alterClass();
+  });
+
+var chart = $("#toy-algo-houses-area"),
+    aspect = chart.width() / chart.height(),
+    container = chart.parent();
+
+$(window).on("resize", function() {
+    var targetWidth = container.width();
+    chart.attr("width", targetWidth);
+    chart.attr("height", Math.round(targetWidth / aspect));
+}).trigger("resize");
+
+$('.modal-backdrop').click(function(){
+  console.log("hello");
+  $('.learn_modal').modal('hide');
+})
