@@ -1224,4 +1224,8 @@ li {
   #avocado_drawing{
     display: none;
   }
+
+  #toy-algo-houses-area{
+    width: 100%;
+  }
 }
