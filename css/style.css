@@ -617,6 +617,7 @@ p{
   padding-right: 4%;
 }
 
+
 .small-card-row{
   margin-bottom:0px;
   margin-top: 0px;
@@ -1100,7 +1101,19 @@ li {
 /** get active **/
 .card-get-active{
   height: 20vw;
+  background-color: var(--secondary-color);
 }
+
+.card-get-active-header{
+  color: white;
+}
+
+.card-get-active-body{
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  color: white;
+}
+
 
 .csl-entry{
   padding-top: 5%;
@@ -1310,21 +1323,15 @@ li {
   }
 
 .helper{
-    display:none;
-  }
+  display:none;
+}
 
 .algorithm_icons{
-    display:none;
-  }
+  display:none;
+}
 
-  #typed-strings{
-    display:none;
-  }
-
-  a:link {
-   color: inherit;
-   text-decoration: underline var(--secondary-color);
-  }
-
+#typed-strings{
+  display:none;
+}
 
 }
