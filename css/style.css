@@ -10,7 +10,6 @@
     --nav-link-color: #9E9E9E;
     --popover-word-color: #F08578;
     --popover-word-pressed-color: #F08578;
-    --mobile-nav-color: #E0E0E0;
     --main-font: 'Nunito', sans-serif;
     --secondary-font: 'Copse', serif;
     --houses-color: #BDBDBD;
@@ -137,10 +136,6 @@ h4{
   color: var(--nav-link-color);
   text-decoration: none;
 }
-
-.mobile_nav{
-  display: none;
-}
 /* splash screen */
 .bg {
   background: url("../img/skyline1.png");
@@ -156,7 +151,6 @@ h4{
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
-
 #title_chevron{
   color: var(--main-color);
   margin-bottom: 0%;
@@ -970,6 +964,49 @@ li {
   margin-top: 5%;
 }
 
+@media only screen and (max-width: 700px) {
+  .modal {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  }
+
+  #navbar-side{
+    display: none;
+    opacity: 0;
+  }
+
+  #website_title{
+    font-size: 300%;
+    font-kerning: normal;
+  }
+  #website_subtitle{
+    font-size: 250%;
+  }
+  #title_chevron{
+    font-size: 300%;
+  }
+  .intro_emphasis{
+    font-size: 6vw;
+  }
+  p.intro_emphasis{
+    font-size: 6vw;
+  }
+  .intro_paragraphs{
+    font-size: 5vw;
+  }
+
+  .small-card{
+    width: 100%;
+    height: 100%;
+  }
+
+  .case_cards{
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .bio_images{
   display: block;
   margin-left: auto;
@@ -1074,6 +1111,7 @@ li {
 .popover_image{
   width: 50%;
 }
+<<<<<<< HEAD
 .modal-content{
   padding-top: 0;
 }
@@ -1244,3 +1282,5 @@ li {
     width: 100%;
   }
 }
+=======
+>>>>>>> parent of b6794c2... Merge branch 'master' of https://github.com/evoeges/paebae
