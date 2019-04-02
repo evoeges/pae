@@ -25,7 +25,7 @@ ToyAlgorithm.prototype.initVis = function() {
   
 
   //set the height and width to be dynamic to the viewport at some point
-  vis.width = windowWidth - vis.margin.left - vis.margin.right,
+  vis.width = 600 - vis.margin.left - vis.margin.right,
     vis.height = 400 - vis.margin.top - vis.margin.bottom;
 
   // SVG drawing area
