@@ -173,7 +173,7 @@ function makeDrawings(){
   });
 
   new Vivus('register_drawing', {
-    duration: 200,
+    duration: 500,
     file: 'img/register2.svg',
     type: 'oneByOne',
     onReady: function (myVivus) {
@@ -182,7 +182,7 @@ function makeDrawings(){
   });
 
   new Vivus('avocado_drawing', {
-    duration: 200,
+    duration: 500,
     file: 'img/avocado.svg',
     onReady: function (myVivus) {
         myVivus.el.setAttribute('width', '100%');

@@ -1102,6 +1102,12 @@ li {
   text-align: center;
   padding-bottom: 3%;
 }
+
+.helper{
+  color: var(--secondary-color);
+  font-size: 90%;
+  text-align: right;
+}
 /* MOBILE SPECIFICATIONS */
 
 @media only screen and (max-width: 700px) {
