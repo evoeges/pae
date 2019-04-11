@@ -246,6 +246,7 @@ a:link {
   font-family: var(--main-font);
   font-size: 102%;
   padding: .75rem 1rem;
+  box-decoration-break: clone;
 }
 
 .popover .arrow{
@@ -261,12 +262,14 @@ a.popover_word{
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
+  box-decoration-break: clone;
 }
 
 a.popover_word:hover {
   background-color: var(--popover-word-pressed-color);
   color: white;
   border-color: var(--popover-word-pressed-color);
+  box-decoration-break: clone;
 }
 
 #variable_example{
