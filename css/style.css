@@ -1,24 +1,24 @@
 :root {
-    --main-color: #2ab3a6;
-    --secondary-color: #F08578;
+    --main-color: #26A599;
+    --secondary-color: #DA786C;
     --esp-color: #2ab3a6;
     --nycha-color: #2ab3a6;
     --doe-color: #2ab3a6;
     --success-color:#4C7CBD;
     --dark-color: #616161;
-    --link-color: #9E9E9E;
-    --nav-link-color: #9E9E9E;
-    --popover-word-color: #F08578;
-    --popover-word-pressed-color: #F08578;
+    --link-color: #767676;
+    --nav-link-color: #767676;
+    --popover-word-color: #DA786C;
+    --popover-word-pressed-color: #DA786C;
     --mobile-nav-color: #E0E0E0;
     --main-font: 'Nunito', sans-serif;
     --secondary-font: 'Copse', serif;
     --houses-color: #BDBDBD;
     --card1-color: #64518e;
-      --card2-color: #455e96;
-      --card3-color: #3389a5;
-      --card4-color: #a8c45a;
-  --card5-color: #e5bd57;
+    --card2-color: #455e96;
+    --card3-color: #3389a5;
+    --card4-color: #7DA11A;
+    --card5-color: #D48200;
 }
 
 /*
@@ -104,7 +104,7 @@ h4{
 .citation{
   font-size:80%;
   font-weight: 200;
-  color: var(--nav-link-color);
+  color: var(--link-color);
 }
 
 /* quote styling */
@@ -258,6 +258,7 @@ a.popover_word{
   border-color: var(--popover-word-color);
   border-radius: 10px;
   color: var(--popover-word-color);
+  font-weight: bold;
   margin: .5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -267,9 +268,11 @@ a.popover_word{
 
 a.popover_word:hover {
   background-color: var(--popover-word-pressed-color);
-  color: white;
   border-color: var(--popover-word-pressed-color);
   box-decoration-break: clone;
+  color: white;
+  font-weight: bold;
+
 }
 
 #variable_example{
@@ -1161,7 +1164,8 @@ li {
 
 .helper{
   color: var(--secondary-color);
-  font-size: 90%;
+  font-size: 100%;
+  font-weight: bold;
   text-align: right;
 }
 
