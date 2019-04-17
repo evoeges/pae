@@ -14,15 +14,6 @@ ToyAlgorithm = function(_parentElement, _data, _selections, _width, _height) {
 }
 
 
-// create a function to select and update the svg's size
-
-
-
-// on window resize, update the svg's width and height
-
-
-
-
 ToyAlgorithm.prototype.initVis = function(width, height) {
   var vis = this;
 
@@ -205,13 +196,29 @@ ToyAlgorithm.prototype.updateVis = function() {
     })
     .attr("fill", "#EF6C00")
     .attr('font-size', function(d) {
-      return '40px'
+      if (window.innerWidth>700) {
+        return '40px';
+      }
+      else if (window.innerWidth<=700){
+        return '20px';
+      }
     })
     .attr("x", function(d) {
-      return vis.x(d.x_position) + 20;
+      if (window.innerWidth>700) {
+        return vis.x(d.x_position)+20;
+      }
+      else if (window.innerWidth<=700){
+        return vis.x(d.x_position)+10;
+      }
+
     })
     .attr("y", function(d) {
-      return vis.y(d.y_position) + 20;
+      if (window.innerWidth>700) {
+        return vis.y(d.y_position)+20;
+      }
+      else if (window.innerWidth<=700){
+        return vis.y(d.y_position)+10;
+      }
     });
 
   fires.exit().remove();
@@ -230,11 +237,11 @@ ToyAlgorithm.prototype.resizeSVG =function (width, height) {
 
     var vis = this;
 
- vis.svg.select('svg')
-   .transition()
-   .duration(100)
-   .attr("width", width)
-   .attr("height", height);
+    vis.svg.select('svg')
+    .transition()
+    .duration(100)
+    .attr("width", width)
+    .attr("height", height);
 
 
    vis.margin = {
@@ -244,7 +251,7 @@ ToyAlgorithm.prototype.resizeSVG =function (width, height) {
      left: 20
    };
 
-   //set the height and width to be dynamic to the viewport at some point
+
    vis.width = width- vis.margin.left - vis.margin.right,
    vis.height = height - vis.margin.top - vis.margin.bottom;
 
