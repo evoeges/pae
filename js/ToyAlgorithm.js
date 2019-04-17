@@ -4,14 +4,26 @@
  * @param _data						-- the data to use in drawing th element
  */
 
-ToyAlgorithm = function(_parentElement, _data, _selections) {
+ToyAlgorithm = function(_parentElement, _data, _selections, _width, _height) {
   this.parentElement = _parentElement;
   this.data = _data;
   this.selections = _selections;
-  this.initVis();
+  this.width= _width;
+  this.height=_height;
+  this.initVis(this.width, this.height);
 }
 
-ToyAlgorithm.prototype.initVis = function() {
+
+// create a function to select and update the svg's size
+
+
+
+// on window resize, update the svg's width and height
+
+
+
+
+ToyAlgorithm.prototype.initVis = function(width, height) {
   var vis = this;
 
   vis.margin = {
@@ -21,18 +33,14 @@ ToyAlgorithm.prototype.initVis = function() {
     left: 20
   };
 
-  var windowWidth = ($(window).width()) / 2;
-
-
   //set the height and width to be dynamic to the viewport at some point
-  vis.width = windowWidth - vis.margin.left - vis.margin.right,
-    vis.height = 400 - vis.margin.top - vis.margin.bottom;
+  vis.width = width- vis.margin.left - vis.margin.right,
+  vis.height = height - vis.margin.top - vis.margin.bottom;
 
   // SVG drawing area
   vis.svg = d3.select("#" + vis.parentElement).append("svg")
     .attr("width", vis.width + vis.margin.left + vis.margin.right)
     .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
-    .attr("preserveAspectRatio", "xMinYMin meet")
     .append("g")
     .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
@@ -156,10 +164,25 @@ ToyAlgorithm.prototype.updateVis = function() {
     .attr("fill", "var(--houses-color)")
     /*.attr("fill", "#fff")
 			 .attr("stroke-width", "4")*/
-    .attr("height", 40)
-    .attr("width", 40)
+    .attr("width", function(){
+        if (window.innerWidth>700) {
+          return 40;
+        }
+        else if (window.innerWidth<=700){
+          return 20;
+        }
+    })
+    .attr("height",  function(){
+        if (window.innerWidth>700) {
+          return 40;
+        }
+        else if (window.innerWidth<=700){
+          return 20;
+        }
+    })
+
     .attr("x", function(d) {
-      return vis.x(d.x_position);
+      return vis.x(d.x_position) ;
     })
     .attr("y", function(d) {
       return vis.y(d.y_position);
@@ -201,6 +224,43 @@ ToyAlgorithm.prototype.updateVis = function() {
    .attr('font-size', function (d) { return '20px' })
    .text(function (d) { return '\uf2b9' }); */
 
+}
+
+ToyAlgorithm.prototype.resizeSVG =function (width, height) {
+
+    var vis = this;
+
+ vis.svg.select('svg')
+   .transition()
+   .duration(100)
+   .attr("width", width)
+   .attr("height", height);
+
+
+   vis.margin = {
+     top: 40,
+     right: 60,
+     bottom: 60,
+     left: 20
+   };
+
+   //set the height and width to be dynamic to the viewport at some point
+   vis.width = width- vis.margin.left - vis.margin.right,
+   vis.height = height - vis.margin.top - vis.margin.bottom;
+
+   vis.x = d3.scaleLinear()
+     .range([0, vis.width])
+     .domain(d3.extent(vis.data, function(d) {
+       return d.x_position;
+     }));
+
+   vis.y = d3.scaleLinear()
+     .range([vis.height, 0])
+     .domain(d3.extent(vis.data, function(d) {
+       return d.y_position;
+     }));
+
+     vis.updateVis();
 
 
 }
