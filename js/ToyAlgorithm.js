@@ -237,11 +237,11 @@ ToyAlgorithm.prototype.resizeSVG =function (width, height) {
 
     var vis = this;
 
- vis.svg.select('svg')
-   .transition()
-   .duration(100)
-   .attr("width", width)
-   .attr("height", height);
+    vis.svg.select('svg')
+    .transition()
+    .duration(100)
+    .attr("width", width)
+    .attr("height", height);
 
 
    vis.margin = {
@@ -251,7 +251,7 @@ ToyAlgorithm.prototype.resizeSVG =function (width, height) {
      left: 20
    };
 
-   //set the height and width to be dynamic to the viewport at some point
+
    vis.width = width- vis.margin.left - vis.margin.right,
    vis.height = height - vis.margin.top - vis.margin.bottom;
 
