@@ -142,7 +142,22 @@ $(window).scroll(function(){
 }
 
 function createToyAlgoViz(data){
-  toyalgo = new ToyAlgorithm("toy-algo-houses-area", data, toyAlgoSelections);
+  if (window.innerWidth>700) {
+  toyalgo = new ToyAlgorithm("toy-algo-houses-area", data, toyAlgoSelections, window.innerWidth/2, window.innerHeight/2);
+  }
+  else if (window.innerWidth<=700) {
+    toyalgo = new ToyAlgorithm("toy-algo-houses-area", data, toyAlgoSelections, .8*window.innerWidth, window.innerHeight/2);
+    }
+}
+
+
+window.onresize=function() {
+  if (window.innerWidth>700) {
+     toyalgo.resizeSVG(window.innerWidth/2, window.innerHeight/2)
+  }
+  else if (window.innerWidth<=700) {
+     toyalgo.resizeSVG(.8*window.innerWidth, window.innerHeight/2)
+    }
 }
 
 function updateToyAlgo(id){
@@ -257,7 +272,8 @@ $(".card-hover").hover(
     //Fire it when the page first loads:
     alterClass();
   });
-  var isMobile = {
+
+/*  var isMobile = {
       Android: function() {
           return navigator.userAgent.match(/Android/i);
       },
@@ -292,7 +308,7 @@ $(".card-hover").hover(
         chart.attr("height", Math.round(targetWidth / aspect));
       }
 
-  }
+  } */
 
 $('.modal-backdrop').click(function(){
   console.log("hello");
