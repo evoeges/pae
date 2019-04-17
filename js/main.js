@@ -311,6 +311,6 @@ $(".card-hover").hover(
   } */
 
 $('.modal-backdrop').click(function(){
-  console.log("hello");
+
   $('.learn_modal').modal('hide');
 })

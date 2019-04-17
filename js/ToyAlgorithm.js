@@ -44,7 +44,6 @@ ToyAlgorithm.prototype.initVis = function(width, height) {
     .append("g")
     .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-  console.log(vis.width)
   // Scales and axes
   vis.x = d3.scaleLinear()
     .range([0, vis.width])
@@ -183,7 +182,6 @@ ToyAlgorithm.prototype.updateVis = function() {
     })
 
     .attr("x", function(d) {
-      console.log(vis.x(d.x_position));
       return vis.x(d.x_position) ;
     })
     .attr("y", function(d) {
@@ -232,7 +230,7 @@ ToyAlgorithm.prototype.resizeSVG =function (width, height) {
 
     var vis = this;
 
-d3.select('svg')
+ vis.svg.select('svg')
    .transition()
    .duration(100)
    .attr("width", width)
@@ -264,7 +262,5 @@ d3.select('svg')
 
      vis.updateVis();
 
-     console.log("window width" + window.innerWidth);
-     console.log("width" + width);
-     console.log("vis.width" + vis.width);
+
 }
