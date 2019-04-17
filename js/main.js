@@ -142,7 +142,22 @@ $(window).scroll(function(){
 }
 
 function createToyAlgoViz(data){
-  toyalgo = new ToyAlgorithm("toy-algo-houses-area", data, toyAlgoSelections);
+  if (window.innerWidth>700) {
+  toyalgo = new ToyAlgorithm("toy-algo-houses-area", data, toyAlgoSelections, window.innerWidth/2, window.innerHeight/2);
+  }
+  else if (window.innerWidth<=700) {
+    toyalgo = new ToyAlgorithm("toy-algo-houses-area", data, toyAlgoSelections, .8*window.innerWidth, window.innerHeight/2);
+    }
+}
+
+
+window.onresize=function() {
+  if (window.innerWidth>700) {
+     toyalgo.resizeSVG(window.innerWidth/2, window.innerHeight/2)
+  }
+  else if (window.innerWidth<=700) {
+     toyalgo.resizeSVG(.8*window.innerWidth, window.innerHeight/2)
+    }
 }
 
 function updateToyAlgo(id){
@@ -258,54 +273,44 @@ $(".card-hover").hover(
     alterClass();
   });
 
-/*var chart = $("#toy-algo-houses-area"),
-    aspect = chart.width() / chart.height(),
-    container = chart.parent();
+/*  var isMobile = {
+      Android: function() {
+          return navigator.userAgent.match(/Android/i);
+      },
+      BlackBerry: function() {
+          return navigator.userAgent.match(/BlackBerry/i);
+      },
+      iOS: function() {
+          return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      },
+      Opera: function() {
+          return navigator.userAgent.match(/Opera Mini/i);
+      },
+      Windows: function() {
+          return navigator.userAgent.match(/IEMobile/i);
+      },
+      any: function() {
+          return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+      }
+    };
 
-$(window).on("resize", function() {
-    var targetWidth = container.width();
-    chart.attr("width", targetWidth);
-    chart.attr("height", Math.round(targetWidth / aspect));
-}).trigger("resize");
-*/
+  mobileToy();
+  function mobileToy(){
+    console.log(isMobile.any());
+
+    var chart = $("#toy-algo-houses-area"),
+        aspect = chart.width() / chart.height(),
+        container = chart.parent();
+
+    if (isMobile.any()) {
+        var targetWidth = container.width();
+        chart.attr("width", targetWidth);
+        chart.attr("height", Math.round(targetWidth / aspect));
+      }
+
+  } */
+
 $('.modal-backdrop').click(function(){
-  console.log("hello");
+
   $('.learn_modal').modal('hide');
 })
-
-var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-  };
-
-mobileToy();
-function mobileToy(){
-  console.log(isMobile.any());
-
-  var chart = $("#toy-algo-houses-area"),
-      aspect = chart.width() / chart.height(),
-      container = chart.parent();
-
-  if (isMobile.any()) {
-      var targetWidth = container.width();
-      chart.attr("width", targetWidth);
-      chart.attr("height", Math.round(targetWidth / aspect));
-    }
-
-}
