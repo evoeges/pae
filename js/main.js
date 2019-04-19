@@ -314,3 +314,12 @@ $('.modal-backdrop').click(function(){
 
   $('.learn_modal').modal('hide');
 })
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'left'
+    });
+  });
