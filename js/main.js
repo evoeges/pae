@@ -196,11 +196,14 @@ $("[data-toggle=popover]")
 
 
 $(window).bind("scroll", function() {
-    if ($(this).scrollTop() > 250) {
+    if ($(this).scrollTop() > 500) {
         $("#navbar-side").fadeIn();
+        $(".ads_alert").fadeIn();
         $("#navbar-side").removeClass("definitions_hidden");
+        $(".ads_alert").removeClass("definitions_hidden");
     } else {
         $("#navbar-side").stop().fadeOut();
+        $(".ads_alert").stop().fadeOut();
     }
 });
 

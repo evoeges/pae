@@ -1401,6 +1401,13 @@ li {
   text-align: right;
 }
 
+.alert_button:hover{
+  -moz-box-shadow:-10 10 .75rem;
+  -webkit-box-shadow:-10 10 .75rem;
+  box-shadow: -10 10 .75rem;
+
+}
+
 }
 
 
