@@ -100,6 +100,23 @@ h4{
 }
 
 
+.salmon{
+  background-color: var(--secondary-color);
+  width: 200%;
+}
+
+.btn-floating{
+  width: 100%;
+
+
+}
+
+.btn-floating:hover{
+  background-color: var(--secondary-color);
+}
+.salmon:hover{
+  background-color: var(--secondary-color);
+}
 
 .citation{
   font-size:80%;
@@ -107,21 +124,14 @@ h4{
   color: var(--link-color);
 }
 
-.ads_alert{
-  display: block;
-  position: fixed;
-  margin-left: 90%;
-  z-index: 999;
-  margin-bottom: 90vh;
-}
+
 
 .alert_text{
   background-color: var(--secondary-color);
-  color: white;
-  padding: 1%;
+  color: white !important;
+
   border-radius: 25px;
-  padding-left: 2%;
-  padding-right: 2%;
+
 }
 
 .alert_button{
@@ -1379,13 +1389,7 @@ li {
 
 
 
-.ads_alert{
-  display: block;
-  position: fixed;
-  margin-left: 90%;
-  z-index: 999;
-  margin-bottom: 90vh;
-}
+
 
 .alert_text{
   background-color: var(--secondary-color);
@@ -1400,15 +1404,16 @@ li {
   text-align: right;
 }
 
+
+
+}
+
 .alert_button:hover{
   -moz-box-shadow:-10 10 .75rem;
   -webkit-box-shadow:-10 10 .75rem;
   box-shadow: -10 10 .75rem;
 
 }
-
-}
-
 
 .fixed-action-button.active, .fixed-action-button:hover {
     background-color: white;

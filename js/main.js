@@ -207,7 +207,7 @@ $(window).bind("scroll", function() {
     }
 });
 
-$(".alert_text").delay(10000).fadeOut();
+//$(".alert_text").delay(10000).fadeOut();
 
 $(document).ready(function(){
   $('.collapsible').collapsible();
