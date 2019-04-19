@@ -146,9 +146,8 @@ h4{
 #navbar-side{
   font-size: 80%;
   width: 10%;
-
 }
-#navbar-side a.active {
+#navbar-side  a.active {
     background-color: transparent;
     font-weight: 600;
     margin-left: 15px;
@@ -159,6 +158,11 @@ h4{
 #navbar-side a {
   color: var(--nav-link-color);
   text-decoration: none;
+}
+
+.sub_nav {
+  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .mobile_nav{
@@ -1303,29 +1307,16 @@ li {
     display:block;
   }
 
-  li.nav-link {
-    border-left: none;
-    font-size: 60%;
+.nav-link {
     font-weight: 200;
-    line-height: 1px;
-    margin-bottom: 5%;
     margin-left: 5px;
     padding-left: 5px;
+    border-left: none;
+    font-size: 100%;
     padding-top: 40%;
 }
-  li.nav-item {
-    margin-bottom: 5%;
-  }
 
-  .nav_chapter_number{
-    width: 100px;
-    height: 100px;
-    background: var(--dark-color);
-    color: white;
-    margin: auto;
-    padding: 5px;
-    border-radius: 50%;
-  }
+
 
 
   #navbar-side a{
@@ -1334,13 +1325,20 @@ li {
 
   #navbar-side a.active {
     background-color: transparent;
-    border-left: none;
-    color: var(--secondary-color);
     font-weight: 200;
-    font-size: 60%;
-    margin-left: 0px;
-    padding-left: 2px;
+    margin-left: 5px;
+    padding-left: 5px;
+     border-left: none;
+     font-size: 100%;
+    color: var(--secondary-color);
+
   }
+
+  .sub_nav {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
 
   .frameworks_row .body_takeaway{
     margin-top: 10%;
