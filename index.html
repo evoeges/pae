@@ -240,7 +240,7 @@
             <p> Like many of his neighbors, Porfirio is a Dominican immigrant. He works with an anti-hunger advocacy group and knows the importance of the <a href="https://www.fns.usda.gov/snap/eligible-food-items" target="_blank">Supplemental Nutrition
               Assistance Program (SNAP)</a>, also
             known as food stamps. More than half of his customers bought their groceries with SNAP benefits from the US Department of Agriculture (USDA). </p>
-          <p>But when their benefits hadn't come in yet, <strong> he let long-time patrons take groceries home trusting that they would come back later to settle their bills, like an informal IOU system</strong>. This IOU system allowed Porfirio to help members of his community feel secure about their food even if they felt insecure about their finances.
+          <p>But when their benefits hadn't come in yet, <strong> he let patrons take groceries home trusting that they would come back later to settle their bills, like an informal IOU system</strong>. This IOU system allowed Porfirio to help members of his community feel secure about their food even if they felt insecure about their finances.
           </p>
           <p class="citation">*Original reporting by <a href="https://theintercept.com/2018/10/08/food-stamps-snap-program-usda/" target="_blank">The Intercept and and The New Food Economy</a></p>
 
@@ -857,7 +857,7 @@
 
           <p>These biases can arise because all datasets, to some extent, are incomplete. It is impossible to capture the world absolutely and perfectly. The best datasets try to be as complete as they need to be for the purpose and acknowledge their bias.</p>
 
-          <h3>Algorithm Model</h3>
+          <h3>Algorithmic Model</h3>
           <p><b>An ADS should use the correct type of algorithm so that it handles the variables and data points correctly.</b> Choosing the
             right algorithm depends on the ADS's purpose. There are hundreds of different algorithms that each calculate outputs slightly differently.</p>
 
@@ -888,14 +888,16 @@
 
           <div class="body_takeaway"> When an ADS is explainable, it's easier to pinpoint where problems arise. </div>
 
-          <h3>Easy to Understand</h3>
+          <h3>Transparency</h3>
+        <p>Before we can even begin to understand how an ADS works we need to be able to find information on it. To be completely transparent an ADS's algorithms and data (as long as privacy concerns are met) should be made publicly available with documentation explaining them.</p>
+
+          <h3>Ease of Understanding</h3>
           <p>Some algorithms are very easy to understand, like instructions for choosing an avocado. We know exactly which variables are going into the model and how they're weighted. </p>
 
           <p>The avocado algorithm is a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
               data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image'>">decision
               tree</a>. Super explainable. </p>
 
-          <h3>Hard to Understand</h3>
           <p> Others can feel like a black box. We give the data to the computer and it gives us a decision, but we don't really know how it reached that decision. </p>
 
           <p>A <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
@@ -1010,9 +1012,8 @@
               <h4>Data</h4>
               <p>Because Porfirio's bodega is in a low-income neighborhood, he is more likely to have more customers with food stamps. While the data is technically accurate, it is geographically skewed so that bodegas like Porfirio's receive
                 more scrutiny whereas bodegas in rich neighborhoods receive less scrutiny.</p>
-              <h4> Algorithm Model </h4>
-              <p>The algorithm the USDA used to identify cash-for-food-stamps fraud was using large one time purchases as variable to indicate fraud. The algorithm couldn't distinguish between true fraud and Porfirio's IOU system. Someone
-                decided that the model should flag certain transactions as fraudulent, so there was bias in the model against those kinds of transactions.</p>
+              <h4> Algorithmic Model </h4>
+              <p>The algorithmic model the USDA used to identify cash-for-food-stamps fraud was using large one time purchases as a variable to indicate fraud. The model was designed in such a way that it couldn't distinguish between true fraud and Porfirio's IOU system. It simply flagged certain transactions as fraudulent, so there was bias in the model against those kinds of transactions.</p>
             </div>
           </div>
         </div>
@@ -1280,7 +1281,7 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
                   <h4>Data</h4>
                   <p>ESP uses a lot of data which incorporates both library and private book sale data but is currently unable to take into account other forms of data, like book reviews.</p>
                   <p>The data doesn't account for human biased equity issues. Sales data may be skewed to higher-income individuals who can buy more books. Libraries should think about books that their unique populations need and value.</p>
-                  <h4> Algorithm Model </h4>
+                  <h4> Algorithmic Model </h4>
                   <p>ESP uses a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
                       data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a>. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know what kinds of biases in the data are driving outcomes. </p>
                 </div>
@@ -1503,7 +1504,7 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
                 <h4>Data</h4>
                 <p>The data TSAP uses is based on both historical data and new data input by new applicants, transfer requests, or case workers.  The algorithm makes a prediction about how many units will be vacated based on how many units of a certain type were vacated in the past. However,  there might be other factors at play in the present day that the algorithm can’t account for. For example, maybe that building was renovated and fewer people want to leave now. This is called omitted variable bias.
                 </p>
-                <h4> Algorithm Model </h4>
+                <h4> Algorithmic Model </h4>
                 <p>There are multiple algorithms in this ADS. It seems like NYCHA is trying to use the best algorithm for each decision type.
                 </p>
               </div>
@@ -1750,7 +1751,7 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
                   <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
                   <h4>Data</h4>
                   <p> This algorithm uses data from students and schools ranking their preferences. These datasets can be very biased. Student rankings are based on their own perceptions of their competitivity in the process, their parents' knowledge about which schools are best, their desire to stay with their friends. School rankings are based on their admissions priorities, which just track what the schools want to focus on. If they want to focus on good grades, they can do that. If they want to focus on students in the neighborhood, they can do that.</p>
-                  <h4> Algorithm Model </h4>
+                  <h4> Algorithmic Model </h4>
                   <p>The algorithm maximizes top mutual matches for students and schools. This algorithm is used in other matching situations, like matching medical students to residencies.</p>
                 </div>
               </div>
