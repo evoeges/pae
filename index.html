@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Automating NYC</title>
+  <!--find favicons here: https://realfavicongenerator.net/favicon_result?file_id=p1d90r0r5bi041kt81ro912qnm1h6-->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -12,11 +13,9 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#26a599">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#26a599">
-<!--find icons here: https://realfavicongenerator.net/favicon_result?file_id=p1d90r0r5bi041kt81ro912qnm1h6-->
 
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/hover-min.css">
-
 
   <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700" rel="stylesheet">
@@ -45,7 +44,7 @@
           <h2 id="website_subtitle">and (en)coding inequality?</h2>
         </div>
 
-        <div id="skyline_drawing"></div>
+        <div id="skyline_drawing" aria-label="Animated line drawing of New York City skyline"></div>
 
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="center">
           <a href="#first_page">
@@ -119,7 +118,7 @@
 
     <div class="fixed-action-btn">
       <a class="btn-floating btn-large salmon ads_alert">
-        <img src="img/megaphone_white.png" class="alert_button">
+        <img src="img/megaphone_white.png" class="alert_button" alt="Floating pink button with a white megaphone inside">
       </a>
       <ul>
         <li><a class="btn-floating alert_text">&nbsp;&nbsp;The first meeting of the ADS Task Force is on April 30th!&nbsp;&nbsp;</a></li>
@@ -485,10 +484,10 @@
         <div class="col"></div>
         <div class="col-md-8 avocado_section" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
           <p class="body_emphasis">Hover over to find the best avocado.</p>
-          <a class="tooltipped" data-position="top" data-tooltip="Cost: $2.00<br>Organic: Yes<br>Ripeness: Not very ripe <br>"><img src="img/avocado.png" class="avocado_images"></a>
-          <a class="tooltipped" data-position="top" data-tooltip="Cost: $1.29<br>Organic: No<br>Ripeness: Not very ripe <br>"><img src="img/avocado.png" class="avocado_images"></a>
-          <a class="tooltipped" data-position="top" data-tooltip="Cost: $2.00<br>Organic: Yes<br>Ripeness: Ripe"><img src="img/avocado.png" class="avocado_images"></a>
-          <a class="tooltipped" data-position="top" data-tooltip="Cost: $1.29<br>Organic: No<br>Ripeness: Ripe<br><br>You found the best one!"><img src="img/avocado.png" class="avocado_images hvr-wobble-vertical"></a>
+          <a class="tooltipped" data-position="top" data-tooltip="Cost: $2.00<br>Organic: Yes<br>Ripeness: Not very ripe <br>"><img src="img/avocado.png" class="avocado_images" alt="First non-ideal avocado cut in half"></a>
+          <a class="tooltipped" data-position="top" data-tooltip="Cost: $1.29<br>Organic: No<br>Ripeness: Not very ripe <br>"><img src="img/avocado.png" class="avocado_images" alt="Second non-ideal avocado cut in half"></a>
+          <a class="tooltipped" data-position="top" data-tooltip="Cost: $2.00<br>Organic: Yes<br>Ripeness: Ripe"><img src="img/avocado.png" class="avocado_images" alt="Third non-ideal avocado cut in half"></a>
+          <a class="tooltipped" data-position="top" data-tooltip="Cost: $1.29<br>Organic: No<br>Ripeness: Ripe<br><br>You found the best one!"><img src="img/avocado.png" alt="Best avocado cut in half jumping up and down" class="avocado_images hvr-wobble-vertical"></a>
         </div>
         <div class="col"></div>
       </div>
@@ -833,7 +832,7 @@
         <div class="col-md-4 sticky sticky_card_section" align="center">
           <div class="card impact-card small-card">
             <div class="card-content">
-              <img src="img/impact.png" class="sticky_card_icon">
+              <img src="img/impact.png" class="sticky_card_icon" alt="Exclamation mark icon">
               <h3 class="front-card-title">Impact</h3>
               <p class="front-card-body center"> Who is affected by the ADS and how?</p>
             </div>
@@ -869,7 +868,7 @@
         <div class="col-md-4 sticky sticky_card_section" align="center">
           <div class="card machine-bias-card small-card">
             <div class="card-content">
-              <img src="img/bias.png" class="sticky_card_icon">
+              <img src="img/bias.png" class="sticky_card_icon" alt="Forward slash icon">
               <h3 class="front-card-title">Bias</h3>
               <p class="front-card-body center">What inputs in the ADS create problems?</p>
             </div>
@@ -909,7 +908,7 @@
         <div class="col-md-4 sticky sticky_card_section" align="center">
           <div class="card explainability-card small-card">
             <div class="card-content">
-              <img src="img/explainability.png" class="sticky_card_icon">
+              <img src="img/explainability.png" class="sticky_card_icon" alt="Question mark icon">
               <h3 class="front-card-title">Explainability</h3>
               <p class="front-card-body center"> How easy is it for humans to understand how the ADS works?</p>
             </div>
@@ -927,13 +926,13 @@
           <p>Some algorithms are very easy to understand, like instructions for choosing an avocado. We know exactly which variables are going into the model and how they're weighted. </p>
 
           <p>The avocado algorithm is a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-              data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image'>">decision
+              data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image' alt='A node connects to two other nodes. Each node connects to another two nodes that are unconnected to the first node.'>">decision
               tree</a>. Super explainable. </p>
 
           <p> Others can feel like a black box. We give the data to the computer and it gives us a decision, but we don't really know how it reached that decision. </p>
 
           <p>A <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-              data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a> algorithm is not that explainable. </p>
+              data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image' alt='One node is surrounded in a circle by six other nodes. Each node is connected to the center node and and node immediate next to it.'> ">neural network</a> algorithm is not that explainable. </p>
 
         </div>
         <div class="col"></div>
@@ -946,7 +945,7 @@
         <div class="col-md-4 sticky sticky_card_section" align="center">
           <div class="card automation-card small-card">
             <div class="card-content">
-              <img src="img/automation.png" class="sticky_card_icon">
+              <img src="img/automation.png" class="sticky_card_icon" alt="Asterisk icon">
               <h3 class="front-card-title">Automation</h3>
               <p class="front-card-body center"> How much of the decision is made by the algorithm?</p>
             </div>
@@ -981,7 +980,7 @@
         <div class="col-md-4 sticky sticky_card_section" align="center">
           <div class="card flexibility-card small-card">
             <div class="card-content">
-              <img src="img/flexibility.png" class="sticky_card_icon">
+              <img src="img/flexibility.png" class="sticky_card_icon" alt="Tilde (Squiggly Line) icon">
               <h3 class="front-card-title">Flexibility</h3>
               <p class="front-card-body center"> Can the ADS be changed easily if people have feedback?</p>
             </div>
@@ -1016,7 +1015,7 @@
         <div class="col-md-4">
           <div class="card  case_cards activator impact-card">
             <div class="card-content activator">
-              <span class="activator"><img src="img/impact.png" class="card_icon activator"></span>
+              <span class="activator"><img src="img/impact.png" class="card_icon activator" alt="Exclamation mark icon"></span>
               <h3 class="card-title activator">Impact<i class="right activator" data-feather="maximize-2"></i></h3>
               <p class="activator">Who does the ADS affect and how?</p>
             </div>
@@ -1035,7 +1034,7 @@
         <div class="col-md-4">
           <div class="card  case_cards activator machine-bias-card">
             <div class="card-content">
-              <span class="activator"><img src="img/bias.png" class="card_icon activator"></span>
+              <span class="activator"><img src="img/bias.png" class="card_icon activator" alt="Forward slash icon"></span>
               <h3 class="card-title activator">Bias<i class="right activator" data-feather="maximize-2"></i></h3>
               <p>What inputs in the ADS create problems?</p>
             </div>
@@ -1053,7 +1052,7 @@
         <div class="col-md-4">
           <div class="card case_cards activator explainability-card">
             <div class="card-content">
-              <span class="activator"><img src="img/explainability.png" class="card_icon activator"></span>
+              <span class="activator"><img src="img/explainability.png" class="card_icon activator" alt="Question mark icon"></span>
               <h3 class="card-title activator">Explainability<i class="right activator" data-feather="maximize-2"></i></h3>
               <p>How easy is it for humans to understand how the ADS works?</p>
             </div>
@@ -1074,7 +1073,7 @@
         <div class="col-md-4">
           <div class="card  case_cards activator automation-card">
             <div class="card-content">
-              <span class="activator"><img src="img/automation.png" class="card_icon activator"></span>
+              <span class="activator"><img src="img/automation.png" class="card_icon activator" alt="Asterisk icon"></span>
               <h3 class="card-title activator">Automation<i class="right activator" data-feather="maximize-2"></i></h3>
               <p>How much of the decision is made by the algorithm?</p>
             </div>
@@ -1095,7 +1094,7 @@
         <div class="col-md-4">
           <div class="card case_cards activator flexibility-card">
             <div class="card-content">
-              <span class="activator"><img src="img/flexibility.png" class="card_icon activator"></span>
+              <span class="activator"><img src="img/flexibility.png" class="card_icon activator" alt="Tilde (Squiggly line) icon"></span>
               <h3 class="card-title activator">Flexibility<i class="right activator" data-feather="maximize-2"></i></h3>
               <p>Can the ADS be changed easily if people have feedback?</p>
             </div>
@@ -1241,7 +1240,7 @@
             <div class="col-md-7">
               <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">So, which factors matter when ESP rates books?</h3>
               <p data-scroll="toggle(.fromBottomIn, .fromBottomOut) once"> We don't actually know. ESP is a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                  data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a> algorithm, which is hard to understand, it's like a black box. We know which datasets ESP uses, but the
+                  data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image' alt='One node is surrounded in a circle by six other nodes. Each node is connected to the center node and and node immediate next to it.'> ">neural network</a> algorithm, which is hard to understand, it's like a black box. We know which datasets ESP uses, but the
                 patterns
                 it's using to make recommendations are fuzzy.</p>
               <p>To be fair, we don't always know exactly what librarians are thinking either when they make decisions to stock particular books. But if they're connected with the community they serve, we might trust that and can draw from their
@@ -1256,7 +1255,7 @@
               <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">But we get better book picks, right?</h3>
               <p data-scroll="toggle(.fromBottomIn, .fromBottomOut) once"> Not so fast. </p>
               <p> As a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                  data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a>, ESP works best when there is a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well. But it would have a harder time when guessing which
+                  data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image' alt='One node is surrounded in a circle by six other nodes. Each node is connected to the center node and and node immediate next to it.'> ">neural network</a>, ESP works best when there is a lot of data. For example, in established book genres and topics like knitting, it tends to pick the winners well. But it would have a harder time when guessing which
                 debut
                 fiction (e.g. an author’s first book) will be a hit with readers. </p>
              <p> Even if we have a bunch of data from Amazon or other book sellers, the data might not be representative of many NYC communities, particularly minorities and low income individuals. These communities are some of the largest users of library services, and they might also purchase fewer books. This means that the recommendations ESP produces might not reflect what patrons want and may not be easy to change unless we get a whole lot more data.</p>
@@ -1282,7 +1281,7 @@
             <div class="col-md-4">
               <div class="card  case_cards activator impact-card">
                 <div class="card-content activator">
-                  <span class="activator"><img src="img/impact.png" class="card_icon activator"></span>
+                  <span class="activator"><img src="img/impact.png" class="card_icon activator" alt="Exclamation mark icon"></span>
                   <h3 class="card-title activator">Impact<i class="right activator" data-feather="maximize-2"></i></h3>
                   <p class="activator">Who does the ADS affect and how?</p>
                 </div>
@@ -1302,7 +1301,7 @@
             <div class="col-md-4">
               <div class="card  case_cards activator machine-bias-card">
                 <div class="card-content">
-                  <span class="activator"><img src="img/bias.png" class="card_icon activator"></span>
+                  <span class="activator"><img src="img/bias.png" class="card_icon activator" alt="Forward slash icon"></span>
                   <h3 class="card-title  activator">Bias<i class="right activator" data-feather="maximize-2"></i></h3>
                   <p>What inputs in the ADS create problems?</p>
                 </div>
@@ -1313,7 +1312,7 @@
                   <p>The data doesn't account for human biased equity issues. Sales data may be skewed to higher-income individuals who can buy more books. Libraries should think about books that their unique populations need and value.</p>
                   <h4> Algorithmic Model </h4>
                   <p>ESP uses a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                      data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a>. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know what kinds of biases in the data are driving outcomes. </p>
+                      data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image' alt='One node is surrounded in a circle by six other nodes. Each node is connected to the center node and and node immediate next to it.'> ">neural network</a>. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know what kinds of biases in the data are driving outcomes. </p>
                 </div>
               </div>
             </div>
@@ -1321,7 +1320,7 @@
             <div class="col-md-4">
               <div class="card  case_cards activator explainability-card">
                 <div class="card-content">
-                  <span class="activator"><img src="img/explainability.png" class="card_icon activator"></span>
+                  <span class="activator"><img src="img/explainability.png" class="card_icon activator" alt="Question mark icon"></span>
                   <h3 class="card-title activator">Explainability<i class="right activator" data-feather="maximize-2"></i></h3>
                   <p>How easy is it for humans to understand how the ADS works?</p>
                 </div>
@@ -1342,7 +1341,7 @@
             <div class="col-md-4">
               <div class="card  case_cards activator automation-card">
                 <div class="card-content">
-                  <span class="activator"><img src="img/automation.png" class="card_icon activator"></span>
+                  <span class="activator"><img src="img/automation.png" class="card_icon activator" alt="Asterisk icon"></span>
                   <h3 class="card-title activator">Automation<i class="right activator" data-feather="maximize-2"></i></h3>
                   <p>How much of the decision is made by the algorithm?</p>
                 </div>
@@ -1359,7 +1358,7 @@
             <div class="col-md-4">
               <div class="card case_cards activator flexibility-card">
                 <div class="card-content">
-                  <span class="activator"><img src="img/flexibility.png" class="card_icon activator"></span>
+                  <span class="activator"><img src="img/flexibility.png" class="card_icon activator" alt="Tilde (Squiggly line) mark"></span>
                   <h3 class="card-title activator">Flexibility<i class="right activator" data-feather="maximize-2"></i></h3>
                   <p>Can the ADS be changed easily if people have feedback?</p>
                 </div>
@@ -1479,11 +1478,11 @@
             <p>Actually, each step of TSAP uses a different algorithm with different levels of automation.
             </p>
             <p>For example, the step for assigning priority codes involves a pretty simple <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image'>"> decision
+                data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image' alt='A node connects to two other nodes. Each node connects to another two nodes that are unconnected to the first node.'>"> decision
                 tree</a> that follows a series of yes or no questions about the person’s needs.
             </p>
             <p>The step for predicting vacancies is more like a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                data-content="A <b>linear regression</b> draws a simple line through data points to make a prediction. They look like this: <br><img src='img/regression.svg' class='popover_image'> ">linear regression</a>. The algorithm looks at past data and past vacancies and determines how important each variable is in ‘causing’ a vacancy. It then uses this formula to predict future vacancies on new data.
+                data-content="A <b>linear regression</b> draws a simple line through data points to make a prediction. They look like this: <br><img src='img/regression.svg' class='popover_image' alt="Line drawn diagonally from bottom left to top right. Dots are on scattered closely on both sides of the line."> ">linear regression</a>. The algorithm looks at past data and past vacancies and determines how important each variable is in ‘causing’ a vacancy. It then uses this formula to predict future vacancies on new data.
             </p>
           </div>
           <div class="col"></div>
@@ -1507,7 +1506,7 @@
           <div class="col-md-4">
             <div class="card  case_cards activator impact-card">
               <div class="card-content activator">
-                <span class="activator"><img src="img/impact.png" class="card_icon activator"></span>
+                <span class="activator"><img src="img/impact.png" class="card_icon activator" alt="Exclamation mark icon"></span>
                 <h3 class="card-title activator">Impact<i class="right activator" data-feather="maximize-2"></i></h3>
                 <p class="activator">Who does the ADS affect and how?</p>
               </div>
@@ -1526,7 +1525,7 @@
           <div class="col-md-4">
             <div class="card  case_cards activator machine-bias-card">
               <div class="card-content">
-                <span class="activator"><img src="img/bias.png" class="card_icon activator"></span>
+                <span class="activator"><img src="img/bias.png" class="card_icon activator" alt="Forward slash icon"></span>
                 <h3 class="card-title activator">Bias<i class="right activator" data-feather="maximize-2"></i></h3>
                 <p>What inputs in the ADS create problems?</p>
               </div>
@@ -1545,7 +1544,7 @@
           <div class="col-md-4">
             <div class="card  case_cards activator explainability-card">
               <div class="card-content">
-                <span class="activator"><img src="img/explainability.png" class="card_icon activator"></span>
+                <span class="activator"><img src="img/explainability.png" class="card_icon activator" alt="Exclamation mark icon"></span>
                 <h3 class="card-title activator">Explainability<i class="right activator" data-feather="maximize-2"></i></h3>
                 <p>How easy is it for humans to understand how the ADS works?</p>
               </div>
@@ -1553,7 +1552,7 @@
                 <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
                 <p>The actual algorithms used by TSAP are pretty explainable.
                   <p> <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                    data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image'>"> Decision
+                    data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image' alt='A node connects to two other nodes. Each node connects to another two nodes that are unconnected to the first node.'>"> Decision
                     trees</a> and <br><a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
                         data-content="A <b>linear regression</b> draws a simple line through data points to make a prediction. They look like this: <br><img src='img/regression.svg' class='popover_image'> ">linear regressions</a> both have clearly identifiable variables and the weights are easy to understand.
                 </p>
@@ -1577,7 +1576,7 @@
           <div class="col-md-4">
             <div class="card  case_cards activator automation-card">
               <div class="card-content">
-                <span class="activator"><img src="img/automation.png" class="card_icon activator"></span>
+                <span class="activator"><img src="img/automation.png" class="card_icon activator" alt="Asterisk icon"></span>
                 <h3 class="card-title activator">Automation<i class="right activator" data-feather="maximize-2"></i></h3>
                 <p>How much of the decision is made by the algorithm?</p>
               </div>
@@ -1594,7 +1593,7 @@
           <div class="col-md-4">
             <div class="card case_cards activator flexibility-card">
               <div class="card-content">
-                <span class="activator"><img src="img/flexibility.png" class="card_icon activator"></span>
+                <span class="activator"><img src="img/flexibility.png" class="card_icon activator" alt="Tilde (squiggly line) icon"></span>
                 <h3 class="card-title activator">Flexibility<i class="right activator" data-feather="maximize-2"></i></h3>
                 <p>Can the ADS be changed easily if people have feedback?</p>
               </div>
@@ -1761,7 +1760,7 @@
             <div class="col-md-4">
               <div class="card  case_cards activator impact-card">
                 <div class="card-content activator">
-                  <span class="activator"><img src="img/impact.png" class="card_icon activator"></span>
+                  <span class="activator"><img src="img/impact.png" class="card_icon activator" alt="Exclamation mark icon"></span>
                   <h3 class="card-title activator">Impact<i class="right activator" data-feather="maximize-2"></i></h3>
                   <p class="activator">Who does the ADS affect and how?</p>
                 </div>
@@ -1779,7 +1778,7 @@
             <div class="col-md-4">
               <div class="card  case_cards activator machine-bias-card">
                 <div class="card-content">
-                  <span class="activator"><img src="img/bias.png" class="card_icon activator"></span>
+                  <span class="activator"><img src="img/bias.png" class="card_icon activator" alt="Forward slash icon"></span>
                   <h3 class="card-title activator">Bias<i class="right activator" data-feather="maximize-2"></i></h3>
                   <p>What inputs in the ADS create problems?</p>
                 </div>
@@ -1796,7 +1795,7 @@
             <div class="col-md-4">
               <div class="card  case_cards activator explainability-card">
                 <div class="card-content">
-                  <span class="activator"><img src="img/explainability.png" class="card_icon activator"></span>
+                  <span class="activator"><img src="img/explainability.png" class="card_icon activator" alt="Question mark icon"></span>
                   <h3 class="card-title activator">Explainability<i class="right activator" data-feather="maximize-2"></i></h3>
                   <p>How easy is it for humans to understand how the ADS works?/<p>
                 </div>
@@ -1823,7 +1822,7 @@
             <div class="col-md-4">
               <div class="card  case_cards activator automation-card">
                 <div class="card-content">
-                  <span class="activator"><img src="img/automation.png" class="card_icon activator"></span>
+                  <span class="activator"><img src="img/automation.png" class="card_icon activator" alt="Asterisk icon"></span>
                   <h3 class="card-title activator">Automation<i class="right activator" data-feather="maximize-2"></i></h3>
                   <p>How much of the decision is made by the algorithm?</p>
                 </div>
@@ -1839,7 +1838,7 @@
             <div class="col-md-4">
               <div class="card case_cards activator flexibility-card">
                 <div class="card-content">
-                  <span class="activator"><img src="img/flexibility.png" class="card_icon activator"></span>
+                  <span class="activator"><img src="img/flexibility.png" class="card_icon activator" alt="Tilde (squiggly line) icon"></span>
                   <h3 class="card-title activator">Flexibility<i class="right activator" data-feather="maximize-2"></i></h3>
                   <p>Can the ADS be changed easily if people have feedback?</p>
                 </div>
@@ -2351,25 +2350,25 @@
 
     <div class="row align-items-top">
       <div class="col-md-3">
-        <img src="img/aki.jpg" class="bio_images hvr-wobble-vertical">
+        <img src="img/aki.jpg" class="bio_images hvr-wobble-vertical" alt="Drawing of Aki, person with red glasses, round gold earrings, and dark hair in a ponytail">
         <h3 class="center bio_name"> Aki </h3>
         <p class="center"> Project Management <br> + <br> Data Wrangler </p>
         <p class="bio"> Aki Younge is a futurist thinker and racial justice advocate who believes in empowering communities to use data and technology to dismantle systems of oppression.</p>
       </div>
       <div class="col-md-3">
-        <img src="img/dee.jpg" class="bio_images hvr-wobble-vertical">
+        <img src="img/dee.jpg" class="bio_images hvr-wobble-vertical" alt="Drawing of Dee, a person with light pink glasses and dark medium-length hair worn down ">
         <h3 class="center bio_name"> Deepra </h3>
         <p class="center"> Content Development <br> + <br> Research</p>
         <p class="bio"> Deepra Yusuf is a native New Yorker, former government analyst, and design thinker committed to finding ways governments and technology can form ethical and symbiotic relationships.</p>
       </div>
       <div class="col-md-3">
-        <img src="img/elyse2.jpg" class="bio_images hvr-wobble-vertical">
+        <img src="img/elyse2.jpg" class="bio_images hvr-wobble-vertical" alt="Drawing of Elyse, a person with squiggly black earrings, teal eyeliner, and short gold hair">
         <h3 class="center bio_name"> Elyse </h3>
         <p class="center">Design<br> + <br> Engineering</p>
         <p class="bio"> Elyse Voegeli is a data analyst and designer committed to making tech accountable, accessible, and delightful.</p>
       </div>
       <div class="col-md-3">
-        <img src="img/jon.jpg" class="bio_images hvr-wobble-vertical">
+        <img src="img/jon.jpg" class="bio_images hvr-wobble-vertical" alt="Drawing of Jon, a person with dark round glasses and long black hair worn down.">
         <h3 class="center bio_name">Jon </h3>
         <p class="center"> Design <br> + <br> Content Development</p>
         <p class="bio">Jon Truong works at the intersection of digital tools and social change in urban settings.</p>
