@@ -82,6 +82,14 @@ h4{
   font-family: var(--secondary-font);
 }
 
+
+.pros_cons{
+color: var(--main-color);
+text-align: center;
+width: 35px;
+height: 35px;
+}
+
 .body_emphasis{
   font-size: 120%;
   font-weight: 400;
@@ -1323,7 +1331,7 @@ li {
     padding-left: 5px;
     border-left: none;
     font-size: 100%;
-    padding-top: 40%;
+    padding-top: 10%;
 }
 
 
