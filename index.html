@@ -237,8 +237,7 @@
           <p class="body_emphasis" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">Since 2012, Porfirio's been running P&L Deli Grocery, a bodega in Washington Heights.</p>
           <p data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">Locals know they can count on him for groceries, even when times are tough. Just as important, the bodega serves as a space for building community &mdash; a place where neighbors go to hang out, watch baseball, and smoke cigars.
             </p>
-            <p> Like many of his neighbors, Porfirio is a Dominican immigrant. He works with an anti-hunger advocacy group and knows the importance of the <a href="https://www.fns.usda.gov/snap/eligible-food-items" target="_blank">Supplemental Nutrition
-              Assistance Program (SNAP)</a>, also
+            <p> Like many of his neighbors, Porfirio is a Dominican immigrant. He works with an anti-hunger advocacy group and knows the importance of the Supplemental Nutrition Assistance Program (SNAP), also
             known as food stamps. More than half of his customers bought their groceries with SNAP benefits from the US Department of Agriculture (USDA). </p>
           <p>But when their benefits hadn't come in yet, <strong> he let patrons take groceries home trusting that they would come back later to settle their bills, like an informal IOU system</strong>. This IOU system allowed Porfirio to help members of his community feel secure about their food even if they felt insecure about their finances.
           </p>
@@ -383,13 +382,12 @@
             <p> Definitely. Just look back to the <a href="https://www.wired.com/story/ideas-joi-ito-insurance-algorithms" target="_blank">history of housing segregation and redlining.</a> </p>
           </div>
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <p>Even though human-centric systems also make mistakes, ADSs are unique:</p>
+            <p>Even though human-centric systems also make mistakes, ADSs are unique in their potential and in their risk.</p>
             <ul class="indented-bullet-points browser-default">
-              <li>They can work at a <strong>more rapid pace</strong> and at a <strong>larger scale</strong>.</li>
-              <li>When they make mistakes, the ADS <strong>might not have human checks</strong> to
-                override or course-correct them.</li>
-              <li>Implementing ADSs are often used to <strong>justify collecting a lot more data</strong> about people.</li>
-              <li>Data can be used to <strong>increase policing of marginalized communities</strong>, just like the ADS flagged Porfirio using receipts of transactions.</li>
+              <li>ADSs can work at a <strong>more rapid pace</strong> and at a <strong>larger scale</strong> than human decision processes. This can be good when resources are limited, but can be bad if they are reinforcing unjust systems.</li>
+              <li>When they make mistakes, the ADS <strong>might not have human checks</strong> to override or course-correct them. This can be good if we worry that the humans making decision processes have biases or prejudices, but it can be bad because often the data reflects cultural biases and predjudices.</li>
+              <li>ADSs can be used to <strong>focus on resources for marginalized communities</strong>. This can be good if it's for giving more resources to historically underserved communities (like the ADS that your tax preparer uses to help you know if you're eligible for the Earned Income Tax Credit), bad if those resources are over-policing and penalization (like for Porfirio).</li>
+              <li>Implementing ADSs are often used to <strong>justify collecting a lot more data</strong> about people. This can be good if government services are tailored to you and are transparent, but it can be bad and scary for your personal privacy if you don't have control or knowledge of what data is being collected about you.</li>
             </ul>
           </div>
         </div>
@@ -400,7 +398,7 @@
         <div class="col"></div>
         <div class="col-md-8">
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-            <div class="body_takeaway">ADSs can help solve major problems, but can also make problems like racism, discrimination, surveillance, and inequality much worse, much faster.</div>
+            <div class="body_takeaway">ADSs might be able to help us in poweful ways, but they can also make problems like racism, discrimination, surveillance, and inequality much worse, much faster.</div>
           </div>
         </div>
         <div class="col"></div>
@@ -484,11 +482,13 @@
         <div class="col"></div>
         <div class="col-md-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
           <p>You’ve taken some <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-              data-content="<b>Variables</b> are the factors or traits that you're considering as part of your decision.">variables</a> (the price, organic or not, and how ripe it is) to analyze a set of <a class="popover_word"
+              data-content="<b>Variables</b> are the factors or traits that you're considering as part of your decision.">variables</a> (the price, how ripe it is, and is it organic or not), given those variables <a
+                  class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
+                  data-content="<b>Weight</b> is the priority that you're giving a variable or factor you're considering. When you add up the weights for all the variables, it should equal 100%.">weights</a> (buying a cheap, ripe avocado is more important than an organic avocado),
+                    to analyze a set of <a class="popover_word"
               href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-              data-content="<b>Data points</b> are all of the individual pieces of information that make up your dataset. For example, your avocados dataset has data points about the cost and ripeness of each avocado.">data points</a> (the pile of
-            avocados) and reach a
-            decision (which avocado should you buy).</p>
+              data-content="<b>Data points</b> are all of the individual pieces of information that make up your dataset.">data points</a> (the pile of
+            avocados) and reach a decision (which avocado should you buy).</p>
         </div>
         <div class="col"></div>
       </div>
@@ -500,10 +500,8 @@
             <h3> What kind of algorithms do ADSs use?</h3>
           </div>
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <p>It depends. They can sometimes be a bit more complicated than the ones we use in our everyday decisions. Some ADSs involve multiple algorithms, hundreds of thousands of data points, and variables that are given different <a
-                class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                data-content="<b>Weight</b> is the priority that you're giving a variable or factor you're considering. <p>For example, when you decide which avocado to buy, you might assign more weight to price than whether something is organic or ripe. You might say that the price is 50% of your decision, ripeness is 30%, and organic only 20%. This all adds up to 100%. ">weights</a>.
-              But really, the building blocks are the same.
+            <p>It depends. They can sometimes be a bit more complicated than the ones we use in our everyday decisions. Some ADSs involve multiple algorithms, hundreds of thousands of data points, and variables that are given different weights.</p>
+            <p>But really, they all use these building blocks for the instructions &mdash; variables, weights, and data points &mdash; are the same.</p>
             </p>
           </div>
         </div>
@@ -517,7 +515,7 @@
               avocados or
               predicting that a place is committing food-stamp fraud.
             </p>
-            <p>In other cases, data is given to a computer that learns about the data and then decides which variables are important.</p>
+            <p>In other cases, data is given to a computer, the computer finds patterns in the data, and then decides which variables are important based on the patterns it finds.</p>
           </div>
             <div class="col-md-2">
                 <div id="avocado_drawing"></div>
@@ -529,7 +527,7 @@
           <div class="col"></div>
           <div class="col-md-7">
 
-            <p>When a computer learns on its own, rather than having you tell it which variables are important, the set of instructions it uses is called a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0"
+            <p>When a computer finds patterns on its own, rather than having you tell it which variables are important, the set of instructions it uses is called a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0"
                 class="popover-dismiss" data-toggle="popover"
                 data-content="<b>Machine learning algorithms</b> are sets of instructions that tell the computer how to find patterns in data to predict an outcome.<br><br> For example, you could write a machine learning algorithm that predicts what kinds of avocados you'd like. You might give it qualities (ripeness, price, organic or not) of all the avocados you've ever bought. The algorithm would use part of that data to figure out what patterns might exist. <br><br>The model it creates could then be used to look at a new pile of avocados and predict which one you want.">machine
                 learning algorithm</a>. They
@@ -1099,14 +1097,12 @@
         <div class="col"></div>
         <div class="col-md-7">
 
-            <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">Each of these design decisions interacts with the others</h3>
-           <p>
-This framework isn’t cut and dry! Some of the design decisions relate to one another. Like the more explainable an ADS is (explainability) the easier it is it give feedback and be able to update it (flexibility). </p>
-
-<p>There are also elements we hope interact but don’t always. A government might state a good purpose, but might not make design decisions that reach this goal. The ADS must always be intentionally designed to achieve a good purpose.</p>
+            <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">Each of these design decisions interacts with the others.</h3>
+           <p>For example, a more explainable an ADS is (explainability) the easier it is it give feedback and be able to update it (flexibility). It isn't cut and dry!</p>
+           <p>There are also elements we hope interact but don’t always. A government might state a good purpose, but might not make design decisions that reach this goal. The ADS must always be intentionally designed to achieve a good purpose.</p>
            <p>When we ask good questions about the purpose and the design decisions and how they interact, we can design ADSs that acknowledge or undo unjust systems.</p>
-</div>
-         <div class="col"></div>
+       </div>
+       <div class="col"></div>
        </div>
        <div class="row align-items-center">
          <div class="col"></div>
@@ -1391,9 +1387,8 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
           <div class="col"></div>
           <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
             <p class="problem_statement">
-              The New York City Housing Authority (NYCHA) has over 175,000 public housing units across the City. Fewer than 1% are vacated each year, and the waitlist is over 200,000 families long. As soon as a unit is vacant, NYCHA has to fill it with eligible New Yorkers.
-              <br>
-              How can NYCHA sort through such a long waitlist to fill vacant units as quickly as possible? Could they start the process even before a unit is vacated?
+              The New York City Housing Authority (NYCHA) has over 175,000 public housing units across the City, but ewer than 1% are vacated each year, and the waitlist is over 250,000 families long.
+              How can NYCHA sort through such a long waitlist to fill their few vacant units as quickly as possible?
             </p>
           </div>
           <div class="col"></div>
@@ -1408,7 +1403,7 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
             </p>
             <p>It’s built to do this as soon as possible, to make sure units don’t go unfilled for too long in a city where many people need shelter. In fact, the process begins even before units are vacated, by predicting which units will go vacant in the next six months. This helps NYCHA make sure it has staff resources and a ready waitlist of eligible and certified New Yorkers to fill apartments when they open up.
             </p>
-            <p>The process looks like this:
+            <p>Here's a very simplified description of the process.
             </p>
           </div>
           <div class="col"></div>
@@ -1433,7 +1428,7 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
           <div class="col-md-3">
             <h4 class="center">1. Apply & Assign</h4>
             <p>New people apply to get put onto the NYCHA waitlist. People already in public housing units also apply to transfer to other units when there are openings.
-              <br><br>These two groups of applicants are assigned “priority codes” based on their income and needs (like having experienced domestic abuse, hate crimes, or involuntary displacement) and are put on a general waiting list.
+              <br><br>These two groups of applicants are assigned “priority codes” based on their income, needs, and other priorities for the City (like having experienced domestic abuse, hate crimes, or involuntary displacement; or being a homeless veteran; or aging out of foster care) and they are put on a general waiting list.
             </p>
           </div>
           <div class="col-md-3">
@@ -1443,12 +1438,14 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
           </div>
           <div class="col-md-3">
             <h4 class="center">3. Verify</h4>
-            <p>NYCHA staff reach out to the list of new applicants to interview them. These interviews are to verify that applicants actually do meet the requirements for the apartment. If they pass, they’ll be “certified” and placed in the pool to fill units.
+            <p>NYCHA staff reach out to the list of new applicants to interview them. These interviews are to verify that applicants actually do meet the requirements for the apartment that they predict will become vacant (making sure the applicant's family size will fit in the number of bedrooms for the unit that's predicted to be vacant; if the unit is specifically for elderly people, then making
+              sure the applicant is old enough for the unit's requirements; etc). If they pass, they’ll be “certified” and placed in the pool to fill units.
             </p>
           </div>
           <div class="col-md-3">
             <h4 class="center">4. Match</h4>
-            <p>Once a vacant unit opens up, the computer program looks for people who are certified and eligible. It prioritizes transfers with high-needs, then transfers with less urgent needs and new applicants.
+            <p>Once a vacant unit actually opens up, the computer program looks for people who are certified and eligible. It prioritizes transfers with high-needs, then transfers with less urgent needs and new applicants.
+              <br><br>Sometimes this matching process can get tricky because there might be only one unit, but multiple certified and elibile applicants with different high-needs. TSAP's matching algorithm has to work to figure out how to sort competing priority codes.
             </p>
           </div>
       </div>
