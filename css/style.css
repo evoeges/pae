@@ -1394,9 +1394,9 @@ li {
 .alert_text{
   background-color: var(--secondary-color);
   color: white;
-  padding: 1%;
+  padding: 0;
   border-radius: 25px;
-  font-size: 85%;
+  font-size: 75%;
 }
 
 .alert_button{
