@@ -868,8 +868,7 @@
           <p>These biases can arise because all datasets, to some extent, are incomplete. It is impossible to capture the world absolutely and perfectly. The best datasets try to be as complete as they need to be for the purpose and acknowledge their bias.</p>
 
           <h3>Algorithmic Model</h3>
-          <p><b> The type of algorithm an ADS uses and the way it handles the variables and data points matter.</b> Choosing the
-           best algorithm for the problem depends on the ADS's purpose. There are hundreds of different algorithms that each calculate outputs slightly differently.</p>
+          <p><b> The type of algorithm an ADS uses and the way it handles the variables and data points matter.</b> Choosing the best algorithm for the problem depends on the ADS's purpose. There are hundreds of different algorithms that each calculate outputs slightly differently.</p>
 
           <p>If humans are determining specific components of the algorithm, this can also create bias. For many algorithms, humans will be determining the outcome of interest and the variables. These decisions are subjective because they are based on our own world views and what we think are the relationships between outcomes of interest and variables.
           </p>
@@ -1305,11 +1304,10 @@
                 </div>
                 <div class="card-reveal">
                   <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
-                  <p>Although the company that makes ESP has documentation <a href="https://www.collectionhq.com/esp/" target="_blank">online</a> explaining it broadly, the specifics of how it works and how it is used by NYPL are not publicly available making this ADS not very transparent.</p>
-
                   <p>ESP is a neural network, which is not very explainable. We can't distinguish which variables the algorithm is using and how important they end up being to the eventual results.</p>
 
                   <p>If we knew more about the process and components of the ADS, we might be able to mitigate mistakes like incorrect predictions about which books will be popular.</p>
+                  <p>Although the company that makes ESP has documentation <a href="https://www.collectionhq.com/esp/" target="_blank">online</a> explaining it broadly, the specifics of how it works and how it is used by NYPL are not publicly available making this ADS not very transparent.</p>
                 </div>
               </div>
             </div>
@@ -1377,7 +1375,7 @@
         <div class="row align-items-icon_center" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
           <div class="col"></div>
           <div class="col-md-8">
-            <h2 class="case_title nycha_titles">NYCHA manages public housing placements with automation.
+            <h2 class="case_title nycha_titles">NYCHA speeds up the public housing placements with automation.
             </h2>
           </div>
           <div class="col"></div>
@@ -1397,10 +1395,11 @@
         <div class="row align-items-center">
           <div class="col"></div>
           <div class="col-md-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <h3>TSAP, ASAP?</h3>
-            <p>The Tenant Selection and Assignment Plan (TSAP) is an ADS that does what it says in the name: select and assign tenants to apartments that open up.</p>
-            <p>But, this process is really hard and even with automation, this process takes a long time. TSAP is built to do this as soon as possible, to make sure units don’t go unfilled. It even tries
-              to speed up this process by predicting which units will go vacant in the next six months and starting the certification process for applicants to fill those units before the units are even vacated.
+            <h3>TSAP, ASAP.</h3>
+            <p>
+              The Tenant Selection and Assignment Plan (TSAP) is an ADS that does what it says in the name: select and assign tenants to apartments that open up.
+            </p>
+            <p>It’s built to do this as soon as possible, to make sure units don’t go unfilled for too long in a city where many people need shelter. In fact, the process begins even before units are vacated, by predicting which units will go vacant in the next six months. This helps NYCHA make sure it has staff resources and a ready waitlist of eligible and certified New Yorkers to fill apartments when they open up.
             </p>
             <p>Here's a very simplified description of the process.
             </p>
@@ -1529,7 +1528,7 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
-                <p>TSAP is pretty transparent. You can find documentation on how TSAP works online, but the description is 57 pages long! The actual algorithms used are pretty explainable.
+                <p>The actual algorithms used by TSAP are pretty explainable.
                   <p> <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
                     data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image'>"> Decision
                     trees</a> and <br><a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
@@ -1539,6 +1538,9 @@
                 </p>
                 <p>Certain parts are easier to understand than others. For example, what the priority codes are and what the qualifications for these priority codes are is clearly laid out, but predicting vacant units and how that impacts eligibility interviews is more opaque.
                 </p>
+                <p>TSAP is pretty transparent. You can find documentation on how TSAP works online, but the description is 57 pages long!</p>
+
+
               </div>
             </div>
           </div>
@@ -1616,7 +1618,7 @@
           <div class="row align-items-icon_center" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
             <div class="col"></div>
             <div class="col-md-8">
-              <h2 id="DOE" class="case_title"> DOE wants to match students with the best high school for them.</h2>
+              <h2 id="DOE" class="case_title"> DOE wants to match students with the best high school for them</h2>
             </div>
             <div class="col"></div>
           </div>
@@ -1870,7 +1872,7 @@
       <div class="col">
       </div>
       <div class="col-md-10">
-        <h4>We've seen how automated decision systems can sometimes increase discrimination and inequality. </h4>
+        <h4>We've seen how automating decision-making can sometimes increase discrimination and inequality. </h4>
         <p> But this isn't inevitable. </p>
         <p> We can decide when the City should or shouldn't automate decisions. We can ask the tough questions to make sure that government systems don't leave out those of us who have historically been, or are currently being ignored. We can
           bring
@@ -1935,10 +1937,8 @@
                       <a href="https://www.qchnyc.org/" target="blank">Queens Community House</a><br>
                       <a href="https://www.universitysettlement.org/us/" target="blank">University Settlement</a><br></p>
 
-                    <p><strong>Criminal Justice & Policing</strong><br>
-                      <a href="https://www.changethenypd.org/" target="blank">Community for Police Reform</a><br></p>
+                    <p><strong>Criminal Justice</strong><br>
                       <a href="https://fortunesociety.org/" target="blank">The Fortune Society</a><br></p>
-                      <a href="https://www.stopspying.org/" target="blank">Surveillance Oversight Project (STOP)</a><br></p>
 
                     <p><strong>Economic Justice</strong><br>
                       <a href="https://www.socialists.nyc/" target="blank">Democratic Socialists of America</a><br>
@@ -2006,6 +2006,9 @@
                       <a href="http://sapnanyc.org/" target="blank">Sapna NYC</a></p>
                   </div>
                   <div class="col-md-4">
+                    <p><strong>Policing</strong><br>
+                      <a href="https://www.changethenypd.org/" target="blank">Community for Police Reform</a><br></p>
+
                     <p><strong>Workers’ & Labor Rights</strong><br>
                       <a href="https://brandworkers.org/" target="blank">Brandworkers’ International</a><br>
                       <a href="https://frontlineretail.org/" target="blank">Center for Frontline Retail</a><br>
@@ -2146,14 +2149,16 @@
                 <div class="col-md-10">
                   <p>Here are all of the articles and documents we used in the creation of this website.* </p>
                   <div class="csl-bib-body" style="line-height: 1.35; margin-left: 2em; text-indent:-2em;">
-                    <div class="csl-entry"><a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish"
-                        target="_blank">"2019 NYC High School Directory."</a> Accessed March 12, 2019. <br><br>This document outlines information about every high school in New York City and provides students with information about the process of submitting their lists of preferred high schools.</div>
+                    <div class="csl-entry">2019 NYC High School Directory. Accessed March 12, 2019. <a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish"
+                        target="_blank">https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish</a>.</div>
                     <span class="Z3988"
                       title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=2019nychsdirectorycitywideenglish.pdf&amp;rft.identifier=https%3A%2F%2Fwww.schools.nyc.gov%2Fdocs%2Fdefault-source%2Fdefault-document-library%2F2019nychsdirectorycitywideenglish"></span>
-                    <div class="csl-entry"><a href="https://www.alliedmedia.org/peoples-ai" target="_blank">“A People’s Guide to AI.”</a> Allied Media Projects, September 18, 2018. <br><br>Systems that use artificial intelligence are quietly becoming present in more and more parts of our lives. But
-                      what does this technology really mean for people, both right now and in the future?</div>
+                    <div class="csl-entry">“A People’s Guide to AI.” Allied Media Projects, September 18, 2018. <a href="https://www.alliedmedia.org/peoples-ai" target="_blank">https://www.alliedmedia.org/peoples-ai</a>.</div>
                     <span class="Z3988"
                       title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=A%20People's%20Guide%20to%20AI&amp;rft.description=Systems%20that%20use%20artificial%20intelligence%20are%20quietly%20becoming%20present%20in%20more%20and%20more%20parts%20of%20our%20lives.%20But%20what%20does%20this%20technology%20really%20mean%20for%20people%2C%20both%20right%20now%20and%20in%20the%20future%3F&amp;rft.identifier=https%3A%2F%2Fwww.alliedmedia.org%2Fpeoples-ai&amp;rft.date=2018-09-18&amp;rft.language=en"></span>
+                    <div class="csl-entry">“ADS Benefits and Concerns, By Example.” Jain Family Institute, n.d.</div>
+                    <span class="Z3988"
+                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=ADS%20Benefits%20and%20Concerns%2C%20By%20Example"></span>
                     <div class="csl-entry">“Algorithm Tips – Resources and Leads for Investigating Algorithms in Society.” Accessed February 2, 2019. <a href="http://algorithmtips.org/" target="_blank">http://algorithmtips.org/</a>.</div>
                     <span class="Z3988"
                       title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Algorithm%20Tips%20%E2%80%93%20Resources%20and%20leads%20for%20investigating%20algorithms%20in%20society&amp;rft.description=Algorithm%20Tips%20is%20here%20to%20help%20you%20start%20investigating%20algorithmic%20decision-making%20power%20in%20society.%0A%0AThe%20site%20offers%20a%20database%20of%20leads%20which%20you%20can%20search%20below.%20It%E2%80%99s%20a%20curated%20set%20of%20algorithms%20being%20using%20in%20the%20US%20Federal%20government.%20For%20details%20on%20our%20curation%20methodology%20see%20here.%0A%0AWe%20also%20provide%20resources%20such%20as%20example%20investigations%2C%20methodological%20tips%2C%20and%20guidelines%20for%20public%20records%20requests%20related%20to%20algorithms.%0A%0AFinally%2C%20we%20blog%20about%20some%20of%20the%20more%20interesting%20examples%20of%20algorithms%20we%E2%80%99ve%20uncovered%20in%20our%20research.&amp;rft.identifier=http%3A%2F%2Falgorithmtips.org%2F&amp;rft.language=en-US"></span>
@@ -2164,6 +2169,9 @@
                     <div class="csl-entry"> Athey, Susan. “The Impact of Machine Learning on Economics,” NBER, January 2018. <a href="https://www.nber.org/chapters/c14009.pdf" target="_blank">https://www.nber.org/chapters/c14009.pdf</a></div>
                     <span class="Z3988"
                       title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The%20Impact%20of%20Machine%20Learning%20on%20Economics&amp;rft.aufirst=Susan&amp;rft.aulast=Athey&amp;rft.au=Susan%20Athey&amp;rft.pages=31&amp;rft.language=en"></span>
+                    <div class="csl-entry">“Automated Decision Systems Primer.” Jain Family Institute, n.d.</div>
+                    <span class="Z3988"
+                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=Automated%20Decision%20Systems%20Primer"></span>
                     <div class="csl-entry">Ayala, Christine. “Ocasio-Cortez Is Right, Algorithms Are Biased — but We Can Make Them Fairer.” Text. TheHill, February 13, 2019. <a
                         href="https://thehill.com/opinion/technology/429883-ocasio-cortez-is-right-algorithms-are-biased-but-we-can-make-them-fairer"
                         target="_blank">https://thehill.com/opinion/technology/429883-ocasio-cortez-is-right-algorithms-are-biased-but-we-can-make-them-fairer</a>.</div>
@@ -2235,6 +2243,10 @@
                         target="_blank">https://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html</a>.</div>
                     <span class="Z3988"
                       title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=How%20Game%20Theory%20Helped%20Improve%20New%20York%20City%E2%80%99s%20High%20School%20Application%20Process%20-%20The%20New%20York%20Times&amp;rft.identifier=https%3A%2F%2Fwww.nytimes.com%2F2014%2F12%2F07%2Fnyregion%2Fhow-game-theory-helped-improve-new-york-city-high-school-application-process.html"></span>
+
+                    <div class="csl-entry">“JFI-NYC Scope of Work.” Jain Family Institute, n.d.</div>
+                    <span class="Z3988"
+                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=JFI-NYC%20Scope%20of%20Work"></span>
                     <div class="csl-entry">Julia Angwin, Jeff Larson. “Machine Bias.” Text/html. ProPublica, May 23, 2016. <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
                         target="_blank">https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing</a>.</div>
                     <span class="Z3988"
@@ -2302,6 +2314,7 @@
                         target="_blank">https://www.newyorker.com/tech/annals-of-technology/new-york-citys-bold-flawed-attempt-to-make-algorithms-accountable</a>.</div>
                     <span class="Z3988"
                       title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=magazineArticle&amp;rft.title=New%20York%20City%E2%80%99s%20Bold%2C%20Flawed%20Attempt%20to%20Make%20Algorithms%20Accountable&amp;rft.source=The%20New%20Yorker&amp;rft.description=Automated%20systems%20guide%20the%20allocation%20of%20everything%20from%20firehouses%20to%20food%20stamps.%20Why%20don%E2%80%99t%20we%20know%20more%20about%20them%3F&amp;rft.identifier=https%3A%2F%2Fwww.newyorker.com%2Ftech%2Fannals-of-technology%2Fnew-york-citys-bold-flawed-attempt-to-make-algorithms-accountable&amp;rft.aufirst=Julia&amp;rft.aulast=Powles&amp;rft.au=Julia%20Powles&amp;rft.date=2017-12-21&amp;rft.issn=0028-792X&amp;rft.language=en"></span>
+
                     <div class="csl-entry">Poweles, Julia. “The Seductive Diversion of ‘Solving’ Bias in Artificial Intelligence,” n.d. <a href="https://medium.com/s/story/the-seductive-diversion-of-solving-bias-in-artificial-intelligence-890df5e5ef53"
                         target="_blank">https://medium.com/s/story/the-seductive-diversion-of-solving-bias-in-artificial-intelligence-890df5e5ef53</a>.</div>
                     <span class="Z3988"
@@ -2339,6 +2352,7 @@
                         target="_blank">https://gizmodo.com/new-york-city-is-fighting-fires-with-data-mining-1509004543</a>.</div>
                     <span class="Z3988"
                       title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=New%20York%20City%20Is%20Using%20Data%20Mining%20to%20Fight%20Fires&amp;rft.description=Helmets%3F%20Check.%20Breathing%20tanks%3F%20Check.%20Hoses%3F%20Ditto.%20Algorithms%3F%20Yep%3A%20the%20New%20York%20City%20Fire%20Department%20is%20using%20data%20mining%20to%20predict%20which%20of%20the%20city%26%2339%3Bs%20buildings%20are%20at%20highest%20risk%20of%20catching%20fire.%20Now%20that%26%2339%3Bs%20metadata%20we%20can%20get%20behind.&amp;rft.identifier=https%3A%2F%2Fgizmodo.com%2Fnew-york-city-is-fighting-fires-with-data-mining-1509004543&amp;rft.aufirst=Bob&amp;rft.aulast=Sorokanich&amp;rft.au=Bob%20Sorokanich&amp;rft.language=en-US"></span>
+
                     <div class="csl-entry">Stoyanovich, Julia. “Follow the Data!,” n.d.</div>
                     <span class="Z3988"
                       title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=document&amp;rft.title=Follow%20the%20Data!&amp;rft.aufirst=Julia&amp;rft.aulast=Stoyanovich&amp;rft.au=Julia%20Stoyanovich"></span>
