@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Automating NYC</title>
-  <link rel="icon" type="image/png" href="img/avocado.png">
+  <link rel="icon" type="image/png" href="img/avocado_fav.png">
 
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/hover-min.css">
@@ -59,8 +59,8 @@
         <a class="nav-link active" href="#introduction"><span class="desktop_nav"><b>Introduction</b></span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
-      <li class="nav-link">
-        <a class="nav-link" href="#define_ads"><span class="desktop_nav">        Define ADS</span> <i class="fas fa-circle mobile_nav"></i></a>
+      <li class="nav-item sub_nav">
+        <a class="nav-link" href="#define_ads"><span class="desktop_nav">What is an ADS?</span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
       <li class="nav-item">
@@ -71,32 +71,32 @@
         <a class="nav-link" href="#avocados"><span class="desktop_nav"><b>What are Algorithms?</b></span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
-      <li class="nav-link">
-        <a class="nav-link" href="#toyAlgo"><span class="desktop_nav">       Toy Algorithm</span> <i class="fas fa-circle mobile_nav"></i></a>
+      <li class="nav-item sub_nav">
+        <a class="nav-link" href="#toyAlgo"><span class="desktop_nav">Toy Algorithm</span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link" href="#frameworks"><span class="desktop_nav"><b>Are ADSs Good or Bad?</b></span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
-      <li class="nav-link">
-        <a class="nav-link" href="#design-decisions-header"><span class="desktop_nav">      Design Decisions</span> <i class="fas fa-circle mobile_nav"></i></a>
+      <li class="nav-item sub_nav">
+        <a class="nav-link" href="#design-decisions-header"><span class="desktop_nav">Design Decisions</span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link" href="#Examples"><span class="desktop_nav"><b>Examples</b></span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
-      <li class="nav-link">
-        <a class="nav-link" href="#nypl_accordian"><span class="desktop_nav">     Public Library</span> <i class="fas fa-circle mobile_nav"></i></a>
+      <li class="nav-item sub_nav">
+        <a class="nav-link" href="#nypl_accordian"><span class="desktop_nav">Public Library</span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
-      <li class="nav-link">
-        <a class="nav-link" href="#nycha_accordian"><span class="desktop_nav">     Housing Authority</span> <i class="fas fa-circle mobile_nav"></i></a>
+      <li class="nav-item sub_nav">
+        <a class="nav-link" href="#nycha_accordian"><span class="desktop_nav">Housing Authority</span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
-      <li class="nav-link">
-        <a class="nav-link" href="#doe_accordian"><span class="desktop_nav">     Dept of Education</span> <i class="fas fa-circle mobile_nav"></i></a>
+      <li class="nav-item sub_nav">
+        <a class="nav-link" href="#doe_accordian"><span class="desktop_nav">Dept of Education</span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
       <li class="nav-item">
@@ -108,8 +108,36 @@
       </li>
     </ul>
 
+
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large salmon ads_alert">
+        <img src="img/megaphone_white.png" class="alert_button">
+      </a>
+      <ul>
+        <li><a class="btn-floating alert_text">&nbsp;&nbsp;The first meeting of the ADS Task Force is on April 30th!&nbsp;&nbsp;</a></li>
+
+
+      </ul>
+    </div>
+
+
+
+  <!--  <div class="fixed-action-btn ads_alert click-to-toggle definitions_hidden">
+      <a class="button-floating">  <img src="img/megaphone.png" class="alert_button"> </a>
+      <ul>
+       <li class="alert_text">The first meeting of the ADS Task Force is on April 30th!</li>
+
+     </ul>
+   </div> -->
+
+
   <div data-spy="scroll" data-target="#navbar-side" data-offset="0">
     <!-- intro bubbles -->
+
+
+
+
     <div class="container page" id="introduction">
       <a id="first_page"></a>
       <div class="row align-items-center">
@@ -207,16 +235,13 @@
           </div>
 
           <p class="body_emphasis" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">Since 2012, Porfirio's been running P&L Deli Grocery, a bodega in Washington Heights.</p>
-          <p data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">Locals know they can count on him for groceries, even when times are tough. Just as important, the bodega serves as a space for building community &mdash; a place where neighbors go to hangout out, watch baseball, and smoke cigars.
+          <p data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">Locals know they can count on him for groceries, even when times are tough. Just as important, the bodega serves as a space for building community &mdash; a place where neighbors go to hang out, watch baseball, and smoke cigars.
             </p>
-            <p> Like many of his neighbors, Porfirio is a Dominican immigrant. He works with an anti-hunger advocacy group and knows the importance of the <a href="https://www.fns.usda.gov/snap/eligible-food-items" target="_blank">Supplemental Nutrition
-              Assistance Program (SNAP)</a>, also
+            <p> Like many of his neighbors, Porfirio is a Dominican immigrant. He works with an anti-hunger advocacy group and knows the importance of the Supplemental Nutrition Assistance Program (SNAP), also
             known as food stamps. More than half of his customers bought their groceries with SNAP benefits from the US Department of Agriculture (USDA). </p>
-          <p>But when their benefits hadn't come in yet, he let them pay on an IOU system. That
-          way, long-time patrons could take home food and settle
-          their bills later.
+          <p>But when their benefits hadn't come in yet, <strong> he let patrons take groceries home trusting that they would come back later to settle their bills, like an informal IOU system</strong>. This IOU system allowed Porfirio to help members of his community feel secure about their food even if they felt insecure about their finances.
           </p>
-          <p class="citation">*Original reporting by <a href="https://theintercept.com/2018/10/08/food-stamps-snap-program-usda/" target="_blank">The Intercept</a></p>
+          <p class="citation">*Original reporting by <a href="https://theintercept.com/2018/10/08/food-stamps-snap-program-usda/" target="_blank">The Intercept and and The New Food Economy</a></p>
 
         </div>
         <div class="col-md-6">
@@ -234,7 +259,7 @@
             <h3> In 2018, a computer program almost put his bodega out of business</h3>
           </div>
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <p>Porfirio got a notice from the <a href="https://www1.nyc.gov/site/hra/about/about-hra.page" target="_blank">NYC Human Resources Administration (HRA)</a> that his establishment was disqualified from accepting SNAP on suspicion of food
+            <p>Porfirio got a notice from the USDA that his establishment was disqualified from accepting SNAP on suspicion of food
               stamp fraud. Earlier that year, the city, coordinating with the USDA, started
               using a computer program to find cases of trading cash for food stamps. </p>
           </div>
@@ -287,20 +312,20 @@
       <div class="row" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
         <div class="col-md-4">
           <h4 class="center">1. Sales Data</h4>
-          <p>Sales data gets tracked on food-stamp cards like EBT and sent to the USDA & HRA.</p>
+          <p>Sales data gets tracked on food-stamp cards like EBT and sent to the USDA.</p>
         </div>
 
         <div class="col-md-4">
           <h4 class="center">2. Fraud Detection</h4>
           <p>A computer program uses an <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
             data-content="You can think of an <b>algorithm</b> as a series of steps to evaluate data and reach a decision.<br><br>In an ADS, an algorithm is a detailed, computerized set of instructions. You'll learn how we use algorithms every day in the next section.">algorithm</a>
-          and sales data to flag potential fraud. The algorithm used by the program may have noticed large one-time purchases made at P&L
+          and sales data to flag potential fraud. The algorithm used by the program may have noticed large one-time purchases made at P&L Deli
           and mistakenly assumed it was a case of cash-for-food stamps fraud. </p>
         </div>
 
         <div class="col-md-4">
           <h4 class="center">3. Fraud Notice</h4>
-        <p>  Then, USDA & NYC HRA Staff send a fraud notice to Porfirio.</p>
+        <p>  Then, USDA staff sent a fraud notice to Porfirio.</p>
         </div>
       </div>
       <br><br>
@@ -308,11 +333,11 @@
       <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
         <div class="col"></div>
         <div class="col-md-7">
-          <h3> Porfirio is struggling to keep P&L going.</h3>
+          <h3> Porfirio is struggling to keep P&L Deli going.</h3>
           <p>His sales have dropped by 30%.<br><br> The USDA
             told Porfirio to show them itemized receipts to prove his innocence, but Porfirio's registers were only able to print total sales figures. The
             letters
-            his customers sent in as proof were deemed insufficient evidence.<br><br>Porfirio has called NYC HRA, but no one has been able to reverse the decision made by the algorithm.
+            his customers sent in as proof were deemed insufficient evidence.<br><br>Porfirio has called the USDA, but no one has been able to reverse the decision made by the algorithm.
           </p>
         </div>
         <div class="col"></div>
@@ -335,7 +360,7 @@
             <h3 id="bigPicture"> Why should we worry about this?</h3>
           </div>
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <p> P&L wasn't alone: the majority of businesses impacted by this new system have been in low-income neighborhoods like Porfirio's.<br><br>ADSs seem to keep expanding into more areas of our lives. From policing to
+            <p> P&L Deli wasn't alone: the majority of businesses impacted by this new system have been in low-income neighborhoods like Porfirio's.<br><br>ADSs seem to keep expanding into more areas of our lives. From policing to
               school assignments, the decisions made by ADSs can have far-reaching consequences for all of us.</p>
           </div>
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
@@ -357,14 +382,15 @@
             <p> Definitely. Just look back to the <a href="https://www.wired.com/story/ideas-joi-ito-insurance-algorithms" target="_blank">history of housing segregation and redlining.</a> </p>
           </div>
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <p>Even though human-centric systems also make mistakes, ADSs are unique:</p>
+            <p>Even though human-centric systems also make mistakes, ADSs are unique in the risk they pose.</p>
             <ul class="indented-bullet-points browser-default">
-              <li>They can work at a <strong>more rapid pace</strong> and at a <strong>larger scale</strong>.</li>
-              <li>When they make mistakes, the ADS <strong>might not have human checks</strong> to
-                override or course-correct them.</li>
-              <li>Implementing ADSs are often used to <strong>justify collecting a lot more data</strong> about people.</li>
-              <li>Data can be used to <strong>increase policing of marginalized communities</strong>, just like the ADS flagged Porfirio using receipts of transactions.</li>
+              <li>ADSs can work at a <strong>more rapid pace</strong> and at a <strong>larger scale</strong> than human decision processes.</li>
+              <li>When they make mistakes, the ADS <strong>might not have human checks</strong> to override or course-correct them. </li>
+              <li>ADSs can be used to <strong>increase policing and criminalization</strong> of marginalized communities.</li>
+              <li>Implementing ADSs are often used to <strong>justify collecting a lot more data</strong> about people, breaching personal privacy.</li>
             </ul>
+            <p>Some of these unque risks can also be seen as reasons why ADSs have unique potential to improve society and our lives. But we need to be thoughtful and intentional when the government makes ADSs.
+              If we are thoughtful and intentional, we can ensure that we avoid these risks and we can enjoy the potential benefits of ADSs.
           </div>
         </div>
         <div class="col"></div>
@@ -374,7 +400,7 @@
         <div class="col"></div>
         <div class="col-md-8">
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-            <div class="body_takeaway">ADSs can help solve major problems, but can also make problems like racism, discrimination, surveillance, and inequality much worse, much faster.</div>
+            <div class="body_takeaway">ADSs might be able to help us in poweful ways, but they can also make problems like racism, discrimination, surveillance, and inequality much worse, much faster.</div>
           </div>
         </div>
         <div class="col"></div>
@@ -458,11 +484,13 @@
         <div class="col"></div>
         <div class="col-md-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
           <p>You’ve taken some <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-              data-content="<b>Variables</b> are the factors or traits that you're considering as part of your decision.">variables</a> (the price, organic or not, and how ripe it is) to analyze a set of <a class="popover_word"
+              data-content="<b>Variables</b> are the factors or traits that you're considering as part of your decision.">variables</a> (the price, how ripe it is, and is it organic or not), given those variables <a
+                  class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
+                  data-content="<b>Weight</b> is the priority that you're giving a variable or factor you're considering. When you add up the weights for all the variables, it should equal 100%.">weights</a> (buying a cheap, ripe avocado is more important than an organic avocado),
+                    to analyze a set of <a class="popover_word"
               href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-              data-content="<b>Data points</b> are all of the individual pieces of information that make up your dataset. For example, your avocados dataset has data points about the cost and ripeness of each avocado.">data points</a> (the pile of
-            avocados) and reach a
-            decision (which avocado should you buy).</p>
+              data-content="<b>Data points</b> are all of the individual pieces of information that make up your dataset.">data points</a> (the pile of
+            avocados) and reach a decision (which avocado should you buy).</p>
         </div>
         <div class="col"></div>
       </div>
@@ -474,10 +502,8 @@
             <h3> What kind of algorithms do ADSs use?</h3>
           </div>
           <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <p>It depends. They can sometimes be a bit more complicated than the ones we use in our everyday decisions. Some ADSs involve multiple algorithms, hundreds of thousands of data points, and variables that are given different <a
-                class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
-                data-content="<b>Weight</b> is the priority that you're giving a variable or factor you're considering. <p>For example, when you decide which avocado to buy, you might assign more weight to price than whether something is organic or ripe. You might say that the price is 50% of your decision, ripeness is 30%, and organic only 20%. This all adds up to 100%. ">weights</a>.
-              But really, the building blocks are the same.
+            <p>It depends. They can sometimes be a bit more complicated than the ones we use in our everyday decisions. Some ADSs involve multiple algorithms, hundreds of thousands of data points, and variables that are given different weights.</p>
+            <p>But really, they all use these building blocks for the instructions &mdash; variables, weights, and data points &mdash; are the same.</p>
             </p>
           </div>
         </div>
@@ -491,7 +517,7 @@
               avocados or
               predicting that a place is committing food-stamp fraud.
             </p>
-            <p>In other cases, data is given to a computer that learns about the data and then decides which variables are important.</p>
+            <p>In other cases, data is given to a computer, the computer finds patterns in the data, and then decides which variables are important based on the patterns it finds.</p>
           </div>
             <div class="col-md-2">
                 <div id="avocado_drawing"></div>
@@ -503,7 +529,7 @@
           <div class="col"></div>
           <div class="col-md-7">
 
-            <p>When a computer learns on its own, rather than having you tell it which variables are important, the set of instructions it uses is called a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0"
+            <p>When a computer finds patterns on its own, rather than having you tell it which variables are important, the set of instructions it uses is called a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0"
                 class="popover-dismiss" data-toggle="popover"
                 data-content="<b>Machine learning algorithms</b> are sets of instructions that tell the computer how to find patterns in data to predict an outcome.<br><br> For example, you could write a machine learning algorithm that predicts what kinds of avocados you'd like. You might give it qualities (ripeness, price, organic or not) of all the avocados you've ever bought. The algorithm would use part of that data to figure out what patterns might exist. <br><br>The model it creates could then be used to look at a new pile of avocados and predict which one you want.">machine
                 learning algorithm</a>. They
@@ -596,7 +622,9 @@
         <div class="col"> </div>
         <div class="col-md-7">
           <h3>There's no easy answer.</h3>
-          <p>Every ADS is different and we need a framework to ask the right questions. What are the different components of an ADS we can evaluate to make sure the system is ethical?
+          <p>This is a values-driven process, and what follows reflects our values.</p>
+
+            <p>Every ADS is different and we need a framework to ask the right questions. What are the different components of an ADS we can evaluate to make sure the system is ethical?
           </p>
         </div>
         <div class="col"></div>
@@ -606,8 +634,18 @@
         <div class="col"> </div>
         <div class="col-md-7">
           <h3>Let's start with its purpose.</h3>
-          <p>An ADS’s purpose is a combination of <strong>what it’s intended to accomplish</strong> and <strong>why the decision-making process is being automated</strong>. We think a good ADS has to begin with a good purpose &mdash; one that actively acknowledges unjust systems, or
-            better yet, undoes them.
+          <p>An ADS’s purpose is a combination of <strong>what it’s intended to accomplish</strong> and <strong>why the decision-making process is being automated</strong>.
+          </p>
+        </div>
+        <div class="col"></div>
+      </div>
+
+
+      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn,.fromBottomOut) once">
+        <div class="col"> </div>
+        <div class="col-md-7">
+          <h3>So what's a good purpose?</h3>
+           An ADS with a good purpose <strong>actively understands that the systems it is working in may be unjust</strong>, and so it must take certain steps to avoid worsening these systems. Or better yet, the ADS <strong>works to undo the injustice</strong>.
           </p>
         </div>
         <div class="col"></div>
@@ -651,7 +689,7 @@
           <p>A lot of ADSs fall into this trap. <strong>Governments often automate a process to make it more efficient, but don’t explicitly address inequality.</strong> We think New Yorkers should ask tough questions
             about ADSs with this kind of purpose because they can end up cutting services or benefits to vulnerable people.
           </p>
-          <p>For example, in Porfirio’s case, the USDS wanted to make fraud detection more efficient. It didn’t acknowledge the injustices faced by financially insecure communities&mdash; its primary users&mdash; for whom the delayed process of when they received theintercept
+          <p>For example, in Porfirio’s case, the USDA wanted to make fraud detection more efficient. It didn’t acknowledge the injustices faced by financially insecure communities&mdash; its primary users&mdash; for whom the delayed process of when they received
             food stamps forced them to find alternative ways to access credit.
           </p>
         </div>
@@ -831,9 +869,8 @@
 
           <p>These biases can arise because all datasets, to some extent, are incomplete. It is impossible to capture the world absolutely and perfectly. The best datasets try to be as complete as they need to be for the purpose and acknowledge their bias.</p>
 
-          <h3>Algorithm Model</h3>
-          <p><b>An ADS should use the correct type of algorithm so that it handles the variables and data points correctly.</b> Choosing the
-            right algorithm depends on the ADS's purpose. There are hundreds of different algorithms that each calculate outputs slightly differently.</p>
+          <h3>Algorithmic Model</h3>
+          <p><b> The type of algorithm an ADS uses and the way it handles the variables and data points matter.</b> Choosing the best algorithm for the problem depends on the ADS's purpose. There are hundreds of different algorithms that each calculate outputs slightly differently.</p>
 
           <p>If humans are determining specific components of the algorithm, this can also create bias. For many algorithms, humans will be determining the outcome of interest and the variables. These decisions are subjective because they are based on our own world views and what we think are the relationships between outcomes of interest and variables.
           </p>
@@ -862,14 +899,16 @@
 
           <div class="body_takeaway"> When an ADS is explainable, it's easier to pinpoint where problems arise. </div>
 
-          <h3>Easy to Understand</h3>
+          <h3>Transparency</h3>
+        <p>Before we can even begin to understand how an ADS works we need to be able to find information about it. To be completely transparent an ADS's algorithms and data (as long as privacy concerns are met) should be made publicly available with documentation explaining them.</p>
+
+          <h3>Ease of Understanding</h3>
           <p>Some algorithms are very easy to understand, like instructions for choosing an avocado. We know exactly which variables are going into the model and how they're weighted. </p>
 
           <p>The avocado algorithm is a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
               data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image'>">decision
               tree</a>. Super explainable. </p>
 
-          <h3>Hard to Understand</h3>
           <p> Others can feel like a black box. We give the data to the computer and it gives us a decision, but we don't really know how it reached that decision. </p>
 
           <p>A <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
@@ -984,9 +1023,8 @@
               <h4>Data</h4>
               <p>Because Porfirio's bodega is in a low-income neighborhood, he is more likely to have more customers with food stamps. While the data is technically accurate, it is geographically skewed so that bodegas like Porfirio's receive
                 more scrutiny whereas bodegas in rich neighborhoods receive less scrutiny.</p>
-              <h4> Algorithm Model </h4>
-              <p>The algorithm the USDA used to identify cash-for-food-stamps fraud was using large one time purchases as variable to indicate fraud. The algorithm couldn't distinguish between true fraud and Porfirio's IOU system. Someone
-                decided that the model should flag certain transactions as fraudulent, so there was bias in the model against those kinds of transactions.</p>
+              <h4> Algorithmic Model </h4>
+              <p>The algorithmic model the USDA used to identify cash-for-food-stamps fraud was using large one time purchases as a variable to indicate fraud. The model was designed in such a way that it couldn't distinguish between true fraud and Porfirio's IOU system. It simply flagged certain transactions as fraudulent, so there was bias in the model against those kinds of transactions.</p>
             </div>
           </div>
         </div>
@@ -1000,7 +1038,7 @@
             </div>
             <div class="card-reveal">
               <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
-              <p> For Porfirio, we don't know how the whole ADS works. Who looks at the results of the algorithm that is flagging cases of supposed fraud? What are the checks and balances around the decision-making process? </p>
+              <p> The USDA's ADS is not transparent. We don't know exactly how this ADS or its algorithms work. Who looks at the results of the algorithm that is flagging cases of supposed fraud? What are the checks and balances around the decision-making process? </p>
 
               <p>If we knew more about the process and components of the ADS, we would be able to see if there were design decisions to mitigate mistakes like miscategorizing Porfirio's bodega.</p>
 
@@ -1060,14 +1098,12 @@
         <div class="col"></div>
         <div class="col-md-7">
 
-            <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">Each of these design decisions interacts with the others</h3>
-           <p>
-This framework isn’t cut and dry! Some of the design decisions relate to one another. Like the more explainable an ADS is (explainability) the easier it is it give feedback and be able to update it (flexibility). </p>
-
-<p>There are also elements we hope interact but don’t always. A government might state a good purpose, but might not make design decisions that reach this goal. The ADS must always be intentionally designed to achieve a good purpose.</p>
+            <h3 data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">Each of these design decisions interacts with the others.</h3>
+           <p>For example, a more explainable an ADS is (explainability) the easier it is it give feedback and be able to update it (flexibility). It isn't cut and dry!</p>
+           <p>There are also elements we hope interact but don’t always. A government might state a good purpose, but might not make design decisions that reach this goal. The ADS must always be intentionally designed to achieve a good purpose.</p>
            <p>When we ask good questions about the purpose and the design decisions and how they interact, we can design ADSs that acknowledge or undo unjust systems.</p>
-</div>
-         <div class="col"></div>
+       </div>
+       <div class="col"></div>
        </div>
        <div class="row align-items-center">
          <div class="col"></div>
@@ -1254,7 +1290,7 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
                   <h4>Data</h4>
                   <p>ESP uses a lot of data which incorporates both library and private book sale data but is currently unable to take into account other forms of data, like book reviews.</p>
                   <p>The data doesn't account for human biased equity issues. Sales data may be skewed to higher-income individuals who can buy more books. Libraries should think about books that their unique populations need and value.</p>
-                  <h4> Algorithm Model </h4>
+                  <h4> Algorithmic Model </h4>
                   <p>ESP uses a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
                       data-content="A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this: <br><img src='img/network.svg' class='popover_image'> ">neural network</a>. While a human doesn't make a decision about the variables that matter, using such an opaque model might mean that it's harder to know what kinds of biases in the data are driving outcomes. </p>
                 </div>
@@ -1270,10 +1306,10 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
                 </div>
                 <div class="card-reveal">
                   <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
-
                   <p>ESP is a neural network, which is not very explainable. We can't distinguish which variables the algorithm is using and how important they end up being to the eventual results.</p>
 
                   <p>If we knew more about the process and components of the ADS, we might be able to mitigate mistakes like incorrect predictions about which books will be popular.</p>
+                  <p>Although the company that makes ESP has documentation <a href="https://www.collectionhq.com/esp/" target="_blank">online</a> explaining it broadly, the specifics of how it works and how it is used by NYPL are not publicly available making this ADS not very transparent.</p>
                 </div>
               </div>
             </div>
@@ -1351,9 +1387,8 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
           <div class="col"></div>
           <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
             <p class="problem_statement">
-              The New York City Housing Authority (NYCHA) has over 175,000 public housing units across the City. Fewer than 1% are vacated each year, and the waitlist is over 200,000 families long. As soon as a unit is vacant, NYCHA has to fill it with eligible New Yorkers.
-              <br>
-              How can NYCHA sort through such a long waitlist to fill vacant units as quickly as possible? Could they start the process even before a unit is vacated?
+              The New York City Housing Authority (NYCHA) has over 175,000 public housing units across the City, but ewer than 1% are vacated each year, and the waitlist is over 250,000 families long.
+              How can NYCHA sort through such a long waitlist to fill their few vacant units as quickly as possible?
             </p>
           </div>
           <div class="col"></div>
@@ -1368,7 +1403,7 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
             </p>
             <p>It’s built to do this as soon as possible, to make sure units don’t go unfilled for too long in a city where many people need shelter. In fact, the process begins even before units are vacated, by predicting which units will go vacant in the next six months. This helps NYCHA make sure it has staff resources and a ready waitlist of eligible and certified New Yorkers to fill apartments when they open up.
             </p>
-            <p>The process looks like this:
+            <p>Here's a very simplified description of the process.
             </p>
           </div>
           <div class="col"></div>
@@ -1393,7 +1428,7 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
           <div class="col-md-3">
             <h4 class="center">1. Apply & Assign</h4>
             <p>New people apply to get put onto the NYCHA waitlist. People already in public housing units also apply to transfer to other units when there are openings.
-              <br><br>These two groups of applicants are assigned “priority codes” based on their income and needs (like having experienced domestic abuse, hate crimes, or involuntary displacement) and are put on a general waiting list.
+              <br><br>These two groups of applicants are assigned “priority codes” based on their income, needs, and other priorities for the City (like having experienced domestic abuse, hate crimes, or involuntary displacement; or being a homeless veteran; or aging out of foster care) and they are put on a general waiting list.
             </p>
           </div>
           <div class="col-md-3">
@@ -1403,12 +1438,14 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
           </div>
           <div class="col-md-3">
             <h4 class="center">3. Verify</h4>
-            <p>NYCHA staff reach out to the list of new applicants to interview them. These interviews are to verify that applicants actually do meet the requirements for the apartment. If they pass, they’ll be “certified” and placed in the pool to fill units.
+            <p>NYCHA staff reach out to the list of new applicants to interview them. These interviews are to verify that applicants actually do meet the requirements for the apartment that they predict will become vacant (making sure the applicant's family size will fit in the number of bedrooms for the unit that's predicted to be vacant; if the unit is specifically for elderly people, then making
+              sure the applicant is old enough for the unit's requirements; etc). If they pass, they’ll be “certified” and placed in the pool to fill units.
             </p>
           </div>
           <div class="col-md-3">
             <h4 class="center">4. Match</h4>
-            <p>Once a vacant unit opens up, the computer program looks for people who are certified and eligible. It prioritizes transfers with high-needs, then transfers with less urgent needs and new applicants.
+            <p>Once a vacant unit actually opens up, the computer program looks for people who are certified and eligible. It prioritizes transfers with high-needs, then transfers with less urgent needs and new applicants.
+              <br><br>Sometimes this matching process can get tricky because there might be only one unit, but multiple certified and elibile applicants with different high-needs. TSAP's matching algorithm has to work to figure out how to sort competing priority codes.
             </p>
           </div>
       </div>
@@ -1477,7 +1514,7 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
                 <h4>Data</h4>
                 <p>The data TSAP uses is based on both historical data and new data input by new applicants, transfer requests, or case workers.  The algorithm makes a prediction about how many units will be vacated based on how many units of a certain type were vacated in the past. However,  there might be other factors at play in the present day that the algorithm can’t account for. For example, maybe that building was renovated and fewer people want to leave now. This is called omitted variable bias.
                 </p>
-                <h4> Algorithm Model </h4>
+                <h4> Algorithmic Model </h4>
                 <p>There are multiple algorithms in this ADS. It seems like NYCHA is trying to use the best algorithm for each decision type.
                 </p>
               </div>
@@ -1493,7 +1530,7 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
               </div>
               <div class="card-reveal">
                 <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
-                <p>The information about TSAP is available online, but the description is 57 pages long! The actual algorithms used are pretty explainable.
+                <p>The actual algorithms used by TSAP are pretty explainable.
                   <p> <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
                     data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image'>"> Decision
                     trees</a> and <br><a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
@@ -1503,6 +1540,11 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
                 </p>
                 <p>Certain parts are easier to understand than others. For example, what the priority codes are and what the qualifications for these priority codes are is clearly laid out, but predicting vacant units and how that impacts eligibility interviews is more opaque.
                 </p>
+                <p>TSAP is pretty transparent. NYCHA has <a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish"
+                        target="_blank">documentation</a> on how TSAP works, but the description is 57 pages long!</p>
+
+
+
               </div>
             </div>
           </div>
@@ -1724,7 +1766,7 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
                   <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
                   <h4>Data</h4>
                   <p> This algorithm uses data from students and schools ranking their preferences. These datasets can be very biased. Student rankings are based on their own perceptions of their competitivity in the process, their parents' knowledge about which schools are best, their desire to stay with their friends. School rankings are based on their admissions priorities, which just track what the schools want to focus on. If they want to focus on good grades, they can do that. If they want to focus on students in the neighborhood, they can do that.</p>
-                  <h4> Algorithm Model </h4>
+                  <h4> Algorithmic Model </h4>
                   <p>The algorithm maximizes top mutual matches for students and schools. This algorithm is used in other matching situations, like matching medical students to residencies.</p>
                 </div>
               </div>
@@ -1740,8 +1782,15 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
                 <div class="card-reveal">
                   <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
                   <p> The matching algorithm is explainable. It follows a clear series of steps and is based on the preferences of students and schools.  </p>
-                  <p>The <a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish"
-                      target="_blank"> High School Directory</a> is the document that guides students through the high school application and matching process. The directory has school profiles. This information about every school in New York City is supposed to help inform students about their chances of matching. </p>
+
+                  <p>The <a href="https://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html"
+                      target="_blank">NYTimes</a> has covered the matching algorithm and how it works, making this ADS pretty transparent.</p>
+
+                      <p>Also, the DOE has made the process transparent to families through the <a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish"
+                          target="_blank">High School Directory</a>, a document that guides students through the high school application and matching process. The directory has school profiles. This information about every school in NYC is supposed to help inform students about their chances of matching. </p>
+
+
+
                 </div>
               </div>
             </div>
@@ -2104,241 +2153,113 @@ This framework isn’t cut and dry! Some of the design decisions relate to one a
                 <div class="col-md-10">
                   <p>Here are all of the articles and documents we used in the creation of this website.* </p>
                   <div class="csl-bib-body" style="line-height: 1.35; margin-left: 2em; text-indent:-2em;">
-                    <div class="csl-entry">2019 NYC High School Directory. Accessed March 12, 2019. <a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish"
-                        target="_blank">https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=2019nychsdirectorycitywideenglish.pdf&amp;rft.identifier=https%3A%2F%2Fwww.schools.nyc.gov%2Fdocs%2Fdefault-source%2Fdefault-document-library%2F2019nychsdirectorycitywideenglish"></span>
-                    <div class="csl-entry">“A People’s Guide to AI.” Allied Media Projects, September 18, 2018. <a href="https://www.alliedmedia.org/peoples-ai" target="_blank">https://www.alliedmedia.org/peoples-ai</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=A%20People's%20Guide%20to%20AI&amp;rft.description=Systems%20that%20use%20artificial%20intelligence%20are%20quietly%20becoming%20present%20in%20more%20and%20more%20parts%20of%20our%20lives.%20But%20what%20does%20this%20technology%20really%20mean%20for%20people%2C%20both%20right%20now%20and%20in%20the%20future%3F&amp;rft.identifier=https%3A%2F%2Fwww.alliedmedia.org%2Fpeoples-ai&amp;rft.date=2018-09-18&amp;rft.language=en"></span>
-                    <div class="csl-entry">“ADS Benefits and Concerns, By Example.” Jain Family Institute, n.d.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=ADS%20Benefits%20and%20Concerns%2C%20By%20Example"></span>
+                    <div class="csl-entry"><a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish" target="_blank">"2019 NYC High School Directory."</a> Accessed March 12, 2019.
+                        <br><br>This document tells students and their parents information about all high schools in New York City and guides them through the matching process.</div>
+                    <div class="csl-entry"><a href="https://www.alliedmedia.org/peoples-ai" target="_blank">“A People’s Guide to AI.”</a> Allied Media Projects, September 18, 2018.
+                      <br><br>Systems that use artificial intelligence are quietly becoming present in more and more parts of our lives. Butwhat does this technology really mean for people, both right now and in the future?</div>
                     <div class="csl-entry">“Algorithm Tips – Resources and Leads for Investigating Algorithms in Society.” Accessed February 2, 2019. <a href="http://algorithmtips.org/" target="_blank">http://algorithmtips.org/</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Algorithm%20Tips%20%E2%80%93%20Resources%20and%20leads%20for%20investigating%20algorithms%20in%20society&amp;rft.description=Algorithm%20Tips%20is%20here%20to%20help%20you%20start%20investigating%20algorithmic%20decision-making%20power%20in%20society.%0A%0AThe%20site%20offers%20a%20database%20of%20leads%20which%20you%20can%20search%20below.%20It%E2%80%99s%20a%20curated%20set%20of%20algorithms%20being%20using%20in%20the%20US%20Federal%20government.%20For%20details%20on%20our%20curation%20methodology%20see%20here.%0A%0AWe%20also%20provide%20resources%20such%20as%20example%20investigations%2C%20methodological%20tips%2C%20and%20guidelines%20for%20public%20records%20requests%20related%20to%20algorithms.%0A%0AFinally%2C%20we%20blog%20about%20some%20of%20the%20more%20interesting%20examples%20of%20algorithms%20we%E2%80%99ve%20uncovered%20in%20our%20research.&amp;rft.identifier=http%3A%2F%2Falgorithmtips.org%2F&amp;rft.language=en-US"></span>
                     <div class="csl-entry">Athey, Susan. “Beyond Prediction: Using Big Data for Policy Problems.” <i>Science</i> 355, no. 6324 (February 3, 2017): 483–85. <a href="https://doi.org/10.1126/science.aal4321"
                         target="_blank">https://doi.org/10.1126/science.aal4321</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1126%2Fscience.aal4321&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Beyond%20prediction%3A%20Using%20big%20data%20for%20policy%20problems&amp;rft.jtitle=Science&amp;rft.volume=355&amp;rft.issue=6324&amp;rft.aufirst=Susan&amp;rft.aulast=Athey&amp;rft.au=Susan%20Athey&amp;rft.date=2017-02-03&amp;rft.pages=483-485&amp;rft.spage=483&amp;rft.epage=485&amp;rft.issn=0036-8075%2C%201095-9203&amp;rft.language=en"></span>
                     <div class="csl-entry"> Athey, Susan. “The Impact of Machine Learning on Economics,” NBER, January 2018. <a href="https://www.nber.org/chapters/c14009.pdf" target="_blank">https://www.nber.org/chapters/c14009.pdf</a></div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The%20Impact%20of%20Machine%20Learning%20on%20Economics&amp;rft.aufirst=Susan&amp;rft.aulast=Athey&amp;rft.au=Susan%20Athey&amp;rft.pages=31&amp;rft.language=en"></span>
-                    <div class="csl-entry">“Automated Decision Systems Primer.” Jain Family Institute, n.d.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=Automated%20Decision%20Systems%20Primer"></span>
                     <div class="csl-entry">Ayala, Christine. “Ocasio-Cortez Is Right, Algorithms Are Biased — but We Can Make Them Fairer.” Text. TheHill, February 13, 2019. <a
                         href="https://thehill.com/opinion/technology/429883-ocasio-cortez-is-right-algorithms-are-biased-but-we-can-make-them-fairer"
                         target="_blank">https://thehill.com/opinion/technology/429883-ocasio-cortez-is-right-algorithms-are-biased-but-we-can-make-them-fairer</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Ocasio-Cortez%20is%20right%2C%20algorithms%20are%20biased%20%E2%80%94%20but%20we%20can%20make%20them%20fairer&amp;rft.description=Machines%20don%E2%80%99t%20necessarily%20fix%20our%20biases%20%E2%80%94%20they%20mirror%20them.%20If%20we%E2%80%99re%20not%20careful%2C%20they%20can%20further%20entrench%20existing%20disparities.&amp;rft.identifier=https%3A%2F%2Fthehill.com%2Fopinion%2Ftechnology%2F429883-ocasio-cortez-is-right-algorithms-are-biased-but-we-can-make-them-fairer&amp;rft.aufirst=Christine&amp;rft.aulast=Ayala&amp;rft.au=Christine%20Ayala&amp;rft.date=2019-02-13&amp;rft.language=en"></span>
                     <div class="csl-entry">Barber, Gregory. “San Francisco Could Be First to Ban Facial Recognition Tech.” <i>Wired</i>, January 31, 2019. <a href="https://www.wired.com/story/san-francisco-could-be-first-ban-facial-recognition-tech/"
                         target="_blank">https://www.wired.com/story/san-francisco-could-be-first-ban-facial-recognition-tech/</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=magazineArticle&amp;rft.title=San%20Francisco%20Could%20Be%20First%20to%20Ban%20Facial%20Recognition%20Tech&amp;rft.source=Wired&amp;rft.description=A%20city%20supervisor%20has%20proposed%20banning%20local%20agencies%20from%20using%20facial%20recognition%20technology%2C%20warning%20of%20the%20potential%20bias%20and%20invasion%20of%20privacy.&amp;rft.identifier=https%3A%2F%2Fwww.wired.com%2Fstory%2Fsan-francisco-could-be-first-ban-facial-recognition-tech%2F&amp;rft.aufirst=Gregory&amp;rft.aulast=Barber&amp;rft.au=Gregory%20Barber&amp;rft.date=2019-01-31&amp;rft.issn=1059-1028"></span>
                     <div class="csl-entry">Barocas, Solon, and Andrew D. Selbst. “Big Data’s Disparate Impact.” <i>Cal. L. Rev.</i> 104 (2016): 671.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Big%20data's%20disparate%20impact&amp;rft.jtitle=Cal.%20L.%20Rev.&amp;rft.volume=104&amp;rft.aufirst=Solon&amp;rft.aulast=Barocas&amp;rft.au=Solon%20Barocas&amp;rft.au=Andrew%20D.%20Selbst&amp;rft.date=2016&amp;rft.pages=671"></span>
                     <div class="csl-entry">Binns, Reuben. “Fairness in Machine Learning: Lessons from Political Philosophy.” <i>ArXiv Preprint ArXiv:1712.03586</i>, 2017.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Fairness%20in%20Machine%20Learning%3A%20Lessons%20from%20Political%20Philosophy&amp;rft.jtitle=arXiv%20preprint%20arXiv%3A1712.03586&amp;rft.aufirst=Reuben&amp;rft.aulast=Binns&amp;rft.au=Reuben%20Binns&amp;rft.date=2017"></span>
                     <div class="csl-entry">Budds, Diana. “One of New York City’s Most Urgent Design Challenges Is Invisible.” Curbed NY, August 24, 2018. <a href="https://ny.curbed.com/2018/8/24/17775290/new-york-city-automated-decision-systems"
                         target="_blank">https://ny.curbed.com/2018/8/24/17775290/new-york-city-automated-decision-systems</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=One%20of%20New%20York%20City%E2%80%99s%20most%20urgent%20design%20challenges%20is%20invisible&amp;rft.description=Algorithms%20already%20affect%20buildings%2C%20policing%2C%20and%20education.%20Can%20new%20technology%20make%20the%20city%20fairer%20and%20more%20efficient%3F&amp;rft.identifier=https%3A%2F%2Fny.curbed.com%2F2018%2F8%2F24%2F17775290%2Fnew-york-city-automated-decision-systems&amp;rft.aufirst=Diana&amp;rft.aulast=Budds&amp;rft.au=Diana%20Budds&amp;rft.date=2018-08-24"></span>
                     <div class="csl-entry">“Case Study PDFs.” Princeton Dialogues on AI and Ethics, January 24, 2019. <a href="https://aiethics.princeton.edu/case-studies/case-study-pdfs/"
                         target="_blank">https://aiethics.princeton.edu/case-studies/case-study-pdfs/</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Case%20Study%20PDFs&amp;rft.description=Case%20Study%20PDFs%20Below%20are%20a%20set%20of%20fictional%20case%20studies%20that%20are%20designed%20to%20prompt%20reflection%20and%20discussion%20about%20issues%20at%20the%20intersection%20of%20AI%20and%20Ethics.%20These%20case%20studies%20were%20developed%20%E2%80%A6&amp;rft.identifier=https%3A%2F%2Faiethics.princeton.edu%2Fcase-studies%2Fcase-study-pdfs%2F&amp;rft.date=2019-01-24&amp;rft.language=en-US"></span>
                     <div class="csl-entry">Citron, Danielle Keats. “Technological Due Process.” <i>Wash. UL Rev.</i> 85 (2007): 1249.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Technological%20due%20process&amp;rft.jtitle=Wash.%20UL%20Rev.&amp;rft.volume=85&amp;rft.aufirst=Danielle%20Keats&amp;rft.aulast=Citron&amp;rft.au=Danielle%20Keats%20Citron&amp;rft.date=2007&amp;rft.pages=1249"></span>
                     <div class="csl-entry">“City Budget Gives Buses A Key Boost at Intersections – Streetsblog New York City.” Accessed February 12, 2019. <a
                         href="https://nyc.streetsblog.org/2019/02/08/city-budget-gives-buses-a-key-boost-they-need-at-intersections/"
                         target="_blank">https://nyc.streetsblog.org/2019/02/08/city-budget-gives-buses-a-key-boost-they-need-at-intersections/</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=City%20Budget%20Gives%20Buses%20A%20Key%20Boost%20at%20Intersections%20%E2%80%93%20Streetsblog%20New%20York%20City&amp;rft.identifier=https%3A%2F%2Fnyc.streetsblog.org%2F2019%2F02%2F08%2Fcity-budget-gives-buses-a-key-boost-they-need-at-intersections%2F"></span>
                     <div class="csl-entry">Crawford, Kate, and Jason Schultz. “Big Data and Due Process: Toward a Framework to Redress Predictive Privacy Harms.” <i>BCL Rev.</i> 55 (2014): 93.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Big%20data%20and%20due%20process%3A%20Toward%20a%20framework%20to%20redress%20predictive%20privacy%20harms&amp;rft.jtitle=BCL%20Rev.&amp;rft.volume=55&amp;rft.aufirst=Kate&amp;rft.aulast=Crawford&amp;rft.au=Kate%20Crawford&amp;rft.au=Jason%20Schultz&amp;rft.date=2014&amp;rft.pages=93"></span>
                     <div class="csl-entry">Dahl, Robert A. <i>On Democracy</i>. Yale university press, 2008.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A0-300-23332-9&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=On%20democracy&amp;rft.publisher=Yale%20university%20press&amp;rft.aufirst=Robert%20A.&amp;rft.aulast=Dahl&amp;rft.au=Robert%20A.%20Dahl&amp;rft.date=2008&amp;rft.isbn=0-300-23332-9"></span>
                     <div class="csl-entry">Doshi-Velez, Finale, Mason Kortz, Ryan Budish, Chris Bavitz, Sam Gershman, David O’Brien, Stuart Schieber, James Waldo, David Weinberger, and Alexandra Wood. “Accountability of AI under the Law: The Role
                       of Explanation.” <i>ArXiv Preprint ArXiv:1711.01134</i>, 2017.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Accountability%20of%20AI%20under%20the%20law%3A%20The%20role%20of%20explanation&amp;rft.jtitle=arXiv%20preprint%20arXiv%3A1711.01134&amp;rft.aufirst=Finale&amp;rft.aulast=Doshi-Velez&amp;rft.au=Finale%20Doshi-Velez&amp;rft.au=Mason%20Kortz&amp;rft.au=Ryan%20Budish&amp;rft.au=Chris%20Bavitz&amp;rft.au=Sam%20Gershman&amp;rft.au=David%20O'Brien&amp;rft.au=Stuart%20Schieber&amp;rft.au=James%20Waldo&amp;rft.au=David%20Weinberger&amp;rft.au=Alexandra%20Wood&amp;rft.date=2017"></span>
                     <div class="csl-entry">Eggers, William D, David Schatsky, and Peter Viechnicki. “AI-Augmented Government.” Deloitte Insights. Accessed October 22, 2018. <a
                         href="https://www2.deloitte.com/insights/us/en/focus/cognitive-technologies/artificial-intelligence-government.html"
                         target="_blank">https://www2.deloitte.com/insights/us/en/focus/cognitive-technologies/artificial-intelligence-government.html</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=AI-augmented%20government&amp;rft.description=Can%20cognitive%20technologies%20do%20government%20employees%E2%80%99%20thinking%20for%20them%3F%20Not%20quite%E2%80%94at%20least%20not%20yet.%20But%20right%20now%2C%20AI-based%20programs%20can%20help%20agencies%20cut%20costs%2C%20free%20up%20millions%20of%20labor%20hours%20for%20more%20critical%20tasks%2C%20and%20deliver%20better%2C%20faster%20services.%C2%A0%E2%80%8B&amp;rft.identifier=https%3A%2F%2Fwww2.deloitte.com%2Finsights%2Fus%2Fen%2Ffocus%2Fcognitive-technologies%2Fartificial-intelligence-government.html&amp;rft.aufirst=William%20D&amp;rft.aulast=Eggers&amp;rft.au=William%20D%20Eggers&amp;rft.au=David%20Schatsky&amp;rft.au=Peter%20Viechnicki&amp;rft.language=en"></span>
                     <div class="csl-entry">“Ethical Guidelines for Applying Predictive Tools within Human Services.” Accessed January 18, 2019. <a
                         href="https://metrolabnetwork.org/wp-content/uploads/2018/01/Ethical-Guidelines-for-Applying-Predictive-Tools-within-Human-Services-2017.pdf"
                         target="_blank">https://metrolabnetwork.org/wp-content/uploads/2018/01/Ethical-Guidelines-for-Applying-Predictive-Tools-within-Human-Services-2017.pdf</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=attachment&amp;rft.title=Ethical%20Guidelines%20for%20Applying%20Predictive%20Tools%20within%20Human%20Services&amp;rft.identifier=https%3A%2F%2Fmetrolabnetwork.org%2Fwp-content%2Fuploads%2F2018%2F01%2FEthical-Guidelines-for-Applying-Predictive-Tools-within-Human-Services-2017.pdf"></span>
                     <div class="csl-entry">“Ethics &amp; Algorithms Toolkit (Beta).” Accessed January 30, 2019. <a href="https://ethicstoolkit.ai/" target="_blank">https://ethicstoolkit.ai/</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Ethics%20%26%20Algorithms%20Toolkit%20(beta)&amp;rft.identifier=https%3A%2F%2Fethicstoolkit.ai%2F"></span>
                     <div class="csl-entry">Eubanks, Virginia. <i>Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor</i>. St. Martin’s Press, 2018.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A1-4668-8596-3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Automating%20inequality%3A%20How%20high-tech%20tools%20profile%2C%20police%2C%20and%20punish%20the%20poor&amp;rft.publisher=St.%20Martin's%20Press&amp;rft.aufirst=Virginia&amp;rft.aulast=Eubanks&amp;rft.au=Virginia%20Eubanks&amp;rft.date=2018&amp;rft.isbn=1-4668-8596-3"></span>
                     <div class="csl-entry">Greenwalt, Lauren. “The History of U.S. Housing Segregation Points to the Devastating Consequences of Algorithmic Bias.” The Ethical Machine. Accessed January 6, 2019. <a
                         href="https://ai.shorensteincenter.org/ideas/2018/12/1/federal-housing-history-shows-that-algorithmic-bias-carries-long-lasting-disastrous-consequences-29jz2"
                         target="_blank">https://ai.shorensteincenter.org/ideas/2018/12/1/federal-housing-history-shows-that-algorithmic-bias-carries-long-lasting-disastrous-consequences-29jz2</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=The%20History%20of%20U.S.%20Housing%20Segregation%20Points%20to%20the%20Devastating%20Consequences%20of%20Algorithmic%20Bias&amp;rft.description=Algorithms%2C%20and%20algorithmic%20discrimination%2C%20are%20often%20presented%20as%20recent%20phenomena.%20But%20while%20big%20data%20and%20computational%20power%20have%20enabled%20more%20advanced%20algorithms%20and%20reduced%20the%20need%20for%20human%20calculation%2C%20simpler%20algorithms%20have%20long%20been%20used%20to%20allocate%20private%20and%20public%20goods%E2%80%94and%20not%20without%20prejudice.&amp;rft.identifier=https%3A%2F%2Fai.shorensteincenter.org%2Fideas%2F2018%2F12%2F1%2Ffederal-housing-history-shows-that-algorithmic-bias-carries-long-lasting-disastrous-consequences-29jz2&amp;rft.aufirst=Lauren&amp;rft.aulast=Greenwalt&amp;rft.au=Lauren%20Greenwalt&amp;rft.language=en-US"></span>
                     <div class="csl-entry">Holland, Sarah, Ahmed Hosny, Sarah Newman, Joshua Joseph, and Kasia Chmielinski. “The Dataset Nutrition Label: A Framework To Drive Higher Data Quality Standards.” <i>ArXiv:1805.03677 [Cs]</i>, May 9,
                       2018. <a href="http://arxiv.org/abs/1805.03677" target="_blank">http://arxiv.org/abs/1805.03677</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The%20Dataset%20Nutrition%20Label%3A%20A%20Framework%20To%20Drive%20Higher%20Data%20Quality%20Standards&amp;rft.jtitle=arXiv%3A1805.03677%20%5Bcs%5D&amp;rft.aufirst=Sarah&amp;rft.aulast=Holland&amp;rft.au=Sarah%20Holland&amp;rft.au=Ahmed%20Hosny&amp;rft.au=Sarah%20Newman&amp;rft.au=Joshua%20Joseph&amp;rft.au=Kasia%20Chmielinski&amp;rft.date=2018-05-09"></span>
                     <div class="csl-entry">“How Game Theory Helped Improve New York City’s High School Application Process - The New York Times.” Accessed March 12, 2019. <a
                         href="https://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html"
                         target="_blank">https://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=How%20Game%20Theory%20Helped%20Improve%20New%20York%20City%E2%80%99s%20High%20School%20Application%20Process%20-%20The%20New%20York%20Times&amp;rft.identifier=https%3A%2F%2Fwww.nytimes.com%2F2014%2F12%2F07%2Fnyregion%2Fhow-game-theory-helped-improve-new-york-city-high-school-application-process.html"></span>
-
-                    <div class="csl-entry">“JFI-NYC Scope of Work.” Jain Family Institute, n.d.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=JFI-NYC%20Scope%20of%20Work"></span>
                     <div class="csl-entry">Julia Angwin, Jeff Larson. “Machine Bias.” Text/html. ProPublica, May 23, 2016. <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
                         target="_blank">https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Machine%20Bias&amp;rft.rights=Copyright%20%C2%A92018%20ProPublica.&amp;rft.description=There%E2%80%99s%20software%20used%20across%20the%20country%20to%20predict%20future%20criminals.%20And%20it%E2%80%99s%20biased%20against%20blacks.&amp;rft.identifier=https%3A%2F%2Fwww.propublica.org%2Farticle%2Fmachine-bias-risk-assessments-in-criminal-sentencing&amp;rft.aufirst=Jeff%20Larson&amp;rft.aulast=Julia%20Angwin&amp;rft.au=Jeff%20Larson%20Julia%20Angwin&amp;rft.date=2016-05-23&amp;rft.language=en"></span>
                     <div class="csl-entry">Khullar, Dhruv. “Opinion | A.I. Could Worsen Health Disparities.” <i>The New York Times</i>, February 2, 2019, sec. Opinion. <a href="https://www.nytimes.com/2019/01/31/opinion/ai-bias-healthcare.html"
                         target="_blank">https://www.nytimes.com/2019/01/31/opinion/ai-bias-healthcare.html</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=newspaperArticle&amp;rft.title=Opinion%20%7C%20A.I.%20Could%20Worsen%20Health%20Disparities&amp;rft.source=The%20New%20York%20Times&amp;rft.description=In%20a%20health%20system%20riddled%20with%20inequity%2C%20we%20risk%20making%20dangerous%20biases%20automated%20and%20invisible.&amp;rft.identifier=https%3A%2F%2Fwww.nytimes.com%2F2019%2F01%2F31%2Fopinion%2Fai-bias-healthcare.html&amp;rft.aufirst=Dhruv&amp;rft.aulast=Khullar&amp;rft.au=Dhruv%20Khullar&amp;rft.date=2019-02-02&amp;rft.issn=0362-4331&amp;rft.language=en-US"></span>
                     <div class="csl-entry">Kleinberg, Jon, Himabindu Lakkaraju, Jure Leskovec, Jens Ludwig, and Sendhil Mullainathan. “Human Decisions and Machine Predictions.” <i>The Quarterly Journal of Economics</i> 133, no. 1 (February 1,
                       2018): 237–93. <a href="https://doi.org/10.1093/qje/qjx032" target="_blank">https://doi.org/10.1093/qje/qjx032</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1093%2Fqje%2Fqjx032&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Human%20Decisions%20and%20Machine%20Predictions&amp;rft.jtitle=The%20Quarterly%20Journal%20of%20Economics&amp;rft.stitle=Q%20J%20Econ&amp;rft.volume=133&amp;rft.issue=1&amp;rft.aufirst=Jon&amp;rft.aulast=Kleinberg&amp;rft.au=Jon%20Kleinberg&amp;rft.au=Himabindu%20Lakkaraju&amp;rft.au=Jure%20Leskovec&amp;rft.au=Jens%20Ludwig&amp;rft.au=Sendhil%20Mullainathan&amp;rft.date=2018-02-01&amp;rft.pages=237-293&amp;rft.spage=237&amp;rft.epage=293&amp;rft.issn=0033-5533&amp;rft.language=en"></span>
                     <div class="csl-entry">Kleinberg, Jon, Sendhil Mullainathan, and Manish Raghavan. “Inherent Trade-Offs in the Fair Determination of Risk Scores.” <i>ArXiv:1609.05807 [Cs, Stat]</i>, September 19, 2016. <a
                         href="http://arxiv.org/abs/1609.05807" target="_blank">http://arxiv.org/abs/1609.05807</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Inherent%20Trade-Offs%20in%20the%20Fair%20Determination%20of%20Risk%20Scores&amp;rft.jtitle=arXiv%3A1609.05807%20%5Bcs%2C%20stat%5D&amp;rft.aufirst=Jon&amp;rft.aulast=Kleinberg&amp;rft.au=Jon%20Kleinberg&amp;rft.au=Sendhil%20Mullainathan&amp;rft.au=Manish%20Raghavan&amp;rft.date=2016-09-19"></span>
                     <div class="csl-entry">Kuang, Cliff. “Can AI Be Taught to Explain Itself.” <i>New York Times</i>, 2017.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Can%20AI%20be%20taught%20to%20explain%20itself&amp;rft.jtitle=New%20York%20Times&amp;rft.aufirst=Cliff&amp;rft.aulast=Kuang&amp;rft.au=Cliff%20Kuang&amp;rft.date=2017"></span>
                     <div class="csl-entry">Lecher, Colin. “What Happens When an Algorithm Cuts Your Health Care.” The Verge, March 21, 2018. <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy"
                         target="_blank">https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=What%20happens%20when%20an%20algorithm%20cuts%20your%20health%20care&amp;rft.description=When%20Arkansas%20started%20using%20an%20algorithm%20for%20a%20crucial%20health%20service%2C%20the%20program%E2%80%99s%20recipients%20struggled%20to%20understand%20what%20happened.&amp;rft.identifier=https%3A%2F%2Fwww.theverge.com%2F2018%2F3%2F21%2F17144260%2Fhealthcare-medicaid-algorithm-arkansas-cerebral-palsy&amp;rft.aufirst=Colin&amp;rft.aulast=Lecher&amp;rft.au=Colin%20Lecher&amp;rft.date=2018-03-21"></span>
                     <div class="csl-entry">Lee, Min Kyung. “Understanding Perception of Algorithmic Decisions: Fairness, Trust, and Emotion in Response to Algorithmic Management.” <i>Big Data &amp; Society</i> 5, no. 1 (January 1, 2018):
                       2053951718756684. <a href="https://doi.org/10.1177/2053951718756684" target="_blank">https://doi.org/10.1177/2053951718756684</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1177%2F2053951718756684&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Understanding%20perception%20of%20algorithmic%20decisions%3A%20Fairness%2C%20trust%2C%20and%20emotion%20in%20response%20to%20algorithmic%20management&amp;rft.jtitle=Big%20Data%20%26%20Society&amp;rft.stitle=Big%20Data%20%26%20Society&amp;rft.volume=5&amp;rft.issue=1&amp;rft.aufirst=Min%20Kyung&amp;rft.aulast=Lee&amp;rft.au=Min%20Kyung%20Lee&amp;rft.date=2018-01-01&amp;rft.pages=2053951718756684&amp;rft.issn=2053-9517&amp;rft.language=en"></span>
                     <div class="csl-entry">Liptak, Adam. “Sent to Prison by a Software Program’s Secret Algorithms - The New York Times.” <i>The New York Times</i>. Accessed October 22, 2018. <a
                         href="https://www.nytimes.com/2017/05/01/us/politics/sent-to-prison-by-a-software-programs-secret-algorithms.html"
                         target="_blank">https://www.nytimes.com/2017/05/01/us/politics/sent-to-prison-by-a-software-programs-secret-algorithms.html</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=newspaperArticle&amp;rft.title=Sent%20to%20Prison%20by%20a%20Software%20Program%E2%80%99s%20Secret%20Algorithms%20-%20The%20New%20York%20Times&amp;rft.source=The%20New%20York%20Times&amp;rft.identifier=https%3A%2F%2Fwww.nytimes.com%2F2017%2F05%2F01%2Fus%2Fpolitics%2Fsent-to-prison-by-a-software-programs-secret-algorithms.html&amp;rft.aufirst=Adam&amp;rft.aulast=Liptak&amp;rft.au=Adam%20Liptak"></span>
                     <div class="csl-entry">Martinho-Truswell, Emma. “How AI Could Help the Public Sector.” <i>Harvard Business Review</i>, January 26, 2018. <a href="https://hbr.org/2018/01/how-ai-could-help-the-public-sector"
                         target="_blank">https://hbr.org/2018/01/how-ai-could-help-the-public-sector</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=magazineArticle&amp;rft.title=How%20AI%20Could%20Help%20the%20Public%20Sector&amp;rft.source=Harvard%20Business%20Review&amp;rft.description=Talent%20and%20motivation%20are%20wasted%C2%A0on%20routine%20tasks.&amp;rft.identifier=https%3A%2F%2Fhbr.org%2F2018%2F01%2Fhow-ai-could-help-the-public-sector&amp;rft.aufirst=Emma&amp;rft.aulast=Martinho-Truswell&amp;rft.au=Emma%20Martinho-Truswell&amp;rft.date=2018-01-26&amp;rft.issn=0017-8012"></span>
                     <div class="csl-entry">“Mayor de Blasio Announces First-In-Nation Task Force To Examine Automated Decision Systems.” The official website of the City of New York, May 16, 2018. <a
-                        href="http:///office-of-the-mayor/news/251-18/mayor-de-blasio-first-in-nation-task-force-examine-automated-decision-systems-used-by">http:///office-of-the-mayor/news/251-18/mayor-de-blasio-first-in-nation-task-force-examine-automated-decision-systems-used-by</a>.
-                    </div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Mayor%20de%20Blasio%20Announces%20First-In-Nation%20Task%20Force%20To%20Examine%20Automated%20Decision%20Systems&amp;rft.identifier=http%3A%2F%2F%2Foffice-of-the-mayor%2Fnews%2F251-18%2Fmayor-de-blasio-first-in-nation-task-force-examine-automated-decision-systems-used-by&amp;rft.date=2018-05-16"></span>
+                        href="http:///office-of-the-mayor/news/251-18/mayor-de-blasio-first-in-nation-task-force-examine-automated-decision-systems-used-by">http:///office-of-the-mayor/news/251-18/mayor-de-blasio-first-in-nation-task-force-examine-automated-decision-systems-used-by</a>.</div>
                     <div class="csl-entry">Miller, Alex P. “Want Less-Biased Decisions? Use Algorithms.” <i>Harvard Business Review</i>, July 26, 2018. <a
                         href="https://hbr.org/2018/07/want-less-biased-decisions-use-algorithms">https://hbr.org/2018/07/want-less-biased-decisions-use-algorithms</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=magazineArticle&amp;rft.title=Want%20Less-Biased%20Decisions%3F%20Use%20Algorithms.&amp;rft.source=Harvard%20Business%20Review&amp;rft.description=They%E2%80%99re%20not%20purely%20objective%2C%20but%20neither%20are%20humans.&amp;rft.identifier=https%3A%2F%2Fhbr.org%2F2018%2F07%2Fwant-less-biased-decisions-use-algorithms&amp;rft.aufirst=Alex%20P.&amp;rft.aulast=Miller&amp;rft.au=Alex%20P.%20Miller&amp;rft.date=2018-07-26&amp;rft.issn=0017-8012"></span>
                     <div class="csl-entry">Mullainathan, Sendhil, and Ziad Obermeyer. “Does Machine Learning Automate Moral Hazard and Error?” <i>The American Economic Review</i> 107, no. 5 (May 2017): 476–80. <a
                         href="https://doi.org/10.1257/aer.p20171084" target="_blank">https://doi.org/10.1257/aer.p20171084</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1257%2Faer.p20171084&amp;rft_id=info%3Apmid%2F28781376&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Does%20Machine%20Learning%20Automate%20Moral%20Hazard%20and%20Error%3F&amp;rft.jtitle=The%20American%20economic%20review&amp;rft.stitle=Am%20Econ%20Rev&amp;rft.volume=107&amp;rft.issue=5&amp;rft.aufirst=Sendhil&amp;rft.aulast=Mullainathan&amp;rft.au=Sendhil%20Mullainathan&amp;rft.au=Ziad%20Obermeyer&amp;rft.date=2017-05&amp;rft.pages=476-480&amp;rft.spage=476&amp;rft.epage=480&amp;rft.issn=0002-8282"></span>
                     <div class="csl-entry">“New York City Tenant Selection and Assignment Plan,” September 13, 2016. <a href="https://www1.nyc.gov/assets/nycha/downloads/pdf/TSAPlan.pdf"
                         target="_blank">https://www1.nyc.gov/assets/nycha/downloads/pdf/TSAPlan.pdf</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=New%20York%20City%20Tenant%20Selection%20and%20Assignment%20Plan&amp;rft.date=2016-09-13"></span>
                     <div class="csl-entry">Noble, Safiya Umoja. <i>Algorithms of Oppression: How Search Engines Reinforce Racism</i>. New York: New York University Press, 2018.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-1-4798-3724-3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Algorithms%20of%20oppression%3A%20how%20search%20engines%20reinforce%20racism&amp;rft.place=New%20York&amp;rft.publisher=New%20York%20University%20Press&amp;rft.aufirst=Safiya%20Umoja&amp;rft.aulast=Noble&amp;rft.au=Safiya%20Umoja%20Noble&amp;rft.date=2018&amp;rft.isbn=978-1-4798-3724-3&amp;rft.language=eng"></span>
                     <div class="csl-entry">oğlu, Atil̇ a Abdulkadiṙ, Parag A. Pathak, and Alvin E. Roth. “The New York City High School Match.” <i>The American Economic Review</i> 95, no. 2, (2005): 364–67.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The%20New%20York%20City%20High%20School%20Match&amp;rft.jtitle=The%20American%20Economic%20Review&amp;rft.volume=95&amp;rft.issue=2%2C&amp;rft.aufirst=Atil%CC%87%20a%20Abdulkadi%E1%B9%99&amp;rft.aulast=o%C4%9Flu&amp;rft.au=Atil%CC%87%20a%20Abdulkadi%E1%B9%99%20o%C4%9Flu&amp;rft.au=Parag%20A.%20Pathak&amp;rft.au=Alvin%20E.%20Roth&amp;rft.date=2005&amp;rft.pages=364-367&amp;rft.spage=364&amp;rft.epage=367&amp;rft.language=en"></span>
                     <div class="csl-entry">O’Neil, Cathy. <i>Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy</i>. First edition. New York: Crown, 2016.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-0-553-41881-1%20978-0-553-41883-5&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Weapons%20of%20math%20destruction%3A%20how%20big%20data%20increases%20inequality%20and%20threatens%20democracy&amp;rft.place=New%20York&amp;rft.publisher=Crown&amp;rft.edition=First%20edition&amp;rft.aufirst=Cathy&amp;rft.aulast=O'Neil&amp;rft.au=Cathy%20O'Neil&amp;rft.date=2016&amp;rft.tpages=259&amp;rft.isbn=978-0-553-41881-1%20978-0-553-41883-5"></span>
                     <div class="csl-entry">Powles, Julia. “New York City’s Bold, Flawed Attempt to Make Algorithms Accountable.” <i>The New Yorker</i>, December 21, 2017. <a
                         href="https://www.newyorker.com/tech/annals-of-technology/new-york-citys-bold-flawed-attempt-to-make-algorithms-accountable"
                         target="_blank">https://www.newyorker.com/tech/annals-of-technology/new-york-citys-bold-flawed-attempt-to-make-algorithms-accountable</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=magazineArticle&amp;rft.title=New%20York%20City%E2%80%99s%20Bold%2C%20Flawed%20Attempt%20to%20Make%20Algorithms%20Accountable&amp;rft.source=The%20New%20Yorker&amp;rft.description=Automated%20systems%20guide%20the%20allocation%20of%20everything%20from%20firehouses%20to%20food%20stamps.%20Why%20don%E2%80%99t%20we%20know%20more%20about%20them%3F&amp;rft.identifier=https%3A%2F%2Fwww.newyorker.com%2Ftech%2Fannals-of-technology%2Fnew-york-citys-bold-flawed-attempt-to-make-algorithms-accountable&amp;rft.aufirst=Julia&amp;rft.aulast=Powles&amp;rft.au=Julia%20Powles&amp;rft.date=2017-12-21&amp;rft.issn=0028-792X&amp;rft.language=en"></span>
-
                     <div class="csl-entry">Poweles, Julia. “The Seductive Diversion of ‘Solving’ Bias in Artificial Intelligence,” n.d. <a href="https://medium.com/s/story/the-seductive-diversion-of-solving-bias-in-artificial-intelligence-890df5e5ef53"
                         target="_blank">https://medium.com/s/story/the-seductive-diversion-of-solving-bias-in-artificial-intelligence-890df5e5ef53</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=newspaperArticle&amp;rft.title=The%20Seductive%20Diversion%20of%20%E2%80%98Solving%E2%80%99%20Bias%20in%20Artificial%20Intelligence&amp;rft.identifier=https%3A%2F%2Fmedium.com%2Fs%2Fstory%2Fthe-seductive-diversion-of-solving-bias-in-artificial-intelligence-890df5e5ef53&amp;rft.aufirst=Julia&amp;rft.aulast=Powles&amp;rft.au=Julia%20Powles"></span>
                     <div class="csl-entry">“Preferences-and-Outcomes-a-Look-at-New-York-Citys-Public-High-School-Choice-Process.Pdf.” Accessed March 12, 2019. <a
                         href="https://ibo.nyc.ny.us/iboreports/preferences-and-outcomes-a-look-at-new-york-citys-public-high-school-choice-process.pdf"
                         target="_blank">https://ibo.nyc.ny.us/iboreports/preferences-and-outcomes-a-look-at-new-york-citys-public-high-school-choice-process.pdf</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=preferences-and-outcomes-a-look-at-new-york-citys-public-high-school-choice-process.pdf"></span>
                     <div class="csl-entry">Primus, Richard. “The Future of Disparate Impact.” <i>Mich. L. Rev.</i> 108 (2009): 1341.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The%20future%20of%20disparate%20impact&amp;rft.jtitle=Mich.%20L.%20Rev.&amp;rft.volume=108&amp;rft.aufirst=Richard&amp;rft.aulast=Primus&amp;rft.au=Richard%20Primus&amp;rft.date=2009&amp;rft.pages=1341"></span>
                     <div class="csl-entry">Reisman, Dillon, Jason Schultz, Kate Crawford, and Meredith Whittaker. “AINow: ALGORITHMIC IMPACT ASSESSMENTS,” n.d., 22.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=AINow%3A%20ALGORITHMIC%20IMPACT%20ASSESSMENTS&amp;rft.aufirst=Dillon&amp;rft.aulast=Reisman&amp;rft.au=Dillon%20Reisman&amp;rft.au=Jason%20Schultz&amp;rft.au=Kate%20Crawford&amp;rft.au=Meredith%20Whittaker&amp;rft.pages=22&amp;rft.language=en"></span>
                     <div class="csl-entry">Richardson, Rashida, Jason Schultz, and Kate Crawford. “DIRTY DATA, BAD PREDICTIONS: HOW CIVIL RIGHTS VIOLATIONS IMPACT POLICE DATA, PREDICTIVE POLICING SYSTEMS, AND JUSTICE,” n.d., 30.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=DIRTY%20DATA%2C%20BAD%20PREDICTIONS%3A%20HOW%20CIVIL%20RIGHTS%20VIOLATIONS%20IMPACT%20POLICE%20DATA%2C%20PREDICTIVE%20POLICING%20SYSTEMS%2C%20AND%20JUSTICE&amp;rft.aufirst=Rashida&amp;rft.aulast=Richardson&amp;rft.au=Rashida%20Richardson&amp;rft.au=Jason%20Schultz&amp;rft.au=Kate%20Crawford&amp;rft.pages=30&amp;rft.language=en"></span>
                     <div class="csl-entry">Roth, Alvin E. “The Design of School Choice Systems in NYC and Boston: Game-Theoretic Issues,” n.d., 62.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The%20Design%20of%20School%20Choice%20Systems%20in%20NYC%20and%20Boston%3A%20Game-Theoretic%20Issues&amp;rft.aufirst=Alvin%20E&amp;rft.aulast=Roth&amp;rft.au=Alvin%20E%20Roth&amp;rft.pages=62&amp;rft.language=en"></span>
-                    <div class="csl-entry">“Shorenstein Center The Ethical Machine Blog.” The Ethical Machine. Accessed January 6, 2019. <a href="https://ai.shorensteincenter.org/about/" target="_blank">https://ai.shorensteincenter.org/about/</a>.
-                    </div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Shorenstein%20Center%20The%20Ethical%20Machine%20Blog&amp;rft.identifier=https%3A%2F%2Fai.shorensteincenter.org%2Fabout%2F&amp;rft.language=en-US"></span>
+                    <div class="csl-entry">“Shorenstein Center The Ethical Machine Blog.” The Ethical Machine. Accessed January 6, 2019. <a href="https://ai.shorensteincenter.org/about/" target="_blank">https://ai.shorensteincenter.org/about/</a>.</div>
                     <div class="csl-entry">Singer, Natasha. “Bringing Big Data to the Fight Against Benefits Fraud.” <i>The New York Times</i>, December 21, 2017, sec. Technology. <a
                         href="https://www.nytimes.com/2015/02/22/technology/bringing-big-data-to-the-fight-against-benefits-fraud.html"
                         target="_blank">https://www.nytimes.com/2015/02/22/technology/bringing-big-data-to-the-fight-against-benefits-fraud.html</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=newspaperArticle&amp;rft.title=Bringing%20Big%20Data%20to%20the%20Fight%20Against%20Benefits%20Fraud&amp;rft.source=The%20New%20York%20Times&amp;rft.description=To%20detect%20possible%20abuse%20of%20programs%20or%20benefits%2C%20state%20and%20local%20governments%20are%20turning%20to%20data-mining%20techniques%20long%20used%20by%20financial%20services%20companies.&amp;rft.identifier=https%3A%2F%2Fwww.nytimes.com%2F2015%2F02%2F22%2Ftechnology%2Fbringing-big-data-to-the-fight-against-benefits-fraud.html&amp;rft.aufirst=Natasha&amp;rft.aulast=Singer&amp;rft.au=Natasha%20Singer&amp;rft.date=2017-12-21&amp;rft.issn=0362-4331&amp;rft.language=en-US"></span>
                     <div class="csl-entry">Smith, Aaron. “Public Attitudes Towards Computer Algorithms,” November 16, 2018.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=document&amp;rft.title=Public%20Attitudes%20Towards%20Computer%20Algorithms&amp;rft.aufirst=Aaron&amp;rft.aulast=Smith&amp;rft.au=Aaron%20Smith&amp;rft.date=2018-11-16"></span>
                     <div class="csl-entry">Sorokanich, Bob. “New York City Is Using Data Mining to Fight Fires.” Gizmodo. Accessed September 30, 2018. <a href="https://gizmodo.com/new-york-city-is-fighting-fires-with-data-mining-1509004543"
                         target="_blank">https://gizmodo.com/new-york-city-is-fighting-fires-with-data-mining-1509004543</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=New%20York%20City%20Is%20Using%20Data%20Mining%20to%20Fight%20Fires&amp;rft.description=Helmets%3F%20Check.%20Breathing%20tanks%3F%20Check.%20Hoses%3F%20Ditto.%20Algorithms%3F%20Yep%3A%20the%20New%20York%20City%20Fire%20Department%20is%20using%20data%20mining%20to%20predict%20which%20of%20the%20city%26%2339%3Bs%20buildings%20are%20at%20highest%20risk%20of%20catching%20fire.%20Now%20that%26%2339%3Bs%20metadata%20we%20can%20get%20behind.&amp;rft.identifier=https%3A%2F%2Fgizmodo.com%2Fnew-york-city-is-fighting-fires-with-data-mining-1509004543&amp;rft.aufirst=Bob&amp;rft.aulast=Sorokanich&amp;rft.au=Bob%20Sorokanich&amp;rft.language=en-US"></span>
-
                     <div class="csl-entry">Stoyanovich, Julia. “Follow the Data!,” n.d.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=document&amp;rft.title=Follow%20the%20Data!&amp;rft.aufirst=Julia&amp;rft.aulast=Stoyanovich&amp;rft.au=Julia%20Stoyanovich"></span>
                     <div class="csl-entry">“Student Activists Push to Integrate NYC Schools.” EMBRACERACE. Accessed March 12, 2019. <a
                         href="http://www.embracerace.org/1/post/2017/09/integratenyc4me-pushing-back-against-segregated-public-schools-in-nyc-and-beyond.html"
                         target="_blank">http://www.embracerace.org/1/post/2017/09/integratenyc4me-pushing-back-against-segregated-public-schools-in-nyc-and-beyond.html</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Student%20Activists%20Push%20to%20Integrate%20NYC%20Schools&amp;rft.description=IntegrateNYC4Me%20is%20a%20youth%20led%20organization%20fighting%20segregation%20in%20the%20NYC.%20They%20join%20us%20for%20this%20episode%20of%20%23talkingraceandkids%20with%20%23embracerace.&amp;rft.identifier=http%3A%2F%2Fwww.embracerace.org%2F1%2Fpost%2F2017%2F09%2Fintegratenyc4me-pushing-back-against-segregated-public-schools-in-nyc-and-beyond.html&amp;rft.language=en"></span>
                     <div class="csl-entry">Thomas, Rachel. “What HBR Gets Wrong About Algorithms and Bias.” Accessed October 22, 2018. <a href="http://www.fast.ai/2018/08/07/hbr-bias-algorithms/"
                         target="_blank">http://www.fast.ai/2018/08/07/hbr-bias-algorithms/</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=What%20HBR%20Gets%20Wrong%20About%20Algorithms%20and%20Bias&amp;rft.identifier=http%3A%2F%2Fwww.fast.ai%2F2018%2F08%2F07%2Fhbr-bias-algorithms%2F&amp;rft.aufirst=Rachel&amp;rft.aulast=Thomas&amp;rft.au=Rachel%20Thomas"></span>
                     <div class="csl-entry">Tullis, Tracy. “How Game Theory Helped Improve New York City’s High School Application Process.” <i>The New York Times</i>, January 19, 2018, sec. New York. <a
                         href="https://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html"
                         target="_blank">https://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=newspaperArticle&amp;rft.title=How%20Game%20Theory%20Helped%20Improve%20New%20York%20City%E2%80%99s%20High%20School%20Application%20Process&amp;rft.source=The%20New%20York%20Times&amp;rft.description=As%20bad%20as%20many%20students%20and%20parents%20may%20think%20New%20York%E2%80%99s%20method%20of%20matching%20students%20and%20schools%20is%2C%20it%20was%20much%20worse%20before%20economists%20from%20Duke%2C%20M.I.T.%20and%20Stanford%20tackled%20it.&amp;rft.identifier=https%3A%2F%2Fwww.nytimes.com%2F2014%2F12%2F07%2Fnyregion%2Fhow-game-theory-helped-improve-new-york-city-high-school-application-process.html&amp;rft.aufirst=Tracy&amp;rft.aulast=Tullis&amp;rft.au=Tracy%20Tullis&amp;rft.date=2018-01-19&amp;rft.issn=0362-4331&amp;rft.language=en-US"></span>
-                    <div class="csl-entry">Vanian, Jonathan. “Unmasking A.I.’s Bias Problem.” Fortune. Accessed October 22, 2018. <a href="http://fortune.com/longform/ai-bias-problem/" target="_blank">http://fortune.com/longform/ai-bias-problem/</a>.
-                    </div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Unmasking%20A.I.'s%20Bias%20Problem&amp;rft.description=Artificial%20intelligence%20can%20imitate%20and%20enhance%20human%20decision-making%20--%20and%20amplify%20human%20prejudices.%20Can%20Big%20Tech%20tackle%20A.I.'s%20discrimination%20problem%3F&amp;rft.identifier=http%3A%2F%2Ffortune.com%2Flongform%2Fai-bias-problem%2F&amp;rft.aufirst=Jonathan&amp;rft.aulast=Vanian&amp;rft.au=Jonathan%20Vanian&amp;rft.language=en"></span>
+                    <div class="csl-entry">Vanian, Jonathan. “Unmasking A.I.’s Bias Problem.” Fortune. Accessed October 22, 2018. <a href="http://fortune.com/longform/ai-bias-problem/" target="_blank">http://fortune.com/longform/ai-bias-problem/</a>.</div>
                     <div class="csl-entry">Williams, Timothy. “In High-Tech Cities, No More Potholes, but What About Privacy?” <i>The New York Times</i>, January 2, 2019, sec. U.S. <a
                         href="https://www.nytimes.com/2019/01/01/us/kansas-city-smart-technology.html" target="_blank">https://www.nytimes.com/2019/01/01/us/kansas-city-smart-technology.html</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=newspaperArticle&amp;rft.title=In%20High-Tech%20Cities%2C%20No%20More%20Potholes%2C%20but%20What%20About%20Privacy%3F&amp;rft.source=The%20New%20York%20Times&amp;rft.description=Cities%2C%20including%20some%20far%20from%20the%20coasts%2C%20are%20vying%20to%20use%20technology%20to%20guide%20services.%20But%20the%20race%20toward%20%E2%80%9Csmart%20cities%E2%80%9D%20is%20raising%20privacy%20worries.&amp;rft.identifier=https%3A%2F%2Fwww.nytimes.com%2F2019%2F01%2F01%2Fus%2Fkansas-city-smart-technology.html&amp;rft.aufirst=Timothy&amp;rft.aulast=Williams&amp;rft.au=Timothy%20Williams&amp;rft.date=2019-01-02&amp;rft.issn=0362-4331&amp;rft.language=en-US"></span>
                     <div class="csl-entry">Zomer, Alisa. “Coming Clean, Using Data Science to Address Wrongful Convictions (MIT GOV Lab).” Accessed October 22, 2018. <a
                         href="http://mitgovlab.org/news/coming-clean-using-data-science-to-address-wrongful-convictions/" target="_blank">http://mitgovlab.org/news/coming-clean-using-data-science-to-address-wrongful-convictions/</a>.</div>
-                    <span class="Z3988"
-                      title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Coming%20Clean%2C%20Using%20Data%20Science%20to%20Address%20Wrongful%20Convictions%20(MIT%20GOV%20Lab)&amp;rft.description=Bringing%20together%20legal%20strategies%20and%20data%20science%2C%20ACLU%20Massachusetts%20presented%20at%20our%20seminar%20series%20on%20one%20of%20the%20largest%20criminal%20justice%20scandals%20in%20Bay%20State%20history.&amp;rft.identifier=http%3A%2F%2Fmitgovlab.org%2Fnews%2Fcoming-clean-using-data-science-to-address-wrongful-convictions%2F&amp;rft.aufirst=Alisa&amp;rft.aulast=Zomer&amp;rft.au=Alisa%20Zomer"></span>
-                  </div>
-                  <p class="citation">*We also conducted interviews with experts, city officials, practitioners, and real people to make this website as accurate and friendly as possible!</p>
+                </div>
+                <p class="citation">*We also conducted interviews with experts, city officials, practitioners, and real people to make this website as accurate and friendly as possible!</p>
 
                 </div>
                 <div class="col"></div>

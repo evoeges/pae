@@ -196,13 +196,18 @@ $("[data-toggle=popover]")
 
 
 $(window).bind("scroll", function() {
-    if ($(this).scrollTop() > 250) {
+    if ($(this).scrollTop() > 500) {
         $("#navbar-side").fadeIn();
+        $(".ads_alert").fadeIn();
         $("#navbar-side").removeClass("definitions_hidden");
+        $(".ads_alert").removeClass("definitions_hidden");
     } else {
         $("#navbar-side").stop().fadeOut();
+        $(".ads_alert").stop().fadeOut();
     }
 });
+
+//$(".alert_text").delay(10000).fadeOut();
 
 $(document).ready(function(){
   $('.collapsible').collapsible();
@@ -314,3 +319,12 @@ $('.modal-backdrop').click(function(){
 
   $('.learn_modal').modal('hide');
 })
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'left'
+    });
+  });
