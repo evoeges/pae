@@ -3,6 +3,7 @@
 var toyalgo;
 var typed;
 
+
 //initialize selections for the toy algo
 
 var toyAlgoSelections={
@@ -321,10 +322,19 @@ $('.modal-backdrop').click(function(){
 })
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
 
-    var instances = M.FloatingActionButton.init(elems, {
+    var taskforce_alert = M.FloatingActionButton.init(elems, {
       direction: 'left'
     });
+
+
   });
+
+/*  $(window).scroll(function() {
+    if ($(this).scrollTop() > 500) {
+      taskforce_alert.open();
+    }
+  }); */
