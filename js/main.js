@@ -237,10 +237,9 @@ function makeDrawings(){
       },
   });
 
-  new Vivus('register_drawing', {
-    duration: 500,
-    file: 'img/register2.svg',
-    type: 'oneByOne',
+  new Vivus('mejia_drawing', {
+    duration: 30,
+    file: 'img/mejia_drawing.svg',
     onReady: function (myVivus) {
         myVivus.el.setAttribute('width', '100%');
       },
