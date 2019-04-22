@@ -1182,6 +1182,10 @@ li {
 .popover_image{
   width: 50%;
 }
+
+.popover_paragraph{
+  padding-top: 0;
+}
 .modal-content{
   padding-top: 0;
 }
