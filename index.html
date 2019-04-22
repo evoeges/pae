@@ -65,6 +65,10 @@
         <a class="nav-link active" href="#introduction"><span class="desktop_nav"><b>Introduction</b></span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
+      <li class="nav-item sub_nav">
+        <a class="nav-link" href="#define_ads"><span class="desktop_nav">What is an ADS?</span> <i class="fas fa-circle mobile_nav"></i></a>
+      </li>
+
       <li class="nav-item">
         <a class="nav-link" href="#Porfirio"><span class="desktop_nav"><b>Why Do ADSs Matter?</b></span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
@@ -74,7 +78,7 @@
       </li>
 
       <li class="nav-item sub_nav">
-        <a class="nav-link" href="#toyAlgo"><span class="desktop_nav">Toy Algorithm</span><i class="fas fa-circle mobile_nav"></i></a>
+        <a class="nav-link" href="#toyAlgo"><span class="desktop_nav">Toy Algorithm</span> <i class="fas fa-circle mobile_nav"></i></a>
       </li>
 
       <li class="nav-item">
@@ -247,14 +251,14 @@
 
         </div>
         <div class="col-md-6">
-            <div id="bodega_drawing" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once" aria-label="Animated line drawing of Porfirio's bodega"></div>
+            <div id="bodega_drawing" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once"></div>
         </div>
       </div>
 
 
       <div class="row align-items-center">
         <div class="col-md-6">
-          <div id="register_drawing" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once" aria-label="Animated line drawing of a cash register"></div>
+          <div id="register_drawing" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once"></div>
         </div>
         <div class="col-md-6">
           <div>
@@ -285,14 +289,14 @@
       <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
         <div class="col-md-4 center">
           <span class="algorithm_icons">
-            <i class="fas fa-shopping-cart" aria-label="Shopping Cart Icon"></i>
+            <i class="fas fa-shopping-cart"></i>
           </span>
         </div>
 
         <div class="col-md-4">
           <div class="row align-items-center">
             <div class="col-md-4 center">
-              <span class="algorithm_icons"><i class="fas fa-desktop" aria-label="Desktop computer icon"></i></span>
+              <span class="algorithm_icons"><i class="fas fa-desktop"></i></span>
             </div>
             <div class="col-md-8 code_block">
               <div id="typed-strings">
@@ -307,7 +311,7 @@
         </div>
 
         <div class="col-md-4 center">
-          <span class="algorithm_icons"><i class="far fa-envelope" aria-label="Envelope Icon"></i><span>
+          <span class="algorithm_icons"><i class="far fa-envelope"></i><span>
         </div>
       </div>
 
@@ -393,7 +397,7 @@
         <div class="row align-items-top">
           <div class="col"></div>
           <div class="col-md-5">
-            <p class="center"> <i class="pros_cons" data-feather="minus-circle" aria-label="Minus sign inside circle icon"></i> </p>
+            <p class="center"> <i class="pros_cons" data-feather="minus-circle"></i> </p>
             <ul class="indented-bullet-points browser-default">
               <li>ADSs can work at a <strong>more rapid pace</strong> and at a <strong>larger scale</strong> than human decision processes. This could accelerate injustices.</li>
               <li>When they make mistakes, the ADS <strong>might not have human checks</strong> to override or course-correct them. </li>
@@ -402,7 +406,7 @@
             </ul>
           </div>
           <div class="col-md-5">
-            <p class="center"> <i class="pros_cons"  data-feather="plus-circle" aria-label="Plus sign inside circle icon"></i> </p>
+            <p class="center"> <i class="pros_cons"  data-feather="plus-circle"></i> </p>
             <ul class="indented-bullet-points browser-default">
               <li>The <strong>scale and speed of ADSs could be used to bring benefits </strong>to the communities that most need them.</li>
               <li>ADSs <strong> could build in more transparency</strong> than human systems so we know exactly how a decision is being made. </li>
@@ -536,7 +540,7 @@
             <p>In other cases, data is given to a computer, the computer finds patterns in the data, and then decides which variables are important based on the patterns it finds.</p>
           </div>
             <div class="col-md-2">
-                <img src="img/two_avocados.png" alt="Two avocado halves with the pits still inside" id="two_avocados">
+                <div id="avocado_drawing"></div>
             </div>
           <div class="col"></div>
         </div>
@@ -662,7 +666,7 @@
             <h3>What’s an unjust system and how do you undo it?</h3>
             <p class="body_emphasis">An unjust system is a set of political, cultural, and economic conditions that perpetuate inequality.
             </p>
-            <p>For example, the education system is unjust due to the legal school segregation that resulted in separate, under-resourced, non-White schools. While we've worked to undo this injustice by ending legal segregation, other conditions &mdash; like housing segregation, parents opting to send their kids to private schools, and the criminalization of students of color &mdash; perpetuate inequality.
+            <p>For example, we think the education system is unjust due to the legal school segregation that resulted in separate, under-resourced, non-White schools. While we've worked to undo this injustice by ending legal segregation, other conditions &mdash; like housing segregation, parents opting to send their kids to private schools, and the criminalization of students of color &mdash; perpetuate inequality.
             </p>
             <p>In education, an ADS with a good purpose might aim to use algorithms to create more racially and socioeconomically integrated schools.
             </p>
@@ -1064,7 +1068,7 @@
 
 
       <!-- PUBLIC LIBRARY CASE STUDY -->
-      <button id="nypl_accordian" class="accordion"><i class="fas fa-book-reader" aria-label="Icon of a person reading a book"></i>&nbsp; Public Library &nbsp;<i class="fas fa-sort-down"></i>
+      <button id="nypl_accordian" class="accordion"><i class="fas fa-book-reader"></i>&nbsp; Public Library &nbsp;<i class="fas fa-sort-down"></i>
       </button>
       <div class="panel">
         <div id="NYPL_case">
@@ -1079,8 +1083,7 @@
             <div class="col"></div>
             <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
               <p class="problem_statement">
-                A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and they can't reallly test out new books by buying and returning them. How can librarians
-                tell which books will be popular with their patrons? What else should they consider when they're picking titles for their library branch?
+                A library needs books, and librarians need to pick them. But how should they do that? Libraries have limited resources and they can't really test out new books by buying and returning them. How can librarians tell which books will be popular with their patrons? What else should they consider when they're picking titles for their library branch?
               </p>
             </div>
             <div class="col"></div>
@@ -1102,19 +1105,19 @@
             <div class="col"></div>
             <div class="col-md-3 center">
               <span class="algorithm_icons">
-                <i class="fab fa-amazon" aria-label="Icon of Amazon styled letter A"></i>
+                <i class="fas fa-dollar-sign"></i>
               </span>
             </div>
 
             <div class="col-md-4 center">
 
-              <span class="algorithm_icons"><i class="fas fa-book" aria-label="Icon of a book"></i></span>
+              <span class="algorithm_icons"><i class="fas fa-book"></i></span>
 
             </div>
 
 
             <div class="col-md-3 center">
-              <span class="algorithm_icons"><i class="fas fa-user" aria-label="Icon of a person"></i><span>
+              <span class="algorithm_icons"><i class="fas fa-user"></i><span>
             </div>
               <div class="col"></div>
           </div>
@@ -1124,7 +1127,7 @@
 
             <div class="col-md-3">
               <h4 class="center">1. Data</h4>
-              <p>ESP is fed circulation data (like which books have been checked out) and sales data (like Amazon purchases). In case you're wondering, no it doesn't use book reviews yet.</p>
+              <p>ESP is fed circulation data (like which books have been checked out) and sales data (from a book warehouse called Baker & Taylor). It uses book reviews, but only in aggregate (total number of reviews, not whether they were good or bad).</p>
             </div>
 
             <div class="col-md-4">
@@ -1197,7 +1200,7 @@
                   <h4> Scope </h4>
                   <p>Superficial. Books are great, but probably not as serious as other social services. It's not about life or death.</p>
                   <h4> Vulnerability </h4>
-                   <p>This depends on how you look at it. People who need to use libraries might be more vulnerable because they don't have other means to knowledge.</p> <p>People whose books don't get great reviews are more likely to be vulnerable because they might not have other access to knowledge.</p>
+                   <p>This depends on how you look at it. People who need to use libraries might be more vulnerable because they don't have other means to knowledge.</p>
                   <p>Authors whose books don't have high sales or who don't have a lot of data about their work are more likely to be vulnerable people
                     (new authors, authors that are underrepresented, topics that are underrepresented).</p>
                 </div>
@@ -1213,7 +1216,7 @@
                 <div class="card-reveal">
                   <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
                   <h4>Data</h4>
-                  <p>ESP uses a lot of data which incorporates both library and private book sale data but is currently unable to take into account other forms of data, like book reviews.</p>
+                  <p>ESP uses a lot of data which incorporates both library and private book sale data but is currently unable to take into account other forms of data, like good or bad book reviews.</p>
                   <p>The data doesn't account for human biased equity issues. Sales data may be skewed to higher-income individuals who can buy more books. Libraries should think about books that their unique populations need and value.</p>
                   <h4> Algorithmic Model </h4>
                   <p>ESP uses a <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
@@ -1231,10 +1234,11 @@
                 </div>
                 <div class="card-reveal">
                   <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
+                    <p>This ADS could be more transparent. The company that makes ESP has documentation <a href="https://www.collectionhq.com/esp/" target="_blank">online</a> explaining it broadly, but the specifics of how it works and how it is used by NYPL are not publicly available.</p>
                   <p>ESP is a neural network, which is not very explainable. We can't distinguish which variables the algorithm is using and how important they end up being to the eventual results.</p>
 
                   <p>If we knew more about the process and components of the ADS, we might be able to mitigate mistakes like incorrect predictions about which books will be popular.</p>
-                  <p>Although the company that makes ESP has documentation <a href="https://www.collectionhq.com/esp/" target="_blank">online</a> explaining it broadly, the specifics of how it works and how it is used by NYPL are not publicly available making this ADS not very transparent.</p>
+
                 </div>
               </div>
             </div>
@@ -1296,13 +1300,13 @@
       </div>
 
       <!-- NYCHA CASE STUDY -->
-      <button id="nycha_accordian" class="accordion"><i class="far fa-building" aria-label="Icon of a building"></i></i>&nbsp;Housing Authority &nbsp;<i class="fas fa-sort-down"></i>
+      <button id="nycha_accordian" class="accordion"><i class="far fa-building"></i></i>&nbsp;Housing Authority &nbsp;<i class="fas fa-sort-down"></i>
       </button>
       <div class="panel">
         <div class="row align-items-icon_center" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
           <div class="col"></div>
           <div class="col-md-8">
-            <h2 class="case_title nycha_titles">NYCHA speeds up the public housing placements with automation.
+            <h2 class="case_title nycha_titles">NYCHA speeds up public housing placements with automation.
             </h2>
           </div>
           <div class="col"></div>
@@ -1312,7 +1316,7 @@
           <div class="col"></div>
           <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
             <p class="problem_statement">
-              The New York City Housing Authority (NYCHA) has over 175,000 public housing units across the City, but ewer than 1% are vacated each year, and the waitlist is over 250,000 families long.
+              The New York City Housing Authority (NYCHA) has over 175,000 public housing units across the City, but fewer than 1% are vacated each year, and the waitlist is over 250,000 families long.
               How can NYCHA sort through such a long waitlist to fill their few vacant units as quickly as possible?
             </p>
           </div>
@@ -1336,16 +1340,16 @@
 
         <div class="row align-items-center">
           <div class="col-md-3 center">
-            <i class="fas fa-pen-nib algorithm_icons" aria-label="Icon of a pen nib"></i>
+            <i class="fas fa-pen-nib algorithm_icons"></i>
           </div>
           <div class="col-md-3 center">
-            <i class="far fa-question-circle algorithm_icons" aria-label="Question mark in a circle"></i><i class="far fa-building algorithm_icons" aria-label="Building icon"></i>
+            <i class="far fa-question-circle algorithm_icons"></i><i class="far fa-building algorithm_icons"></i>
           </div>
           <div class="col-md-3 center">
-          <i class="fas fa-user-check algorithm_icons" aria-label="Icon of a person with a check mark next to them"></i>
+          <i class="fas fa-user-check algorithm_icons"></i>
           </div>
           <div class="col-md-3 center">
-            <i class="far fa-user algorithm_icons" aria-label="Icon of a person"></i><i class="fas fa-link algorithm_icon_link" aria-label="Chain icon"></i><i class="far fa-building algorithm_icons" aria-label="Building icon"></i>
+            <i class="far fa-user algorithm_icons"></i><i class="fas fa-link algorithm_icon_link"></i><i class="far fa-building algorithm_icons"></i>
           </div>
       </div>
 
@@ -1455,6 +1459,8 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
+                <p>TSAP is pretty transparent. NYCHA has <a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish"
+                        target="_blank">documentation</a> on how TSAP works, but the description is 57 pages long!</p>
                 <p>The actual algorithms used by TSAP are pretty explainable.
                   <p> <a class="popover_word" href="javascript:void(0)" data-trigger="hover" tabindex="0" class="popover-dismiss" data-toggle="popover"
                     data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: <br><img src='img/decisionTree.svg' class='popover_image' alt='A node connects to two other nodes. Each node connects to another two nodes that are unconnected to the first node.'>"> Decision
@@ -1465,8 +1471,7 @@
                 </p>
                 <p>Certain parts are easier to understand than others. For example, what the priority codes are and what the qualifications for these priority codes are is clearly laid out, but predicting vacant units and how that impacts eligibility interviews is more opaque.
                 </p>
-                <p>TSAP is pretty transparent. NYCHA has <a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish"
-                        target="_blank">documentation</a> on how TSAP works, but the description is 57 pages long!</p>
+
 
 
 
@@ -1540,7 +1545,7 @@
 
 
       <!-- DOE CASE STUDY -->
-      <button id="doe_accordian" class="accordion"><i class="fas fa-graduation-cap" aria-label="Icon of a graduation cap"></i>&nbsp; Department of Education &nbsp;<i class="fas fa-sort-down"></i>
+      <button id="doe_accordian" class="accordion"><i class="fas fa-graduation-cap"></i>&nbsp; Department of Education &nbsp;<i class="fas fa-sort-down"></i>
       </button>
       <div class="panel">
         <div id="DOE_case">
@@ -1568,7 +1573,7 @@
               <p>
                 The Department of Education (DOE) uses an algorithm that goes by many names: centralized clearinghouse, two-sided deferred acceptance matching, and applicant-proposing acceptance algorithm. All of these names refer to the same algorithm that just matches students to high schools. </p>
 
-              <p>Here's how it works.</p>
+              <p>Here's how it works:</p>
             </div>
             <div class="col"></div>
           </div>
@@ -1577,25 +1582,25 @@
           <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
             <div class="col-md-3 center">
               <span class="algorithm_icons">
-              <i class="fas fa-user-graduate" aria-label="Icon of a person with a graduation cap and gown"></i>
+              <i class="fas fa-user-graduate"></i>
               </span>
             </div>
 
             <div class="col-md-3 center">
               <span class="algorithm_icons">
-              <i class="fas fa-school" aria-label="Icon of a schoolhouse"></i>
+              <i class="fas fa-school"></i>
             </span>
             </div>
 
             <div class="col-md-3 center">
                 <span class="algorithm_icons">
-              <i class="fas fa-link" aria-label="Icon of a chain"></i>
+              <i class="fas fa-link"></i>
             </span>
             </div>
 
             <div class="col-md-3 center">
             <span class="algorithm_icons">
-            <i class="fas fa-redo" aria-label="Icon of a rounded arrow pointed to the bottom right"></i>
+            <i class="fas fa-redo"></i>
             </span>
             </div>
           </div>
@@ -1604,7 +1609,7 @@
 
             <div class="col-md-3">
               <h4 class="center">1. Students Submit</h4>
-              <p>A student will "apply" to schools online, through a school counselor, or at a Family Welcome Center. In their application, they rank up to 12 schools in order of their preference.</p>
+              <p>A student will "apply" to schools online, through a school counselor, or at a Family Welcome Center. In their application, they rank up to 12 schools in order of preference.</p>
             </div>
 
             <div class="col-md-3">
@@ -1641,9 +1646,9 @@
               <h3> So this is better, right?</h3>
               <p> Sort of. </p>
               <p>
-                The new algorithm helps to more efficiently “assign as many students as possible into programs that they rank highly, given constraints due to limited seats and the high schools' own admission priorities,” as the New York Independent Budget Office reported in 2016. </p>
+                The new algorithm helps to more efficiently “assign as many students as possible into programs that they rank highly, given constraints due to limited seats and the high schools' own admission priorities,” as the New York Independent Budget Office <a href="https://ibo.nyc.ny.us/iboreports/preferences-and-outcomes-a-look-at-new-york-citys-public-high-school-choice-process.html" target="_blank">reported in 2016.</a> </p>
               <p>But the matching algorithm doesn’t challenge the underlying unjust system that maintains school segregation and the unequal distribution of educational resources. It doesn’t challenge the specific admissions priorities and preferences of schools. These priorities and preferences can perpetuate school segregation.  </p>
-              <p>Also, the matching process doesn’t apply to schools that tend to be more competitive and highly resourced schools, like charter schools or the eight specialized high schools where students qualify by taking the Specialized High School Admissions Test (SHSAT). And it definitely doesn’t apply to the one audition school in New York City (LaGuardia High School). There might be good reasons for excluding some of these schools from the system, but redesigning the ADS could have been an opportunity to think critically about these reasons. </p>
+              <p>Also, the matching process doesn’t apply to more competitive or highly resourced schools, like charter schools or the eight specialized high schools where students qualify by taking the Specialized High School Admissions Test (SHSAT). And it definitely doesn’t apply to the one audition school in New York City (LaGuardia High School). There might be good reasons for excluding some of these schools from the system, but redesigning the ADS could have been an opportunity to think critically about these reasons. </p>
             </div>
             <div class="col"></div>
           </div>
@@ -1750,9 +1755,9 @@
                 <div class="card-reveal">
                   <span class="card-title  flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
                   <h4> Feedback System </h4>
-                  <p>Students can appeal their matches, but only for certain reasons like travel, housing, or medical hardships.  </p>
+                  <p>Students can appeal their matches to staff in DOE, but only for certain reasons like travel, housing, or medical hardships.  </p>
                   <h4> Ability and Access to Update </h4>
-                  <p>Students can appeal their matches to staff in DOE which makes it more flexible. Also, the algorithm is maintained by the DOE Office of Student Enrollment. Hypothetically, staff from that office could update the algorithm.</p>
+                  <p>The algorithm is maintained by the DOE Office of Student Enrollment. Hypothetically, staff from that office could update the algorithm.</p>
                 </div>
               </div>
             </div>
@@ -1801,7 +1806,7 @@
       <div class="col">
       </div>
       <div class="col-md-10">
-        <h4>We've seen how automating decision-making can sometimes increase discrimination and inequality. </h4>
+        <h4>We've seen how automating decision systema can sometimes increase discrimination and inequality. </h4>
         <p> But this isn't inevitable. </p>
         <p> We can decide when the City should or shouldn't automate decisions. We can ask the tough questions to make sure that government systems don't leave out those of us who have historically been, or are currently being ignored. We can
           bring
