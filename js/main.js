@@ -246,13 +246,13 @@ function makeDrawings(){
       },
   });
 
-  new Vivus('avocado_drawing', {
+  /*new Vivus('avocado_drawing', {
     duration: 500,
     file: 'img/avocado.svg',
     onReady: function (myVivus) {
         myVivus.el.setAttribute('width', '100%');
       },
-  });
+  }); */
 
 }
 
