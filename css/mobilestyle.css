@@ -190,7 +190,14 @@
   }
 
 
-  .footer{
+  .mobile_only{
+    display:block;
+  }
+  .desktop_only{
+    display:none;
+  }
+
+.footer{
       width:100%;
       position:fixed;
       bottom:0px;
@@ -200,13 +207,5 @@
       text-align: center;
       height: 5%;
       padding: 1%;
-
-  }
-
-  .mobile_only{
-    display:block;
-  }
-  .desktop_only{
-    display:none;
   }
 }
