@@ -202,12 +202,15 @@ $("[data-toggle=popover]")
 $(window).bind("scroll", function() {
     if ($(this).scrollTop() > 500) {
         $("#navbar-side").fadeIn();
-        $(".ads_alert").fadeIn();
+        //$(".ads_alert").fadeIn();
+        $("#banner").fadeIn();
         $("#navbar-side").removeClass("definitions_hidden");
-        $(".ads_alert").removeClass("definitions_hidden");
+        //$(".ads_alert").removeClass("definitions_hidden");
+        $("#banner").removeClass("hidden");
     } else {
         $("#navbar-side").stop().fadeOut();
-        $(".ads_alert").stop().fadeOut();
+        //$(".ads_alert").stop().fadeOut();
+        $("#banner").stop().fadeOut();
     }
 });
 
