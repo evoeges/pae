@@ -205,7 +205,14 @@
       color:white;
       font-size:90%;
       text-align: center;
-      height: 5%;
-      padding: 1%;
+      height: 7%;
+      padding:1%;
+      padding-top: 2%;
+      vertical-align: middle;
+  }
+
+.footer a:hover{
+    color: white;
+    font-size: 110%;
   }
 }
