@@ -188,9 +188,12 @@ $('body').scrollspy({ target: '#navbar-side' })
     $('.tooltipped').tooltip();
   });
 
-//enable popover
-$("[data-toggle=popover]")
-.popover({html:true})
+  //enable popover
+  $("[data-toggle=popover]")
+  .popover(
+    {html:true,
+    trigger: 'hover focus',
+    placement: 'auto'})
 
 
 
