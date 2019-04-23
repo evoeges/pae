@@ -248,6 +248,14 @@ function makeDrawings(){
       },
   });
 
+  new Vivus('mejia_drawing_mobile', {
+    duration: 50,
+    file: 'img/mejia_drawing.svg',
+    onReady: function (myVivus) {
+        myVivus.el.setAttribute('width', '80%');
+      },
+  });
+
   /*new Vivus('avocado_drawing', {
     duration: 500,
     file: 'img/avocado.svg',
