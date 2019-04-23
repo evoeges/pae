@@ -191,7 +191,10 @@ $('body').scrollspy({ target: '#navbar-side' })
 
 //enable popover
 $("[data-toggle=popover]")
-.popover({html:true})
+.popover(
+  {html:true,
+  trigger: 'hover click',
+  placement: 'auto'})
 
 
 
