@@ -769,7 +769,6 @@ margin-left: 20%;
   height:100%;
 }
 
-
 .overlay {
     position: absolute;
     top: -2%;
@@ -1248,4 +1247,9 @@ li {
 
 .active, .accordion:hover {
     background-color: rgb(0,0,0,0);
+}
+
+.row_nopad{
+  margin-bottom: 0;
+  padding-top: 0;
 }
