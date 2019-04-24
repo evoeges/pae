@@ -1274,6 +1274,7 @@ li {
       padding:1%;
       padding-top: 2%;
       vertical-align: middle;
+      opacity:0;
   }
 
 .footer a:hover{

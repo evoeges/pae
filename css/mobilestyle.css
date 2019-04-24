@@ -203,12 +203,13 @@
       bottom:0px;
       background-color: var(--secondary-color);
       color:white;
-      font-size:90%;
+      font-size:15px;
       text-align: center;
-      height: 7%;
+      height: 50px;
       padding:1%;
       padding-top: 2%;
       vertical-align: middle;
+      opacity: 1;
   }
 
 .footer a:hover{
