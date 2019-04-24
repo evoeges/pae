@@ -210,6 +210,11 @@
       padding-top: 2%;
       vertical-align: middle;
       opacity: 1;
+
+  }
+
+  .footer a{
+    text-decoration: underline white;
   }
 
 .footer a:hover{
