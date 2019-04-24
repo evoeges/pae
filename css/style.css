@@ -1257,3 +1257,26 @@ li {
 .mobile_only{
   display: none;
 }
+
+.hidden{
+  display:none;
+}
+
+.footer{
+      width:100%;
+      position:fixed;
+      bottom:0px;
+      background-color: var(--secondary-color);
+      color:white;
+      font-size:90%;
+      text-align: center;
+      height: 7%;
+      padding:1%;
+      padding-top: 2%;
+      vertical-align: middle;
+  }
+
+.footer a:hover{
+    color: white;
+    font-size: 110%;
+  }
