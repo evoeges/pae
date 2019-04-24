@@ -225,4 +225,12 @@
     display:none;
   }
 
+  .case_study{
+    width: 90%;
+  }
+
+  .cases_header{
+    width: 80%;
+  }
+
 }
