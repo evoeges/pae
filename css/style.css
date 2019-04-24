@@ -1281,3 +1281,7 @@ li {
     color: white;
     font-size: 110%;
   }
+
+.fixed-action-btn a:focus{
+    background-color: var(--secondary-color);
+  }
