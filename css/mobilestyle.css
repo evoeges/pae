@@ -239,3 +239,10 @@
   }
 
 }
+
+@media only screen and (max-width: 450px) {
+
+    .card-get-active {
+      height: 70vw;
+    }
+}
