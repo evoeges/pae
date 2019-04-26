@@ -191,7 +191,10 @@ $('body').scrollspy({ target: '#navbar-side' })
 
 //enable popover
 $("[data-toggle=popover]")
-.popover({html:true})
+.popover(
+  {html:true,
+  trigger: 'hover focus',
+  placement: 'auto'})
 
 
 
@@ -199,12 +202,15 @@ $("[data-toggle=popover]")
 $(window).bind("scroll", function() {
     if ($(this).scrollTop() > 500) {
         $("#navbar-side").fadeIn();
-        $(".ads_alert").fadeIn();
+        //$(".ads_alert").fadeIn();
+        $("#banner").fadeIn();
         $("#navbar-side").removeClass("definitions_hidden");
-        $(".ads_alert").removeClass("definitions_hidden");
+        //$(".ads_alert").removeClass("definitions_hidden");
+        $("#banner").removeClass("hidden");
     } else {
         $("#navbar-side").stop().fadeOut();
-        $(".ads_alert").stop().fadeOut();
+        //$(".ads_alert").stop().fadeOut();
+        $("#banner").stop().fadeOut();
     }
 });
 
@@ -245,13 +251,15 @@ function makeDrawings(){
       },
   });
 
-  /*new Vivus('avocado_drawing', {
-    duration: 500,
-    file: 'img/avocado.svg',
+  new Vivus('mejia_drawing_mobile', {
+    duration: 50,
+    file: 'img/mejia_drawing.svg',
     onReady: function (myVivus) {
-        myVivus.el.setAttribute('width', '100%');
+        myVivus.el.setAttribute('width', '80%');
       },
-  }); */
+  });
+
+
 
 }
 
@@ -278,42 +286,6 @@ $(".card-hover").hover(
     alterClass();
   });
 
-/*  var isMobile = {
-      Android: function() {
-          return navigator.userAgent.match(/Android/i);
-      },
-      BlackBerry: function() {
-          return navigator.userAgent.match(/BlackBerry/i);
-      },
-      iOS: function() {
-          return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-      },
-      Opera: function() {
-          return navigator.userAgent.match(/Opera Mini/i);
-      },
-      Windows: function() {
-          return navigator.userAgent.match(/IEMobile/i);
-      },
-      any: function() {
-          return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-      }
-    };
-
-  mobileToy();
-  function mobileToy(){
-    console.log(isMobile.any());
-
-    var chart = $("#toy-algo-houses-area"),
-        aspect = chart.width() / chart.height(),
-        container = chart.parent();
-
-    if (isMobile.any()) {
-        var targetWidth = container.width();
-        chart.attr("width", targetWidth);
-        chart.attr("height", Math.round(targetWidth / aspect));
-      }
-
-  } */
 
 $('.modal-backdrop').click(function(){
 
@@ -331,9 +303,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   });
-
-/*  $(window).scroll(function() {
-    if ($(this).scrollTop() > 500) {
-      taskforce_alert.open();
-    }
-  }); */

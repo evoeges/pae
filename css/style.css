@@ -1253,3 +1253,35 @@ li {
   margin-bottom: 0;
   padding-top: 0;
 }
+
+.mobile_only{
+  display: none;
+}
+
+.hidden{
+  display:none;
+}
+
+.footer{
+      width:100%;
+      position:fixed;
+      bottom:0px;
+      background-color: var(--secondary-color);
+      color:white;
+      font-size:90%;
+      text-align: center;
+      height: 0;
+      padding:1%;
+      padding-top: 2%;
+      vertical-align: middle;
+      opacity:0;
+  }
+
+.footer a:hover{
+    color: white;
+    font-size: 110%;
+  }
+
+.fixed-action-btn a:focus{
+    background-color: var(--secondary-color);
+  }

@@ -188,4 +188,61 @@
     width: 35px;
     text-align: right;
   }
+
+
+  .mobile_only{
+    display:block;
+  }
+  .desktop_only{
+    display:none;
+  }
+
+.footer{
+      width:100%;
+      position:fixed;
+      bottom:0px;
+      background-color: var(--secondary-color);
+      color:white;
+      font-size:15px;
+      text-align: center;
+      height: 50px;
+      padding:1%;
+      padding-top: 2%;
+      vertical-align: middle;
+      opacity: 1;
+
+  }
+
+  .footer a{
+    text-decoration: underline white;
+  }
+
+.footer a:hover{
+    color: white;
+    font-size: 110%;
+  }
+
+  .contact_info {
+    margin-bottom: 55px;
+  }
+
+  .hidden{
+    display:none;
+  }
+
+  .case_study{
+    width: 90%;
+  }
+
+  .cases_header{
+    width: 80%;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .card-get-active {
+      height: 70vw;
+    }
 }
